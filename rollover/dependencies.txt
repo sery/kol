@@ -1,0 +1,2 @@
+https://svn.code.sf.net/p/serysmafiascripts/code/srylib
+https://svn.code.sf.net/p/zlib/code

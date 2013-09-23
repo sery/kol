@@ -1,0 +1,179 @@
+a little sump'm sump'm	12
+accidental cider	4
+Alewife&trade; Ale	2
+artisanal limoncello	6
+Aye Aye, Tooth Tooth	8
+backwoods screwdriver	7
+Barulio's bottle	12
+beertini	6
+Beignet Milgranet	4
+berry-infused sake	14
+bilge wine	4
+black & tan	6
+Blackfly Chardonnay	5
+blended frozen swill	12
+bloody beer	2
+bloody mary	5
+boilermaker	13
+bottle of Calcutta Emerald	6
+bottle of cooking sherry	2
+bottle of Definit	6
+bottle of Domesticated Turkey	6
+bottle of Jorge Sinsonte	6
+bottle of Lieutenant Freeman	6
+bottle of Pete's Sake	6
+bottle of Pinot Renoir	6
+bottle of popskull	2
+bottle of realpagne	6
+bottle of rum	3
+bottle of sake	3
+bottle of tequila	3
+bottle of wine	8
+boxed champagne	6
+boxed wine	3
+bucket of wine	17
+calle de miel	12
+can of Swiller	3
+Candicaine	8
+Candy Alexander	6
+Cobb's Knob Wurstbrau	2
+Corpse Island iced tea	21
+corpse on the beach	21
+corpsebite	7
+corpsedriver	21
+corpsetini	21
+cream stout	2
+cruelty-free wine	3
+CSA cheerfulness ration	4
+CSA scoutmaster's &quot;water&quot;	9
+cup of primitive beer	3
+decanter of fine Scotch	20
+dew yoana salacious lei	12
+Divine	16
+Drunken Astrophysicist	8
+dry martini	7
+ducha de oro	12
+Dump Truck	8
+Earth and Firewater	6
+Earth, Wind and Firewater	8
+eggnog	7
+elven squeeze	6
+extra-spicy bloody mary	7
+fine wine	2
+Flaming Caipiranha	8
+Flaming Knob	8
+Flaming Sazerorc	8
+flute of flat champagne	4
+fruity girl swill	12
+fuzzbump	12
+Fuzzy Tentacle	6
+gimlet	16
+gloomy mushroom wine	14
+Golden Mean	6
+Gordon Bennett	16
+Green Giant	8
+Green Muslin	6
+grog	7
+Haymaker	8
+horizontal tango	12
+Humanitini	4
+Hundred Headed IPA	10
+ice-cold fotie	3
+ice-cold Sir Schlitz	1
+ice-cold Willer	1
+Imp Ale	1
+Jackhammer	6
+kamicorpse-ee	7
+Lollipop Drop	4
+lumbering jack	5
+lychee chuhai	5
+Mad Train wine	3
+Mae West	16
+margarita	5
+McLeod's Hard Haggis-Ade	3
+McMillicancuddy's Special Lager	3
+melon-infused sake	14
+melted Jell-o shot	3
+Mon Tiki	16
+monkey wrench	5
+More Humanitini than Humanitini	6
+Morto Moreto	5
+natto-infused sake	7
+Neuromancer	16
+ocean motion	12
+Oh, the Humanitini	8
+old-fashioned	7
+open sauce	12
+papaya sling	5
+papaya slung	6
+perpendicular hula	12
+pink pony	12
+Plague of Locusts	8
+plastic cup of beer	1
+prussian cathouse	16
+purple corpsel	7
+rabbit punch	7
+Ram's Face Lager	2
+redrum	5
+rockin' wagon	12
+roll in the hay	12
+rum and cola	5
+Russian Ice	2
+salacious lychee chuhai	12
+salacious screwdiver	12
+salinated mint julep	5
+salty dog	5
+salty slug	6
+sangria	7
+screwdriver	5
+sham champagne	5
+shot of blackberry schnapps	2
+shot of nepenthe schnapps	6
+shot of rotgut	2
+Shot of the Living Dead	8
+slap and tickle	12
+Slimebite	8
+slimy fermented bile bladder	2
+slip 'n' slide	12
+Sloe Comfortable Zoo	6
+Sloe Comfortable Zoo on Fire	8
+slug of rum	3
+slug of shochu	3
+slug of vodka	3
+snifter of thoroughly aged brandy	3
+soft green echo eyedrop antidote martini	13
+spiced rum	6
+strawberry daiquiri	5
+strawberry wine	5
+Suffering Sinner	4
+Supernova Champagne	9
+Suppurating Sinner	6
+Taco Dan's Taco Stand Chimichangarita	2
+tangarita	16
+tankard of ale	3
+Temps Tempranillo	4
+teqiwila slammer	16
+tequila sunrise	5
+tequila with training wheels	7
+The Cooler Out of Space	8
+thistle wine	3
+tobiko-infused sake	7
+tomato daiquiri	6
+Transylvania Sling	6
+tropical swill	12
+Typical Tavern swill	5
+vodka and cranberry	5
+vodka martini	5
+vodka stratocaster	16
+wasabi-infused sake	7
+water purification pills	6
+whiskey and cola	5
+whiskey sour	5
+white Canadian	5
+White Hyborian	5
+white lightning	7
+white Xanadian	6
+wine spritzer	5
+Ye Olde Meade	15
+yellow brick road	16
+Zoodriver	4
