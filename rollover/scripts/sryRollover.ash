@@ -509,7 +509,7 @@ void rollover(String simulate) {
 	int rollMP;
 	int ind = index_of(body,"campground/rest")+15;
 	int house;
-	if ((substring(body,ind,ind+1) == "a")(substring(body,ind,ind+1) == "b")) {
+	if ((substring(body,ind,ind+1) == "a") || (substring(body,ind,ind+1) == "b")) {
 		house = 10;
 	}
 	else {
