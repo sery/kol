@@ -27,15 +27,15 @@ import <Rainbow Gravitation.ash>
 //import <ClipArt.ash>
 
 void create_RO_Aliases(){
-	if (get_property("sry_RO_Alias") != 1){
-		set_property("sry_RO_Alias",1);
+	if (get_property("sry_RO_Alias") != 2){
+		set_property("sry_RO_Alias",2);
 		cli_execute("alias rollover => ashq import <sryRollover.ash> rollover('none')");
 		cli_execute("alias rolloversim => ashq import <sryRollover.ash> rollover('sim')");
 		}
 	//Sets up quick preference checker alias "sryROPrefs"
-	if (get_property("sry_RO_Alias") != 1){
-		set_property("sry_RO_Alias",1);
-		cli_execute("alias sryROPrefs => ashq import <rollover.ash> getRolloverPrefs()");
+	if (get_property("sry_RO_Alias") != 2){
+		set_property("sry_RO_Alias",2);
+		cli_execute("alias sryROPrefs => ashq import <sryRollover.ash> getRolloverPrefs()");
 		}
 	}
 
