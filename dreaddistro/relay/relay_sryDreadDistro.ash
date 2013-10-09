@@ -1,405 +1,1918 @@
-import <clan_raidlogs.ash>
-/*
-Taken symobls:
-string[string] FF=form_fields();
 string[string] contexts;
+string[string] FF=form_fields();
 string page;
-string[int] layout;
+string abortMessage;
+//total, player, area, section
 int[string,string,string] data;
-string[string] players;
-int[int,string,string] odata;
+int[int,string,string]odata;
 string[string] options;
+
 int runType=-1;
-boolean activeComment=false;
+//Consts
+boolean activeComment=false;//uncomment next line for testing.
+activeComment=true;
 string clearID="!Made it<br>Through";
 string[string,string] theMatcher;
+
+theMatcher["DreadInn",".carriage"]="carriageman (\\d+) sheet";
+theMatcher["DreadInn",".temp"]="action: v_cold";
+theMatcher["DreadWoods",".dist"]="<b>([\\d,]+)</b> monster\\(s\\) in the Forest";
+theMatcher["DreadVillage",".dist"]="<b>([\\d,]+)</b> monster\\(s\\) in the Village";
+theMatcher["DreadCastle",".dist"]="<b>([\\d,]+)</b> monster\\(s\\) in the Castle";
+
+theMatcher["DreadWoods","&nbsp;"]="defeated( by)?  (hot|cold|spooky|stench|sleaze) (bugbear|werewolf)";
+theMatcher["DreadWoods","!Werewolf"]="defeated( by)? The Great Wolf of the Air";
+theMatcher["DreadWoods","!Bugbear"]="defeated( by)?  Falls-From-Sky";
+theMatcher["DreadWoods","+Cabin.11"]="acquired some dread tarragon";
+theMatcher["DreadWoods","+Cabin.12"]="made some bone flour";
+theMatcher["DreadWoods","+Cabin.13"]="made the forest less stinky";
+theMatcher["DreadWoods","+Cabin.21"]="recycled some newspapers";
+theMatcher["DreadWoods","+Cabin.22"]="read an old diary";
+theMatcher["DreadWoods","+Cabin.23"]="got a Dreadsylvanian auditor's badge";
+theMatcher["DreadWoods","+Cabin.24"]="made an impression of a complicated lock";
+theMatcher["DreadWoods","+Cabin.30"]="unlocked the attic of the cabin";
+theMatcher["DreadWoods","+Cabin.31"]="made the forest less spooky";
+theMatcher["DreadWoods","+Cabin.32"]="drove some werewolves out of the forest";
+theMatcher["DreadWoods","+Cabin.33"]="drove some vampires out of the castle";
+theMatcher["DreadWoods","+Cabin.34"]="flipped through a photo album";
+//4? 5-pencil, 6-leave
+theMatcher["DreadWoods","+Tree.11"]="(?:wasted some fruit|knocked some fruit loose)";
+theMatcher["DreadWoods","+Tree.12"]="made the forest less sleazy";
+theMatcher["DreadWoods","+Tree.13"]="acquired a chunk of moon-amber";
+theMatcher["DreadWoods","+Tree.20"]="unlocked the fire watchtower";
+theMatcher["DreadWoods","+Tree.21"]="drove some ghosts out of the village";
+theMatcher["DreadWoods","+Tree.22"]="rifled through a footlocker";
+theMatcher["DreadWoods","+Tree.23"]="lifted some weights";
+theMatcher["DreadWoods","+Tree.31"]="got a blood kiwi";
+theMatcher["DreadWoods","+Tree.32"]="got a cool seed pod";
+//theMatcher["DreadWoods","+Tree.33"]="";
+theMatcher["DreadWoods","+Burrows.11"]="made the forest less hot";
+theMatcher["DreadWoods","+Burrows.12"]="got intimate with some hot coals";
+theMatcher["DreadWoods","+Burrows.13"]="made a cool iron ingot";
+theMatcher["DreadWoods","+Burrows.21"]="made the forest less cold";
+theMatcher["DreadWoods","+Burrows.22"]="listened to the forest's heart";
+theMatcher["DreadWoods","+Burrows.23"]="drank some nutritious forest goo";
+theMatcher["DreadWoods","+Burrows.31"]="drove some bugbears out of the forest";
+theMatcher["DreadWoods","+Burrows.32"]="found and sold a rare baseball card";
+
+theMatcher["DreadVillage","&nbsp;"]="defeated( by)?  (hot|cold|spooky|stench|sleaze) (ghost|zombie)";
+theMatcher["DreadVillage","!Ghost"]="defeated( by)?  Mayor Ghost";
+theMatcher["DreadVillage","!Zombie"]="defeated( by)? the Zombie Homeowners";
+theMatcher["DreadVillage","+Square.10"]="unlocked the schoolhouse";
+theMatcher["DreadVillage","+Square.11"]="drove some ghosts out of the village";
+theMatcher["DreadVillage","+Square.12"]="collected a ghost pencil";
+theMatcher["DreadVillage","+Square.13"]="read some naughty carvings";
+theMatcher["DreadVillage","+Square.21"]="made the village less cold";
+theMatcher["DreadVillage","+Square.22"]="looted the blacksmith's till";
+theMatcher["DreadVillage","+Square.23"]="made (?:a|some) cool(?:ing)? iron";
+theMatcher["DreadVillage","+Square.31"]="made the village less spooky";
+theMatcher["DreadVillage","+Square.32"]="was hung by a clanmate";
+//theMatcher["DreadVillage","+Square.33"]="";//gawking
+theMatcher["DreadVillage","+Square.34"]="hung a clanmate";
+theMatcher["DreadVillage","+Skid Row.11"]="made the vill?age less stinky";
+theMatcher["DreadVillage","+Skid Row.12"]="swam in a sewer";
+theMatcher["DreadVillage","+Skid Row.21"]="drove some skeletons out of the castle";
+theMatcher["DreadVillage","+Skid Row.22"]="made the village less sleazy";
+theMatcher["DreadVillage","+Skid Row.23"]="moved some bricks around";
+theMatcher["DreadVillage","+Skid Row.31"]="looted the tinker's shack";
+theMatcher["DreadVillage","+Skid Row.32"]="made a complicated key";
+theMatcher["DreadVillage","+Skid Row.33"]="polished some moon-amber";
+theMatcher["DreadVillage","+Skid Row.34"]="made a clockwork bird";
+theMatcher["DreadVillage","+Skid Row.35"]="got some old fuse";
+theMatcher["DreadVillage","+Estate.11"]="drove some zombies out of the village";
+theMatcher["DreadVillage","+Estate.12"]="robbed some graves";
+theMatcher["DreadVillage","+Estate.13"]="read some lurid epitaphs";
+theMatcher["DreadVillage","+Estate.21"]="made the village less hot";
+theMatcher["DreadVillage","+Estate.22"]="made a shepherd's pie";
+theMatcher["DreadVillage","+Estate.23"]="raided some naughty cabinets";
+theMatcher["DreadVillage","+Estate.30"]="unlocked the master suite";
+theMatcher["DreadVillage","+Estate.31"]="drove some werewolves out of the forest";
+theMatcher["DreadVillage","+Estate.32"]="got a bottle of eau de mort";
+theMatcher["DreadVillage","+Estate.33"]="made a ghost shawl";
+
+theMatcher["DreadCastle","&nbsp;"]="defeated( by)?  (hot|cold|spooky|stench|sleaze) (skeleton|vampire)";
+theMatcher["DreadCastle","!Vampire"]="defeated( by)?  Count Drunkula";
+theMatcher["DreadCastle","!Skeleton"]="defeated( by)?  The Unkillable Skeleton";
+theMatcher["DreadCastle","+Great Hall.10"]="unlocked the ballroom";
+theMatcher["DreadCastle","+Great Hall.11"]="drove some vampires out of the castle";
+theMatcher["DreadCastle","+Great Hall.12"]="twirled on the dance floor";
+theMatcher["DreadCastle","+Great Hall.21"]="made the castle less cold";
+theMatcher["DreadCastle","+Great Hall.22"]="frolicked in a freezer";
+theMatcher["DreadCastle","+Great Hall.31"]="got some roast beast";
+theMatcher["DreadCastle","+Great Hall.32"]="made the castle less stinky";
+theMatcher["DreadCastle","+Great Hall.33"]="got a wax banana";
+theMatcher["DreadCastle","+Tower.10"]="unlocked the lab";
+theMatcher["DreadCastle","+Tower.11"]="drove some bugbears out of the forest";
+theMatcher["DreadCastle","+Tower.12"]="drove some zombies out of the village";
+theMatcher["DreadCastle","+Tower.13"]="fixed The Machine";
+theMatcher["DreadCastle","+Tower.14"]="made a blood kiwitini";
+theMatcher["DreadCastle","+Tower.21"]="drove some skeletons out of the castle";
+theMatcher["DreadCastle","+Tower.22"]="read some ancient secrets";
+theMatcher["DreadCastle","+Tower.23"]="learned to make a moon-amber necklace";
+theMatcher["DreadCastle","+Tower.31"]="made the castle less sleazy";
+theMatcher["DreadCastle","+Tower.32"]="raided a dresser";
+theMatcher["DreadCastle","+Tower.33"]="got magically fingered";
+theMatcher["DreadCastle","+Dungeon.11"]="made the castle less spooky";
+theMatcher["DreadCastle","+Dungeon.12"]="did a whole bunch of pushups";
+theMatcher["DreadCastle","+Dungeon.13"]="took a nap on a prison cot";
+theMatcher["DreadCastle","+Dungeon.21"]="made the castle less hot";
+theMatcher["DreadCastle","+Dungeon.22"]="sifted through some ashes";
+theMatcher["DreadCastle","+Dungeon.23"]="relaxed in a furnace";
+theMatcher["DreadCastle","+Dungeon.31"]="got some stinking agaric";
+theMatcher["DreadCastle","+Dungeon.32"]="rolled around in some mushrooms";
+
+theMatcher["DreadPencil","DreadWoods.Cabin"]="loc=1";
+theMatcher["DreadPencil","DreadWoods.Tree"]="loc=2";
+theMatcher["DreadPencil","DreadWoods.Burrows"]="loc=3";
+theMatcher["DreadPencil","DreadVillage.Square"]="loc=4";
+theMatcher["DreadPencil","DreadVillage.Skid Row"]="loc=5";
+theMatcher["DreadPencil","DreadVillage.Estate"]="loc=6";
+theMatcher["DreadPencil","DreadCastle.Great Hall"]="loc=7";
+theMatcher["DreadPencil","DreadCastle.Tower"]="loc=8";
+theMatcher["DreadPencil","DreadCastle.Dungeon"]="loc=9";
+
+//End Consts
+
+string noSpaces(string input){
+ matcher m=create_matcher("\\s",input);
+ return m.replace_all("");
+}
+
+int abs(int i){
+ if(i<0)return -i;
+ return i;
+}
+
+string expand(string s){
+ switch(s){
+  case "DreadWoods":case "Woods":return "The Woods";
+  case "DreadVillage":case "Village":return "The Village";
+  case "DreadCastle":case "Castle":return "The Castle";
+  case "DreadLoot":case "Loot":return "Loot Distribution";
+ }
+ return s;
+}
+
+string bossName(string s){
+ switch(s){
+   case "Woods":if(data[".data","DreadWoods"] contains "!Werewolf")return "The Great Wolf of the Air";
+   else if(data[".data","DreadWoods"] contains "!Bugbear")return "Falls-From-Sky";
+   else return "Unknown";
+  case "Village":if(data[".data","DreadVillage"] contains "!Ghost")return "Mayor Ghost";
+   else if(data[".data","DreadVillage"] contains "!Zombie")return "Zombie HOA";
+   else return "Unknown";
+  case "Castle":if(data[".data","DreadCastle"] contains "!Vampire")return "Count Drunkula";
+   else if(data[".data","DreadCastle"] contains "!Skeleton")return "Unkillable Skeleton";
+   else return "Unknown";
+  case "Inn":return "Carriageman";
+ }
+ return s;
+}
+
+string linkify(string u){
+ return "<a href=\"showplayer.php?who="+data[".data",".id",u]+"\">"+u+"</a>";
+}
+
+string imageOf(string who){
+ switch(who){
+  case "The Great Wolf of the Air":return "http://images.kingdomofloathing.com/adventureimages/wolfoftheair.gif";
+  case "Falls-From-Sky":return "http://images.kingdomofloathing.com/adventureimages/fallsfromsky.gif";
+  case "Mayor Ghost":return "http://images.kingdomofloathing.com/adventureimages/mayorghost.gif";
+  case "Zombie HOA":return "http://images.kingdomofloathing.com/adventureimages/zombiehoa.gif";
+  case "Count Drunkula":return "http://images.kingdomofloathing.com/adventureimages/drunkula.gif";
+  case "Unkillable Skeleton":return "http://images.kingdomofloathing.com/adventureimages/ukskeleton.gif";
+  case "Carriageman":return "http://images.kingdomofloathing.com/otherimages/dv/biginn.gif";
+ }
+ return "http://images.kingdomofloathing.com/adventureimages/question.gif";
+}
+
+string linkTo(string where){
+ switch(where){
+  case "Inn":return "shop.php?whichshop=dv";
+  case "Woods":return "adventure.php?snarfblat=338";
+  case "Cabin":return "clan_dreadsylvania.php?action=forceloc&loc=1";
+  case "Tree":return "clan_dreadsylvania.php?action=forceloc&loc=2";
+  case "Burrows":return "clan_dreadsylvania.php?action=forceloc&loc=3";
+  case "Village":return "adventure.php?snarfblat=339";
+  case "Square":return "clan_dreadsylvania.php?action=forceloc&loc=4";
+  case "Skid Row":return "clan_dreadsylvania.php?action=forceloc&loc=5";
+  case "Estate":return "clan_dreadsylvania.php?action=forceloc&loc=6";
+  case "Castle":return "adventure.php?snarfblat=340";
+  case "Great Hall":return "clan_dreadsylvania.php?action=forceloc&loc=7";
+  case "Tower":return "clan_dreadsylvania.php?action=forceloc&loc=8";
+  case "Dungeon":return "clan_dreadsylvania.php?action=forceloc&loc=9";
+ }
+ return "clan_basement.php";
+}
+
+string capitalize(string s){
+ if(s.length()<2)return s.to_upper_case();
+ return s.char_at(0).to_upper_case()+s.substring(1);
+}
+
+string pullField(int[string,string] fakeField, string fName){
+ string rv;
+ foreach s,i in fakeField[fName] rv=s;
+ return rv;
+}
+
+string getName(string l){
+ matcher m=create_matcher("(?:<b>)?([\\w\\s_]+) \\(#(\\d+)\\)",l);
+ if(!m.find())return ".";
+ data[".data",".id",m.group(1)]=m.group(2).to_int();
+ return m.group(1);
+}
+
+int getTurns(string l){
+ matcher m=create_matcher("\\((\\d+) turns?\\)",l);
+ if(!m.find())return 0;
+ return m.group(1).to_int();
+}
+
+int parseImageN(string l){
+ matcher m=create_matcher("(?<!sewer)(\\d+)\\.gif",l);
+ if(!m.find())return -1;
+ return m.group(1).to_int();
+}
+
+int parseImageS(string l){
+ matcher m=create_matcher("(tube_boss|\\d+)\\.gif",l);
+ if(!m.find())return -1;
+ if(m.group(1)=="tube_boss")return 10;
+ return m.group(1).to_int();
+}
+
+string spoiler(string zone, string what){
+ switch(zone){
+  case"DreadWoods":case"Woods":
+   switch(what){
+    case"Hot":return "Burrows->Heat->Cork";
+    case"Cold":return "Burrows->Cold->Read";
+    case"Spooky":return "Cabin->Attic->Music Box";
+    case"Sleaze":return "Tree->Climb->Kick Nest";
+    case"Stench":return "Cabin->Kitchen->Disposal";
+   }
+   break;
+  case"DreadVillage":case"Village":
+   switch(what){
+    case"Hot":return "Estate->Quarters->Ovens";
+    case"Cold":return "Square->Blacksmith->Furnace";
+    case"Spooky":return "Square->Gallows->Paint Noose";
+    case"Sleaze":return "Skid Row->Tenements->Paint";
+    case"Stench":return "Skid Row->Sewers->Unclog";
+   }
+   break;
+  case"DreadCastle":case"Castle":
+   switch(what){
+    case"Hot":return "Dungeon->Boiler->Steam";
+    case"Cold":return "Great Hall->Kitchen->Lower Freezer";
+    case"Spooky":return "Dungeon->Cell Block->Flush";
+    case"Sleaze":return "Tower->Bedroom->Parrot";
+    case"Stench":return "Great Hall->Dining Room->Dishes";
+   }
+   break;
+ }
+ return "";
+}
+
+/*
+string[int] layout;
+layout[1]="Cabin,Unlock(Attic),Freddies(10),Auditor's Badge(1),Music Box(-Spooky)";
+layout[2]="Square,Unlock(Schoolhouse),Freddies(10),Ghost Pencil(10)";
+layout[3]="Great Hall,Unlock(Ballroom),Dreadful Roast(1),Wax Banana(1)";
+layout[4]="Tree,Unlock(Watchtower),Freddies(10),Blood Kiwi(Stomped),Moon-Amber(1)";
+layout[5]="Skid Row,Freddies(10)";
+layout[6]="Tower,Unlock(Laboratory),Freddies(10)";
+layout[7]="Burrows,Freddies(10)";
+layout[8]="Estate,Unlock(Suite),Freddies(10)";
+layout[9]="Dungeon,Freddies(10),Stinking Agaricus(1)";
+string dreadNonComStr(string zone, int opt){
+ switch(zone){
+  case"+Cabin":
+   switch(opt){
+    case 11:return "Dread Tarragon";
+    case 12:return "Bone Flour";
+    case 13:return "-Stench";
+    case 21:return "Freddies";
+    case 22:return "Bored Stiff";
+    case 23:return "Auditor's Badge";
+    case 24:return "Lock Impression";
+    case 30:return "Attic";
+    case 31:return "-Spooky";
+    case 32:return "-Werewolves";
+    case 33:return "-Vampires";
+    case 34:return "Moxie";
+   }
+   break;
+  case"+Tree":
+   switch(opt){
+    case 11:return "Stomped";
+    case 12:return "-Sleaze";
+    case 13:return "Moon-Amber";
+    case 20:return "Watchtower";
+    case 21:return "-Ghosts";
+    case 22:return "Freddies";
+    case 23:return "Muscle";
+    case 31:return "Blood Kiwi";
+    case 32:return "Seed Pod";
+    case 33:return "Owl Folder";
+   }
+   break;
+  case"+Burrows":
+   switch(opt){
+    case 11:return "-Hot";
+    case 12:return "Coals";
+    case 13:return "Cool Ingot";
+    case 21:return "-Cold";
+    case 22:return "Myst";
+    case 23:return "Bounty";
+    case 31:return "-Bugbears";
+    case 32:return "Freddies";
+   }
+   break;
+  case"+Square":
+   switch(opt){
+    case 10:return "Schoolhouse";
+    case 11:return "-Ghosts";
+    case 12:return "Ghost Pencil";
+    case 13:return "Myst";
+    case 21:return "-Cold";
+    case 22:return "Freddies";
+    case 23:return "Cool Iron Equipment";
+    case 31:return "-Spooky";
+    case 32:return "Trap Door Item";
+    case 33:return "-";
+    case 34:return "Pulled Lever";
+   }
+   break;
+  case"+Skid Row":
+   switch(opt){
+    case 11:return "-Stench";
+    case 12:return "Drenched";
+    case 21:return "-Skeletons";
+    case 22:return "-Sleaze";
+    case 23:return "Muscle";
+    case 31:return "Freddies";
+    case 32:return "Replica Key";
+    case 33:return "Polished Amber";
+    case 34:return "Songbird";
+    case 35:return "Old Fuse";
+   }
+   break;
+  case"+Estate":
+   switch(opt){
+    case 11:return "-Zombies";
+    case 12:return "Freddies";
+    case 13:return "50 Ways";
+    case 21:return "-Hot";
+    case 22:return "Shepherd's Pie";
+    case 23:return "Moxie";
+    case 30:return "Suite";
+    case 31:return "-Werewolves";
+    case 32:return "Eau de Mort";
+    case 33:return "Ghost Shawl";
+   }
+   break;
+  case"+Great Hall":
+   switch(opt){
+    case 10:return "Ballroom";
+    case 11:return "-Vampires";
+    case 12:return "Moxie";
+    case 21:return "-Cold";
+    case 22:return "Frosty";
+    case 31:return "Dreadful Roast";
+    case 32:return "-Stench";
+    case 33:return "Wax Banana";
+   }
+   break;
+  case"+Tower":
+   switch(opt){
+    case 10:return "Laboratory";
+    case 11:return "-Bugbears";
+    case 12:return "-Zombies";
+    case 13:return "Fixed The Machine";
+    case 14:return "Bloody Kiwitini";
+    case 21:return "-Skeletons";
+    case 22:return "Myst";
+    case 23:return "Necklace Recipe";
+    case 31:return "-Sleaze";
+    case 32:return "Freddies";
+    case 33:return "Fingered";
+   }
+   break;
+  case"+Dungeon":
+   switch(opt){
+    case 11:return "-Spooky";
+    case 12:return "Muscle";
+    case 13:return "MP";
+    case 21:return "-Hot";
+    case 22:return "Freddies";
+    case 23:return "Stats";
+    case 31:return "Stinking Agaricus";
+    case 32:return "Spore-Wreathed";
+   }
+   break;
+ }
+ return "";
+}
 */
-int[int,string,string] raw;
-string runRowMatcher="<tr><td class=small>([^&]+)&nbsp;&nbsp;</td><td class=small>([^&]+)&nbsp;&nbsp;</td><td class=small>([^&]+)[^v]+[^=]+=(\\d+)";
-activeComment=false;
-boolean[string] pointList=$strings[Kills,Bosses,Unlocks,Sheets,Noncombats,Losses,Boss Losses,.adjust];
-boolean[string] lootList=$strings[Loot,HM Loot,Capacitors,Noses,Consumables,.-adjust];
-
-int lookupClanId(string c){
- string page=visit_url("clan_signup.php?action=search&whichfield=1&searchstring="+c);
- matcher m=create_matcher("(?i)whichclan=(\\d+)\">"+c+"<",page);
- if(m.find())return m.group(1).to_int();
- return 0;
-}
-
-void toggleRun(int clan, int run){
- int m=1;
- map_to_file(raw,"raidlog/dreadKP."+get_clan_id()+".txt");
- file_to_map("raidlog/dreadKP."+clan+".txt",raw);
- if(!(raw contains run))return;
- if(raw[run,".","ignore"]==1)remove raw[run,".","ignore"];
- else{
-  m=-1;
-  raw[run,".","ignore"]=1;
- }
- foreach user,thing,val in raw[run] if((user.char_at(0)!=".")&&(thing.char_at(0)!="."))raw[0,user,thing]+=m*val;
- map_to_file(raw,"raidlog/dreadKP."+clan+".txt");
- file_to_map("raidlog/dreadKP."+get_clan_id()+".txt",raw);
-}
-
-
-
-void initData(){
- print("first time, might take a while","olive");
- print("getting clan runs");
- buffer allRuns;
- buffer nextPage;
- int row=0;
- repeat{
-  nextPage=visit_url("clan_oldraidlogs.php?startrow="+row);
-  allRuns.append(nextPage);
-  row+=10;
- }until(nextPage.contains_text("gray>next"));
- print("parsing runs");
- matcher m=create_matcher(runRowMatcher,allRuns);
- while(m.find()){
- 	addRun(m.group(4).to_int(),m.group(3),m.group(1),m.group(2));
- 	print(m);}
- raw[0,".clanName",get_clan_name()]=1;
- map_to_file(raw,"raidlog/dreadKP."+get_clan_id()+".txt");
- print("initialization complete","blue");
-}
-
-void numberCruncher(){
- int[int,string,string]raw2;
- matcher m=create_matcher("^([A-WY-Z]+)([\\dX])$","");
- foreach clanName,clanNum in raw[0,".union"]{
-  file_to_map("raidlog/dreadKP."+clanNum+".txt",raw2);
-  foreach user in raw2[0] if(user.char_at(0)!=".") foreach thing,val in raw2[0,user]if(thing.char_at(0)!=".")raw[0,user,thing]+=val;
-  else raw[0,user,thing]=val;
- }
- foreach user in raw[0] if(user.char_at(0)!="."){
-  raw[0,user,".points"]=0;
-  foreach thing in pointList raw[0,user,".points"]+=round(raw[0,user,thing]*raw[0,".weight",thing]/100.0);
-  foreach thing in $strings[FFS,GW,ZHA,MG,CD,US]{
-   raw[0,user,"Loot"]+=raw[0,user,thing+"X"];
-   for i from 1 to 3 raw[0,user,"HM Loot"]+=raw[0,user,thing+i];
+/*
+void formatDreadOptions(){
+ boolean classLock(string nc, int directory){
+  switch(nc){
+   case"Tree":if(((directory/10)==1)&&(my_primestat()!=$stat[muscle]))return true;return false;
+   case"Skid Row":if(((directory/10)==3)&&(my_primestat()!=$stat[moxie]))return true;return false;
+   case"Tower":if(((directory/10)==2)&&(my_primestat()!=$stat[mysticality]))return true;return false;
   }
-  raw[0,user,".total"]=raw[0,user,".points"];
-  foreach thing in lootList raw[0,user,".total"]-=round(raw[0,user,thing]*raw[0,".weight",thing]/100.0);
-  raw[0,user,".combined"]=raw[0,user,".total"];
+  return false;
  }
- foreach user in raw[-1] if(user.char_at(0)!="."){
-  raw[-1,user,".points"]=0;
-  foreach thing in pointList raw[-1,user,".points"]+=round(raw[-1,user,thing]*raw[0,".weight",thing]/100.0);
-  foreach thing in $strings[FFS,GW,ZHA,MG,CD,US]{
-   raw[-1,user,"Loot"]+=raw[-1,user,thing+"X"];
-   for i from 1 to 3 raw[-1,user,"HM Loot"]+=raw[-1,user,thing+i];
+ boolean keyLocked(string nc, int directory){
+  if(data[".data"]contains(".unlock."+nc))return false;
+  switch(nc){
+   case"Cabin":if((directory/10)!=3)return false;return true;
+   case"Tree":if((directory/10)!=2)return false;return true;
+   case"Square":if((directory/10)!=1)return false;return true;
+   case"Estate":if((directory/10)!=3)return false;return true;
+   case"Tower":if((directory/10)!=1)return false;return true;
+   case"Great Hall":if((directory/10)!=1)return false;return true;
   }
-  raw[-1,user,".total"]=raw[-1,user,".points"];
-  foreach thing in lootList raw[-1,user,".total"]-=round(raw[-1,user,thing]*raw[0,".weight",thing]/100.0);
-  raw[0,user,".combined"]+=raw[-1,user,".total"];
+  return false;
  }
- foreach user in raw[0] if(user.char_at(0)!=".")foreach thing in lootList if(thing!=".-adjust") raw[0,user,".loot"]+=raw[-1,user,thing]+raw[0,user,thing];
+ matcher m=create_matcher("([^.]+)\\.(.*)","");
+ string zone;
+ string nc;
+ string menu;
+ int[string]resultList;
+ foreach area,locNum in theMatcher["DreadPencil"]{
+  m.reset(area);
+  if(!m.find())continue;
+  zone=m.group(1);
+  nc=m.group(2);
+  menu=nc.noSpaces()+"td";
+  if(data[my_name(),zone,"+"+nc]%10!=0){
+   contexts[menu]+='"done": {name: "You\'ve already adventured here!", disabled: true}';
+   continue;
+  }
+  if( (("Cabin Tree Burrows".contains_text(nc))&&(data[".data","DreadWoods",".dist"]>999))||
+     (("Square Skid Row Estate".contains_text(nc))&&(data[".data","DreadVillage",".dist"]>999))||
+     (("Great Hall Tower Dungeon".contains_text(nc))&&(data[".data","DreadCastle",".dist"]>999)) ){
+   contexts[menu]+='"done": {name: "This area is finished.", disabled: true}';
+   continue;
+  }
+  if( (("Square Skid Row Estate".contains_text(nc))&&(data[".data","Dread",".carriage"]<1000))||
+     (("Great Hall Tower Dungeon".contains_text(nc))&&(data[".data","Dread",".carriage"]<2000)) ){
+   contexts[menu]+='"done": {name: "The carriageman isn\'t drunk enough to bring you here.", disabled: true}';
+   continue;
+  }  
+  if(data[".data",".pencil",nc]==1){
+   boolean empty=true;
+   boolean first=true;
+   boolean keyOp=false;
+   clear(resultList);
+   for tens from 1 to 3 for ones from 1 to 5 resultList[dreadNonComStr("+"+nc,tens*10+ones)]=tens*10+ones;
+   remove resultList[""];
+   if((resultList contains "Freddies")&&(data[".data",zone,"+"+nc+".Freddies"]<10)){
+    contexts[menu]+='"g'+locNum.char_at(4)+resultList["Freddies"]+'": {name: "Collect Freddies", accesskey:"f"';
+    if(classLock(nc,resultList["Freddies"]))contexts[menu]+=", disabled: true";
+    else if(keyLocked(nc,resultList["Freddies"])){
+     keyOp=true;
+     contexts[menu]+=', icon: "key", disabled: function(key, opt){return !this.data(\''+nc.noSpaces()+'Disabled\');}';
+    }
+    contexts[menu]+='},';
+    empty=false;
+   }
+   foreach e in $strings[Hot,Cold,Spooky,Sleaze,Stench] if((resultList contains ("-"+e))&&(data[".data",zone,"."+e]==0)){
+    if((zone=="DreadVillage")&&(e=="Cold")&&(data[".data",zone,".Hot"]!=0))continue;
+    empty=false;
+    if(first){
+     contexts[menu]+='"elemList": {name: "Banish Element", accesskey:"e", items:{';
+     first=false;
+    }
+    contexts[zone+"_"+e]='"g'+locNum.char_at(4)+resultList["-"+e]+'": {name: "Banish '+e+'", accesskey:"b"';
+    contexts[menu]+='"g'+locNum.char_at(4)+resultList["-"+e]+'": {name: "'+e+'", accesskey:"'+e.char_at(0)+' '+e.char_at(1)+'"';
+    if(classLock(nc,resultList["-"+e])){
+     contexts[zone+"_"+e]+=", disabled: true";
+     contexts[menu]+=", disabled: true";
+    }else if(keyLocked(nc,resultList["-"+e])){
+     keyOp=true;
+     contexts[zone+"_"+e]+=', icon: "key", disabled: function(key, opt){return !this.data(\''+nc.noSpaces()+'Disabled\');}';
+     contexts[menu]+=', icon: "key", disabled: function(key, opt){return !this.data(\''+nc.noSpaces()+'Disabled\');}';
+    }
+    if((zone=='DreadVillage')&&(e=='Hot')&&(data[".data",zone,".Cold"]==0))contexts[zone+"_"+e]+=", callback: function(key, options){if(confirm('Cold has not been banished yet, banishing Hot now will make this impossible, do you wish to continue?')){window.location='clan_raidlogs.ash?cmd=g621';}}";
+    contexts[zone+"_"+e]+='},';
+    if(keyOp)contexts[zone+"_"+e]+='"toggle": {name: "Use Dreadsylvania Key", callback: function() {this.data(\''+nc.noSpaces()+'Disabled\', !this.data(\''+nc.noSpaces()+'Disabled\')); return false;}}';
+    contexts[menu]+='},';
+   }
+   if(!first)contexts[menu]+='}},';
+   first=true;
+   foreach e in $strings[Bugbears,Werewolves,Ghosts,Zombies,Skeletons,Vampires] if((resultList contains ("-"+e))&&(data[".data",zone,"+"+nc+".-"+e]==0)){
+    empty=false;
+    if(first){
+     contexts[menu]+='"monList": {name: "Banish Monster", accesskey:"m", items:{';
+     first=false;
+    }
+    contexts[menu]+='"g'+locNum.char_at(4)+resultList["-"+e]+'": {name: "'+e+'", accesskey:"'+e.char_at(0)+' '+e.char_at(1)+'"';
+    if(classLock(nc,resultList["-"+e]))contexts[menu]+=", disabled: true";
+    else if(keyLocked(nc,resultList["-"+e])){
+     keyOp=true;
+     contexts[menu]+=', icon: "key", disabled: function(key, opt){return !this.data(\''+nc.noSpaces()+'Disabled\');}';
+    }
+    contexts[menu]+='},';
+   }
+   if(!first)contexts[menu]+='}},';
+   if(!empty)contexts[menu]+='"sep1": "---------",';
+   switch(nc){
+    case"Cabin":
+     contexts[menu]+='"kitchenList": {name: "Kitchen", items:{';
+     contexts[menu]+='"g111": {name: "Collect Dread Tarragon"},';
+     contexts[menu]+='"g112": {name: "Grind Bone into Flour"'+((my_primestat()==$stat[muscle])&&(item_amount($item[old dry bone])>0)?"":", disabled: true")+'},';
+     contexts[menu]+='"g113": {name: "Banish Stench"'+(data[".data",zone,".Stench"]==0?"":", disabled: true")+'}}},';
+     contexts[menu]+='"basementList": {name: "Basement", items:{';
+     contexts[menu]+='"g121": {name: "Collect Freddies"'+(data[".data",zone,"+"+nc+".Freddies"]<10?"":", disabled: true")+'},';
+     contexts[menu]+='"g122": {name: "Gain Bored Stiff"},';
+     contexts[menu]+='"g123": {name: "Collect Auditor\'s Badge"'+((item_amount($item[replica key])>0)&&(data[".data",zone,"+"+nc+".Auditor's Badge"]<1)?"":", disabled: true")+'},';
+     contexts[menu]+='"g124": {name: "Make Lock Impression"'+(item_amount($item[wax banana])>0?"":", disabled: true")+'}}},';
+     contexts[menu]+='"atticList": {name: "Attic", '+(keyLocked(nc,30)?'icon: "key", disabled: function(key, opt){return !this.data(\''+nc.noSpaces()+'Disabled\');}, ':"")+'items:{';
+     contexts[menu]+='"g131": {name: "Banish Spooky"'+(data[".data",zone,".Spooky"]==0?"":", disabled: true")+'},';
+     contexts[menu]+='"g132": {name: "Banish Werewolves"'+(data[".data",zone,"+"+nc+".-Werewolves"]==0?"":", disabled: true")+'},';
+     contexts[menu]+='"g133": {name: "Banish Vampires"'+(data[".data",zone,"+"+nc+".-Vampires"]==0?"":", disabled: true")+'},';
+     contexts[menu]+='"g134": {name: "Moxie Stats"}}},';
+     break;
+    case"Tree":
+     contexts[menu]+='"topList": {name: "Top", '+(classLock(nc,10)?"disabled: true, ":"")+'items:{';
+     contexts[menu]+='"g211": {name: "Drop Blood Kiwi"'+(data[".data",zone,"+"+nc+".Stomped"]>0?", disabled: true":"")+'},';
+     contexts[menu]+='"g212": {name: "Banish Sleaze"'+(data[".data",zone,".Sleaze"]==0?"":", disabled: true")+'},';
+     contexts[menu]+='"g213": {name: "Collect Moon-Amber"'+(data[".data",zone,"+"+nc+".Moon-Amber"]>0?", disabled: true":"")+'}}},';
+     contexts[menu]+='"towerList": {name: "Fire Tower", '+(keyLocked(nc,20)?'icon: "key", disabled: function(key, opt){return !this.data(\''+nc.noSpaces()+'Disabled\');}, ':"")+'items:{';
+     contexts[menu]+='"g221": {name: "Banish Ghosts"'+(data[".data",zone,"+"+nc+".-Ghosts"]==0?"":", disabled: true")+'},';
+     contexts[menu]+='"g222": {name: "Collect Freddies"'+(data[".data",zone,"+"+nc+".Freddies"]<10?"":", disabled: true")+'},';
+     contexts[menu]+='"g223": {name: "Muscle Stats"}}},';
+     contexts[menu]+='"baseList": {name: "Base", items:{';
+     contexts[menu]+='"r231": {name: "Wait for Blood Kiwi"'+(data[".data",zone,"+"+nc+".Stomped"]>0?", disabled: true":"")+'},';
+     contexts[menu]+='"g232": {name: "Collect Seed Pod"},';
+     contexts[menu]+='"g233": {name: "Collect Owl Folder"'+(equipped_amount($item[over-the-shoulder folder holder])>0?"":", disabled: true")+'}}},';
+     break;
+    case"Burrows":
+     contexts[menu]+='"hotList": {name: "Heat", items:{';
+     contexts[menu]+='"g311": {name: "Banish Hot"'+(data[".data",zone,".Hot"]==0?"":", disabled: true")+'},';
+     contexts[menu]+='"g312": {name: "Gain Dragged Through the Coals"},';
+     contexts[menu]+='"g313": {name: "Smelt Cool Iron"'+(item_amount($item[old ball and chain])>0?"":", disabled: true")+'}}},';
+     contexts[menu]+='"coldList": {name: "Cold", items:{';
+     contexts[menu]+='"g321": {name: "Banish Cold"'+(data[".data",zone,".Cold"]==0?"":", disabled: true")+'},';
+     contexts[menu]+='"g322": {name: "Mysticality Stats"},';
+     contexts[menu]+='"g323": {name: "Gain Nature\'s Bounty"}}},';
+     contexts[menu]+='"smellyList": {name: "Smelly", items:{';
+     contexts[menu]+='"g331": {name: "Banish Bugbears"'+(data[".data",zone,"+"+nc+".-Bugbears"]==0?"":", disabled: true")+'},';
+     contexts[menu]+='"g332": {name: "Collect Freddies"'+(data[".data",zone,"+"+nc+".Freddies"]<10?"":", disabled: true")+'}}},';
+     break;
+    case"Square":
+     contexts[menu]+='"schoolList": {name: "Schoolhouse", '+(keyLocked(nc,10)?'icon: "key", disabled: function(key, opt){return !this.data(\''+nc.noSpaces()+'Disabled\');}, ':"")+'items:{';
+     contexts[menu]+='"g411": {name: "Banish Ghosts"'+(data[".data",zone,"+"+nc+".-Ghosts"]==0?"":", disabled: true")+'},';
+     contexts[menu]+='"g412": {name: "Collect Ghost Pencil"'+(data[".data",zone,"+"+nc+".Ghost Pencil"]<10?"":", disabled: true")+'},';
+     contexts[menu]+='"g413": {name: "Mysticality Stats"}}},';
+     contexts[menu]+='"blackList": {name: "Blacksmith", items:{';
+     contexts[menu]+='"g421": {name: "Banish Cold"'+((data[".data",zone,".Cold"]==0)&&(data[".data",zone,".Hot"]==0)?"":", disabled: true")+'},';
+     contexts[menu]+='"g422": {name: "Collect Freddies"'+(data[".data",zone,"+"+nc+".Freddies"]<10?"":", disabled: true")+'},';
+     contexts[menu]+='"r423": {name: "Smith Cool Iron"'+((item_amount($item[hothammer])>0)&&(item_amount($item[cool iron ingot])>0)&&(item_amount($item[warm fur])>0)?"":", disabled: true")+'}}},';
+     contexts[menu]+='"gallowsList": {name: "Gallows", items:{';
+     contexts[menu]+='"g431": {name: "Banish Spooky"'+(data[".data",zone,".Spooky"]==0?"":", disabled: true")+'},';
+     contexts[menu]+='"r432": {name: "Wait for '+(my_primestat()==$stat[muscle]?"Hangman's Hood":(my_primestat()==$stat[moxie]?"Clockwork Key":"Cursed Ring"))+'"'+(data[".data"] contains ".hung"?", disabled: true":"")+'},';
+     contexts[menu]+='"g434": {name: "Pull the Lever"'+(data[".data"] contains ".hung"?", disabled: true":"")+'}}},';
+     break;
+    case"Skid Row":
+     contexts[menu]+='"sewerList": {name: "Sewers", items:{';
+     contexts[menu]+='"g511": {name: "Banish Stench"'+(data[".data",zone,".Stench"]==0?"":", disabled: true")+'},';
+     contexts[menu]+='"g512": {name: "Gain Sewer-Drenched"}}},';
+     contexts[menu]+='"tenementsList": {name: "Tenements", items:{';
+     contexts[menu]+='"g521": {name: "Banish Skeletons"'+(data[".data",zone,"+"+nc+".-Skeletons"]==0?"":", disabled: true")+'},';
+     contexts[menu]+='"g522": {name: "Banish Sleaze"'+(data[".data",zone,".Sleaze"]==0?"":", disabled: true")+'},';
+     contexts[menu]+='"g523": {name: "Muscle Stats"}}},';
+     contexts[menu]+='"shackList": {name: "Ticking Shack", '+(classLock(nc,30)?"disabled: true, ":"")+'items:{';
+     contexts[menu]+='"g531": {name: "Collect Freddies"'+(data[".data",zone,"+"+nc+".Freddies"]<10?"":", disabled: true")+'},';
+     contexts[menu]+='"g532": {name: "Replicate Key"'+((item_amount($item[intricate music box parts])>0)&&(item_amount($item[complicated lock impression])>0)?"":", disabled: true")+'},';
+     contexts[menu]+='"g533": {name: "Polish Moon-Amber"'+(item_amount($item[moon-amber])>0?"":", disabled: true")+'},';
+     contexts[menu]+='"g534": {name: "Assemble Songbird"'+((item_amount($item[intricate music box parts])>2)&&(item_amount($item[dreadsylvanian clockwork key])>0)?"":", disabled: true")+'},';
+     contexts[menu]+='"g535": {name: "Collect Old Fuse"}}},';
+     break;
+    case"Estate":
+     contexts[menu]+='"plotList": {name: "Family Plot", items:{';
+     contexts[menu]+='"g611": {name: "Banish Zombies"'+(data[".data",zone,"+"+nc+".-Zombies"]==0?"":", disabled: true")+'},';
+     contexts[menu]+='"g612": {name: "Collect Freddies"'+(data[".data",zone,"+"+nc+".Freddies"]<10?"":", disabled: true")+'},';
+     contexts[menu]+='"g613": {name: "Gain 50 Ways"}}},';
+     contexts[menu]+='"quarterList": {name: "Servant\'s Quarters", items:{';
+     contexts[menu]+='"g621": {name: "Banish Hot"'+(data[".data",zone,".Hot"]==0?"":", disabled: true")+(data[".data",zone,".Cold"]==0?", callback: function(key, options){if(confirm('Cold has not been banished yet, banishing Hot now will make this impossible, do you wish to continue?')){window.location='clan_raidlogs.ash?cmd=621';}}":"")+'},';
+     contexts[menu]+='"g622": {name: "Make Pie"'+((item_amount($item[dread tarragon])>0)&&(item_amount($item[bone flour])>0)&&(item_amount($item[dreadful roast])>0)&&(item_amount($item[stinking agaricus])>0)?"":", disabled: true")+'},';
+     contexts[menu]+='"g623": {name: "Moxie Stats"}}},';
+     contexts[menu]+='"suiteList": {name: "Master Suite", '+(keyLocked(nc,30)?'icon: "key", disabled: function(key, opt){return !this.data(\''+nc.noSpaces()+'Disabled\');}, ':"")+'items:{';
+     contexts[menu]+='"g631": {name: "Banish Werewolves"'+(data[".data",zone,"+"+nc+".-Werewolves"]==0?"":", disabled: true")+'},';
+     contexts[menu]+='"g632": {name: "Collect Eau de Mort"},';
+     contexts[menu]+='"g633": {name: "Sew Ghost Shawl"'+(item_amount($item[ghost thread])>9?"":", disabled: true")+'}}},';
+     break;
+    case"Great Hall":
+     contexts[menu]+='"ballroomList": {name: "Ballroom", '+(keyLocked(nc,10)?'icon: "key", disabled: function(key, opt){return !this.data(\''+nc.noSpaces()+'Disabled\');}, ':"")+'items:{';
+     contexts[menu]+='"g711": {name: "Banish Vampires"'+(data[".data",zone,"+"+nc+".-Vampires"]==0?"":", disabled: true")+'},';
+     contexts[menu]+='"g712": {name: "Moxie Stats"}}},';
+     contexts[menu]+='"kitchenList": {name: "Kitchen", items:{';
+     contexts[menu]+='"g721": {name: "Banish Cold"'+(data[".data",zone,".Cold"]==0?"":", disabled: true")+'},';
+     contexts[menu]+='"g722": {name: "Gain Staying Frosty"}}},';
+     contexts[menu]+='"diningList": {name: "Dining Room", items:{';
+     contexts[menu]+='"g731": {name: "Collect Dreadful Roast"'+(data[".data",zone,"+"+nc+".Dreadful Roast"]>0?", disabled: true":"")+'},';
+     contexts[menu]+='"g732": {name: "Banish Stench"'+(data[".data",zone,".Stench"]==0?"":", disabled: true")+'},';
+     contexts[menu]+='"g733": {name: "Collect Wax Banana"'+(my_primestat()==$stat[mysticality]?"":", disabled: true")+'}}},';
+     break;
+    case"Tower":
+     contexts[menu]+='"labratoryList": {name: "Laboratory", '+(keyLocked(nc,10)?'icon: "key", disabled: function(key, opt){return !this.data(\''+nc.noSpaces()+'Disabled\');}, ':"")+'items:{';
+     contexts[menu]+='"g811": {name: "Banish Bugbears"'+(data[".data",zone,"+"+nc+".-Bugbears"]==0?"":", disabled: true")+'},';
+     contexts[menu]+='"g812": {name: "Banish Zombies"'+(data[".data",zone,"+"+nc+".-Zombies"]==0?"":", disabled: true")+'},';
+     contexts[menu]+='"g813": {name: "'+(data[".data"] contains ".machine"?"Visit":"Repair")+' the Machine"'+((data[".data"] contains ".machine")||(item_amount($item[skull capacitor])>0)?"":", disabled: true")+'},';
+     contexts[menu]+='"g814": {name: "Mix Blood Kiwitini"'+((item_amount($item[eau de mort])>0)&&(item_amount($item[blood kiwi])>0)&&(my_primestat()==$stat[moxie])?"":", disabled: true")+'}}},';
+     contexts[menu]+='"booksList": {name: "Books", '+(classLock(nc,20)?"disabled: true, ":"")+'items:{';
+     contexts[menu]+='"g821": {name: "Banish Skeletons"'+(data[".data",zone,"+"+nc+".-Skeletons"]==0?"":", disabled: true")+'},';
+     contexts[menu]+='"g822": {name: "Myst Stats"},';
+     contexts[menu]+='"g823": {name: "Learn Necklace Recipe"}}},';
+     contexts[menu]+='"bedroomList": {name: "Bedroom", items:{';
+     contexts[menu]+='"g831": {name: "Banish Sleaze"'+(data[".data",zone,".Sleaze"]==0?"":", disabled: true")+'},';
+     contexts[menu]+='"g832": {name: "Collect Freddies"'+(data[".data",zone,"+"+nc+".Freddies"]<10?"":", disabled: true")+'},';
+     contexts[menu]+='"g833": {name: "Gain Magically Fingered"}}},';
+     break;
+    case"Dungeon":
+     contexts[menu]+='"cellList": {name: "Cell Block", items:{';
+     contexts[menu]+='"g911": {name: "Banish Spooky"'+(data[".data",zone,".Spooky"]==0?"":", disabled: true")+'},';
+     contexts[menu]+='"g912": {name: "Muscle Stats"},';
+     contexts[menu]+='"g913": {name: "MP"}}},';
+     contexts[menu]+='"boilerList": {name: "Boiler Room", items:{';
+     contexts[menu]+='"g921": {name: "Banish Hot"'+(data[".data",zone,".Hot"]==0?"":", disabled: true")+'},';
+     contexts[menu]+='"g922": {name: "Collect Freddies"'+(data[".data",zone,"+"+nc+".Freddies"]<10?"":", disabled: true")+'},';
+     contexts[menu]+='"g923": {name: "All Stats"}}},';
+     contexts[menu]+='"guardList": {name: "Guardroom", items:{';
+     contexts[menu]+='"g931": {name: "Collect Stinking Agaricus"'+(data[".data",zone,"+"+nc+".Stinking Agaricus"]>0?", disabled: true":"")+'},';
+     contexts[menu]+='"g932": {name: "Gain Spore-Wreathed"}}},';
+     break;
+   }
+   if(keyOp)contexts[menu]+='"sep2": "---------", "toggle": {name: "Use Dreadsylvania Key", callback: function() {this.data(\''+nc.noSpaces()+'Disabled\', !this.data(\''+nc.noSpaces()+'Disabled\')); return false;}}';
+  }
+ }
+}
+*/
+
+void parseDread(string dread){
+ string sub;
+ int t;
+ string w;
+ string pn;
+ matcher m;
+ matcher nc;
+ foreach zone in $strings[Woods, Village, Castle]{
+  data[".data","Dread"+zone,".dist"]=0;
+  data[".data","Dread"+zone,".hasdata"]=-1;
+ }
+ foreach zone in $strings[Woods, Village, Castle]{
+  m=create_matcher(theMatcher["Dread"+zone,".dist"],dread);
+  if(m.find())data[".data","Dread"+zone,".dist"]=min(1000,m.group(1).to_int());
+ }
+ m=create_matcher("<center>",dread);
+ if(m.find()){
+  data[".data","Dread",".hasdata"]=1;
+  m=create_matcher("<b>(\\d+)</b> kisses earned",dread);
+  if(m.find())data[".data","Dread","kisses"]=m.group(1).to_int();
+  foreach zone in $strings[Inn, Woods, Village, Castle] foreach pointName,mString in theMatcher["Dread"+zone]{
+   sub="";
+   switch(zone){
+    case "Inn":sub=dread;break;
+    case "Woods":
+     m=create_matcher("<b>The Woods</b><blockquote(.+?)/blockquote>",dread);
+     if(m.find())sub=m.group(1);
+     break;
+    case "Village":
+     m=create_matcher("<b>The Village</b><blockquote(.+?)/blockquote>",dread);
+     if(m.find())sub=m.group(1);
+     break;
+    case "Castle":
+     m=create_matcher("<b>The Castle</b><blockquote(.+?)/blockquote>",dread);
+     if(m.find())sub=m.group(1);
+     break;
+   }
+   if(sub=="")continue;
+   if(zone!="Inn")data[".data","Dread",".hasdata"]+=1;
+   m=create_matcher(">[^<]+"+mString+"[^<]+<",sub);
+   while(m.find()){
+    w=getName(m.group());
+    t=getTurns(m.group());
+    if(pointName.char_at(0)=="."){
+     switch(pointName){
+      case ".carriage":
+       data[w,"Dread",pointName]+=m.group(1).to_int();
+       data[".data","Dread",pointName]+=m.group(1).to_int();
+       break;
+      case ".temp":
+       data[".data","DreadVillage",".cold"]=-1;
+       data[".data","DreadVillage",".kisses"]+=1;
+       data[w,"DreadVillage","+Square"]=201;
+       data[w,"DreadVillage",".total"]+=1;
+       data[w,".dread",".total"]+=1;
+       data[".dtotal","DreadVillage","+Square"]+=1;
+       data[".dtotal","DreadVillage",".total"]+=1;
+       data[".dtotal",".dread",".total"]+=1;
+       break;
+     }
+     continue;
+    }
+    data[".data","Dread"+zone,".hasdata"]=1;
+    switch(pointName.char_at(0)){
+     case "&":
+       if(m.group(1)==" by"){
+        pn=".Defeat.";
+        data[w,"Dread"+zone,"Defeats"]+=t;
+        data[".dtotal","Dread"+zone,"Defeats"]+=t;
+        data[w,"Dread"+zone,".Defeat.All."+m.group(3).capitalize()]+=t;
+        data[".dtotal","Dread"+zone,".Defeat.All."+m.group(3).capitalize()]+=t;
+       }else{
+        pn=".Kill.";
+        data[w,"Dread"+zone,"&nbsp;"+m.group(3).capitalize()]+=t;
+        data[w,"Dread"+zone,".Kills"]+=t;
+        data[".dtotal","Dread"+zone,"&nbsp;"+m.group(3).capitalize()]+=t;
+        data[".dtotal","Dread"+zone,".Kills"]+=t;
+       }
+       pn+=m.group(2).capitalize()+"."+m.group(3).capitalize();
+      break;
+     case "!":
+       if(m.group(1)==" by"){
+        pn="!bossloss";
+        data[".data","Dread"+zone,pointName]=1;
+        data[".dtotal","Dread"+zone,"Defeats"]+=0;
+       }else{
+        pn="!Boss";
+        data[".data","Dread"+zone,pointName]=1;
+        data[".data","Dread"+zone,".dist"]=1001;
+        data[w,"Dread"+zone,".Kills"]+=t;
+        data[".dtotal","Dread"+zone,".Kills"]+=t;
+       }
+      break;
+     case "+":
+       nc=create_matcher("(\\+[\\w\\s]+)\\.(-?\\d+)",pointName);
+       if(!nc.find())abort("No.");
+       pn=nc.group(1);
+       t=0;
+       if(dreadNonComStr(pn,nc.group(2).to_int())=="Trap Door Item"){       
+        data[".data",".hung",w]=1;
+        data[w,"DreadCastle",".hung"]=1;
+       }else if(dreadNonComStr(pn,nc.group(2).to_int())=="Pulled Lever"){
+        data[".data",".hanger",w]=1;
+        data[w,"DreadCastle",".hanger"]=1;
+       }
+       if(dreadNonComStr(pn,nc.group(2).to_int())=="Fixed The Machine"){
+        data[".data",".machine",w]=1;
+        data[w,"DreadCastle",".machine"]=1;
+       }else if(nc.group(2).to_int()%10==0){
+        data[".data",".unlock."+pn.substring(1),w]=1;
+        data[w,"Dread"+zone,".unlock"]+=1;
+       }else{
+        data[w,"Dread"+zone,pn]=nc.group(2).to_int();
+        data[w,"Dread"+zone,".total"]+=1;
+        data[w,".dread",".total"]+=1;
+        data[".dtotal","Dread"+zone,pn]+=1;
+        data[".dtotal","Dread"+zone,".total"]+=1;
+        data[".dtotal",".dread",".total"]+=1;
+        data[".data","Dread"+zone,pn+"."+dreadNonComStr(pn,nc.group(2).to_int())]+=1;
+        switch(dreadNonComStr(pn,nc.group(2).to_int())){
+         case "-Hot":data[".data","Dread"+zone,".hot"]=-1;data[".data","Dread"+zone,".kisses"]+=1;break;
+         case "-Spooky":data[".data","Dread"+zone,".spooky"]=-1;data[".data","Dread"+zone,".kisses"]+=1;break;
+         case "-Stench":data[".data","Dread"+zone,".stench"]=-1;data[".data","Dread"+zone,".kisses"]+=1;break;
+         case "-Cold":data[".data","Dread"+zone,".cold"]=-1;data[".data","Dread"+zone,".kisses"]+=1;break;
+         case "-Sleaze":data[".data","Dread"+zone,".sleaze"]=-1;data[".data","Dread"+zone,".kisses"]+=1;break;
+         case "-Bugbears":data[".data","DreadWoods",".tilt"]-=1;break;
+         case "-Werewolves":data[".data","DreadWoods",".tilt"]+=1;break;
+         case "-Ghosts":data[".data","DreadVillage",".tilt"]-=1;break;
+         case "-Zombies":data[".data","DreadVillage",".tilt"]+=1;break;
+         case "-Skeletons":data[".data","DreadCastle",".tilt"]-=1;break;
+         case "-Vampires":data[".data","DreadCastle",".tilt"]+=1;break;
+        }
+       }
+      break;
+     default:
+      pn=pointName;
+    }
+    data[w,"Dread"+zone,pn]+=t;
+    data[w,"Dread"+zone,".total"]+=t;
+    data[w,".dread",".total"]+=t;
+    data[".dtotal","Dread"+zone,pn]+=t;
+    data[".dtotal","Dread"+zone,".total"]+=t;
+    data[".dtotal",".dread",".total"]+=t;
+   }
+  }
+ }else{
+  data[".data","Dread",".hasdata"]=-1;
+ }
+ if(runType==-1){
+  sub=visit_url("clan_dreadsylvania.php");
+  foreach area,mString in theMatcher["DreadPencil"]{
+   m=create_matcher(mString,sub);
+   if(!m.find())continue;
+   m=create_matcher("[^.]+\\.(.*)",area);
+   if(!m.find())continue;
+   data[".data",".pencil",m.group(1)]=1;
+  }
+  formatDreadOptions();
+ }
 }
 
-string linkName(string u){
- return "<a href=\"showplayer.php?who="+raw[0,u,".id"]+"\">"+u+"</a>";
+string getData(){
+ string ret="";
+ string dread="NONE";
+ matcher m;
+ if(runType==0){
+  if(page.contains_text("<b>Dreadsylvania run,"))runType=4;
+  else runType=-1;
+ }
+ switch(runType){
+  case 4:
+   m=create_matcher("run,(.+?)</table>",page);
+   if(m.find())dread=m.group(1);
+   ret=dread;
+   break;
+  default:
+   m=create_matcher("<div id='Dreadsylvania'>(.+?)</div>",page);
+   if(m.find())dread=m.group(1);
+   break;
+ }
+ parseDread(dread);
+ if(activeComment)map_to_file(data,"raidlog/rawdata.txt");
+ return ret;
 }
 
-string lootListCM(){
- string o='"FFS":{name: "Falls-From-Sky", accesskey:"f", items: {"FFSX":{name: "Outfit"},"FFS1":{name: "Helps-You-Sleep"},"FFS2":{name: "Quiets-Your-Step"},"FFS3":{name: "Protects-Your-Junk"}} },';
- o+='"GW":{name: "Great Wolf", accesskey:"g", items: {"GWX":{name: "Outfit"},"GW1":{name: "Rocket Launcher"},"GW2":{name: "Beastly Trousers"},"GW3":{name: "Lice"}} },';
- o+='"ZHA":{name: "Zombie HOA", accesskey:"z", items: {"ZHAX":{name: "Outfit"},"ZHA1":{name: "Regulation Book"},"ZHA2":{name: "Zombie Eyes"},"ZHA3":{name: "Citation Pad"}} },';
- o+='"MG":{name: "Mayor Ghost", accesskey:"m", items: {"MGX":{name: "Outfit"},"MG1":{name: "Gavel"},"MG2":{name: "Sash"},"MG3":{name: "Scissors"}} },';
- o+='"CD":{name: "Count Drunkula", accesskey:"d", items: {"CDX":{name: "Outfit"},"CD1":{name: "Bell"},"CD2":{name: "Ring"},"CD3":{name: "Wineglass"}} },';
- o+='"US":{name: "Unkillable Skeleton", accesskey:"s", items: {"USX":{name: "Outfit"},"US1":{name: "Sawsword"},"US2":{name: "Shield"},"US3":{name: "Restless Leg"}} },';
- o+='"Capacitors":{name: "Skull Capacitor"},"Noses":{name: "Wriggling Nose"}';
- return o;
-}
-
-void lootPageHeader(){
- writeln("<html><head><script type=\"text/javascript\" language=\"Javascript\" src=\"jquery-1.10.2.min.js\"></script>");
- writeln("<script type=\"text/javascript\" language=\"Javascript\" src=\"jquery.contextMenu.js\"></script>");
- writeln("<link rel=\"stylesheet\" type=\"text/css\" href=\"jquery.contextMenu.css\"><style type=\"text/css\">");
+void pageHeader(){
+ /*
+  Tables: use tableD, [element]T
+  Header: use rowD, [element]I, font-size:13px;
+  Odd rows: use rowD, [element]O
+  Even rows: use rowD
+  Totals: use rowD, [element]I
+  
+  T-comes from table
+  O-comes from shaded
+  I-comes from header/totals
+ */
+ writeln("<html><head><style type=\"text/css\">");
  writeln(".directory td,.directory th{font-size:11px;border:0px;border-collapse:separate;padding:0px 10px;}");
  writeln(".submit{font-size:11px;border:0px;border-collapse:separate;padding:0px 0px;background:transparent;text-decoration:underline;cursor:pointer;}");
- writeln("td.hideBox{height:20px;}");
- writeln("td.hideBox input{display:none;}");
- writeln("td.hideBox:hover input,td.hideBox input:checked{float:right; display:inline; -ms-transform: scale(0.75,0.75); -moz-transform: scale(0.75,0.75); -webkit-transform: scale(0.75,0.75); -o-transform: scale(0.75); margin:0px; border:1px;}");
  writeln(".opts td{text-decoration:underline}");
- writeln(".tableD, .runTable, .userTable{font-size:11px;border:1px solid;border-spacing:0px;border-collapse:separate;background-color:#FFFFFF;width:100%;}");
+ writeln(".tableD{font-size:11px;border:1px solid;border-spacing:0px;border-collapse:separate;background-color:#FFFFFF;width:100%;}");
+ writeln(".imgtable td{width:75px !important;}");
  writeln(".rowD th,.rowD td{font-size:11px;text-align:center;padding:0px 3px;}");
- writeln(".inner{overflow-x:scroll;margin-left:153px;margin-top:1px;}");
- writeln("table.lootTable{font-size:11px;border:none;border-spacing:0px;border-collapse:collapse;background-color:#FFFFFF;table-layout:fixed;}");
- writeln("table.lootTable tr td{border:1px solid;border-spacing:0px;text-align:center;}");
- writeln("table.lootTable tr th{width:150px;margin-top:-1px;border:1px solid;border-spacing:0px;text-align:left;position:absolute;left:5;}");
- writeln("table.lootTable tr:nth-child(2n+4) td{background-color:#00CCFF;}");
- writeln("table.lootTable tr:nth-child(n+4) td{width:35px;}");
- writeln("table.lootTable tr:nth-child(n+4) td:nth-child(4n-2),td.outfit{background-color:#0066FF;}");
- writeln("table.sortable tbody tr:nth-child(even) td{background-color:#FFFFFF !important}");
- writeln(".userTable {width:50%;}");
- writeln("table.userTable tr td{background-color:#E3E2EA;text-align:left;}");
- writeln("table.userTable tr td:nth-child(2){width:10%;}");
- writeln("table.runTable tr th{font-weight:bold;color:white;background-color:#303030;text-align:left;}");
- writeln("table.runTable tr td{background-color:#989898;text-align:left;}");
+ writeln("table:not(.tots).sortable tbody tr:nth-child(odd):not(:hover) td, table.tots.sortable tbody tr:nth-child(even):not(:hover) td{background-color:#FFFFFF}");
+ writeln("table.sortable tbody tr:hover *{background-color:#000080 !important;color:#FFFFFF !important;}");
+ writeln("tr.HL *{background-color:#94c5e9 !important;}");
  writeln("select, select option{font-size:11px;}");
  writeln(".rowL th,.rowL td{font-size:9px;text-align:left;padding:0px 3px;}");
+ writeln(".bossKiller{font-weight:bold;color:black !important;}");
+ writeln(".clear{font-weight:bold;color:darkgreen !important;}");
+ writeln(".smalltxt{font-size:10px;color:black;background-color:white;font-weight:normal;padding:1px;height:auto;}");
+ writeln(".smallbtn{font-size:9px;font-style:normal;color:black;border-color:gray;background-color:lightgray;font-weight:bold;height:16px;}");
+ writeln(".eMsg{font-size:14px; font-weight:bold; border:3px solid red;}");
 
- writeln(".TST{border-color:black;}");
- writeln(".TSI{font-weight:bold;color:white;background-color:#17037D;}");
- writeln(".TSO{background-color:#E3E2EA;}");
-
- writeln(".PosT{border-color:green;}");
- writeln(".PosI{font-weight:bold;color:white;background-color:#254117;}");
- writeln(".PosO{background-color:#609060;}");
-
- writeln(".NegI{font-weight:bold;color:white;background-color:#D93636;}");
- writeln(".NegO{background-color:#FDC5C5;}");
-
- writeln(".ZeroI{font-weight:bold;color:white;background-color:#303030;}");
- writeln(".ZeroO{background-color:#989898;}");
-
- writeln(".LootC{color:#303030;}");
- writeln(".LootT{border-color:#CFB53B;}");
- writeln(".LootE{background-color:#A8A8A8;}");
- writeln(".context-menu-item{padding:2px 2px 2px 5px !important;}");
+/* writeln(".DreadCastleT, .DreadCastleT tr td center div table{border-color:#CFB53B;}");
+ writeln(".DreadCastleT tr:nth-child(1) td:only-child, .DreadCastleT tr td center div table tr:last-child td{font-weight:bold;color:white;background-color:#303030;}");
+ writeln(".DreadCastleT tr td center div:nth-child(1) table tr>*{background-color:#B0B0B0;}");
+*/
+ writeln(".DreadCastleC{color:#303030;}");
+ writeln(".DreadCastleT{border-color:#CFB53B;}");
+ writeln(".DreadCastleI{font-weight:bold;color:white;background-color:#303030;}");
+ writeln(".DreadCastleO{background-color:#B0B0B0;}");
+ writeln(".DreadCastleE{background-color:#C8C8C8;}");
+ 
+ writeln(".DreadVillageC{color:#98790C;}");
+ writeln(".DreadVillageT{border-color:brown;}");
+ writeln(".DreadVillageI{font-weight:bold;color:white;background-color:#98790C;}");
+ writeln(".DreadVillageO{background-color:#D7CAA6;}");
+ writeln(".DreadVillageE{background-color:#FFF1C5;}");
+ 
+ writeln(".DreadWoodsC{color:#254117;}");
+ writeln(".DreadWoodsT{border-color:#green;}");
+ writeln(".DreadWoodsI{font-weight:bold;color:white;background-color:#254117;}");
+ writeln(".DreadWoodsO{background-color:#93B38B;}");
+ writeln(".DreadWoodsE{background-color:#A8C8A0;}");
+ writeln(".context-menu-item:not(.icon-key) {padding:2px 2px 2px 12px !important;}");
+ writeln(".context-menu-item.icon-key { padding:2px 2px 2px 24px !important; background-image:url(http://images.kingdomofloathing.com/itemimages/dv_key.gif); background-size:18px 18px; background-repeat:no-repeat;}");
  writeln("</style>");
  writeln("<script language=\"Javascript\" type=\"text/javascript\" src=\"sorttable.js\"></script>");
- writeln("<script language=\"Javascript\" type=\"text/javascript\">$(window).load(function(){");
- writeln("$(function(){$.contextMenu({selector:'.player',callback:function(key,options){if(options.inputs.adjust.$input[0].value!=''){window.location.assign('"+__FILE__+"?adjust='+key+'&who='+this[0].getAttribute(\"id\")+'&to='+options.inputs.adjust.$input[0].value);}},items:{ \"ignore\": {name: \"Ignore\", callback: function(key,options){window.location.assign('"+__FILE__+"?removePlayer='+this[0].getAttribute(\"id\"));}}, \"sep1\": \"---------\", \"adjust\": {name: \"Adjust Value\", type:\"text\", value:\"\"}, \".adjust\": {name: \"Adjustments (Green)\"}, \".-adjust\": {name: \"Adjustments (Red)\"}, \"sep2\":\"---------\", "+lootListCM()+" }, events: {show: function(opt){var d=document.getElementsByClassName('context-menu-list')[0].firstChild.firstChild; d.innerHTML=\"Ignore \"+this[0].getAttribute(\"id\");} } })});");
- writeln("$(function(){$.contextMenu({selector:'.weight',callback:function(key,options){},items:{ \"weight\": {name: \"Edit Weight\", type:\"text\", value:\"\" }, \"submit\": {name: \"Change\", callback: function(key,options){if(options.inputs.weight.$input[0].value!=''){window.location.assign('"+__FILE__+"?change='+this[0].getAttribute(\"id\")+'&to='+options.inputs.weight.$input[0].value);}}}}})});");
- writeln("});function tog(e){ var i=document.getElementById(e);if(i.style.display=='none'){i.style.display='inline';}else{i.style.display='none';}}");
- writeln("function hideAll(){['point','distro','history'].forEach(function(name){var i1=document.getElementById(name+'Tab'); if(i1==null)return; i1.style.textDecoration='underline'; i1.style.cursor='pointer'; i1=document.getElementById(name+'Div'); if(i1==null)return; i1.style.display='none';});}");
- writeln("function show(e){hideAll(); var i1=document.getElementById(e+'Div'); i1.style.display='inline'; i1=document.getElementById(e+'Tab'); i1.style.textDecoration='none'; i1.style.cursor='default';}");
- writeln("</script>");
- matcher m=create_matcher("<link[^>]+>",page);
- if(m.find())writeln(m.group(0));
- writeln("</head><body>");
- write("<center><table class=\"directory\"><tr>");
- write("<td style=\"text-decoration:none; cursor:default;\" id=\"pointTab\" onclick=\"show('point');\">Points</td>");
- write("<td style=\"text-decoration:underline; cursor:pointer;\" id=\"distroTab\" onclick=\"show('distro');\">Distro</td>");
- write("<td style=\"text-decoration:underline; cursor:pointer;\" id=\"historyTab\" onclick=\"show('history');\">Data</td>");
- writeln("</tr></table></center>");
-}
-
-string toSimpleDec(int i){
- if(i==0)return "";
- string r=to_string(i/100.0)+"0";
- if(i<1)r=r.substring(0,5);
- else r=r.substring(0,4);
- while(r.char_at(r.length()-1)=="0")r=r.substring(0,r.length()-1);
- if(r.char_at(r.length()-1)==".")r=r.substring(0,r.length()-1);
- r=" ("+r+")";
- return r;
-}
-
-void displayPoints(){
- write("<div id=\"pointDiv\" style=\"display:inline;\"><center><form action=\""+__FILE__+"\"><table class=\"tableD ZeroT\"><tr class=\"RowD\"><td class=\"ZeroI\" onclick=\"tog('LootTable')\">"+raw[0].pullField(".clanName")+" Loot Deductions</td></tr>");
- write("<tr><td><center><div id=\"LootTable\" style=\"display:inline;\"><table class=\"sortable tableD TST\"><tr><th class=\"TSI\">Players</th>");
- write("<th class=\"PosI\">Points Earned</th>");
- foreach thing in lootList if(thing!=".-adjust") write("<th id=\""+thing+"\" class=\"weight "+(raw[0,".weight",thing]>0?"NegI":(raw[0,".weight",thing]<0?"PosI":"ZeroI"))+"\">"+thing+raw[0,".weight",thing].toSimpleDec()+"</th>");
- write("<th class=\"NegI\">Adjustments</th><th class=\"TSI\">Points</th><th class=\"TSI\">(With Current)</th></tr>");
- foreach user in raw[0] if(user.char_at(0)!="."){
-  if(raw[0,user,".ignore"]==1)continue;
-  if((raw[0,user,".points"]==0)&&(raw[0,user,".total"]==0))continue;
-  odata[count(odata)+1,".data"]=raw[0,user];
-  odata[count(odata),".name",user]=1;
+ writeln("<script language=\"Javascript\" type=\"text/javascript\">function tog(e){ var i=document.getElementById(e);if(i.style.display=='none'){i.style.display='inline';}else{i.style.display='none';}}");
+ writeln("function tog2(e){var i1=document.getElementById(e); var i2=document.getElementById(e+'2'); if(i1.style.display=='inline'){i1.style.display='none'; i2.style.display='inline';}else if(i2.style.display=='inline'){i2.style.display='none';}else{i1.style.display='inline';}}");
+ writeln("function hideAll(){['Hobo','Slime','Haunted','Dread'].forEach(function(name){var i1=document.getElementById(name+'Tab'); if(i1==null)return; i1.style.textDecoration='underline'; i1.style.cursor='pointer'; i1=document.getElementById(name+'Div'); if(i1==null)return; i1.style.display='none';});}");
+ writeln("function show(e){hideAll(); var sub=new XMLHttpRequest; sub.open('GET','KoLmafia/sideCommand?cmd=set+raidlogStartPage='+e+'&pwd="+my_hash()+"'); sub.send(); var i1=document.getElementById(e+'Div'); i1.style.display='inline'; i1=document.getElementById(e+'Tab'); i1.style.textDecoration='none'; i1.style.cursor='default';}");
+ writeln("function openContext(e,d){var div=document.getElementById('context'+d); div.style.display='inline'; div.style.position='absolute'; div.style.top=e.clientY+2; div.style.left=e.clientX; div.style.overflowy='auto';}");
+ writeln("function updateTots(area){var td=document.getElementById(area+\"Ps\"); var allIs=document.getElementById(area+\"Table\").getElementsByTagName(\"input\"); var t=0; for(i=0;i<allIs.length;i++){ t=t+Number(allIs[i].value); } td.innerHTML=t;}</script>");
+ int i=page.index_of("</head>");
+ matcher m=create_matcher("http://images\\.kingdomofloathing\\.com|images)/scripts/jquery.+?js",page.substring(12,i));
+ if(m.find())write(m.replace_first("jquery-1.10.2.min.js"));
+ writeln("<link rel=\"stylesheet\" type=\"text/css\" href=\"jquery.contextMenu.css\">");
+ writeln("<script type='text/javascript' src=\"jquery.contextMenu.js\"></script>");
+ writeln("<script type=\"text/javascript\">$(window).load(function(){");
+ if(runType<0)foreach menu in contexts writeln("$(function(){$.contextMenu({selector: '."+menu+"', callback: function(key,options){ window.location='"+__FILE__+"?cmd='+key;}, items: {"+contexts[menu]+"}});});");
+ writeln("});</script></head><body>");
+ write("<center>");
+ write("<table class=\"directory\"><tr><td><a href=\""+__FILE__+"\">");
+ if(runType>0)write("Current Runs</a></td>");
+ else write("Refresh</a></td>");
+ if((!(data[".data"] contains get_property("raidlogStartPage")))||(data[".data",get_property("raidlogStartPage"),".hasdata"]==-1)){
+  foreach z in $strings[Hobo, Slime, Haunted, Dread] if((data[".data"]contains z)&&(data[".data",z,".hasdata"]!=-1))set_property("raidlogStartPage",z);
  }
- sort odata by -value[".data",".combined"];
- foreach index in odata{
-  write("<tr class=\"RowD player\" id=\""+odata[index].pullField(".name")+"\"><td class=\"TSO hideBox\" style=\"text-align:left\">"+odata[index].pullField(".name").linkName()+"<input type=\"checkbox\" name=\"ignores[]\" value=\""+odata[index].pullField(".name")+"\"></td>");
-  write("<td class=\"PosO\">"+odata[index,".data",".points"]+"</td>");
-  foreach thing in lootList {
-   write("<td class=\""+(raw[0,".weight",thing]>0?"NegO":(raw[0,".weight",thing]<0?"PosO":"ZeroO"))+"\">"+odata[index,".data",thing]+"</td>");
-   if((raw[0,".weight",thing]!=0)&&(thing!=".-adjust"))raw[0,".total",".loot"]+=odata[index,".data",thing];
+ if(((runType<0)||(runType==4))&&(data[".data","Dread",".hasdata"]!=-1))write("<td style=\"text-decoration:"+(get_property("raidlogStartPage")=="Dread"?"none; cursor:default;":"underline; cursor:pointer;")+"\" id=\"DreadTab\" onclick=\"show('Dread');\">Dreadsylvania</td>");
+ write("<td><a href=\"clan_basement.php\">Basement</a></td>");
+ writeln("</tr></table>");
+ if(abortMessage!=""){
+  writeln("<div class=\"eMsg\">"+abortMessage+"</div>");
+ }
+}
+
+/*
+string withColor(string e){
+ switch(e){
+  case "Hot":return "<span class=\"BootsC\">Hot</span>";
+  case "Cold":return "<span class=\"EyesC\">Cold</span>";
+  case "Spooky":return "<span class=\"SkullsC\">Spooky</span>";
+  case "Sleaze":return "<span class=\"CrotchesC\">Sleaze</span>";
+  case "Stench":return "<span class=\"GutsC\">Stench</span>";
+ }
+ return e;
+ */
+}
+
+/*
+void formatHBT(){
+ write("<table><tr class=\"rowD\">");
+ foreach area in $strings[Parts,BB,EE,Heap,AHBG,PLD,TS] write("<td class=\""+area+"I\">"+area.bossName()+"</td>");
+ write("</tr><tr>");
+ foreach area in $strings[Parts,BB,EE,Heap,AHBG,PLD,TS] write("<td class=\""+area+"O\"><a href=\"clan_hobopolis.php?place="+theMatcher[area,".place"]+"\"><img src=\""+theMatcher[area,".image"]+"\" width=\"80px\" height=\"80px\" /></a></td>");
+ write("</tr><tr class=\"rowD\">");
+ write("<td><div style=\"border:1px solid brown;\">");
+ foreach thing in $strings[Skins,Boots,Eyes,Guts,Skulls,Crotches]{
+  write("<span class=\""+thing+"C\">"+data[".data","Richard",thing]+" "+thing+"</span><br>");
+ }
+ write("</div></td>");
+ foreach area in $strings[BB,EE,Heap,AHBG,PLD]{
+  write("<td width=\"75px\" class=\""+area+"I\">");
+  switch(data[".data",area,".image"]){
+   case -2:
+    write("<font size=\"0.9em\">Data not available.</font>");
+    break;
+   case -1:
+    write("<font size=\"0.9em\">Area not open yet or unavailable to you.</font>");
+    break;
+   case 10:
+    write("<font size=\"0.9em\">Boss is ready for a fight!</font>");
+    break;
+   case 11:
+    write("<font size=\"0.9em\">Defeated by ");
+    foreach user in data{
+     if(user.char_at(0)==".")continue;
+     if(data[user,area,"!"+area.bossName()]<1)continue;
+     write(user+"</font>");
+     break;
+    }
+    break;
+   default:
+    write(data[".data",area,".image"]+"0% Complete");
   }
-  write("<td class=\"TSO\">"+odata[index,".data",".total"]+"</td><td class=\"TSO\">"+odata[index,".data",".combined"]+"</tr>");
+  write("</td>");
  }
- writeln("</table></div></center></td></tr></table><br>");//<--End Loot Table, Begin Point Table
- write("<table class=\"tableD ZeroT\"><tr class=\"RowD\"><td class=\"ZeroI\" onclick=\"tog('PointsTable')\">"+raw[0].pullField(".clanName")+" Loot Points</td></tr>");
- write("<tr><td><center><div id=\"PointsTable\" style=\"display:inline;\"><table class=\"sortable tableD TST\"><tr><th class=\"TSI\">Players</th>");
- foreach thing in pointList if(thing!=".adjust") write("<th id=\""+thing+"\" class=\"weight "+(raw[0,".weight",thing]<0?"NegI":(raw[0,".weight",thing]>0?"PosI":"ZeroI"))+"\">"+thing+raw[0,".weight",thing].toSimpleDec()+"</th>");
- write("<th class=\"PosI\">Adjustments</th><th class=\"TSI\">Earned Points</th></tr>");
+ write("<td width=\"75px\" class=\"TSI\">");
+ switch(data[".data","TS",".image"]){
+  case -2:
+   write("<font size=\"0.9em\">Data not available.</font>");
+   break;
+  case -1:
+   write("<font size=\"0.9em\">Area not open yet or unavailable to you.</font>");
+   break;
+  case 25:
+   write("<font size=\"0.9em\">Boss is ready for a fight!</font>");
+   break;
+  case 26:
+   write("<font size=\"0.9em\">Defeated by ");
+   foreach user in data{
+    if(user.char_at(0)==".")continue;
+    if(data[user,"TS","!Hodgman"]<1)continue;
+    write(user+"</font>");
+    break;
+   }
+   break;
+  default:
+   write(to_string(data[".data","TS",".image"]*4)+"% Complete");
+   write("<br>Tent is "+(data[".data","TS",".open"]==1?"Open":"Closed")+"</td>");
+ }
+ write("</tr><tr><td colspan=\"7\"><form action=\"clan_hobopolis.php\" method=\"post\">");
+ write("<input type=\"hidden\" name=\"preaction\" value=\"simulacrum\"><input type=\"hidden\" name=\"place\" value=\"3\">");
+ write("<input class=\"smalltxt\" type=\"text\" name=\"qty\" value=\"0\" size=\"4\"><input class=\"smallbtn\" type=\"submit\" value=\"Make Scarehobos\">");
+ writeln("</form></td></tr></table><br>");
+}
+*/
+/*
+void formatHB(string show){
+ write("<div id=\"HoboDiv\" style=\"display:"+show+"\">");
+ write("<table class=\"directory\"><tr>");
+ write("<td><a href=\"clan_hobopolis.php?place=1\">Sewers</a></td>");
+ write("<td><a href=\"clan_hobopolis.php?place=2\">Town Square</a></td>");
+ write("<td><a href=\""+__FILE__+"?conman=1\">Consumable Distro</a></td>");
+ write("<td><a href=\""+__FILE__+"?lootman=1\">Loot Manager</a></td></tr></table>");
+ formatHBT();
+ write("<table class=\"tableD TST\"><tr class=\"rowD\"><td class=\"TSI\" onclick=\"tog('totTable')\">Totals</td></tr><tr><td><center><div id=\"totTable\" style=\"display:inline;\"><table class=\"tots sortable tableD TST\">");
+ write("<tr class=\"rowD\"><th class=\"TSI\">Players</th>");
+ foreach s in $strings[Sewer,TS,BB,EE,Heap,AHBG,PLD]{//Full area table Headers
+  if(data[".data",s,".hasdata"]==-1)continue;
+  write("<th class=\""+s+"I\">"+expand(s)+"</th>");
+ }
  clear(odata);
- foreach user in raw[0] if(user.char_at(0)!="."){
-  if(raw[0,user,".ignore"]==1)continue;
-  if(raw[0,user,".points"]==0)continue;
-  odata[count(odata)+1,".data"]=raw[0,user];
-  odata[count(odata),".name",user]=1;
+ write("<th class=\"TSI\">Totals</th>");
+ boolean customTotals=false;
+ foreach att in $strings[marketMatter,richardMatter,defeatsMatter,sewersMatter] if(options["hobo."+att]=="n")customTotals=true;
+ if(customTotals)write("<th class=\"TSI\">Adjusted Total</th>");
+ write("</tr>");
+ int tmp;
+ foreach user in data{//Sort data
+  if(user.char_at(0)==".")continue;
+  if(data[user,".hobo",".total"]<1)continue;
+  odata[count(odata)]=data[user];
+  odata[count(odata)-1,".name",user]=1;
+  tmp=data[user,".hobo",".total"];
+  if(options["hobo.marketMatter"]=="n")tmp-=data[user,"TS","Market<br>Trips"];
+  if(options["hobo.richardMatter"]=="n"){
+   tmp-=data[user,"TS","Made<br>Bandages"];
+   tmp-=data[user,"TS","Made<br>Grenades"];
+   tmp-=data[user,"TS","Made<br>Shakes"];
+  }
+  if(options["hobo.defeatsMatter"]=="n"){
+   foreach area in $strings[TS,BB,EE,Heap,AHBG,PLD]{
+    tmp-=data[user,area,"Defeats"];
+    tmp-=data[user,area,"!bossloss"];
+   }
+   if(options["hobo.sewersMatter"]=="on")tmp-=data[user,"Sewer","Defeats"];
+  }
+  if(options["hobo.sewersMatter"]=="n")tmp-=data[user,"Sewer",".total"];  
+  odata[count(odata)-1,".hobo",".rtotal"]=tmp;
  }
- sort odata by -value[".data",".points"];
- foreach index in odata{
-  write("<tr class=\"RowD player\" id=\""+odata[index].pullField(".name")+"\"><td class=\"TSO hideBox\" style=\"text-align:left\">"+odata[index].pullField(".name").linkName()+"<input type=\"checkbox\" name=\"ignores[]\" value=\""+odata[index].pullField(".name")+"\"></td>");
-  foreach thing in pointList
-   write("<td class=\""+(raw[0,".weight",thing]<0?"NegO":(raw[0,".weight",thing]>0?"PosO":"ZeroO"))+"\">"+odata[index,".data",thing]+"</td>");
-  write("<td class=\"TSO\">"+odata[index,".data",".points"]+"</td></tr>");
-  raw[0,".total",".points"]+=odata[index,".data",".points"];
+ sort odata by (value["Sewer",clearID]==0?5000:0)-value[".hobo",".rtotal"];
+ foreach index in odata{//Full Area Table Data
+  write("<tr class=\"rowD"+(odata[index].pullField(".name")==my_name()?" HL":"")+"\"><td class=\"TSO\" style=\"text-align:left\">"+linkify(odata[index].pullField(".name"))+"</td>");
+  foreach s in $strings[Sewer,TS,BB,EE,Heap,AHBG,PLD]{
+   if(data[".data",s,".hasdata"]==-1)continue;
+   write("<td class=\""+s+"O\">"+odata[index,s,".total"]+"</td>");
+  }
+  write("<td class=\"TSO\">"+odata[index,".hobo",".total"]+"</td>");
+  if(customTotals)write("<td class=\"TSO\">"+odata[index,".hobo",".rtotal"]+"</td>");
+  write("</tr>");
  }
- write("<tfoot><tr class=\"RowD\"><td class=\"TSI\">Totals</td><td class=\"PosI\" colspan=\"2\">Points Earned</td><td class=\"PosO\">"+raw[0,".total",".points"]+"</td>");
- write("<td class=\"NegI\" colspan=\"2\">Amount of Loot</td><td class=\"NegO\">"+raw[0,".total",".loot"]+"</td>");
- write("<td class=\"TSI\" colspan=\"2\">Zero Sum Value</td><td class=\"TSO\">"+(raw[0,".total",".points"]*1.0/raw[0,".total",".loot"]).to_string()+"</td></tr></tfoot>");
- writeln("</table></div></center></td></tr></table><br>");
- write("<input type=\"submit\" name=\"ignoreSelected\" value=\"Ignore Selected\"><br>");
- write("Above table includes: "+raw[0].pullField(".clanName"));
- foreach clanName in raw[0,".union"] write(", "+clanName);
- write("<br>Add another clan: <input type=\"text\" name=\"addClan\"></input>");
- write("<input type=\"submit\" value=\"Add!\"></form>");//Current Run Below
- write("<table class=\"tableD ZeroT\"><tr class=\"RowD\"><td class=\"ZeroI\" onclick=\"tog('PointsTable')\">"+raw[0].pullField(".clanName")+" Current Run</td></tr>");
- write("<tr><td><center><div id=\"PointsTable\" style=\"display:inline;\"><table class=\"sortable tableD TST\"><tr><th class=\"TSI\">Players</th>");
- foreach thing in pointList if(thing!=".adjust"){
-  write("<th class=\""+(raw[0,".weight",thing]<0?"NegI":(raw[0,".weight",thing]>0?"PosI":"ZeroI"))+"\">");
-  write(thing+raw[0,".weight",thing].toSimpleDec()+"</th>");
+ write("<tfoot><tr class=\"rowD\"><td class=\"TSI\">Total</td>");
+ foreach s in $strings[Sewer,TS,BB,EE,Heap,AHBG,PLD]{//Full Area Table Total
+  if(data[".data",s,".hasdata"]==-1)continue;
+  write("<td class=\""+s+"I\">"+data[".total",s,".total"]+"</td>");
  }
- foreach thing in lootList if(thing!=".-adjust"){
-  write("<th class=\""+(raw[0,".weight",thing]>0?"NegI":(raw[0,".weight",thing]<0?"PosI":"ZeroI"))+"\">");
-  write(thing+raw[0,".weight",thing].toSimpleDec()+"</th>");
+ write("<td class=\"TSI\">"+data[".total",".hobo",".total"]);
+ if(customTotals){
+  tmp=data[".total",".hobo",".total"];
+  if(options["hobo.marketMatter"]=="n")tmp-=data[".total","TS","Market<br>Trips"];
+  if(options["hobo.richardMatter"]=="n"){
+   tmp-=data[".total","TS","Made<br>Bandages"];
+   tmp-=data[".total","TS","Made<br>Grenades"];
+   tmp-=data[".total","TS","Made<br>Shakes"];
+  }
+  if(options["hobo.defeatsMatter"]=="n"){
+   foreach area in $strings[TS,BB,EE,Heap,AHBG,PLD]{
+    tmp-=data[".total",area,"Defeats"];
+    tmp-=data[".total",area,"!bossloss"];
+   }
+   if(options["hobo.sewersMatter"]=="on")tmp-=data[".total","Sewer","Defeats"];
+  }
+  if(options["hobo.sewersMatter"]=="n")tmp-=data[".total","Sewer",".total"];  
+  write("<td class=\"TSI\">"+tmp+"</td>");
  }
- write("<th class=\"TSI\">Total Points</th></tr>");
+ writeln("</tr></tfoot></table></div></center></td></tr></table><br>");
+ foreach area in $strings[Sewer,TS,BB,EE,Heap,AHBG,PLD]{//Per-area tables
+  if(data[".data",area,".hasdata"]<0)continue;
+  write("<table class=\"tableD "+area+"T\"><tr class=\"rowD\"><td class=\""+area+"I\" onclick=\"tog('"+area+"Table')\">"+expand(area)+"</td></tr><tr><td><center><div id=\""+area+"Table\" style=\"display:inline;\"><table class=\"sortable tableD "+area+"T\"><tr>");
+  write("<th class=\""+area+"O\">Players</th>");
+  foreach s in theMatcher[area]{//per-area headers
+   if(".!".contains_text(s.char_at(0)))continue;
+   if((data[".total",area,s]<1)&&((s!="Defeats")||data[".total",area,"!bossloss"]<1))continue;
+   write("<th class=\""+area+"O\">"+s+"</th>");
+  }
+  write("<th class=\""+area+"O\">Totals</th></tr>");
+  clear(odata);
+  foreach user in data{//Get and sort data
+   if(user.char_at(0)==".")continue;
+   if(data[user,area,".total"]<1)continue;
+   odata[count(odata)]=data[user];
+   odata[count(odata)-1,".name",user]=1;
+  }
+  sort odata by (area=="Sewer"?(1-value["Sewer",clearID])*5000-value[area,".total"]:-value[area,".total"]);
+  foreach index in odata{//per-area table data
+   write("<tr class=\"rowD"+(odata[index].pullField(".name")==my_name()?" HL":"")+"\"><td class=\""+area+"O\" style=\"text-align:left\">");
+   write(linkify(odata[index].pullField(".name"))+((area=="Sewer")&&(odata[index,"Sewer",clearID]>0)?" <span class=\"clear\">(Clear"+(odata[index,"Sewer",clearID]>1?" x"+odata[index,"Sewer",clearID]:"")+")</span>":"")+(odata[index,area,"!"+area.bossName()]>0?" <span class=\"bossKiller\">(Boss)</span>":"")+"</td>");
+   foreach s in theMatcher[area]{//per-area table data
+    if(".!".contains_text(s.char_at(0)))continue;
+    if((data[".total",area,s]<1)&&((s!="Defeats")||data[".total",area,"!bossloss"]<1))continue;
+    write("<td class=\""+area+"O\">"+odata[index,area,s]+((s=="Defeats")&&(odata[index,area,"!bossloss"]>0)?" ("+odata[index,area,"!bossloss"]+")":"")+"</td>");
+   }
+   write("<td class=\""+area+"O\">"+odata[index,area,".total"]+"</td></tr>");
+  }
+  write("<tfoot><tr class=\"rowD\"><td class=\""+area+"I\">Total</td>");
+  foreach s in theMatcher[area]{//per-area totals row
+   if(".!".contains_text(s.char_at(0)))continue;
+   if((data[".total",area,s]<1)&&((s!="Defeats")||data[".total",area,"!bossloss"]<1))continue;
+   write("<td class=\""+area+"I\">"+data[".total",area,s]+((s=="Defeats")&&(data[".total",area,"!bossloss"]>0)?" ("+data[".total",area,"!bossloss"]+")":"")+"</td>");
+  }
+  writeln("<td class=\""+area+"I\">"+data[".total",area,".total"]+"</td></tr></tfoot></table></div></center></td></tr></table><br>");
+ }
+ write("<form name=\"opts\" action=\""+__FILE__+"?submitOpts=1&dungeon=hobo\" method=\"POST\"><table class=\"directory opts\"><tr><th>Count To Total:</th>");
+ write("<td>Market <input type=\"checkbox\" name=\"hobo.marketMatter\""+(options["hobo.marketMatter"]=="on"?" checked=\"checked\"":"")+"></td>");
+ write("<td>Richard <input type=\"checkbox\" name=\"hobo.richardMatter\""+(options["hobo.richardMatter"]=="on"?" checked=\"checked\"":"")+"></td>");
+ write("<td>Defeats <input type=\"checkbox\" name=\"hobo.defeatsMatter\""+(options["hobo.defeatsMatter"]=="on"?" checked=\"checked\"":"")+"></td>");
+ write("<td>Sewer <input type=\"checkbox\" name=\"hobo.sewersMatter\""+(options["hobo.sewersMatter"]=="on"?" checked=\"checked\"":"")+"></td>");
+ writeln("<th colspan=2>[<input class=\"submit\" type=\"submit\" value=\"Save\">]</th></tr></table></form></div>");
+}
+*/
+/*
+void formatST(string show){
+ write("<div id=\"SlimeDiv\" style=\"display:"+show+"\"><table class=\"directory\"><tr><td><a href=\"/clan_slimetube.php\">Slimetube</a></td></tr></table><table><tr><td width=\"80px\" valign=\"top\"><table>");//all of ST
+ write("<tr class=\"rowD\"><td class=\"SlimeI\">Mother Slime</td></tr><tr><td class=\"SlimeO\"><a href=\"/clan_slimetube.php\"><img src=\""+theMatcher["Slime",".image"]+"\" width=\"80px\" height=\"80px\" /></a></td></tr><tr class=\"rowD\"><td class=\"SlimeI\">");
+ switch(data[".data","Slime",".image"]){//Write the boss table text
+  case -2:
+   write("<font size=\"0.9em\">Data not available.</font>");
+   break;
+  case -1:
+   write("<font size=\"0.9em\">Area not available to you.</font>");
+   break;
+  case 10:write("<font size=\"0.9em\">Boss is ready for a fight!</font>");break;
+  case 11:write("<font size=\"0.9em\">Defeated by ");
+   foreach user in data{
+    if(user.char_at(0)==".") continue;
+    if(data[user,"Slime","!Mother Slime"]<1) continue;
+    write(user+"</font>");
+    break;
+   }
+   break;
+  default:write(data[".data","Slime",".image"]+"0% Complete");  
+ }
+ write("</td></tr></table></td><td width=\"100%\"><table class=\"tableD SlimeT\"><tr class=\"rowD\"><td class=\"SlimeI\" onclick='tog(SlimeTable);'>Slime Tube</td></tr><tr><td><center><div id=\"SlimeTable\" style=\"display:inline;\">");
+ write("<table class=\"sortable tableD SlimeT\"><tr class=\"rowD\"><th class=\"SlimeO\">Players</th>");
+ foreach s in theMatcher["Slime"]{//Slime table header row
+  if(".!".contains_text(s.char_at(0)))continue;
+  if((data[".stotal","Slime",s]<1)&&((s!="Defeats")||data[".stotal","Slime","!bossloss"]<1))continue;
+  write("<th class=\"SlimeO\">"+s+"</th>");
+ }
+ write("<th class=\"SlimeO\">Totals</th>");
+ boolean customTotals=false;
+ foreach att in $strings[defeats] if(options["slime."+att]=="n")customTotals=true;
+ if(customTotals)write("<th class=\"SlimeO\">Adjusted Total</th></tr>");
+ else write("</tr>");
  clear(odata);
- foreach user in raw[-1] if(user.char_at(0)!="."){
-  if(raw[0,user,".ignore"]==1)continue;
-  if(raw[-1,user,".total"]==0)continue;
-  odata[count(odata)+1,".data"]=raw[-1,user];
-  odata[count(odata),".name",user]=1;
+ int tmp;
+ foreach user in data{//data collection and sorting
+  if(user.char_at(0)==".")continue;
+  if(data[user,"Slime",".total"]<1)continue;
+  tmp=data[user,"Slime",".total"];
+  odata[count(odata)]=data[user];
+  odata[count(odata)-1,".name",user]=1;
+  if(options["slime.defeats"]=="n"){
+   tmp-=data[user,"Slime","Defeats"];
+   tmp-=data[user,"Slime","!bossloss"];
+  }
+  odata[count(odata)-1,"Slime",".rtotal"]=tmp;
  }
- sort odata by -value[".data",".total"];
+ sort odata by -value["Slime",".rtotal"];
+ foreach index in odata{//slime table rows
+  write("<tr class=\"rowD"+(odata[index].pullField(".name")==my_name()?" HL":"")+"\"><td class=\"SlimeO\" style=\"text-align:left\">"+linkify(odata[index].pullField(".name"))+"</td>");
+  foreach s in theMatcher["Slime"]{
+   if(".!".contains_text(s.char_at(0)))continue;
+   if((data[".stotal","Slime",s]<1)&&((s!="Defeats")||data[".stotal","Slime","!bossloss"]<1))continue;
+   write("<td class=\"SlimeO\">"+odata[index,"Slime",s]+((s=="Defeats")&&(odata[index,"Slime","!bossloss"]>0)?" ("+odata[index,"Slime","!bossloss"]+")":"")+"</td>");
+  }
+  write("<td class=\"SlimeO\">"+odata[index,"Slime",".total"]+"</td>");
+  if(customTotals)write("<td class=\"SlimeO\">"+odata[index,"Slime",".rtotal"]+"</td></tr>");
+  else write("</tr>");
+ }
+ write("<tfoot><tr class=\"rowD\"><td class=\"SlimeI\">Total</td>");
+ foreach s in theMatcher["Slime"]{
+  if(".!".contains_text(s.char_at(0)))continue;
+  if((data[".stotal","Slime",s]<1)&&((s!="Defeats")||data[".stotal","Slime","!bossloss"]<1))continue;
+  write("<td class=\"SlimeI\">"+data[".stotal","Slime",s]+((s=="Defeats")&&(data[".stotal","Slime","!bossloss"]>0)?" ("+data[".stotal","Slime","!bossloss"]+")":"")+"</td>");
+ }
+ write("<td class=\"SlimeI\">"+data[".stotal","Slime",".total"]+"</td>");
+ if(customTotals){
+  tmp=data[".stotal","Slime",".total"];
+  if(options["slime.defeats"]=="n"){
+   tmp-=data[".stotal","Slime","Defeats"];
+   tmp-=data[".stotal","Slime","!bossloss"];
+  }
+  write("<td class=\"SlimeI\">"+tmp+"</td>");
+ }
+ writeln("</tr></tfoot></table></div></center></td></tr></table></td></tr></table>");
+ write("<form name=\"opts\" action=\""+__FILE__+"?submitOpts=1&dungeon=slime\" method=\"POST\"><table class=\"directory opts\"><tr><th>Count To Total:</th>");
+ write("<td>Defeats <input type=\"checkbox\" name=\"slime.defeats\""+(options["slime.defeats"]=="on"?" checked=\"checked\"":"")+"></td>");
+ writeln("<th colspan=2>[<input class=\"submit\" type=\"submit\" value=\"Save\">]</th></tr></table></form></div>");
+}
+*/
+/*
+void formatHH(string show){
+ write("<div id=\"HauntedDiv\" style=\"display:"+show+"\"><table><tr><td width=\"80px\" valign=\"top\"><table>");//all of HH
+ write("<tr class=\"rowD\"><td class=\"HauntedI\">Necbromancer</td></tr><tr><td width=\"90px\" class=\"HauntedO\"><a href=\"/clan_hh.php\"><img src=\""+theMatcher["Haunted",".image"]+"\" width=\"90px\" height=\"90px\" /></a></td></tr><tr class=\"rowD\"><td class=\"HauntedI\">");
+*//* switch(data[".htotal","Haunted","!Necbromancer"]){//Write the boss table text
+  case 1:write("<font size=\"0.9em\">Defeated by ");
+   foreach user in data{
+    if(user.char_at(0)==".") continue;
+    if(data[user,"Haunted","!Necbromancer"]<1) continue;
+    write(user+"</font>");
+    break;
+   }
+   break;
+  default:
+   write("<font size=\"0.9em\"></font>");
+   break;
+ }*/
+ /*
+ int tmp=0;
+ boolean customTotals=false;
+ foreach att in $strings[defeats] if(options["haunted."+att]=="n")customTotals=true;
+ clear(odata);
+ foreach user in data{//data collection and sorting
+  if(user.char_at(0)==".")continue;
+  if(data[user,"Haunted",".total"]<1)continue;
+  odata[count(odata)]=data[user];
+  odata[count(odata)-1,".name",user]=1;
+  tmp=data[user,"Haunted","!Mirrors"];
+  tmp+=data[user,"Haunted","!Bullet"];
+  tmp+=data[user,"Haunted","!Chainsaw"];
+  tmp+=data[user,"Haunted","!Trap"];
+  tmp+=data[user,"Haunted","!Guides"];
+  tmp+=data[user,"Haunted","!Costume"];
+  odata[count(odata)-1,"Haunted","Collected<br>Item"]=tmp;
+  tmp=data[user,"Haunted","!NoiseUp"];
+  tmp+=data[user,"Haunted","!NoiseDown"];
+  tmp+=data[user,"Haunted","!DarkUp"];
+  tmp+=data[user,"Haunted","!DarkDown"];
+  tmp+=data[user,"Haunted","!FogUp"];
+  tmp+=data[user,"Haunted","!FogDown"];
+  odata[count(odata)-1,"Haunted","Mod ML"]=tmp;
+  tmp=data[user,"Haunted",".total"];
+  if(options["haunted.defeats"]=="n"){
+   tmp-=data[user,"Haunted","Defeats"];
+   tmp-=data[user,"Haunted","!bossloss"];
+  }
+  odata[count(odata)-1,"Haunted",".rtotal"]=tmp;
+ }
+ sort odata by -value["Haunted",".rtotal"];
+ odata[count(odata),".name",".total"]=1;
+ foreach s in theMatcher["Haunted"] if(s.char_at(0)=="&")odata[count(odata)-1,"Haunted",s]=0;
+ for n from 0 upto count(odata)-2 foreach c,v in odata[n,"Haunted"] odata[count(odata)-1,"Haunted",c]+=v;
+ if(activeComment)map_to_file(odata,"raidlog/HHodata.txt");
+ write("</td></tr></table></td><td width=\"100%\"><table class=\"tableD HauntedT\"><tr class=\"rowD\"><td class=\"HauntedI\" onclick='tog(HauntedTable);'>Haunted Sorority House</td></tr><tr><td><center><div id=\"HauntedTable\" style=\"display:inline;\">");
+ write("<table class=\"sortable tableD HauntedT\"><tr class=\"rowD\"><th class=\"HauntedO\">Players</th>");
+ foreach s in odata[count(odata)-1,"Haunted"]{//haunted table header row
+  if(".!".contains_text(s.char_at(0)))continue;
+  if((odata[count(odata)-1,"Haunted",s]==0)&&(s.char_at(0)!="&"))continue;
+  if((odata[count(odata)-1,"Haunted",s]==0)&&(s.char_at(0)!="&")&&((s!="Defeats")||data[".htotal","Haunted","!bossloss"]<1))continue;
+  write("<th class=\"HauntedO\">"+s+"</th>");
+ }
+ write("<th class=\"HauntedO\">Totals</th>");
+ if(customTotals)write("<th class=\"HauntedO\">Adjusted Total</th></tr>");
+ else write("</tr>");
+ foreach index in odata{//haunted table rows
+  if(index==count(odata)-1)break;
+  write("<tr class=\"rowD"+(odata[index].pullField(".name")==my_name()?" HL":"")+"\"><td class=\"HauntedO\" style=\"text-align:left\">"+linkify(odata[index].pullField(".name"))+(odata[index,"Haunted","!Necbromancer"]>0?" ("+odata[index,"Haunted","!Necbromancer"]+")":"")+(odata[index,"Haunted","!Guides"]>0?" (G)":"")+"</td>");
+  foreach s in odata[count(odata)-1,"Haunted"]{
+   if(".!".contains_text(s.char_at(0)))continue;
+   if((odata[count(odata)-1,"Haunted",s]==0)&&(s.char_at(0)!="&")&&((s!="Defeats")||data[".htotal","Haunted","!bossloss"]<1))continue;
+   write("<td class=\"HauntedO\">"+odata[index,"Haunted",s]+((s=="Defeats")&&(odata[index,"Haunted","!bossloss"]>0)?" ("+odata[index,"Haunted","!bossloss"]+")":""));
+   if("&".contains_text(s.char_at(0)))write(" ["+odata[index,"Haunted","!"+s.substring(6)]+"]");
+   write("</td>");
+  }
+  write("<td class=\"HauntedO\">"+odata[index,"Haunted",".total"]+"</td>");
+  if(customTotals)write("<td class=\"HauntedO\">"+odata[index,"Haunted",".rtotal"]+"</td>");
+  write("</tr>");
+ }
+ write("<tfoot><tr class=\"rowD\"><td class=\"HauntedI\">Total</td>");
+ foreach s in odata[count(odata)-1,"Haunted"]{//Haunted table totals
+  if(".!".contains_text(s.char_at(0)))continue;
+  if((odata[count(odata)-1,"Haunted",s]==0)&&(s.char_at(0)!="&")&&((s!="Defeats")||data[".htotal","Haunted","!bossloss"]<1))continue;
+  write("<td class=\"HauntedI\">"+odata[count(odata)-1,"Haunted",s]+((s=="Defeats")&&(odata[count(odata)-1,"Haunted","!bossloss"]>0)?" ("+odata[count(odata)-1,"Haunted","!bossloss"]+")":""));
+  if("&".contains_text(s.char_at(0)))write(" ["+odata[count(odata)-1,"Haunted","!"+s.substring(6)]+"]");
+  write("</td>");
+ }
+ write("<td class=\"HauntedI\">"+odata[count(odata)-1,"Haunted",".total"]+"</td>");
+ if(customTotals)write("<td class=\"HauntedI\">"+odata[count(odata)-1,"Haunted",".rtotal"]+"</td>");
+ write("</tr><tr class=\"rowD\"><td class=\"HauntedI\">Current<br>Remaining:</td>");
+ boolean nomod=true;
+ foreach s in odata[count(odata)-1,"Haunted"]{//haunted table current estimates
+  if(".!".contains_text(s.char_at(0)))continue;
+  if((odata[count(odata)-1,"Haunted",s]==0)&&(s.char_at(0)!="&")&&((s!="Defeats")||data[".htotal","Haunted","!bossloss"]<1))continue;
+  if((s.char_at(0)!="&")&&(s!="Mod ML")){
+   write("<td class=\"HauntedI\"></td>");
+   continue;
+  }
+  if(s=="Mod ML"){
+   nomod=false;
+   tmp=odata[count(odata)-1,"Haunted","!DarkUp"]-odata[count(odata)-1,"Haunted","!DarkDown"];
+   tmp+=odata[count(odata)-1,"Haunted","!FogUp"]-odata[count(odata)-1,"Haunted","!FogDown"];
+   tmp+=odata[count(odata)-1,"Haunted","!NoiseUp"]-odata[count(odata)-1,"Haunted","!NoiseDown"];
+   write("<td class=\"HauntedI\" style=\"font-weight:bold;\">ML: "+tmp+"</td>");
+   continue;
+  }
+  tmp=300-odata[count(odata)-1,"Haunted",s];
+  tmp-=floor(odata[count(odata)-1,"Haunted","!"+s.substring(6)]*((s=="&nbsp;Wolves")||(s=="&nbsp;Vamps")?17.5:12.5));
+  write("<td class=\"HauntedI\">"+tmp+"</td>");
+ }
+ if(nomod)write("<td class=\"HauntedI\">ML: 0</td>");
+ else write("<td class=\"HauntedI\"></td>");
+ if(customTotals)write("<td class=\"HauntedI\"></td>");
+ writeln("</tr></tfoot></table></div></center></td></tr></table></td></tr></table>");
+ write("<form name=\"opts\" action=\""+__FILE__+"?submitOpts=1&dungeon=haunted\" method=\"POST\"><table class=\"directory opts\"><tr><th>Count To Total:</th>");
+ write("<td>Defeats <input type=\"checkbox\" name=\"haunted.defeats\""+(options["haunted.defeats"]=="on"?" checked=\"checked\"":"")+"></td>");
+ writeln("<th colspan=2>[<input class=\"submit\" type=\"submit\" value=\"Save\">]</th></tr></table></form></div>");
+}
+*/
+void formatDreadTable(){
+ write("<table class=\"imgtable\"><tr class=\"rowD\">");
+ foreach area in $strings[Inn, Woods, Village, Castle] write("<td class=\"Dread"+area+"I\">"+area+"</td>");
+ write("</tr><tr>");
+ foreach area in $strings[Inn, Woods, Village, Castle] write("<td class=\"Dread"+area+"O\" style=\"text-align:center\"><a href=\""+area.linkTo()+"\"><img src=\""+area.bossName().imageOf()+"\" width=\"80px\" height=\"80px\" /></a></td>");
+ write("</tr><tr class=\"rowD\">");
+ foreach area in $strings[Inn, Woods, Village, Castle] write("<td class=\"Dread"+area+"I\">"+area.bossName()+"</td>");
+ write("</tr><tr class=\"rowD\">");
+ write("<td><div style=\"border:1px solid brown;\">");
+ write("<span class=\"CrotchesC\">"+data[".data","Dread","kisses"]+" Kisses</span><br>");
+ if(data[".data","Dread",".carriage"]>999)write("<span class=\"DreadVillageC\">Village Open</span><br>");
+ if(data[".data","Dread",".carriage"]>1999)write("<span class=\"DreadCastleC\">Castle Open</span><br>");
+ else write("<span>"+data[".data","Dread",".carriage"]+" sheets</span");
+ write("</div></td>");
+ foreach area in $strings[Woods, Village, Castle]{
+  write("<td width=\"75px\" class=\"Dread"+area+"I\">");
+  switch(data[".data","Dread"+area,".dist"]){
+   case 1000:
+    write("<font size=\"0.9em\">Boss is ready for a fight!</font>");
+    break;
+   case 1001:
+    write("<font size=\"0.9em\">Defeated by ");
+    foreach user in data{
+     if(user.char_at(0)==".")continue;
+     if(data[user,"Dread"+area,"!Boss"]<1)continue;
+     write(user+"</font>");
+     break;
+    }
+    break;
+   case -2:
+    write("<font size=\"0.9em\">Data not available.</font>");
+    break;
+   case -1:
+    if((area=="Village")&&(data[".data","Dread",".carriage"]<1000)){
+     write("<font size=\"0.9em\">Area not open yet.</font>");
+     break;
+    }
+    if((area=="Castle")&&(data[".data","Dread",".carriage"]<2000)){
+     write("<font size=\"0.9em\">Area not open yet.</font>");
+     break;
+    }
+   default:
+    write(to_string(1000-data[".data","Dread"+area,".dist"])+" Kill"+(data[".data","Dread"+area,".dist"]!=999?"s":"")+" Remain"+(data[".data","Dread"+area,".dist"]!=999?"":"s"));
+  }
+  write("</td>");
+ }
+ writeln("</tr></table><br>");
+}
+
+void formatDreadNCTable(){
+ write("<table class=\"tableD TST\"><tr class=\"RowD\">");
+ foreach area in $strings[DreadWoods, DreadVillage, DreadCastle] write("<th class=\""+area+"I\" style=\"max-width:40%; min-width:28%\">"+area.expand()+"</th>");
+ string[int] list;
+ boolean odd=false;
+ string zone;
+ matcher m=create_matcher("([^(]+)\\((.+)\\)","");
+ foreach i in layout{
+  switch(i%3){
+   case 0:zone="DreadCastle";break;
+   case 1:zone="DreadWoods";write("<tr class=\"RowD\">");break;
+   case 2:zone="DreadVillage";break;
+  }
+  list=split_string(layout[i],",");
+  write("<td class=\""+list[0].noSpaces()+"td "+(odd?zone+"E":zone+"O")+"\">");
+  write("<span style=\"font-weight:bold;\">"+(data[".data",".pencil",list[0]]==1?"<a href=\""+list[0].linkTo()+"\">"+list[0]+"</a>":list[0])+"</span><br>");
+  if((i==6)&&(data[".data"] contains ".machine"))write("<span style=\"font-weight:bold\">"+data[".data"].pullField(".machine")+"</span> has fixed The Machine.<br>");
+  if((i==2)&&(data[".data"] contains ".hung"))write("<span style=\"font-weight:bold\">"+data[".data"].pullField(".hung")+"</span> was hung by <span style=\"font-weight:bold\">"+data[".data"].pullField(".hanger")+"</span>.<br>");
+  foreach i2 in list if(i2>0){
+   m.reset(list[i2]);
+   if(!m.find())continue;
+   switch(m.group(1)){
+    case"Unlock":
+     write("<span style=\"font-style:italic\">"+m.group(2));
+     if(data[".data"] contains (".unlock."+list[0]))write(" unlocked by <span style=\"font-weight:bold\">"+data[".data"].pullField(".unlock."+list[0]));
+     else write(" <span style=\"font-weight:bold\">locked");
+     write("</span>.</span><br>");
+     break;
+    case"Music Box":
+     write("Music Box parts ");
+     if(data[".data",zone,"+Cabin.-Spooky"]>0)write("unavailable.<br>");
+     else write("available.<br>");
+     break;
+    case"Blood Kiwi":
+     write("Blood Kiwi");
+     if(data[".data",zone,"+Tree.Blood Kiwi"]==data[".data",zone,"+Tree.Stomped"])write(" "+data[".data",zone,"+Tree.Blood Kiwi"]+"/1<br>");
+     else write(" unavailable.<br>");
+     break;
+    default:
+     write(m.group(1)+": "+data[".data",zone,"+"+list[0]+"."+m.group(1)]+"/"+m.group(2)+"<br>");
+     break;
+   }
+  }
+  write("</td>");
+  if(i%3==0){
+   odd=!odd;
+   write("</tr>");
+  }
+ }
+ write("</tr><tr style=\"height:5px;\"><td class=\"DreadWoodsI\"></td><td class=\"DreadVillageI\"></td><td class=\"DreadCastleI\"></td>");
+ write("</tr></table>");
+}
+
+void formatDread(string show){
+ write("<div id=\"DreadDiv\" style=\"display:"+show+"\"><table class=\"directory\"><tr>");
+ write("<td><a href=\"clan_dreadsylvania.php\">Dreadsylvania</a></td><td><a href=\"shop.php?whichshop=dv\">Inn</a></td></tr></table>");
+ formatDreadTable();
+ if(data[".data","Dread",".hasdata"]<2){
+  write("<table class=\"tableD TST\"><tr class=\"RowD\"><td class=\"allDread TSI\" onclick=\"tog('DreadTotsTable')\">Totals</td></tr>");
+  write("<tr><td><center><div id=\"DreadTotsTable\" style=\"display:inline\">");
+  formatDreadNCTable();
+  writeln("</div></center></td></tr></table><br>");
+  return;
+ }
+ write("<table class=\"tableD TST\"><tr class=\"RowD\"><td class=\"allDread TSI\" onclick=\"tog2('DreadTotsTable')\">Totals</td></tr>");
+ write("<tr><td><center><div id=\"DreadTotsTable");
+ if(options["dread.limitTable"]=="on")write("2\" style=\"display:none;\"");
+ else if(options["dread.limitTable"]=="none")write("\" style=\"display:none;");
+ else write("\" style=\"display:inline;");
+ write("\"><table class=\"tots sortable tableD TST\"><tr><th class=\"TSI\">Players</th>");
+ foreach area in $strings[DreadWoods, DreadVillage, DreadCastle] if(data[".dtotal",area,".total"]>0)write("<th class=\""+area+"I\">"+area.expand()+"</th>");
+ write("<th class=\"TSI\">Totals</th>");
+ boolean customTotals=false;
+ foreach att in $strings[defeats] if(options["dread."+att]=="n")customTotals=true;
+ if(customTotals)write("<th class=\"TSI\">Adjusted Total</th>");
+ write("</tr>");
+ clear(odata);
+ int tmp;
+ foreach user in data{//Get and sort data
+  if(user.char_at(0)==".")continue;
+  if(data[user,".dread",".total"]<1)continue;
+  odata[count(odata)]=data[user];
+  odata[count(odata)-1,".name",user]=1;
+  tmp=data[user,".dread",".total"];
+  if(options["dread.defeats"]=="n") foreach area in $strings[DreadWoods, DreadVillage, DreadCastle]{
+   tmp-=data[user,area,"Defeats"];
+   tmp-=data[user,area,"!bossloss"];
+  }
+  odata[count(odata)-1,".dread",".rtotal"]=tmp;
+ }
+ sort odata by -value[".dread",".rtotal"];
  foreach index in odata{
-  write("<tr class=\"RowD\"><td class=\"TSO hideBox\" style=\"text-align:left\" oncontextmenu=\"removePlayer('"+odata[index].pullField(".name")+"'); return false;\">"+odata[index].pullField(".name").linkName()+"</td>");
-  foreach thing in pointList if(thing!=".adjust")
-   write("<td class=\""+(raw[0,".weight",thing]<0?"NegO":(raw[0,".weight",thing]>0?"PosO":"ZeroO"))+"\">"+odata[index,".data",thing]+"</td>");
-  foreach thing in lootList if(thing!=".-adjust")
-   write("<td class=\""+(raw[0,".weight",thing]>0?"NegO":(raw[0,".weight",thing]<0?"PosO":"ZeroO"))+"\">"+odata[index,".data",thing]+"</td>");
-  write("<td class=\"TSO\">"+odata[index,".data",".total"]+"</td></tr>");
+  write("<tr class=\"rowD"+(odata[index].pullField(".name")==my_name()?" HL":"")+"\"><td class=\"TSO\" style=\"text-align:left\">");
+  write(linkify(odata[index].pullField(".name"))+"</td>");
+  foreach area in $strings[DreadWoods, DreadVillage, DreadCastle] if(data[".dtotal",area,".total"]>0)write("<td class=\""+area+"O\">"+odata[index,area,".total"]+"</td>");
+  write("<td class=\"TSO\">"+odata[index,".dread",".total"]+"</td>");
+  if(customTotals)write("<td class=\"TSO\">"+odata[index,".dread",".rtotal"]+"</td></tr>");
+  else write("</tr>");
  }
- writeln("</table></div></center></td></tr></table></center></div>");
+ write("<tfoot><tr class=\"rowD\"><td class=\"TSI\">Total</td>");
+ foreach area in $strings[DreadWoods, DreadVillage, DreadCastle] if(data[".dtotal",area,".total"]>0)write("<td class=\""+area+"I\">"+data[".dtotal",area,".total"]+"</td>");
+ write("<td class=\"TSI\">"+data[".dtotal",".dread",".total"]+"</td>");
+ if(customTotals){
+  tmp=data[".dtotal",".dread",".total"];
+  if(options["dread.defeats"]=="n") foreach area in $strings[DreadWoods, DreadVillage, DreadCastle]{
+   tmp-=data[".dtotal",area,"Defeats"];
+   tmp-=data[".dtotal",area,"!bossloss"];
+  }
+  write("<td class=\"TSI\">"+tmp+"</td>");
+ }
+ write("</tr></foot></table></div>");
+ if(options["dread.limitTable"]!="on")write("<div id=\"DreadTotsTable2\" style=\"display:none;\">");
+ else if(options["dread.limitTable"]=="none")write("<div id=\"DreadTotsTable2\" style=\"display:none;\">");
+ else write("<div id=\"DreadTotsTable\" style=\"display:inline;\">");
+ formatDreadNCTable();
+ writeln("</div></center></td></tr></table><br>");
+ foreach area in $strings[DreadWoods, DreadVillage, DreadCastle]{//Per-area tables
+  if(data[".data",area,".hasdata"]<0)continue;
+  write("<table class=\"tableD "+area+"T\"><tr class=\"RowD\"><td colspan=\"3\" id=\""+area+"tr\" class=\""+area+"I\" onclick=\"tog2('"+area+"Table')\">"+expand(area)+"</td></tr>");
+  write("<tr class=\"RowL\"><td>Kiss Level: "+to_string(1+data[".data",area,".kisses"])+"</td><td>Elements:");
+  foreach e in $strings[Hot, Cold, Spooky, Sleaze, Stench] if((data[".data",area,".kisses"]>4)||(data[".data",area,"."+e]!=-1)) write(" <span class=\""+area+"_"+e+(data[".data",area,".kisses"]<5?"\" title=\""+area.spoiler(e):"")+"\">"+e.withColor()+"</span>");
+  write("</td><td>Monster Shift: ");
+  if(data[".data",area,".tilt"]<0)switch(area){
+   case "DreadWoods":write("Werewolves");break;
+   case "DreadVillage":write("Zombies");break;
+   case "DreadCastle":write("Vampires");break;
+  }else if(data[".data",area,".tilt"]>0)switch(area){
+   case "DreadWoods":write("Bugbears");break;
+   case "DreadVillage":write("Ghosts");break;
+   case "DreadCastle":write("Skeletons");break;
+  }else write("None");
+  if(abs(data[".data",area,".tilt"])>1)write(" (x"+abs(data[".data",area,".tilt"])+")");
+  write("</td></tr><tr><td colspan=\"3\"><center><div id=\""+area+"Table\" style=\"display:inline;\"><table class=\"sortable tableD "+area+"T\"><tr>");
+//  write("</td></tr><tr><td colspan=\"3\"><center><div id=\""+area+"Table\" style=\"display:inline;\"><table class=\"sortable tableD\"><tr>");
+  write("<th class=\""+area+"O\">Players</th>");
+  foreach s in data[".dtotal",area]{//per-area headers
+   if(".!".contains_text(s.char_at(0)))continue;
+   if((data[".dtotal",area,s]<1)&&((s!="Defeats")||data[".dtotal",area,"!bossloss"]<1))continue;
+   write("<th class=\""+(s.char_at(0)=="+"?s.substring(1).noSpaces()+"td ":"")+area+"O\">"+(s.char_at(0)=="+"?s.substring(1):s)+"</th>");
+  }
+  write("<th class=\""+area+"O\">Totals</th></tr>");
+  clear(odata);
+  foreach user in data{//Get and sort data
+   if(user.char_at(0)==".")continue;
+   if(data[user,area,".total"]+data[user,area,".unlock"]+data[user,area,".machine"]<1)continue;
+   odata[count(odata)]=data[user];
+   odata[count(odata)-1,".name",user]=1;
+  }
+  sort odata by -value[area,".total"];
+  foreach index in odata{//per-area table data
+   write("<tr class=\"rowD"+(odata[index].pullField(".name")==my_name()?" HL":"")+"\"><td class=\""+area+"O\" style=\"text-align:left\">");
+   write(linkify(odata[index].pullField(".name")));
+   for i from 1 upto odata[index,area,".unlock"] write(" <span style=\"color:gold\">&#9733;</span>");
+   write((odata[index,area,"!Boss"]>0?" <span class=\"bossKiller\">(Boss)</span>":"")+"</td>");
+   foreach s in data[".dtotal",area]{//per-area table data
+    if(".!".contains_text(s.char_at(0)))continue;
+    if((data[".dtotal",area,s]<1)&&((s!="Defeats")||data[".dtotal",area,"!bossloss"]<1))continue;
+    write("<td class=\""+area+"O\">"+(s.char_at(0)=="+"?dreadNonComStr(s,odata[index,area,s]):odata[index,area,s]+((s=="Defeats")&&(odata[index,area,"!bossloss"]>0)?" ("+odata[index,area,"!bossloss"]+")":""))+"</td>");
+   }
+   write("<td class=\""+area+"O\">"+odata[index,area,".total"]+"</td></tr>");
+  }
+  write("<tfoot><tr class=\"rowD\"><td class=\""+area+"I\">Total</td>");
+  foreach s in data[".dtotal",area]{//per-area totals row
+   if(".!".contains_text(s.char_at(0)))continue;
+   if((data[".dtotal",area,s]<1)&&((s!="Defeats")||data[".dtotal",area,"!bossloss"]<1))continue;
+   write("<td class=\""+area+"I\">"+data[".dtotal",area,s]+((s=="Defeats")&&(data[".dtotal",area,"!bossloss"]>0)?" ("+data[".dtotal",area,"!bossloss"]+")":"")+"</td>");
+  }
+  write("<td class=\""+area+"I\">"+data[".dtotal",area,".total"]+"</td></tr></tfoot></table></div>");
+  write("<div id=\""+area+"Table2\" style=\"display:none;\"><table class=\"tableD "+area+"T\"><tr><th class=\""+area+"O\">Players</th>");
+  string[int] specs;
+  foreach pn in data[".dtotal",area] if(pn.char_at(0)=="&")specs[count(specs)]=pn.substring(6);
+  boolean[string,string] exists;
+  foreach i,s in specs{
+   foreach e in $strings[Hot, Cold, Spooky, Sleaze, Stench] if((data[".dtotal",area,".Kill."+e+"."+s]+data[".dtotal",area,".Defeat."+e+"."+s])>0)exists[s,e]=true;
+   exists[s,"All"]=true;
+   write("<th class=\""+area+"O\" colspan=\""+count(exists[s])+"\">"+s+"</th>");
+  }
+  write("<th class=\""+area+"O\">Totals</th></tr><tr><th></th>");
+  foreach i,s in specs foreach e in $strings[Hot, Cold, Spooky, Sleaze, Stench, All] if(exists[s,e])write("<th>"+e.withColor()+"</th>");
+  write("<th></th></tr>");
+  clear(odata);
+  foreach user in data{//Get and sort data
+   if(user.char_at(0)==".")continue;
+   if((data[user,area,".Kills"]+data[user,area,"Defeats"])<1)continue;
+   odata[count(odata)]=data[user];
+   odata[count(odata)-1,".name",user]=1;
+  }
+  sort odata by -(value[area,".Kills"]+value[area,"Defeats"]);
+  boolean odd=false;
+  foreach index in odata{
+   odd=!odd;
+   write("<tr class=\"rowD\"><td class=\""+(odd?area+"O":"rowEven")+"\" style=\"text-align:left\">");
+   write(linkify(odata[index].pullField(".name"))+(odata[index,area,"!Boss"]>0?" <span class=\"bossKiller\">(Boss)</span>":"")+"</td>");
+   foreach i,s in specs foreach e in $strings[Hot, Cold, Spooky, Sleaze, Stench, All] if(exists[s,e])
+    write("<td class=\""+(odd?(e=="All"?area:e)+"O":"rowEven")+"\">"+odata[index,area,(e=="All"?"&nbsp;"+s:".Kill."+e+"."+s)]+(odata[index,area,".Defeat."+e+"."+s]>0?":"+odata[index,area,".Defeat."+e+"."+s]:"")+"</td>");
+   write("<td class=\""+(odd?area+"O":"rowEven")+"\">"+odata[index,area,".Kills"]+(odata[index,area,"Defeats"]>0?":"+odata[index,area,"Defeats"]:"")+"</td></tr>");
+  }
+  write("<tr class=\"rowD\"><td class=\""+area+"I\">Total</td>");
+  foreach i,s in specs foreach e in $strings[Hot, Cold, Spooky, Sleaze, Stench, All] if(exists[s,e])
+   write("<td class=\""+(e=="All"?area:e)+"I\">"+data[".dtotal",area,(e=="All"?"&nbsp;"+s:".Kill."+e+"."+s)]+(data[".dtotal",area,".Defeat."+e+"."+s]>0?":"+data[".dtotal",area,".Defeat."+e+"."+s]:"")+"</td>");
+  writeln("<td class=\""+area+"I\">"+data[".dtotal",area,".Kills"]+(data[".dtotal",area,"Defeats"]>0?":"+data[".dtotal",area,"Defeats"]:"")+"</td></tr></table></div></center></td></tr></table><br>");
+ }
+ write("<form name=\"opts\" action=\""+__FILE__+"?submitOpts=1&dungeon=dread\" method=\"POST\"><table class=\"directory opts\"><tr>");
+ write("<td>Totals Table:</td><th><select name=\"dread.limitTable\"><option value=\"n\""+(options["dread.limitTable"]=="n"?" selected":"")+">Turns</option>");
+ write("<option value=\"on\""+(options["dread.limitTable"]=="on"?" selected":"")+">Noncombats</option>"+"<option value=\"none\""+(options["dread.limitTable"]=="none"?" selected":"")+">Collapsed</option></select></th>");
+ write("<th>Count To Total:</th><td>Defeats <input type=\"checkbox\" name=\"dread.defeats\""+(options["dread.defeats"]=="on"?" checked=\"checked\"":"")+"></td>");
+ writeln("<th colspan=2>[<input class=\"submit\" type=\"submit\" value=\"Save\">]</th></tr></table></form></div>");
 }
 
-void displayDistro(){
- item[int]drops;
- for i from 0 to 20 drops[i]=to_item(i+6440);
- for i from 21 to 40 drops[i]=to_item(i+6441);
- drops[41]=$item[electric kool-aid];
- drops[44]=$item[skull capacitor];
- drops[45]=drops[20];
- drops[46]=drops[6];
- int maxFor(string a){
-  switch(a){
-   case"X":return 2;
-   case"Capacitors":return 4;
-   case"1":case"2":case"3":case"Noses":return 0;
-  }
-  return 500;
+void loadOptions(){
+ string[string]temp;
+ options["dread.defeats"]="n";
+ options["dread.limitTable"]="n";
+ file_to_map("raidlog/options.txt",temp);
+ foreach oN,oV in temp options[oN]=oV;
+ matcher m=create_matcher("(\\w+)\\.(\\w+)","");
+ if(FF contains "submitOpts")foreach oN in options{
+  m.reset(oN);
+  if(!m.find())continue;
+  if(m.group(1)!=FF["dungeon"])continue;
+  if(FF contains oN)options[oN]=FF[oN];
+  else options[oN]="n";
  }
- string toBossName(int i){
-  switch(i){
-   case 0:return "Falls-From-Sky";
-   case 1:return "Great Wolf of the Air";
-   case 2:return "Zombie Homeowner's Association";
-   case 3:return "Mayor Ghost";
-   case 4:return "Count Drunkula";
-  }
-  return "The Unkillable Skeleton";
- }
- write("<div id=\"distroDiv\" style=\"display:none;\"><div class=\"inner\"><table class=\"lootTable\"><tr><th style=\"border:0px\"></th>");
- for i from 0 to 5 write("<td class=\"outfit\"><img title=\""+drops[i*7]+"\" src=\"images/itemimages/"+drops[i*7].image+"\"></td><td rowspan=\"2\" colspan=\"3\" style=\"text-align:center\">"+i.toBossName()+"</td>");
- for i from 3 downto 1 write("<td><img title=\""+drops[i*7+20]+"\" src=\"images/itemimages/"+drops[i*7+20].image+"\"></td>");
- write("</tr><tr><th style=\"border:0px\"></th>");
- for i from 0 to 5 write("<td class=\"outfit\"><img title=\""+drops[i*7+1]+"\" src=\"images/itemimages/"+drops[i*7+1].image+"\"></td>");
- write("<td colspan=\"2\" style=\"border:0px\"></td><td><img title=\""+drops[13]+"\" src=\"images/itemimages/"+drops[13].image+"\"></td></tr><tr><th style=\"border:0px\"></th>");
- for i from 2 to 46 if((i%7>1)&&(i%7<6))write("<td"+(i%7==2?" class=\"outfit\"":"")+"><img title=\""+drops[i]+"\" src=\"images/itemimages/"+drops[i].image+"\"></td>");
- foreach user in raw[0] if((raw[0,user,".loot"]>0)&&(raw[0,user,".ignore"]!=1)&&(user.char_at(0)!=".")){
-  write("</tr><tr><th>"+user+"</th>");
-  foreach a in $strings[FFS,GW,ZHA,MG,CD,US] foreach b in $strings[X,1,2,3] write("<td><span"+(raw[0,user,a+b]>b.maxFor()?" style=\"font-weight:bold\">":">")+raw[0,user,a+b]+"</span></td>");
-  foreach a in $strings[Capacitors,Noses,Consumables] write("<td><span"+(raw[0,user,a]>a.maxFor()?" style=\"font-weight:bold\">":">")+raw[0,user,a]+"</span></td>");
- }
- writeln("</tr></table></div></div>");
+ map_to_file(options,"raidlog/options.txt");
 }
 
-void displayDataLogs(){
- write("<div id=\"historyDiv\" style=\"display:none;\"><center><table class=\"runTable sortable\">");
- string[string,int,int]runs;
- int[int,string,string]raw2;
- foreach clanName,clanNum in raw[0,".union"]{
-  file_to_map("raidlog/dreadKP."+clanNum+".txt",raw2);
-  foreach i in raw2 if(raw2[i,".type","Dreadsylvania"]==1) runs[clanName,clanNum,i]=raw2[i].pullField(".date");
- }
- foreach i in raw if((i>0)&&(raw[i,".type","Dreadsylvania"]==1))runs[get_clan_name(),get_clan_id(),i]=raw[i].pullField(".date");
- write("<tr><th>Clan</th><th>ID</th><th>Start</th><th>End</th><th colspan=\"2\">Edit</th></tr>");
- matcher m=create_matcher("(.+?) to (.*)","");
- foreach clanName,clanNum,i,date in runs {
-  m.reset(date);
-  write("<tr><td>"+clanName+"</td><td>"+i+"</td>");
-  if(m.find())write("<td>"+m.group(1)+"</td><td>"+m.group(2)+"</td>");
-  else write("<td></td><td></td>");
-  write("<td>[<a href=\""+__FILE__+"?toggleRun="+i+"&fromClan="+clanNum+"\">"+(raw[i,".","ignore"]==1?"add":"remove")+"</a>]</td>");
-  write("<td>[<a href=\""+__FILE__+"?recountRun="+i+"&fromClan="+clanNum+"\">recount</a>]</td></tr>");
- }
- writeln("</table><br></center>");
- write("<form action=\""+__FILE__+"\"><input type=\"submit\" name=\"unignoreSelected\" value=\"Unignore Selected\"><br><table class=\"userTable sortable\"><tr><th>Ignored Users</th><th class=\"sorttable_nosort\">Unignore</th></tr>");
- foreach user in raw[0] if(raw[0,user,".ignore"]==1){
-  write("<tr><td>"+user+"</td><td><input name=\"ignores[]\" type=\"checkbox\" value=\""+user+"\"></td></tr>");
- }
- writeln("</table>");
- write("<input type=\"submit\" name=\"unignoreSelected\" value=\"Unignore Selected\"></form></div>");
+void formatData(){
+ string defPage=get_property("raidlogStartPage");
+ if(data[".data","Dread",".hasdata"]!=-1)formatDread((defPage=="Dread"?"inline":"none"));
+ write("</center>");
 }
 
-void displayTables(){
- displayPoints();
- displayDistro();
- displayDataLogs();
+void pageFooter(){
+ int i=page.index_of("<body>");
+ write(page.substring(i+6).replace_string('width=700','width="100%"'));
 }
 
-void checkFF(){
- int i;
- if((FF contains "change")&&(FF contains "to")){
-  i=to_int(FF["to"].expression_eval()*100);
-  i=min(max(-99999,i),99999);
-  raw[0,".weight",FF["change"]]=i;
+int kmail(string to, string message, int meat, int[item] stuff){
+ if(meat>my_meat()){
+  print("Not enough meat to send.");
+  return 3;
  }
- if(FF contains "addClan"){
-  i=lookupClanId(FF["addClan"]);
-  if(i>0)raw[0,".union",FF["addClan"]]=i;
- }
- if(FF contains "removePlayer"){
-  raw[0,FF["removePlayer"],".ignore"]=1;
- }
- if(FF contains "unignoreSelected"){
-  string t="ignores%5B%5D";
-  while(FF contains t){
-   remove raw[0,FF[t],".ignore"];
-   t=t+"_";
-  }
- } 
- if(FF contains "ignoreSelected"){
-  string t="ignores%5B%5D";
-  while(FF contains t){
-   raw[0,FF[t],".ignore"]=1; 
-   t=t+"_";
+ string itemstring = "";
+ int j=0;
+ string[int] itemstrings;
+ foreach i in stuff{
+  if (is_tradeable(i)||is_giftable(i)){
+   j=j+1;
+   itemstring=itemstring+"&howmany"+j+"="+stuff[i]+"&whichitem"+j+"="+to_int(i);
+   if (j>10){
+    itemstrings[count(itemstrings)]=itemstring;
+    itemstring='';
+    j=0;
+   }
   }
  }
- if(FF contains "toggleRun")toggleRun(FF["fromClan"].to_int(),FF["toggleRun"].to_int());
- if(FF contains "recountRun")recountRun(FF["fromClan"].to_int(),FF["recountRun"].to_int());
- if(FF contains "adjust"){
-  addProgressRun();
-  numberCruncher();
-  int v=FF["to"].to_int()-raw[0,FF["who"],FF["adjust"]];
-  clear(raw);
-  file_to_map("raidlog/dreadKP."+get_clan_id()+".txt",raw);
-  raw[0,FF["who"],FF["adjust"]]+=v;
+ if(itemstring!="")itemstrings[count(itemstrings)]=itemstring;
+ if(count(itemstrings)==0)itemstrings[0]="";
+ foreach q in itemstrings{
+  string url=visit_url("sendmessage.php?pwd="+my_hash()+"&action=send&towho="+to+"&message="+message+"&sendmeat="+meat+itemstrings[q]);
+  if(contains_text(url,"That player cannot receive Meat or items")){
+   print("Player may not receive meat/items.");
+   return 2;
+  }
+  if(!contains_text(url,"Message sent.")){
+   print("Unknown error. The message probably did not go through.");
+   return -1;
+  }
  }
- map_to_file(raw,"raidlog/dreadKP."+get_clan_id()+".txt");
+ return 1;
+}
+
+void lootManager(){
+ pageHeader();
+ write("WIP");
+ write("</center></body></html>");
+}
+
+void conMan1(){
+ int[string] points;
+ foreach user in data{
+  if(user.char_at(0)==".")continue;
+  foreach area in $strings[Sewer,TS,BB,EE,Heap,AHBG,PLD]{
+   foreach thing,val in data[user,area]{
+    if(thing.char_at(0)==".")continue;
+    if(options["hobo.defeatsMatter"]=="n"){
+     if(thing=="!bossloss")continue;
+     if(thing=="Defeats")continue;
+    }
+    if(area=="Sewer"){
+     if((options["hobo.sewersMatter"]=="n")&&(thing!="Opened<br>Grates")&&(thing!="Turned<br>Valves"))continue;
+    }
+    if((options["hobo.marketMatter"]=="n")&&(thing=="Market<br>Trips"))continue;
+    if((options["hobo.richardMatter"]=="n")&&(thing.substring(0,5)=="Made<"))continue;
+    points[user]+=val;
+    points[".t"]+=val;
+   }
+  }
+ }
+ 
+ write("<form name=\"conman\" action=\""+__FILE__+"?conman=2\" method=\"POST\">");
+ write("<table><tr><td valign=\"top\"><table id=\"dropTable\"><tr><th colspan=2>Drops</th></tr>");
+ //3,3,3,2,2,1...
+ foreach i in $strings[Sliders,Pickle Juice,Banquets,Blankets,Hodge Stew,Forks,Mugs,Snuff]{
+  write("<tr><td>"+i+"</td><td><input name=\"i."+i+"\" type=\"text\" value=\"0\" onchange=\"updateTots('drop');\"></td></tr>");
+ }
+ write("<tr><td>Total Items:</td><td><span id=\"dropPs\">0</span></td></tr>");
+ write("</table></td><td valign=\"top\"><table id=\"userTable\"><tr><th colspan=2>Player Data</th></tr>");
+ foreach user,p in points{
+  if(user==".t")continue;
+  write("<tr><td>"+user+"</td><td><input name=\"u."+user+"\" type=\"text\" value=\""+p+"\" onchange=\"updateTots('user');\"></td></tr>");
+ }
+ write("<tr><td>Total Points</td><td><span id=\"userPs\">"+points[".t"]+"</span></td></tr>");
+ write("</table></td></tr><tr><td colspan=2><input type=\"Submit\" value=\"Submit\"></td></tr></table></form>");
+}
+
+void conMan2(){
+ int[string] drops;
+ int[string] usersT;
+ foreach d,s in FF switch(d.char_at(0)){
+  case "i":drops[d.substring(2)]+=s.to_int();break;
+  case "u":if(s.to_int()!=0)usersT[d.substring(2)]+=s.to_int();break;
+ }
+ int dv=0;
+ int pv=0;
+ foreach s,v in usersT pv+=v;
+ foreach s in $strings[Sliders,Pickle Juice] dv+=3*drops[s];
+ foreach s in $strings[Banquets,Blankets,Hodge Stew] dv+=2*drops[s];
+ foreach s in $strings[Forks,Mugs,Snuff] dv+=drops[s];
+ record{
+  string name;
+  int points;
+  int[string] drops;
+ }[int] users;
+ foreach n,p in usersT{
+  users[count(users)+1].name=n;
+  users[count(users)].points=floor(p*1.0*dv/pv);
+ }
+ sort users by -usersT[value.name];
+ int extraPoints=dv;
+ foreach u,v in users extraPoints-=v.points;
+ int passback=count(users);
+ users[count(users)+1].name=".Extra";
+ int token=1;
+ for i from 1 to passback if(users[i].points==0){token=i;break;}
+ while(extraPoints>0){
+  users[token].points+=1;
+  extraPoints-=1;
+  token+=1;
+  if(token>passback)token=1;
+ }
+ token=passback;
+ boolean fail;
+ int bush;
+ int VoD=3;
+ foreach thing in $strings[Sliders,Pickle Juice,Banquets,Blankets,Hodge Stew,Forks,Mugs,Snuff]{
+  if(thing=="Banquets")VoD=2;
+  if(thing=="Forks")VoD=1;
+  fail=false;
+  if(drops[thing]==0)continue;
+  while(drops[thing]>0){
+   bush=token;
+   token+=1;
+   if(token>passback)token=1;
+   while(bush!=token){
+    if(users[token].points>=VoD){
+     users[token].drops[thing]+=1;
+     users[token].points-=VoD;
+     drops[thing]-=1;
+     break;
+    }
+    token+=1;
+    if(token>passback)token=1;
+   }
+   if(bush==token){
+    if(users[token].points>=VoD){
+     users[token].drops[thing]+=1;
+     users[token].points-=VoD;
+     drops[thing]-=1;    
+    }else{
+     users[passback+1].drops[thing]+=drops[thing];
+     drops[thing]=0;
+    }
+   }
+  }
+ }
+ write("<form name=\"finalize\" action=\""+__FILE__+"?conman=3\" method=\"POST\"><table class=\"tableD EET\"><tr><th colspan=3 class=\"EEI\">The Distro</th></tr>");
+ boolean first;
+ boolean alt=false;
+ foreach i,v in users{
+  alt=!alt;
+  write("<tr"+(alt?" class=\"EEO\"":"")+"><td rowspan=\""+count(v.drops)+"\" valign=\"top\">"+v.name+"</td>");
+  first=true;
+  foreach thing,amt in v.drops {
+   if(!first)write("<tr"+(alt?" class=\"EEO\"":"")+">");
+   write("<td>"+thing+"</td><td><input type=\"text\" value=\""+amt.to_string()+"\" name=\"u."+v.name+"."+thing+"\"></td>");
+   first=false;
+   write("</tr>");
+  }
+  if(count(v.drops)==0)write("<td>War</td><td>What is it good for?</td></tr>");
+ }
+ write("<tr><td colspan=3><input type=\"Submit\" value=\"Submit\"></td></tr></table></form>");
+}
+
+void conMan3(){
+ int[string,item] stuff;
+ string[int] split;
+ foreach name,amount in FF if(name.substring(0,2)=="u."){
+  split=split_string(name,"\\.");
+  switch(split[2]){
+   case "Sliders":stuff[split[1],$item[extra-greasy slider]]=amount.to_int();
+   case "Pickle Juice":stuff[split[1],$item[jar of fermented pickle juice]]=amount.to_int();
+   case "Banquets":stuff[split[1],$item[frozen banquet]]=amount.to_int();
+   case "Blankets":stuff[split[1],$item[Hodgman's blanket]]=amount.to_int();
+   case "Hodge Stew":stuff[split[1],$item[tin cup of mulligan stew]]=amount.to_int();
+   case "Forks":stuff[split[1],$item[Ol' Scratch's salad fork]]=amount.to_int();
+   case "Mugs":stuff[split[1],$item[Frosty's frosty mug]]=amount.to_int();
+   case "Snuff":stuff[split[1],$item[voodoo snuff]]=amount.to_int();
+  }
+ }
+ int[item] held=stuff[".Extra"];
+ remove stuff[".Extra"];
+ boolean[string] check;
+ foreach u,i,a in stuff if(a==0)remove stuff[u,i];
+ foreach u in stuff if(kmail(u,"",0,stuff[u])==1){
+  check[u]=true;
+  remove stuff[u];
+ }
+ map_to_file(stuff,"raidlog\\undistro.txt");
+ if(count(check)>0){
+  write("Distro complete for the following members:<br>");
+  foreach c in check write("&nbsp;"+c+"<br>");
+ }
+ if(count(stuff)>0){
+  write("<br>Distro held for the following members:<br>");
+  foreach c in stuff write("&nbsp;"+c+"<br>");
+  write("Data saved to data\\raidlog\\undistro.txt");
+ }
+}
+
+void consumablesManager(){
+ pageHeader();
+ switch(FF["conman"]){
+  case "1":if(!activeComment)getData();
+           else file_to_map("raidlog/rawdata.txt",data);
+           conMan1();break;
+  case "2":conMan2();break;
+  case "3":conMan3();break;
+ }
+ write("</center></body></html>");
+}
+
+void noAccess(){
+ writeln('<html><head><script language="Javascript" type="text/Javascript">');
+ writeln('function redirect(){ }');
+ writeln('</script><meta http-equiv="refresh" content="0; URL=./clan_basement.php?fromabove=1"></head><body onload="redirect();">No basement access. Sorry. <a href="clan_hall.php">Back to Clan Hall</a></body></html>');
+}
+
+boolean executeCommand(string cmd){
+ matcher m;
+ string p=visit_url("clan_raidlogs.php");
+ boolean moveTo=false;
+ if(cmd.char_at(0)=='r')moveTo=true;
+ cmd=cmd.substring(1);
+ if(cmd.to_int()>0){
+  if("13 22 41 63 71 81".contains_text(cmd.substring(0,2))){
+   switch(cmd.char_at(0)){
+    case"1":m=create_matcher(theMatcher["DreadWoods","+Cabin.30"],p);break;
+    case"2":m=create_matcher(theMatcher["DreadWoods","+Tree.20"],p);break;
+    case"4":m=create_matcher(theMatcher["DreadVillage","+Square.10"],p);break;
+    case"6":m=create_matcher(theMatcher["DreadVillage","+Estate.30"],p);break;
+    case"7":m=create_matcher(theMatcher["DreadCastle","+Great Hall.10"],p);break;
+    case"8":m=create_matcher(theMatcher["DreadCastle","+Tower.10"],p);break;
+   }
+   if(!m.find()){
+    if(!retrieve_item(1,$item[dreadsylvanian skeleton key])){
+     abortMessage="Failed to acquire Dreadsylvanian skeleton key.";
+     return false;
+    }
+   }
+  }
+  visit_url("clan_dreadsylvania.php?action=forceloc&loc="+cmd.char_at(0));
+  visit_url("adventure.php?snarfblat="+to_string((cmd.char_at(0).to_int()-1)/3+338));
+  p=visit_url("choice.php?forceoption=0");
+  m=create_matcher("whichchoice value=(\\d*)",p);
+  if(!m.find())return false;
+  p=visit_url("choice.php?pwd="+my_hash()+"&whichchoice="+m.group(1)+"&option="+cmd.char_at(1));
+  m.reset(p);
+  if(!m.find())return false;
+  p=visit_url("choice.php?pwd="+my_hash()+"&whichchoice="+m.group(1)+"&option="+cmd.char_at(2));
+  if(moveTo){
+   write(p);
+   return true;
+  }
+ }else{
+ }
+ return false;
 }
 
 void main(){
- if(get_clan_id()==0){
-  write("No clan!</body>");
+ if((FF contains "cmd")&&(executeCommand(FF["cmd"])))return;
+ if(FF contains "viewlog")page=visit_url("clan_raidlogs.php?viewlog="+FF["viewlog"]);
+ else if(FF contains "oldLogs")page=visit_url("clan_oldraidlogs.php?startrow="+FF["oldLogs"]);
+ else page=visit_url("clan_raidlogs.php");
+ if(page==""){
+  noAccess();
   return;
  }
- page=visit_url("clan_oldraidlogs.php?startrow=0");
- lootPageHeader();
- file_to_map("raidlog/dreadKP."+get_clan_id()+".txt",raw);
- addDefs();
- if(raw[0,".","lastRun"]==0)initData();
- addNewRuns();
- checkFF();
- addProgressRun();
- numberCruncher();
- displayTables();
- writeln("</body>");
+ loadOptions();
+ matcher m=create_matcher("a href=\"clan_viewraidlog\\.php\\?viewlog=",page);
+ page=m.replace_all("a target=mainpane href=\""+__FILE__+"?viewlog=");
+ //replace all viewlog links in page
+ m=create_matcher("src=clan_oldraidlogs\\.php",page);
+ page=m.replace_all("src=\""+__FILE__+"?oldLogs=0\"");
+ m=create_matcher("clan_oldraidlogs\\.php\\?startrow=(\\d+)",page);
+ while(m.find()){
+  page=m.replace_first("\"clan_raidlogs.php?oldLogs="+m.group(1)+"\"");
+  m.reset(page);  
+ }
+ if(FF contains "oldLogs"){
+  write(page);
+  return;
+ }
+ if(FF contains "viewlog"){
+  runType=0;
+ }
+ if(FF contains "lootman"){
+  lootManager();
+  return;
+ }
+ if(FF contains "conman"){
+  consumablesManager();
+  return;
+ }
+ getData();
+ pageHeader();
+ formatData();
+ pageFooter();
 }

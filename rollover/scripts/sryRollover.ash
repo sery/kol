@@ -173,7 +173,7 @@ void rollover(String simulate) {
 		familiar oldFam = my_familiar();
 		cli_execute("maximize adv, -tie, switch Disembodied Hand");
 		if (equipped_item($slot[familiar])!=$item[Time Sword]) use_familiar(oldFam);
-		if ((equipped_item($slot[back])!=$item[Drunkula's Cape])&&(available_amount($item[auxiliary backbone])>0))equip($item[auxiliary backbone]);
+		if ((equipped_item($slot[back])!=$item[Drunkula's Cape])&&((available_amount($item[auxiliary backbone])>0)&&can_equip($item[auxiliary backbone])))equip($item[auxiliary backbone]);
 		}
 	else {
 		maximize("adv, -tie, switch hand",true);
