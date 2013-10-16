@@ -1,0 +1,227 @@
+Aliisza	CD1	1
+Aliisza	CDO	2
+Aliisza	Consumables	2
+Aliisza	FFS2	1
+Aliisza	FFS3	1
+Aliisza	FFSO	3
+Aliisza	GW1	1
+Aliisza	GW2	1
+Aliisza	GW3	1
+Aliisza	GWO	1
+Aliisza	MGO	2
+Aliisza	Noses	1
+Aliisza	USO	1
+Aliisza	ZHA3	1
+anaki	Consumables	4
+anaki	FFS3	1
+anaki	GWO	1
+anaki	MG2	1
+anaki	MGO	1
+anaki	Noses	3
+Chunky Spelunky	Capacitors	6
+Chunky Spelunky	CDO	2
+Chunky Spelunky	Consumables	19
+Chunky Spelunky	FFS3	1
+Chunky Spelunky	FFSO	2
+Chunky Spelunky	GW1	1
+Chunky Spelunky	GW2	1
+Chunky Spelunky	GWO	3
+Chunky Spelunky	MG2	1
+Chunky Spelunky	MG3	1
+Chunky Spelunky	MGO	3
+Chunky Spelunky	Noses	1
+Chunky Spelunky	US1	1
+Chunky Spelunky	US2	1
+Chunky Spelunky	US3	2
+Chunky Spelunky	USO	3
+Chunky Spelunky	ZHA1	1
+Chunky Spelunky	ZHA2	1
+Chunky Spelunky	ZHAO	3
+ckb1	Consumables	1
+Crowther	Capacitors	3
+Crowther	CD1	1
+Crowther	CD2	1
+Crowther	CD3	1
+Crowther	CDO	3
+Crowther	Consumables	11
+Crowther	FFS1	1
+Crowther	FFS2	1
+Crowther	FFSO	4
+Crowther	GW3	1
+Crowther	GWO	2
+Crowther	MG3	1
+Crowther	MGO	3
+Crowther	Noses	2
+Crowther	USO	2
+Crowther	ZHA1	1
+Crowther	ZHA2	1
+Crowther	ZHAO	3
+DracoTrainer	Capacitors	1
+DracoTrainer	CDO	1
+DracoTrainer	Consumables	3
+DracoTrainer	FFSO	1
+DracoTrainer	GWO	1
+DracoTrainer	Noses	2
+DracoTrainer	USO	1
+DracoTrainer	ZHAO	1
+ElectricChairJ	Capacitors	2
+ElectricChairJ	CDO	1
+ElectricChairJ	FFS3	1
+ElectricChairJ	FFSO	1
+ElectricChairJ	MG1	1
+ElectricChairJ	USO	1
+ElectricChairJ	ZHAO	2
+Gringdor	Capacitors	1
+Gringdor	CDO	1
+Gringdor	Consumables	1
+Jaeshala	CD1	1
+Jaeshala	CDO	1
+Jaeshala	Consumables	9
+Jaeshala	FFSO	1
+Jaeshala	MGO	2
+Jaeshala	Noses	1
+Jaeshala	ZHA1	1
+Jaeshala	ZHAO	1
+JimFromTx	Noses	1
+Jizmak The Destroyer	Capacitors	6
+Jizmak The Destroyer	CD1	1
+Jizmak The Destroyer	CD2	1
+Jizmak The Destroyer	CD3	1
+Jizmak The Destroyer	CDO	3
+Jizmak The Destroyer	Consumables	9
+Jizmak The Destroyer	FFS1	1
+Jizmak The Destroyer	FFS2	1
+Jizmak The Destroyer	FFS3	1
+Jizmak The Destroyer	FFSO	3
+Jizmak The Destroyer	GW1	1
+Jizmak The Destroyer	GW2	1
+Jizmak The Destroyer	GW3	1
+Jizmak The Destroyer	GWO	3
+Jizmak The Destroyer	MG1	1
+Jizmak The Destroyer	MG2	1
+Jizmak The Destroyer	MG3	1
+Jizmak The Destroyer	MGO	3
+Jizmak The Destroyer	Noses	4
+Jizmak The Destroyer	US1	1
+Jizmak The Destroyer	US2	1
+Jizmak The Destroyer	US3	2
+Jizmak The Destroyer	USO	3
+Jizmak The Destroyer	ZHA1	1
+Jizmak The Destroyer	ZHA2	1
+Jizmak The Destroyer	ZHA3	1
+Jizmak The Destroyer	ZHAO	3
+kuankyh	CD1	1
+kuankyh	CDO	1
+kuankyh	Consumables	12
+kuankyh	FFSO	3
+kuankyh	GW1	1
+kuankyh	GW3	1
+kuankyh	GWO	3
+kuankyh	Noses	2
+kuankyh	USO	1
+kuankyh	ZHAO	1
+Makarina	Capacitors	1
+Makarina	CDO	2
+Makarina	FFS3	1
+Makarina	GW1	1
+Makarina	MG3	1
+Makarina	MGO	1
+Makarina	Noses	1
+Makarina	US1	1
+Makarina	USO	1
+Makarina	ZHA1	1
+Makarina	ZHA3	1
+Makarina	ZHAO	1
+nOOBSauce	Capacitors	2
+nOOBSauce	Consumables	13
+nOOBSauce	FFSO	1
+nOOBSauce	GWO	1
+nOOBSauce	MG1	1
+nOOBSauce	MGO	1
+nOOBSauce	Noses	4
+nOOBSauce	US1	1
+nOOBSauce	USO	1
+nOOBSauce	ZHAO	1
+Noodlius	USO	1
+NULL	Capacitors	1
+NULL	CD2	1
+ReisenFig	Consumables	1
+ReisenFig	MGO	1
+Sary	Capacitors	7
+Sary	CD1	1
+Sary	CD2	1
+Sary	CD3	1
+Sary	CDO	3
+Sary	Consumables	41
+Sary	FFS1	1
+Sary	FFS2	1
+Sary	FFS3	1
+Sary	FFSO	3
+Sary	GW1	1
+Sary	GW2	1
+Sary	GW3	1
+Sary	GWO	3
+Sary	MG1	1
+Sary	MG2	1
+Sary	MG3	1
+Sary	MGO	3
+Sary	Noses	3
+Sary	US1	1
+Sary	US2	1
+Sary	US3	2
+Sary	USO	3
+Sary	ZHA1	1
+Sary	ZHA2	1
+Sary	ZHA3	1
+Sary	ZHAO	3
+scathdhuan	CD1	1
+scathdhuan	CDO	2
+scathdhuan	Consumables	7
+scathdhuan	FFSO	1
+scathdhuan	GW3	1
+scathdhuan	MG2	1
+scathdhuan	Noses	6
+scathdhuan	USO	1
+scathdhuan	ZHAO	1
+Smedley	Consumables	1
+Smoochygirl	Consumables	1
+Smoochygirl	Noses	1
+The_Dancing_Viagra	CD1	1
+The_Dancing_Viagra	CDO	1
+The_Dancing_Viagra	Consumables	5
+The_Dancing_Viagra	FFS3	1
+The_Dancing_Viagra	FFSO	1
+The_Dancing_Viagra	MG1	1
+The_Dancing_Viagra	ZHA2	1
+tomkitty	CD3	1
+tomkitty	Consumables	1
+tomkitty	US3	1
+tomkitty	ZHA3	1
+WhimOrClutters	Capacitors	7
+WhimOrClutters	CD1	1
+WhimOrClutters	CD2	1
+WhimOrClutters	CD3	1
+WhimOrClutters	CDO	2
+WhimOrClutters	Consumables	10
+WhimOrClutters	FFS1	1
+WhimOrClutters	FFS2	1
+WhimOrClutters	FFS3	1
+WhimOrClutters	FFSO	2
+WhimOrClutters	GW1	1
+WhimOrClutters	GW2	1
+WhimOrClutters	GW3	1
+WhimOrClutters	GWO	3
+WhimOrClutters	MG1	1
+WhimOrClutters	MG2	1
+WhimOrClutters	MG3	1
+WhimOrClutters	MGO	3
+WhimOrClutters	Noses	2
+WhimOrClutters	US1	1
+WhimOrClutters	US2	1
+WhimOrClutters	US3	1
+WhimOrClutters	USO	3
+WhimOrClutters	ZHA1	1
+WhimOrClutters	ZHA2	1
+WhimOrClutters	ZHA3	1
+WhimOrClutters	ZHAO	3
+zavijava	Consumables	1

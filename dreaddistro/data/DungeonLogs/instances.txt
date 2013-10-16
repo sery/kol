@@ -1,0 +1,1112 @@
+2046991961-143247	clanid	2046991961
+2046991961-143247	startdate	20130728
+2046991961-143247	enddate	20130803
+2046991961-143247	playerturns	Jizmak The Destroyer	284	194	0	0	0	0	0
+2046991961-143247	playerturns	Sary	321	201	366	634	610	390	22
+2046991961-143247	boss	castle	Count Drunkula	Sary	false
+2046991961-143247	boss	village	Zombie Homeowners' Association	Sary	false
+2046991961-143247	boss	woods	Falls-From-Sky	Sary	false
+2046991961-143247	lootdistro	1	Thunkula's drinking cap	Jizmak The Destroyer	1
+2046991961-143247	lootdistro	2	Drapes-You-Regally	Sary	1
+2046991961-143247	lootdistro	3	wriggling severed nose	Sary	1
+2046991961-143247	lootdistro	4	zombie mariachi pants	Sary	1
+2046991961-144836	clanid	2046991961
+2046991961-144836	startdate	20130803
+2046991961-144836	enddate	20130809
+2046991961-144836	playerturns	Chunky Spelunky	25	36	0	1	41	54	0
+2046991961-144836	playerturns	Jizmak The Destroyer	136	221	300	203	143	226	0
+2046991961-144836	playerturns	Sary	218	364	295	201	196	340	81
+2046991961-144836	boss	castle	Unkillable Skeleton	ckb1	true
+2046991961-144836	boss	village	Mayor Ghost	Jizmak The Destroyer	true
+2046991961-144836	boss	woods	Great Wolf of the Air	Gringdor	true
+2046991961-144836	lootdistro	1	electric Kool-Aid	ckb1	1
+2046991961-144836	lootdistro	2	Hunger&trade; Sauce	Gringdor	1
+2046991961-144836	lootdistro	3	ghost pepper	Jizmak The Destroyer	1
+2046991961-144836	lootdistro	4	Mayor Ghost's gavel	Jizmak The Destroyer	1
+2046991961-144836	lootdistro	5	electric Kool-Aid	Sary	1
+2046991961-144836	lootdistro	6	ghost pepper	Sary	1
+2046991961-144836	lootdistro	7	Great Wolf's right paw	Sary	1
+2046991961-144836	lootdistro	8	Great Wolf's rocket launcher	Sary	1
+2046991961-144836	lootdistro	9	Hunger&trade; Sauce	Sary	1
+2046991961-144836	lootdistro	10	Mayor Ghost's cloak	Sary	1
+2046991961-144836	lootdistro	11	skull capacitor	Sary	1
+2046991961-144836	lootdistro	12	Unkillable Skeleton's breastplate	Sary	1
+2046991961-144836	lootdistro	13	Unkillable Skeleton's restless leg	Sary	1
+2046991961-145967	clanid	2046991961
+2046991961-145967	startdate	20130809
+2046991961-145967	enddate	20130814
+2046991961-145967	playerturns	Jizmak The Destroyer	267	320	0	0	19	15	0
+2046991961-145967	playerturns	Sary	208	205	638	362	359	445	0
+2046991961-145967	playerturns	The_Dancing_Viagra	0	0	0	0	61	101	3
+2046991961-145967	boss	castle	Count Drunkula	Sary	true
+2046991961-145967	boss	village	Mayor Ghost	Jizmak The Destroyer	true
+2046991961-145967	boss	woods	Falls-From-Sky	Sary	true
+2046991961-145967	lootdistro	1	bottle of Bloodweiser	Jizmak The Destroyer	1
+2046991961-145967	lootdistro	2	Gets-You-Drunk	Jizmak The Destroyer	1
+2046991961-145967	lootdistro	3	Protects-Your-Junk	Jizmak The Destroyer	1
+2046991961-145967	lootdistro	4	bottle of Bloodweiser	Sary	1
+2046991961-145967	lootdistro	5	Drapes-You-Regally	Sary	1
+2046991961-145967	lootdistro	6	Drunkula's ring of haze	Sary	1
+2046991961-145967	lootdistro	7	Drunkula's silky pants	Sary	1
+2046991961-145967	lootdistro	8	Gets-You-Drunk	Sary	1
+2046991961-145967	lootdistro	9	ghost pepper	Sary	1
+2046991961-145967	lootdistro	10	Mayor Ghost's sash	Sary	1
+2046991961-145967	lootdistro	11	Mayor Ghost's toupee	Sary	1
+2046991961-145967	lootdistro	12	skull capacitor	Sary	1
+2046991961-145967	lootdistro	13	ghost pepper	The_Dancing_Viagra	1
+2046991961-146753	clanid	2046991961
+2046991961-146753	startdate	20130814
+2046991961-146753	enddate	20130826
+2046991961-146753	playerturns	Sary	381	264	577	422	561	375	10
+2046991961-146753	playerturns	scathdhuan	0	0	0	0	37	27	0
+2046991961-146753	playerturns	tomkitty	0	0	0	1	0	0	0
+2046991961-146753	playerturns	WhimOrClutters	213	142	0	0	0	0	0
+2046991961-146753	boss	castle	Count Drunkula	Sary	true
+2046991961-146753	boss	village	Zombie Homeowners' Association	Sary	true
+2046991961-146753	boss	woods	Great Wolf of the Air	Sary	true
+2046991961-146753	lootdistro	1	Great Wolf's rocket launcher	Jizmak The Destroyer	1
+2046991961-146753	lootdistro	2	bottle of Bloodweiser	Sary	2
+2046991961-146753	lootdistro	3	Drunkula's bell	Sary	1
+2046991961-146753	lootdistro	4	Great Wolf's right paw	Sary	1
+2046991961-146753	lootdistro	5	Hunger&trade; Sauce	Sary	2
+2046991961-146753	lootdistro	6	skull capacitor	Sary	1
+2046991961-146753	lootdistro	7	Thunkula's drinking cap	Sary	1
+2046991961-146753	lootdistro	8	zombie accordion	Sary	1
+2046991961-146753	lootdistro	9	wriggling severed nose	scathdhuan	1
+2046991961-146753	lootdistro	10	HOA regulation book	WhimOrClutters	1
+2046991961-146753	lootdistro	11	wriggling severed nose	WhimOrClutters	1
+2046991961-148284	clanid	2046991961
+2046991961-148284	startdate	20130826
+2046991961-148284	enddate	20130901
+2046991961-148284	playerturns	Chunky Spelunky	1	0	0	0	0	0	0
+2046991961-148284	playerturns	Jizmak The Destroyer	306	245	21	30	22	28	11
+2046991961-148284	playerturns	Sary	19	15	397	551	392	558	10
+2046991961-148284	playerturns	scathdhuan	264	150	0	1	0	0	0
+2046991961-148284	boss	castle	Unkillable Skeleton	Sary	true
+2046991961-148284	boss	village	Zombie Homeowners' Association	Sary	true
+2046991961-148284	boss	woods	Great Wolf of the Air	Sary	true
+2046991961-148284	lootdistro	1	HOA zombie eyes	Chunky Spelunky	1
+2046991961-148284	lootdistro	2	wriggling severed nose	Jizmak The Destroyer	1
+2046991961-148284	lootdistro	3	electric Kool-Aid	Sary	2
+2046991961-148284	lootdistro	4	Great Wolf's headband	Sary	1
+2046991961-148284	lootdistro	5	Great Wolf's lice	Sary	1
+2046991961-148284	lootdistro	6	Hunger&trade; Sauce	Sary	2
+2046991961-148284	lootdistro	7	skull capacitor	Sary	1
+2046991961-148284	lootdistro	8	Unkillable Skeleton's breastplate	Sary	1
+2046991961-148284	lootdistro	9	Unkillable Skeleton's sawsword	Sary	1
+2046991961-148284	lootdistro	10	zombie mariachi pants	Sary	1
+2046991961-148284	lootdistro	11	wriggling severed nose	scathdhuan	1
+2046991961-149092	clanid	2046991961
+2046991961-149092	startdate	20130901
+2046991961-149092	enddate	20130905
+2046991961-149092	playerturns	Aliisza	0	0	0	0	45	45	0
+2046991961-149092	playerturns	Jizmak The Destroyer	593	407	6	14	147	261	0
+2046991961-149092	playerturns	Sary	0	0	399	581	206	296	8
+2046991961-149092	boss	castle	Unkillable Skeleton	Sary	true
+2046991961-149092	boss	village	Zombie Homeowners' Association	Sary	true
+2046991961-149092	boss	woods	Falls-From-Sky	tomkitty	true
+2046991961-149092	lootdistro	1	zombie mariachi pants	Aliisza	1
+2046991961-149092	lootdistro	2	Unkillable Skeleton's restless leg	Chunky Spelunky	1
+2046991961-149092	lootdistro	3	Quiets-Your-Steps	Jizmak The Destroyer	1
+2046991961-149092	lootdistro	4	skull capacitor	Jizmak The Destroyer	1
+2046991961-149092	lootdistro	5	wriggling severed nose	Jizmak The Destroyer	2
+2046991961-149092	lootdistro	6	Covers-Your-Head	Sary	1
+2046991961-149092	lootdistro	7	electric Kool-Aid	Sary	2
+2046991961-149092	lootdistro	8	HOA citation pad	Sary	1
+2046991961-149092	lootdistro	9	Unkillable Skeleton's shinguards	Sary	1
+2046991961-149092	lootdistro	10	Gets-You-Drunk	tomkitty	2
+2046991961-149512	clanid	2046991961
+2046991961-149512	startdate	20130905
+2046991961-149512	enddate	20130909
+2046991961-149512	playerturns	Aliisza	0	1	0	0	20	18	0
+2046991961-149512	playerturns	anaki	5	13	9	16	3	2	0
+2046991961-149512	playerturns	Jizmak The Destroyer	288	198	193	282	119	88	0
+2046991961-149512	playerturns	Sary	298	197	206	294	228	162	2
+2046991961-149512	playerturns	WhimOrClutters	0	0	0	0	204	156	0
+2046991961-149512	boss	castle	Count Drunkula	Sary	true
+2046991961-149512	boss	village	Zombie Homeowners' Association	Sary	true
+2046991961-149512	boss	woods	Great Wolf of the Air	Sary	true
+2046991961-149512	lootdistro	1	wriggling severed nose	Aliisza	1
+2046991961-149512	lootdistro	2	wriggling severed nose	anaki	1
+2046991961-149512	lootdistro	3	Drunkula's bell	Jizmak The Destroyer	1
+2046991961-149512	lootdistro	4	Great Wolf's headband	Jizmak The Destroyer	1
+2046991961-149512	lootdistro	5	HOA citation pad	Jizmak The Destroyer	1
+2046991961-149512	lootdistro	6	skull capacitor	Jizmak The Destroyer	1
+2046991961-149512	lootdistro	7	Thunkula's drinking cap	Jizmak The Destroyer	1
+2046991961-149512	lootdistro	8	bottle of Bloodweiser	Sary	2
+2046991961-149512	lootdistro	9	Great Wolf's beastly trousers	Sary	1
+2046991961-149512	lootdistro	10	Hunger&trade; Sauce	Sary	2
+2046991961-149512	lootdistro	11	zombie mariachi hat	WhimOrClutters	1
+2046991961-149926	clanid	2046991961
+2046991961-149926	startdate	20130909
+2046991961-149926	enddate	20130912
+2046991961-149926	playerturns	Aliisza	151	115	6	4	84	109	0
+2046991961-149926	playerturns	Jizmak The Destroyer	62	45	147	274	162	225	25
+2046991961-149926	playerturns	Sary	315	231	204	343	17	16	14
+2046991961-149926	playerturns	scathdhuan	0	0	0	1	147	240	0
+2046991961-149926	playerturns	WhimOrClutters	48	33	7	14	0	0	0
+2046991961-149926	boss	castle	Unkillable Skeleton	Sary	true
+2046991961-149926	boss	village	Zombie Homeowners' Association	Sary	true
+2046991961-149926	boss	woods	Falls-From-Sky	Sary	true
+2046991961-149926	lootdistro	1	Protects-Your-Junk	Aliisza	1
+2046991961-149926	lootdistro	2	Covers-Your-Head	Jizmak The Destroyer	1
+2046991961-149926	lootdistro	3	skull capacitor	Jizmak The Destroyer	1
+2046991961-149926	lootdistro	4	Unkillable Skeleton's skullcap	Jizmak The Destroyer	1
+2046991961-149926	lootdistro	5	zombie mariachi pants	Jizmak The Destroyer	1
+2046991961-149926	lootdistro	6	electric Kool-Aid	Sary	2
+2046991961-149926	lootdistro	7	Gets-You-Drunk	Sary	2
+2046991961-149926	lootdistro	8	wriggling severed nose	Sary	1
+2046991961-149926	lootdistro	9	wriggling severed nose	scathdhuan	1
+2046991961-149926	lootdistro	10	Unkillable Skeleton's restless leg	tomkitty	1
+2046991961-149926	lootdistro	11	HOA citation pad	WhimOrClutters	1
+2046991961-150161	clanid	2046991961
+2046991961-150161	startdate	20130912
+2046991961-150161	enddate	20130915
+2046991961-150161	playerturns	Aliisza	326	205	87	155	208	136	8
+2046991961-150161	playerturns	Jizmak The Destroyer	247	196	81	120	4	1	0
+2046991961-150161	playerturns	Sary	16	10	222	335	219	136	0
+2046991961-150161	playerturns	scathdhuan	0	0	0	0	168	128	0
+2046991961-150161	boss	castle	Count Drunkula	Jizmak The Destroyer	true
+2046991961-150161	boss	village	Zombie Homeowners' Association	Sary	true
+2046991961-150161	boss	woods	Great Wolf of the Air	Sary	true
+2046991961-150161	lootdistro	1	Great Wolf's lice	Aliisza	1
+2046991961-150161	lootdistro	2	HOA citation pad	Aliisza	1
+2046991961-150161	lootdistro	3	Great Wolf's right paw	Jizmak The Destroyer	1
+2046991961-150161	lootdistro	4	skull capacitor	Jizmak The Destroyer	1
+2046991961-150161	lootdistro	5	Thunkula's drinking cap	Jizmak The Destroyer	1
+2046991961-150161	lootdistro	6	zombie mariachi hat	Jizmak The Destroyer	1
+2046991961-150161	lootdistro	7	bottle of Bloodweiser	Sary	2
+2046991961-150161	lootdistro	8	Hunger&trade; Sauce	Sary	2
+2046991961-150161	lootdistro	9	Drunkula's bell	scathdhuan	1
+2046991961-150161	lootdistro	10	wriggling severed nose	scathdhuan	1
+2046991961-150161	lootdistro	11	wriggling severed nose	WhimOrClutters	1
+2046991961-150463	clanid	2046991961
+2046991961-150463	startdate	20130915
+2046991961-150463	enddate	20130918
+2046991961-150463	playerturns	Aliisza	215	325	0	0	227	113	0
+2046991961-150463	playerturns	Jizmak The Destroyer	152	215	0	0	343	215	0
+2046991961-150463	playerturns	Sary	34	58	592	408	49	53	11
+2046991961-150463	playerturns	scathdhuan	0	1	0	0	0	0	0
+2046991961-150463	boss	castle	Count Drunkula	Jizmak The Destroyer	true
+2046991961-150463	boss	village	Mayor Ghost	Jizmak The Destroyer	true
+2046991961-150463	boss	woods	Great Wolf of the Air	Sary	true
+2046991961-150463	lootdistro	1	Drunkula's bell	Aliisza	1
+2046991961-150463	lootdistro	2	Drunkula's cape	Aliisza	1
+2046991961-150463	lootdistro	3	Great Wolf's left paw	Jizmak The Destroyer	1
+2046991961-150463	lootdistro	4	Mayor Ghost's scissors	Jizmak The Destroyer	1
+2046991961-150463	lootdistro	5	Mayor Ghost's toupee	Jizmak The Destroyer	1
+2046991961-150463	lootdistro	6	skull capacitor	Jizmak The Destroyer	1
+2046991961-150463	lootdistro	7	bottle of Bloodweiser	Sary	2
+2046991961-150463	lootdistro	8	ghost pepper	Sary	1
+2046991961-150463	lootdistro	9	Hunger&trade; Sauce	Sary	2
+2046991961-150463	lootdistro	10	Great Wolf's lice	scathdhuan	1
+2046991961-150734	clanid	2046991961
+2046991961-150734	startdate	20130918
+2046991961-150734	enddate	20130921
+2046991961-150734	playerturns	Aliisza	396	245	61	86	1	2	0
+2046991961-150734	playerturns	Jizmak The Destroyer	132	67	0	0	206	134	0
+2046991961-150734	playerturns	Sary	30	18	331	521	322	252	0
+2046991961-150734	playerturns	Stocks mall multi	1	0	1	0	45	38	2
+2046991961-150734	playerturns	WhimOrClutters	58	53	0	0	0	0	0
+2046991961-150734	boss	castle	Unkillable Skeleton	Sary	true
+2046991961-150734	boss	village	Zombie Homeowners' Association	WhimOrClutters	true
+2046991961-150734	boss	woods	Great Wolf of the Air	Sary	true
+2046991961-150734	lootdistro	1	Great Wolf's rocket launcher	Aliisza	1
+2046991961-150734	lootdistro	2	Unkillable Skeleton's shinguards	Aliisza	1
+2046991961-150734	lootdistro	3	zombie mariachi pants	Jizmak The Destroyer	1
+2046991961-150734	lootdistro	4	electric Kool-Aid	Sary	2
+2046991961-150734	lootdistro	5	Hunger&trade; Sauce	Sary	2
+2046991961-150734	lootdistro	6	skull capacitor	Sary	1
+2046991961-150734	lootdistro	7	wriggling severed nose	Sary	1
+2046991961-150734	lootdistro	8	Great Wolf's left paw	WhimOrClutters	1
+2046991961-150734	lootdistro	9	HOA zombie eyes	WhimOrClutters	1
+2046991961-150734	lootdistro	10	Unkillable Skeleton's sawsword	WhimOrClutters	1
+2046991961-151031	clanid	2046991961
+2046991961-151031	startdate	20130921
+2046991961-151031	enddate	20130926
+2046991961-151031	playerturns	Aliisza	94	136	0	0	0	0	0
+2046991961-151031	playerturns	Jaeshala	0	1	134	203	0	0	0
+2046991961-151031	playerturns	Jizmak The Destroyer	288	339	99	152	238	158	10
+2046991961-151031	playerturns	Sary	0	0	167	245	0	0	1
+2046991961-151031	playerturns	scathdhuan	69	73	0	0	361	243	0
+2046991961-151031	boss	castle	Count Drunkula	Jizmak The Destroyer	true
+2046991961-151031	boss	village	Zombie Homeowners' Association	Jizmak The Destroyer	true
+2046991961-151031	boss	woods	Falls-From-Sky	tomkitty	true
+2046991961-151031	lootdistro	1	Drapes-You-Regally	Aliisza	1
+2046991961-151031	lootdistro	2	zombie accordion	Aliisza	1
+2046991961-151031	lootdistro	3	Protects-Your-Junk	Chunky Spelunky	1
+2046991961-151031	lootdistro	4	skull capacitor	Chunky Spelunky	1
+2046991961-151031	lootdistro	5	Gets-You-Drunk	Jizmak The Destroyer	1
+2046991961-151031	lootdistro	6	HOA regulation book	Jizmak The Destroyer	1
+2046991961-151031	lootdistro	7	wriggling severed nose	Jizmak The Destroyer	2
+2046991961-151031	lootdistro	8	bottle of Bloodweiser	Sary	2
+2046991961-151031	lootdistro	9	Gets-You-Drunk	Sary	1
+2046991961-151031	lootdistro	10	Drunkula's silky pants	scathdhuan	1
+2046991961-151031	lootdistro	11	Drunkula's wineglass	tomkitty	1
+2046991961-151406	clanid	2046991961
+2046991961-151406	startdate	00000000
+2046991961-151406	enddate	00000000
+2046991961-151406	playerturns	Aliisza	79	121	0	0	173	137	0
+2046991961-151406	playerturns	Jizmak The Destroyer	254	377	0	0	379	277	0
+2046991961-151406	playerturns	Sary	64	105	433	562	18	10	4
+2046991961-151406	playerturns	tomkitty	0	0	0	0	5	1	0
+2046991961-151406	boss	castle	Count Drunkula	Jizmak The Destroyer	true
+2046991961-151406	boss	woods	Great Wolf of the Air	Sary	true
+2046991961-151406	lootdistro	1	Great Wolf's right paw	Aliisza	1
+2046991961-151406	lootdistro	2	Great Wolf's rocket launcher	Makarina	1
+2046991961-151406	lootdistro	3	Drunkula's ring of haze	NULL	1
+2046991961-151406	lootdistro	4	skull capacitor	NULL	1
+2046991961-151406	lootdistro	5	bottle of Bloodweiser	Sary	1
+2046991961-151406	lootdistro	6	Hunger&trade; Sauce	Sary	1
+2046991961-151406	lootdistro	7	Drunkula's cape	WhimOrClutters	1
+2047001253-143310	clanid	2047001253
+2047001253-143310	startdate	20130728
+2047001253-143310	enddate	20130805
+2047001253-143310	playerturns	Chunky Spelunky	393	606	378	621	439	163	0
+2047001253-143310	playerturns	nOOBSauce	1	0	1	0	298	100	0
+2047001253-143310	boss	castle	Count Drunkula	Chunky Spelunky	false
+2047001253-143310	boss	village	Zombie Homeowners' Association	Chunky Spelunky	false
+2047001253-143310	boss	woods	Great Wolf of the Air	Chunky Spelunky	false
+2047001253-143310	lootdistro	1	bottle of Bloodweiser	Chunky Spelunky	1
+2047001253-143310	lootdistro	2	Great Wolf's right paw	Chunky Spelunky	1
+2047001253-143310	lootdistro	3	Thunkula's drinking cap	Chunky Spelunky	1
+2047001253-143310	lootdistro	4	zombie accordion	Chunky Spelunky	1
+2047001253-143310	lootdistro	5	Hunger&trade; Sauce	nOOBSauce	1
+2047001253-143310	lootdistro	6	wriggling severed nose	nOOBSauce	1
+2047001253-145185	clanid	2047001253
+2047001253-145185	startdate	20130805
+2047001253-145185	enddate	20130815
+2047001253-145185	playerturns	Chunky Spelunky	452	301	540	385	554	395	27
+2047001253-145185	playerturns	motoXXXozzy	3	0	0	0	7	11	0
+2047001253-145185	playerturns	nOOBSauce	154	89	2	2	20	12	2
+2047001253-145185	playerturns	Sary	1	0	0	0	0	1	0
+2047001253-145185	playerturns	Zob Rombie	0	0	43	28	0	0	0
+2047001253-145185	boss	castle	Count Drunkula	Chunky Spelunky	false
+2047001253-145185	boss	village	Mayor Ghost	Chunky Spelunky	false
+2047001253-145185	boss	woods	Falls-From-Sky	Chunky Spelunky	false
+2047001253-145185	lootdistro	1	bottle of Bloodweiser	Chunky Spelunky	2
+2047001253-145185	lootdistro	2	Covers-Your-Head	Chunky Spelunky	1
+2047001253-145185	lootdistro	3	Gets-You-Drunk	Chunky Spelunky	2
+2047001253-145185	lootdistro	4	ghost pepper	Chunky Spelunky	2
+2047001253-145185	lootdistro	5	Mayor Ghost's khakis	Chunky Spelunky	1
+2047001253-145185	lootdistro	6	Thunkula's drinking cap	Chunky Spelunky	1
+2047001253-147219	clanid	2047001253
+2047001253-147219	startdate	20130817
+2047001253-147219	enddate	20130901
+2047001253-147219	playerturns	Chunky Spelunky	394	605	611	389	407	593	4
+2047001253-147219	playerturns	Skipr	1	0	0	0	0	0	0
+2047001253-147219	boss	castle	Unkillable Skeleton	Chunky Spelunky	true
+2047001253-147219	boss	village	Mayor Ghost	Chunky Spelunky	false
+2047001253-147219	boss	woods	Great Wolf of the Air	Chunky Spelunky	true
+2047001253-147219	lootdistro	1	electric Kool-Aid	Chunky Spelunky	2
+2047001253-147219	lootdistro	2	ghost pepper	Chunky Spelunky	1
+2047001253-147219	lootdistro	3	Great Wolf's beastly trousers	Chunky Spelunky	1
+2047001253-147219	lootdistro	4	Great Wolf's headband	Chunky Spelunky	1
+2047001253-147219	lootdistro	5	Hunger&trade; Sauce	Chunky Spelunky	2
+2047001253-147219	lootdistro	6	Mayor Ghost's toupee	Chunky Spelunky	1
+2047001253-147219	lootdistro	7	skull capacitor	Chunky Spelunky	1
+2047001253-147219	lootdistro	8	Unkillable Skeleton's shinguards	Chunky Spelunky	1
+2047001253-147219	lootdistro	9	Unkillable Skeleton's shield	Sary	1
+2047001253-149101	clanid	2047001253
+2047001253-149101	startdate	20130901
+2047001253-149101	enddate	20130911
+2047001253-149101	playerturns	Chunky Spelunky	453	337	85	146	145	229	1
+2047001253-149101	playerturns	Jizmak The Destroyer	125	75	0	0	0	0	0
+2047001253-149101	playerturns	scathdhuan	7	2	242	495	228	378	119
+2047001253-149101	playerturns	SeAnmullIGan	0	0	10	22	8	12	0
+2047001253-149101	playerturns	WhimOrClutters	1	0	0	0	0	0	0
+2047001253-149101	boss	castle	Unkillable Skeleton	Chunky Spelunky	true
+2047001253-149101	boss	village	Zombie Homeowners' Association	Chunky Spelunky	true
+2047001253-149101	boss	woods	Falls-From-Sky	Chunky Spelunky	false
+2047001253-149101	lootdistro	1	wriggling severed nose	anaki	1
+2047001253-149101	lootdistro	2	electric Kool-Aid	Chunky Spelunky	1
+2047001253-149101	lootdistro	3	HOA regulation book	Chunky Spelunky	1
+2047001253-149101	lootdistro	4	skull capacitor	Chunky Spelunky	1
+2047001253-149101	lootdistro	5	Unkillable Skeleton's shield	Chunky Spelunky	1
+2047001253-149101	lootdistro	6	zombie mariachi hat	Chunky Spelunky	1
+2047001253-149101	lootdistro	7	Drapes-You-Regally	scathdhuan	1
+2047001253-149101	lootdistro	8	electric Kool-Aid	scathdhuan	1
+2047001253-149101	lootdistro	9	Gets-You-Drunk	scathdhuan	1
+2047001253-149101	lootdistro	10	Unkillable Skeleton's breastplate	scathdhuan	1
+2047001253-149101	lootdistro	11	wriggling severed nose	scathdhuan	1
+2047001253-150106	clanid	2047001253
+2047001253-150106	startdate	20130911
+2047001253-150106	enddate	20130918
+2047001253-150106	playerturns	Chunky Spelunky	616	383	142	144	239	334	1
+2047001253-150106	playerturns	Jizmak The Destroyer	0	0	52	32	0	0	0
+2047001253-150106	playerturns	nOOBSauce	0	0	0	0	44	63	0
+2047001253-150106	playerturns	scathdhuan	1	0	374	256	119	201	0
+2047001253-150106	boss	castle	Unkillable Skeleton	Chunky Spelunky	true
+2047001253-150106	boss	village	Mayor Ghost	Chunky Spelunky	false
+2047001253-150106	boss	woods	Falls-From-Sky	Chunky Spelunky	false
+2047001253-150106	lootdistro	1	Drapes-You-Regally	Chunky Spelunky	1
+2047001253-150106	lootdistro	2	electric Kool-Aid	Chunky Spelunky	1
+2047001253-150106	lootdistro	3	skull capacitor	Chunky Spelunky	1
+2047001253-150106	lootdistro	4	Unkillable Skeleton's sawsword	Chunky Spelunky	1
+2047001253-150106	lootdistro	5	Unkillable Skeleton's skullcap	Chunky Spelunky	1
+2047001253-150106	lootdistro	6	electric Kool-Aid	scathdhuan	1
+2047001253-150106	lootdistro	7	Gets-You-Drunk	scathdhuan	1
+2047001253-150106	lootdistro	8	Mayor Ghost's cloak	scathdhuan	1
+2047001253-150761	clanid	2047001253
+2047001253-150761	startdate	20130918
+2047001253-150761	enddate	20130929
+2047001253-150761	playerturns	Chunky Spelunky	386	552	355	147	378	622	4
+2047001253-150761	playerturns	Jizmak The Destroyer	20	42	16	4	0	0	0
+2047001253-150761	playerturns	Makarina	0	0	38	27	0	0	0
+2047001253-150761	playerturns	pachinkoid	0	0	0	1	0	0	0
+2047001253-150761	playerturns	scathdhuan	0	0	254	158	0	0	0
+2047001253-150761	boss	castle	Unkillable Skeleton	Chunky Spelunky	true
+2047001253-150761	boss	village	Mayor Ghost	Jizmak The Destroyer	true
+2047001253-150761	boss	woods	Great Wolf of the Air	Chunky Spelunky	true
+2047001253-150761	lootdistro	1	electric Kool-Aid	Chunky Spelunky	2
+2047001253-150761	lootdistro	2	ghost pepper	Chunky Spelunky	1
+2047001253-150761	lootdistro	3	Great Wolf's headband	Chunky Spelunky	1
+2047001253-150761	lootdistro	4	Hunger&trade; Sauce	Chunky Spelunky	1
+2047001253-150761	lootdistro	5	skull capacitor	Chunky Spelunky	1
+2047001253-150761	lootdistro	6	Unkillable Skeleton's breastplate	Chunky Spelunky	1
+2047001253-150761	lootdistro	7	Unkillable Skeleton's restless leg	Chunky Spelunky	1
+2047001253-150761	lootdistro	8	Mayor Ghost's toupee	Makarina	1
+2047001253-150761	lootdistro	9	ghost pepper	scathdhuan	1
+2047001253-150761	lootdistro	10	Hunger&trade; Sauce	scathdhuan	1
+2047001253-150761	lootdistro	11	Mayor Ghost's sash	scathdhuan	1
+2047001253-150761	lootdistro	12	Great Wolf's rocket launcher	WhimOrClutters	1
+58778-143198	clanid	58778
+58778-143198	startdate	20130728
+58778-143198	enddate	20130805
+58778-143198	playerturns	Crowther	484	516	262	353	550	363	0
+58778-143198	playerturns	Smoochygirl	0	0	136	249	51	36	3
+58778-143198	boss	castle	Count Drunkula	Crowther	false
+58778-143198	boss	village	Zombie Homeowners' Association	Crowther	false
+58778-143198	boss	woods	Falls-From-Sky	Crowther	false
+58778-143198	lootdistro	1	Drunkula's cape	Crowther	1
+58778-143198	lootdistro	2	Warms-Your-Tush	Crowther	1
+58778-143198	lootdistro	3	zombie accordion	Crowther	1
+58778-143198	lootdistro	4	bottle of Bloodweiser	Smoochygirl	1
+58778-143198	lootdistro	5	wriggling severed nose	Smoochygirl	1
+58778-145098	clanid	58778
+58778-145098	startdate	20130805
+58778-145098	enddate	20130814
+58778-145098	playerturns	Crowther	476	324	620	380	350	464	0
+58778-145098	playerturns	Smoochygirl	115	85	0	0	73	113	0
+58778-145098	boss	castle	Unkillable Skeleton	Crowther	false
+58778-145098	boss	village	Mayor Ghost	Crowther	false
+58778-145098	boss	woods	Falls-From-Sky	Crowther	false
+58778-145098	lootdistro	1	Drapes-You-Regally	Crowther	1
+58778-145098	lootdistro	2	electric Kool-Aid	Crowther	1
+58778-145098	lootdistro	3	Mayor Ghost's toupee	Crowther	1
+58778-145098	lootdistro	4	Unkillable Skeleton's skullcap	Crowther	1
+58778-146758	clanid	58778
+58778-146758	startdate	20130814
+58778-146758	enddate	20130826
+58778-146758	playerturns	Crowther	329	540	601	389	388	611	3
+58778-146758	playerturns	scathdhuan	49	82	7	3	1	0	0
+58778-146758	boss	castle	Unkillable Skeleton	Crowther	false
+58778-146758	boss	village	Mayor Ghost	Crowther	true
+58778-146758	boss	woods	Great Wolf of the Air	Crowther	false
+58778-146758	lootdistro	1	electric Kool-Aid	Crowther	1
+58778-146758	lootdistro	2	ghost pepper	Crowther	2
+58778-146758	lootdistro	3	Great Wolf's headband	Crowther	1
+58778-146758	lootdistro	4	Hunger&trade; Sauce	Crowther	1
+58778-146758	lootdistro	5	Mayor Ghost's scissors	Crowther	1
+58778-146758	lootdistro	6	Mayor Ghost's toupee	Crowther	1
+58778-146758	lootdistro	7	Unkillable Skeleton's shinguards	Crowther	1
+58778-148423	clanid	58778
+58778-148423	startdate	20130827
+58778-148423	enddate	20130905
+58778-148423	playerturns	Crowther	596	404	602	398	578	422	0
+58778-148423	boss	castle	Count Drunkula	Crowther	true
+58778-148423	boss	village	Mayor Ghost	Crowther	true
+58778-148423	boss	woods	Falls-From-Sky	Crowther	true
+58778-148423	lootdistro	1	Mayor Ghost's scissors	Chunky Spelunky	1
+58778-148423	lootdistro	2	bottle of Bloodweiser	Crowther	2
+58778-148423	lootdistro	3	Covers-Your-Head	Crowther	1
+58778-148423	lootdistro	4	Drunkula's ring of haze	Crowther	1
+58778-148423	lootdistro	5	Drunkula's silky pants	Crowther	1
+58778-148423	lootdistro	6	Gets-You-Drunk	Crowther	2
+58778-148423	lootdistro	7	ghost pepper	Crowther	1
+58778-148423	lootdistro	8	Helps-You-Sleep	Crowther	1
+58778-148423	lootdistro	9	Mayor Ghost's cloak	Crowther	1
+58778-148423	lootdistro	10	skull capacitor	Crowther	1
+58778-149557	clanid	58778
+58778-149557	startdate	20130906
+58778-149557	enddate	20130918
+58778-149557	playerturns	Crowther	588	412	401	599	627	373	1
+58778-149557	boss	castle	Count Drunkula	Crowther	true
+58778-149557	boss	village	Zombie Homeowners' Association	Crowther	true
+58778-149557	boss	woods	Falls-From-Sky	Crowther	true
+58778-149557	lootdistro	1	bottle of Bloodweiser	Crowther	2
+58778-149557	lootdistro	2	Covers-Your-Head	Crowther	1
+58778-149557	lootdistro	3	Drunkula's wineglass	Crowther	1
+58778-149557	lootdistro	4	Gets-You-Drunk	Crowther	2
+58778-149557	lootdistro	5	HOA regulation book	Crowther	1
+58778-149557	lootdistro	6	Quiets-Your-Steps	Crowther	1
+58778-149557	lootdistro	7	skull capacitor	Crowther	1
+58778-149557	lootdistro	8	Thunkula's drinking cap	Crowther	1
+58778-149557	lootdistro	9	wriggling severed nose	Crowther	2
+58778-149557	lootdistro	10	zombie mariachi pants	Crowther	1
+58778-150751	clanid	58778
+58778-150751	startdate	20130918
+58778-150751	enddate	20130927
+58778-150751	playerturns	Crowther	402	598	383	617	603	397	0
+58778-150751	boss	castle	Count Drunkula	Crowther	true
+58778-150751	boss	village	Zombie Homeowners' Association	Crowther	true
+58778-150751	boss	woods	Great Wolf of the Air	Crowther	true
+58778-150751	lootdistro	1	bottle of Bloodweiser	Crowther	2
+58778-150751	lootdistro	2	Drunkula's bell	Crowther	1
+58778-150751	lootdistro	3	Great Wolf's headband	Crowther	1
+58778-150751	lootdistro	4	Great Wolf's lice	Crowther	1
+58778-150751	lootdistro	5	HOA zombie eyes	Crowther	1
+58778-150751	lootdistro	6	Hunger&trade; Sauce	Crowther	1
+58778-150751	lootdistro	7	skull capacitor	Crowther	1
+58778-150751	lootdistro	8	wriggling severed nose	Crowther	2
+58778-150751	lootdistro	9	zombie accordion	Crowther	1
+58778-150751	lootdistro	10	Drunkula's silky pants	Makarina	1
+58778-151491	clanid	58778
+58778-151491	startdate	20130927
+58778-151491	enddate	20131010
+58778-151491	playerturns	Crowther	352	244	613	386	418	263	3
+58778-151491	playerturns	scathdhuan	0	0	0	1	205	114	0
+58778-151491	playerturns	Tarragon	238	166	0	0	0	0	0
+58778-151491	boss	castle	Count Drunkula	Crowther	true
+58778-151491	boss	village	Mayor Ghost	Crowther	true
+58778-151491	boss	woods	Falls-From-Sky	Crowther	true
+58778-151491	lootdistro	1	bottle of Bloodweiser	Crowther	2
+58778-151491	lootdistro	2	Drunkula's silky pants	Crowther	1
+58778-151491	lootdistro	3	Gets-You-Drunk	Crowther	1
+58778-151491	lootdistro	4	Mayor Ghost's sash	Crowther	1
+58778-151491	lootdistro	5	skull capacitor	Crowther	1
+58778-151491	lootdistro	6	ghost pepper	scathdhuan	2
+58778-151491	lootdistro	7	Helps-You-Sleep	scathdhuan	1
+58778-151491	lootdistro	8	Mayor Ghost's toupee	scathdhuan	1
+58778-151491	lootdistro	9	Drunkula's ring of haze	Tarragon	1
+58778-151491	lootdistro	10	Gets-You-Drunk	Tarragon	1
+58778-151491	lootdistro	11	Warms-Your-Tush	Tarragon	1
+58778-152403	clanid	58778
+58778-152403	startdate	00000000
+58778-152403	enddate	00000000
+58778-152403	playerturns	Crowther	163	106	102	148	145	105	0
+672-142929	clanid	672
+672-142929	startdate	20130727
+672-142929	enddate	20130731
+672-142929	playerturns	Chunky Spelunky	111	42	54	42	9	16	0
+672-142929	playerturns	DracoTrainer	30	14	269	157	27	82	11
+672-142929	playerturns	DreamCatcher	0	0	0	0	0	0	1
+672-142929	playerturns	Gringdor	54	24	50	24	50	194	1
+672-142929	playerturns	Jaeshala	46	11	34	19	29	112	0
+672-142929	playerturns	Jizmak The Destroyer	4	3	76	49	0	0	3
+672-142929	playerturns	Kyta	0	0	45	23	0	0	0
+672-142929	playerturns	lloh	118	41	0	0	0	0	0
+672-142929	playerturns	Maikeruu	12	5	0	0	0	0	3
+672-142929	playerturns	nOOBSauce	0	0	42	31	0	0	7
+672-142929	playerturns	Noodlius	1	0	0	0	56	208	18
+672-142929	playerturns	Sary	0	0	42	32	0	0	1
+672-142929	playerturns	WhimOrClutters	327	158	8	3	76	141	0
+672-142929	boss	castle	Unkillable Skeleton	Gringdor	false
+672-142929	boss	village	Mayor Ghost	Gringdor	false
+672-142929	boss	woods	Falls-From-Sky	Gringdor	false
+672-142929	lootdistro	1	Mayor Ghost's toupee	Chunky Spelunky	1
+672-142929	lootdistro	2	electric Kool-Aid	nOOBSauce	1
+672-142929	lootdistro	3	Gets-You-Drunk	nOOBSauce	2
+672-142929	lootdistro	4	ghost pepper	nOOBSauce	2
+672-142929	lootdistro	5	Unkillable Skeleton's shinguards	Noodlius	1
+672-142929	lootdistro	6	Covers-Your-Head	WhimOrClutters	1
+672-144190	clanid	672
+672-144190	startdate	20130731
+672-144190	enddate	20130806
+672-144190	playerturns	Batdan88	0	0	1	0	0	0	0
+672-144190	playerturns	DracoTrainer	0	0	340	183	53	38	0
+672-144190	playerturns	DreamCatcher	0	0	0	0	0	0	1
+672-144190	playerturns	Gringdor	46	36	59	37	335	232	0
+672-144190	playerturns	GuesssWho	0	0	0	0	0	0	1
+672-144190	playerturns	kuankyh	0	0	144	107	0	0	1
+672-144190	playerturns	Maikeruu	2	3	15	15	25	16	10
+672-144190	playerturns	MaWnStuRR	0	0	0	0	0	0	1
+672-144190	playerturns	nOOBSauce	145	94	36	20	86	57	6
+672-144190	playerturns	ReisenFig	2	4	0	0	0	0	1
+672-144190	playerturns	Sary	0	0	15	10	0	0	1
+672-144190	playerturns	The_Dancing_Viagra	0	0	0	0	0	0	1
+672-144190	playerturns	WhimOrClutters	411	257	7	11	83	75	0
+672-144190	boss	castle	Count Drunkula	Chunky Spelunky	false
+672-144190	boss	village	Mayor Ghost	Sary	true
+672-144190	boss	woods	Falls-From-Sky	Sary	true
+672-144190	lootdistro	1	bottle of Bloodweiser	Chunky Spelunky	1
+672-144190	lootdistro	2	Mayor Ghost's khakis	DracoTrainer	1
+672-144190	lootdistro	3	Drunkula's silky pants	Gringdor	1
+672-144190	lootdistro	4	Warms-Your-Tush	kuankyh	1
+672-144190	lootdistro	5	Gets-You-Drunk	nOOBSauce	2
+672-144190	lootdistro	6	ghost pepper	nOOBSauce	2
+672-144190	lootdistro	7	Mayor Ghost's gavel	Sary	1
+672-144190	lootdistro	8	Protects-Your-Junk	Sary	1
+672-145342	clanid	672
+672-145342	startdate	20130806
+672-145342	enddate	20130809
+672-145342	playerturns	Cosmosis	1	3	0	1	0	0	0
+672-145342	playerturns	DracoTrainer	69	130	34	65	9	19	29
+672-145342	playerturns	Gringdor	105	171	74	131	306	457	1
+672-145342	playerturns	HELPIMDIRTY	0	0	0	0	0	0	4
+672-145342	playerturns	JimFromTx	14	26	18	29	1	0	0
+672-145342	playerturns	Jizmak The Destroyer	5	7	0	0	0	0	0
+672-145342	playerturns	kuankyh	8	2	247	351	0	0	5
+672-145342	playerturns	nOOBSauce	1	0	10	6	1	0	0
+672-145342	playerturns	ReisenFig	16	29	0	0	0	0	5
+672-145342	playerturns	Sary	0	0	11	14	74	101	0
+672-145342	playerturns	Sirquacksalot	0	0	0	0	0	0	2
+672-145342	playerturns	Smedley	0	1	0	0	0	0	1
+672-145342	playerturns	WhimOrClutters	186	225	5	4	17	14	6
+672-145342	playerturns	zavijava	1	0	1	0	0	1	1
+672-145342	boss	castle	Unkillable Skeleton	Gringdor	true
+672-145342	boss	village	Zombie Homeowners' Association	Gringdor	false
+672-145342	boss	woods	Great Wolf of the Air	Gringdor	true
+672-145342	lootdistro	1	Great Wolf's right paw	DracoTrainer	1
+672-145342	lootdistro	2	skull capacitor	Gringdor	1
+672-145342	lootdistro	3	wriggling severed nose	JimFromTx	1
+672-145342	lootdistro	4	Great Wolf's lice	kuankyh	1
+672-145342	lootdistro	5	electric Kool-Aid	nOOBSauce	2
+672-145342	lootdistro	6	Hunger&trade; Sauce	nOOBSauce	2
+672-145342	lootdistro	7	zombie mariachi pants	ReisenFig	1
+672-145342	lootdistro	8	Unkillable Skeleton's restless leg	Sary	1
+672-145342	lootdistro	9	Unkillable Skeleton's shinguards	WhimOrClutters	1
+672-145960	clanid	672
+672-145960	startdate	20130809
+672-145960	enddate	20130820
+672-145960	playerturns	DracoTrainer	116	68	233	155	0	0	1
+672-145960	playerturns	Gringdor	64	50	23	16	338	211	0
+672-145960	playerturns	JimFromTx	0	0	0	0	4	0	0
+672-145960	playerturns	kuankyh	96	58	268	163	60	27	1
+672-145960	playerturns	nOOBSauce	193	127	0	0	0	0	0
+672-145960	playerturns	ReisenFig	9	3	0	0	0	0	2
+672-145960	playerturns	Sary	1	0	0	0	0	0	0
+672-145960	playerturns	Smedley	11	14	0	0	0	0	0
+672-145960	playerturns	The_Dancing_Viagra	0	0	2	7	0	0	12
+672-145960	playerturns	WhimOrClutters	89	65	82	44	200	152	0
+672-145960	playerturns	zavijava	21	15	4	3	4	5	2
+672-145960	boss	castle	Count Drunkula	WhimOrClutters	true
+672-145960	boss	village	Mayor Ghost	The_Dancing_Viagra	true
+672-145960	boss	woods	Falls-From-Sky	zavijava	false
+672-145960	lootdistro	1	Drunkula's cape	DracoTrainer	1
+672-145960	lootdistro	2	Drapes-You-Regally	kuankyh	1
+672-145960	lootdistro	3	ghost pepper	nOOBSauce	1
+672-145960	lootdistro	4	skull capacitor	nOOBSauce	1
+672-145960	lootdistro	5	bottle of Bloodweiser	ReisenFig	1
+672-145960	lootdistro	6	bottle of Bloodweiser	Smedley	1
+672-145960	lootdistro	7	Gets-You-Drunk	The_Dancing_Viagra	1
+672-145960	lootdistro	8	Mayor Ghost's gavel	The_Dancing_Viagra	1
+672-145960	lootdistro	9	Drunkula's wineglass	WhimOrClutters	1
+672-145960	lootdistro	10	Mayor Ghost's toupee	WhimOrClutters	1
+672-145960	lootdistro	11	ghost pepper	zavijava	1
+672-147549	clanid	672
+672-147549	startdate	20130820
+672-147549	enddate	20130822
+672-147549	playerturns	DracoTrainer	152	90	24	29	124	93	0
+672-147549	playerturns	Jaeshala	31	30	0	0	0	0	2
+672-147549	playerturns	kuankyh	0	0	36	69	65	46	0
+672-147549	playerturns	nOOBSauce	9	2	117	212	177	143	1
+672-147549	playerturns	Smedley	25	12	0	0	0	0	0
+672-147549	playerturns	The_Dancing_Viagra	35	2	187	253	0	1	22
+672-147549	playerturns	WhimOrClutters	377	235	32	41	213	138	0
+672-147549	boss	castle	Count Drunkula	The_Dancing_Viagra	false
+672-147549	boss	village	Zombie Homeowners' Association	Sary	true
+672-147549	boss	woods	Falls-From-Sky	The_Dancing_Viagra	true
+672-147549	lootdistro	1	wriggling severed nose	Jizmak The Destroyer	1
+672-147549	lootdistro	2	Drapes-You-Regally	nOOBSauce	1
+672-147549	lootdistro	3	wriggling severed nose	nOOBSauce	1
+672-147549	lootdistro	4	HOA regulation book	Sary	1
+672-147549	lootdistro	5	Thunkula's drinking cap	Sary	1
+672-147549	lootdistro	6	bottle of Bloodweiser	The_Dancing_Viagra	1
+672-147549	lootdistro	7	Gets-You-Drunk	The_Dancing_Viagra	2
+672-147549	lootdistro	8	Protects-Your-Junk	The_Dancing_Viagra	1
+672-147549	lootdistro	9	zombie mariachi hat	WhimOrClutters	1
+672-147822	clanid	672
+672-147822	startdate	20130822
+672-147822	enddate	20130824
+672-147822	playerturns	Chunky Spelunky	40	30	16	22	65	107	0
+672-147822	playerturns	DracoTrainer	179	92	11	17	119	200	0
+672-147822	playerturns	Jaeshala	18	6	196	283	1	7	0
+672-147822	playerturns	Jizmak The Destroyer	0	0	0	0	160	247	0
+672-147822	playerturns	kuankyh	138	93	145	211	9	10	0
+672-147822	playerturns	Sary	0	0	0	0	2	3	0
+672-147822	playerturns	scathdhuan	3	2	23	23	0	0	0
+672-147822	playerturns	WhimOrClutters	241	158	21	32	31	39	0
+672-147822	boss	castle	Unkillable Skeleton	Sary	true
+672-147822	boss	village	Zombie Homeowners' Association	Sary	true
+672-147822	boss	woods	Falls-From-Sky	WhimOrClutters	true
+672-147822	lootdistro	1	zombie accordion	Chunky Spelunky	1
+672-147822	lootdistro	2	electric Kool-Aid	DracoTrainer	1
+672-147822	lootdistro	3	wriggling severed nose	DracoTrainer	1
+672-147822	lootdistro	4	Gets-You-Drunk	Jaeshala	1
+672-147822	lootdistro	5	Unkillable Skeleton's shinguards	Jizmak The Destroyer	1
+672-147822	lootdistro	6	Covers-Your-Head	kuankyh	1
+672-147822	lootdistro	7	electric Kool-Aid	kuankyh	1
+672-147822	lootdistro	8	HOA zombie eyes	Sary	1
+672-147822	lootdistro	9	Quiets-Your-Steps	Sary	1
+672-147822	lootdistro	10	skull capacitor	Sary	1
+672-147822	lootdistro	11	wriggling severed nose	scathdhuan	1
+672-147822	lootdistro	12	Gets-You-Drunk	WhimOrClutters	1
+672-147822	lootdistro	13	Unkillable Skeleton's restless leg	WhimOrClutters	1
+672-148094	clanid	672
+672-148094	startdate	20130824
+672-148094	enddate	20130828
+672-148094	playerturns	Chunky Spelunky	65	59	0	0	69	82	0
+672-148094	playerturns	DracoTrainer	49	27	268	177	38	62	0
+672-148094	playerturns	Jaeshala	94	65	135	92	189	267	0
+672-148094	playerturns	kuankyh	124	96	134	85	21	38	0
+672-148094	playerturns	nOOBSauce	86	65	0	0	49	76	0
+672-148094	playerturns	Sary	13	6	0	0	0	0	0
+672-148094	playerturns	WhimOrClutters	152	99	70	39	44	65	0
+672-148094	boss	castle	Unkillable Skeleton	Sary	true
+672-148094	boss	village	Mayor Ghost	Jizmak The Destroyer	true
+672-148094	boss	woods	Falls-From-Sky	WhimOrClutters	true
+672-148094	lootdistro	1	ghost pepper	Chunky Spelunky	1
+672-148094	lootdistro	2	electric Kool-Aid	DracoTrainer	1
+672-148094	lootdistro	3	Unkillable Skeleton's shinguards	DracoTrainer	1
+672-148094	lootdistro	4	Drapes-You-Regally	Jaeshala	1
+672-148094	lootdistro	5	Gets-You-Drunk	Jaeshala	1
+672-148094	lootdistro	6	Unkillable Skeleton's restless leg	Jizmak The Destroyer	1
+672-148094	lootdistro	7	electric Kool-Aid	kuankyh	1
+672-148094	lootdistro	8	Mayor Ghost's cloak	nOOBSauce	1
+672-148094	lootdistro	9	ghost pepper	Sary	1
+672-148094	lootdistro	10	Mayor Ghost's scissors	Sary	1
+672-148094	lootdistro	11	skull capacitor	Sary	1
+672-148094	lootdistro	12	Gets-You-Drunk	WhimOrClutters	1
+672-148094	lootdistro	13	Protects-Your-Junk	WhimOrClutters	1
+672-148508	clanid	672
+672-148508	startdate	20130828
+672-148508	enddate	20130901
+672-148508	playerturns	Chunky Spelunky	2	1	215	155	46	24	1
+672-148508	playerturns	Jaeshala	103	104	22	22	264	188	1
+672-148508	playerturns	kuankyh	48	73	103	64	211	122	0
+672-148508	playerturns	The_Dancing_Viagra	0	0	0	0	0	0	1
+672-148508	playerturns	WhimOrClutters	268	401	254	165	95	50	0
+672-148508	boss	castle	Count Drunkula	WhimOrClutters	true
+672-148508	boss	village	Mayor Ghost	Jizmak The Destroyer	true
+672-148508	boss	woods	Great Wolf of the Air	Sary	true
+672-148508	lootdistro	1	ghost pepper	Chunky Spelunky	1
+672-148508	lootdistro	2	bottle of Bloodweiser	Jaeshala	1
+672-148508	lootdistro	3	ghost pepper	Jaeshala	1
+672-148508	lootdistro	4	Mayor Ghost's cloak	Jaeshala	1
+672-148508	lootdistro	5	Great Wolf's lice	Jizmak The Destroyer	1
+672-148508	lootdistro	6	Hunger&trade; Sauce	kuankyh	1
+672-148508	lootdistro	7	Drunkula's wineglass	Sary	1
+672-148508	lootdistro	8	Drunkula's silky pants	The_Dancing_Viagra	1
+672-148508	lootdistro	9	bottle of Bloodweiser	WhimOrClutters	1
+672-148508	lootdistro	10	Great Wolf's right paw	WhimOrClutters	1
+672-148508	lootdistro	11	Hunger&trade; Sauce	WhimOrClutters	1
+672-148508	lootdistro	12	Mayor Ghost's sash	WhimOrClutters	1
+672-148508	lootdistro	13	skull capacitor	WhimOrClutters	1
+672-149128	clanid	672
+672-149128	startdate	20130901
+672-149128	enddate	20130904
+672-149128	playerturns	Aliisza	135	197	35	47	64	38	4
+672-149128	playerturns	anaki	19	22	72	103	63	35	3
+672-149128	playerturns	Chunky Spelunky	1	0	106	164	13	9	0
+672-149128	playerturns	DracoTrainer	0	0	41	56	0	0	0
+672-149128	playerturns	kuankyh	200	283	0	0	0	0	0
+672-149128	playerturns	nOOBSauce	0	0	3	7	0	0	0
+672-149128	playerturns	Sary	0	1	0	0	0	0	0
+672-149128	playerturns	The_Dancing_Viagra	24	67	151	215	51	39	2
+672-149128	playerturns	WhimOrClutters	19	32	0	0	423	265	0
+672-149128	boss	castle	Count Drunkula	Sary	true
+672-149128	boss	village	Zombie Homeowners' Association	Sary	true
+672-149128	boss	woods	Great Wolf of the Air	Sary	true
+672-149128	lootdistro	1	Thunkula's drinking cap	Aliisza	1
+672-149128	lootdistro	2	wriggling severed nose	anaki	1
+672-149128	lootdistro	3	Great Wolf's rocket launcher	Chunky Spelunky	1
+672-149128	lootdistro	4	skull capacitor	DracoTrainer	1
+672-149128	lootdistro	5	Great Wolf's right paw	kuankyh	1
+672-149128	lootdistro	6	bottle of Bloodweiser	nOOBSauce	1
+672-149128	lootdistro	7	bottle of Bloodweiser	Sary	1
+672-149128	lootdistro	8	Hunger&trade; Sauce	Sary	2
+672-149128	lootdistro	9	Drunkula's bell	The_Dancing_Viagra	1
+672-149128	lootdistro	10	HOA zombie eyes	The_Dancing_Viagra	1
+672-149128	lootdistro	11	zombie accordion	WhimOrClutters	1
+672-149378	clanid	672
+672-149378	startdate	20130904
+672-149378	enddate	20130906
+672-149378	playerturns	Aliisza	158	101	61	39	89	136	2
+672-149378	playerturns	anaki	78	67	3	0	53	77	0
+672-149378	playerturns	Chunky Spelunky	0	0	29	28	182	243	0
+672-149378	playerturns	DracoTrainer	0	0	177	126	0	0	0
+672-149378	playerturns	Jizmak The Destroyer	47	30	0	0	26	44	1
+672-149378	playerturns	kuankyh	136	89	0	0	0	0	0
+672-149378	playerturns	Sary	5	5	61	51	0	0	9
+672-149378	playerturns	The_Dancing_Viagra	0	0	145	95	0	0	0
+672-149378	playerturns	WhimOrClutters	161	123	101	84	62	88	0
+672-149378	boss	castle	Unkillable Skeleton	Sary	true
+672-149378	boss	village	Mayor Ghost	Jizmak The Destroyer	true
+672-149378	boss	woods	Falls-From-Sky	WhimOrClutters	true
+672-149378	lootdistro	1	Gets-You-Drunk	Aliisza	2
+672-149378	lootdistro	2	ghost pepper	anaki	2
+672-149378	lootdistro	3	Warms-Your-Tush	DracoTrainer	1
+672-149378	lootdistro	4	Mayor Ghost's sash	Jizmak The Destroyer	1
+672-149378	lootdistro	5	Unkillable Skeleton's shinguards	kuankyh	1
+672-149378	lootdistro	6	electric Kool-Aid	Sary	2
+672-149378	lootdistro	7	Mayor Ghost's cloak	Sary	1
+672-149378	lootdistro	8	Quiets-Your-Steps	WhimOrClutters	1
+672-149378	lootdistro	9	skull capacitor	WhimOrClutters	1
+672-149378	lootdistro	10	Unkillable Skeleton's shield	WhimOrClutters	1
+672-149569	clanid	672
+672-149569	startdate	20130906
+672-149569	enddate	20130908
+672-149569	playerturns	Aliisza	232	160	16	9	107	199	5
+672-149569	playerturns	anaki	5	4	1	1	92	150	4
+672-149569	playerturns	Chunky Spelunky	0	0	179	134	0	0	0
+672-149569	playerturns	DracoTrainer	54	47	218	177	30	53	0
+672-149569	playerturns	Jizmak The Destroyer	35	32	0	0	0	0	0
+672-149569	playerturns	kuankyh	141	91	69	40	36	78	0
+672-149569	playerturns	nOOBSauce	0	0	0	0	0	0	1
+672-149569	playerturns	WhimOrClutters	111	88	95	61	89	166	0
+672-149569	boss	castle	Unkillable Skeleton	Sary	true
+672-149569	boss	village	Mayor Ghost	Jizmak The Destroyer	true
+672-149569	boss	woods	Falls-From-Sky	WhimOrClutters	true
+672-149569	lootdistro	1	Covers-Your-Head	Aliisza	1
+672-149569	lootdistro	2	Protects-Your-Junk	anaki	1
+672-149569	lootdistro	3	Gets-You-Drunk	Chunky Spelunky	1
+672-149569	lootdistro	4	ghost pepper	Chunky Spelunky	1
+672-149569	lootdistro	5	ghost pepper	DracoTrainer	1
+672-149569	lootdistro	6	Unkillable Skeleton's sawsword	Jizmak The Destroyer	1
+672-149569	lootdistro	7	Unkillable Skeleton's shinguards	Jizmak The Destroyer	1
+672-149569	lootdistro	8	Gets-You-Drunk	kuankyh	1
+672-149569	lootdistro	9	electric Kool-Aid	Sary	2
+672-149569	lootdistro	10	Mayor Ghost's gavel	WhimOrClutters	1
+672-149569	lootdistro	11	Mayor Ghost's toupee	WhimOrClutters	1
+672-149569	lootdistro	12	skull capacitor	WhimOrClutters	1
+672-149790	clanid	672
+672-149790	startdate	20130908
+672-149790	enddate	20130912
+672-149790	playerturns	Aliisza	141	78	83	113	82	74	7
+672-149790	playerturns	anaki	49	43	14	16	9	8	2
+672-149790	playerturns	Chunky Spelunky	113	71	0	1	195	105	0
+672-149790	playerturns	Jizmak The Destroyer	5	5	4	6	0	0	0
+672-149790	playerturns	kuankyh	99	74	118	182	51	21	1
+672-149790	playerturns	nOOBSauce	24	20	23	41	57	34	2
+672-149790	playerturns	scathdhuan	0	0	79	145	0	0	0
+672-149790	playerturns	The_Dancing_Viagra	13	3	0	0	0	0	1
+672-149790	playerturns	WhimOrClutters	160	102	69	106	212	152	0
+672-149790	boss	castle	Count Drunkula	Jizmak The Destroyer	true
+672-149790	boss	village	Zombie Homeowners' Association	Sary	true
+672-149790	boss	woods	Falls-From-Sky	tomkitty	true
+672-149790	lootdistro	1	Drapes-You-Regally	Aliisza	1
+672-149790	lootdistro	2	bottle of Bloodweiser	anaki	1
+672-149790	lootdistro	3	Gets-You-Drunk	anaki	1
+672-149790	lootdistro	4	Gets-You-Drunk	Chunky Spelunky	1
+672-149790	lootdistro	5	wriggling severed nose	Chunky Spelunky	1
+672-149790	lootdistro	6	Drunkula's ring of haze	Jizmak The Destroyer	1
+672-149790	lootdistro	7	bottle of Bloodweiser	kuankyh	1
+672-149790	lootdistro	8	wriggling severed nose	kuankyh	1
+672-149790	lootdistro	9	zombie mariachi hat	nOOBSauce	1
+672-149790	lootdistro	10	Helps-You-Sleep	Sary	1
+672-149790	lootdistro	11	Drunkula's silky pants	scathdhuan	1
+672-149790	lootdistro	12	HOA citation pad	tomkitty	1
+672-149790	lootdistro	13	skull capacitor	WhimOrClutters	1
+672-150167	clanid	672
+672-150167	startdate	20130912
+672-150167	enddate	20130915
+672-150167	playerturns	Aliisza	0	0	5	8	0	0	2
+672-150167	playerturns	anaki	5	5	7	5	68	121	0
+672-150167	playerturns	Jizmak The Destroyer	249	180	56	25	99	51	1
+672-150167	playerturns	kuankyh	149	109	60	53	127	189	32
+672-150167	playerturns	nOOBSauce	0	0	119	93	88	112	0
+672-150167	playerturns	Sary	0	0	38	27	0	0	0
+672-150167	playerturns	The_Dancing_Viagra	62	41	0	0	0	0	0
+672-150167	playerturns	WhimOrClutters	112	88	312	192	56	89	0
+672-150167	boss	castle	Count Drunkula	Jizmak The Destroyer	true
+672-150167	boss	village	Mayor Ghost	Jizmak The Destroyer	true
+672-150167	boss	woods	Great Wolf of the Air	Sary	true
+672-150167	lootdistro	1	Mayor Ghost's sash	anaki	1
+672-150167	lootdistro	2	Great Wolf's beastly trousers	Jizmak The Destroyer	1
+672-150167	lootdistro	3	Mayor Ghost's toupee	Jizmak The Destroyer	1
+672-150167	lootdistro	4	skull capacitor	Jizmak The Destroyer	1
+672-150167	lootdistro	5	Great Wolf's headband	kuankyh	1
+672-150167	lootdistro	6	Hunger&trade; Sauce	nOOBSauce	2
+672-150167	lootdistro	7	bottle of Bloodweiser	Sary	2
+672-150167	lootdistro	8	ghost pepper	The_Dancing_Viagra	1
+672-150167	lootdistro	9	Drunkula's bell	WhimOrClutters	1
+672-150167	lootdistro	10	Drunkula's silky pants	WhimOrClutters	1
+672-150462	clanid	672
+672-150462	startdate	20130915
+672-150462	enddate	20130918
+672-150462	playerturns	Jaeshala	0	0	14	8	66	54	0
+672-150462	playerturns	Jizmak The Destroyer	70	40	0	0	9	1	2
+672-150462	playerturns	kuankyh	0	0	154	87	214	163	88
+672-150462	playerturns	nOOBSauce	0	0	101	56	171	129	1
+672-150462	playerturns	Sary	0	0	5	5	0	0	0
+672-150462	playerturns	scathdhuan	243	156	0	0	0	0	0
+672-150462	playerturns	The_Dancing_Viagra	224	167	32	27	37	22	1
+672-150462	playerturns	WhimOrClutters	59	41	298	213	84	50	0
+672-150462	boss	castle	Count Drunkula	Jizmak The Destroyer	true
+672-150462	boss	village	Mayor Ghost	Jizmak The Destroyer	true
+672-150462	boss	woods	Falls-From-Sky	WhimOrClutters	true
+672-150462	lootdistro	1	Gets-You-Drunk	Aliisza	1
+672-150462	lootdistro	2	Quiets-Your-Steps	Aliisza	1
+672-150462	lootdistro	3	ghost pepper	Chunky Spelunky	1
+672-150462	lootdistro	4	Drunkula's bell	Jaeshala	1
+672-150462	lootdistro	5	Drunkula's cape	Jaeshala	1
+672-150462	lootdistro	6	Mayor Ghost's cloak	kuankyh	1
+672-150462	lootdistro	7	Mayor Ghost's gavel	nOOBSauce	1
+672-150462	lootdistro	8	bottle of Bloodweiser	Sary	2
+672-150462	lootdistro	9	ghost pepper	scathdhuan	1
+672-150462	lootdistro	10	Drapes-You-Regally	The_Dancing_Viagra	1
+672-150462	lootdistro	11	Gets-You-Drunk	WhimOrClutters	1
+672-150462	lootdistro	12	skull capacitor	WhimOrClutters	1
+672-150730	clanid	672
+672-150730	startdate	20130918
+672-150730	enddate	20130921
+672-150730	playerturns	Aliisza	1	0	5	5	0	0	2
+672-150730	playerturns	Chunky Spelunky	0	0	0	0	63	45	0
+672-150730	playerturns	ElectricChairJ	16	11	239	186	219	164	0
+672-150730	playerturns	Jaeshala	38	28	1	1	69	55	1
+672-150730	playerturns	Jizmak The Destroyer	0	0	34	18	0	0	0
+672-150730	playerturns	kuankyh	143	103	158	84	74	37	0
+672-150730	playerturns	nOOBSauce	57	43	56	44	61	42	0
+672-150730	playerturns	Sary	0	0	0	0	8	1	0
+672-150730	playerturns	Stocks mall multi	0	0	0	0	0	0	1
+672-150730	playerturns	The_Dancing_Viagra	155	95	21	17	0	1	0
+672-150730	playerturns	WhimOrClutters	194	116	81	50	80	81	0
+672-150730	boss	castle	Count Drunkula	Jizmak The Destroyer	true
+672-150730	boss	village	Mayor Ghost	Jizmak The Destroyer	true
+672-150730	boss	woods	Falls-From-Sky	WhimOrClutters	true
+672-150730	lootdistro	1	Mayor Ghost's sash	Chunky Spelunky	1
+672-150730	lootdistro	2	Drunkula's cape	ElectricChairJ	1
+672-150730	lootdistro	3	Protects-Your-Junk	ElectricChairJ	1
+672-150730	lootdistro	4	Covers-Your-Head	Jizmak The Destroyer	1
+672-150730	lootdistro	5	Drunkula's wineglass	Jizmak The Destroyer	1
+672-150730	lootdistro	6	Mayor Ghost's khakis	Jizmak The Destroyer	1
+672-150730	lootdistro	7	Gets-You-Drunk	kuankyh	1
+672-150730	lootdistro	8	ghost pepper	kuankyh	1
+672-150730	lootdistro	9	bottle of Bloodweiser	Sary	1
+672-150730	lootdistro	10	Gets-You-Drunk	WhimOrClutters	1
+672-150730	lootdistro	11	ghost pepper	WhimOrClutters	1
+672-150730	lootdistro	12	skull capacitor	WhimOrClutters	1
+672-151017	clanid	672
+672-151017	startdate	20130921
+672-151017	enddate	20130923
+672-151017	playerturns	Aliisza	38	42	0	0	0	0	0
+672-151017	playerturns	anaki	10	21	37	25	29	25	0
+672-151017	playerturns	Chunky Spelunky	1	1	0	1	178	110	0
+672-151017	playerturns	ElectricChairJ	61	107	230	168	0	0	0
+672-151017	playerturns	HappyAmerican	0	0	0	0	0	0	2
+672-151017	playerturns	Jaeshala	127	207	104	46	5	2	0
+672-151017	playerturns	Jizmak The Destroyer	34	70	7	12	32	23	0
+672-151017	playerturns	kuankyh	0	0	133	87	273	153	0
+672-151017	playerturns	WhimOrClutters	107	174	94	56	89	81	3
+672-151017	boss	castle	Count Drunkula	Jizmak The Destroyer	true
+672-151017	boss	village	Mayor Ghost	Jizmak The Destroyer	true
+672-151017	boss	woods	Falls-From-Sky	WhimOrClutters	true
+672-151017	lootdistro	1	ghost pepper	anaki	1
+672-151017	lootdistro	2	Mayor Ghost's gavel	ElectricChairJ	1
+672-151017	lootdistro	3	bottle of Bloodweiser	Jaeshala	1
+672-151017	lootdistro	4	Gets-You-Drunk	Jaeshala	1
+672-151017	lootdistro	5	ghost pepper	Jaeshala	1
+672-151017	lootdistro	6	Drapes-You-Regally	Jizmak The Destroyer	1
+672-151017	lootdistro	7	Gets-You-Drunk	Jizmak The Destroyer	1
+672-151017	lootdistro	8	Drunkula's bell	kuankyh	1
+672-151017	lootdistro	9	Drunkula's cape	kuankyh	1
+672-151017	lootdistro	10	bottle of Bloodweiser	Sary	1
+672-151017	lootdistro	11	Helps-You-Sleep	WhimOrClutters	1
+672-151017	lootdistro	12	Mayor Ghost's khakis	WhimOrClutters	1
+672-151017	lootdistro	13	skull capacitor	WhimOrClutters	1
+672-151197	clanid	672
+672-151197	startdate	20130923
+672-151197	enddate	20130926
+672-151197	playerturns	ElectricChairJ	3	4	131	109	270	174	0
+672-151197	playerturns	Jaeshala	6	14	106	56	1	3	0
+672-151197	playerturns	Jizmak The Destroyer	139	187	5	4	5	5	0
+672-151197	playerturns	kuankyh	141	260	132	97	23	11	0
+672-151197	playerturns	Makarina	56	84	166	94	119	77	0
+672-151197	playerturns	scathdhuan	9	16	0	0	0	0	0
+672-151197	playerturns	WhimOrClutters	26	55	72	28	179	133	0
+672-151197	boss	castle	Count Drunkula	Jizmak The Destroyer	true
+672-151197	boss	village	Mayor Ghost	Jizmak The Destroyer	true
+672-151197	boss	woods	Great Wolf of the Air	Makarina	true
+672-151197	lootdistro	1	Mayor Ghost's cloak	ElectricChairJ	1
+672-151197	lootdistro	2	skull capacitor	ElectricChairJ	1
+672-151197	lootdistro	3	bottle of Bloodweiser	Jaeshala	1
+672-151197	lootdistro	4	ghost pepper	Jizmak The Destroyer	1
+672-151197	lootdistro	5	Hunger&trade; Sauce	Jizmak The Destroyer	1
+672-151197	lootdistro	6	ghost pepper	kuankyh	1
+672-151197	lootdistro	7	Great Wolf's right paw	kuankyh	1
+672-151197	lootdistro	8	Hunger&trade; Sauce	kuankyh	1
+672-151197	lootdistro	9	Mayor Ghost's scissors	Makarina	1
+672-151197	lootdistro	10	Thunkula's drinking cap	Makarina	1
+672-151197	lootdistro	11	bottle of Bloodweiser	Sary	1
+672-151197	lootdistro	12	Drunkula's ring of haze	WhimOrClutters	1
+672-151197	lootdistro	13	Great Wolf's beastly trousers	WhimOrClutters	1
+672-151429	clanid	672
+672-151429	startdate	20130926
+672-151429	enddate	20130929
+672-151429	playerturns	Aliisza	9	5	0	1	6	13	0
+672-151429	playerturns	Chunky Spelunky	48	46	0	0	30	31	0
+672-151429	playerturns	ElectricChairJ	5	3	345	225	46	86	0
+672-151429	playerturns	Jaeshala	2	0	60	48	0	0	0
+672-151429	playerturns	Jizmak The Destroyer	167	127	4	5	0	0	0
+672-151429	playerturns	kuankyh	28	27	55	35	75	103	0
+672-151429	playerturns	Makarina	207	124	0	0	0	0	0
+672-151429	playerturns	Sary	62	40	13	9	153	257	2
+672-151429	playerturns	WhimOrClutters	62	38	117	83	75	125	0
+672-151429	boss	castle	Unkillable Skeleton	ElectricChairJ	true
+672-151429	boss	village	Mayor Ghost	Jizmak The Destroyer	true
+672-151429	boss	woods	Falls-From-Sky	WhimOrClutters	true
+672-151429	lootdistro	1	Covers-Your-Head	ElectricChairJ	1
+672-151429	lootdistro	2	Mayor Ghost's toupee	ElectricChairJ	1
+672-151429	lootdistro	3	skull capacitor	ElectricChairJ	1
+672-151429	lootdistro	4	Unkillable Skeleton's shinguards	ElectricChairJ	1
+672-151429	lootdistro	5	ghost pepper	Jaeshala	1
+672-151429	lootdistro	6	Unkillable Skeleton's restless leg	Jizmak The Destroyer	1
+672-151429	lootdistro	7	Gets-You-Drunk	kuankyh	1
+672-151429	lootdistro	8	ghost pepper	kuankyh	1
+672-151429	lootdistro	9	Protects-Your-Junk	Makarina	1
+672-151429	lootdistro	10	electric Kool-Aid	Sary	2
+672-151429	lootdistro	11	Mayor Ghost's scissors	WhimOrClutters	1
+672-151632	clanid	672
+672-151632	startdate	20130929
+672-151632	enddate	20130930
+672-151632	playerturns	Aliisza	3	5	0	0	1	1	1
+672-151632	playerturns	Chunky Spelunky	59	96	0	0	0	0	0
+672-151632	playerturns	Jaeshala	73	114	28	41	0	0	0
+672-151632	playerturns	Jizmak The Destroyer	164	248	1	7	6	2	0
+672-151632	playerturns	kuankyh	0	0	0	0	225	328	0
+672-151632	playerturns	Makarina	0	0	102	157	42	70	0
+672-151632	playerturns	Sary	36	49	113	151	86	139	0
+672-151632	playerturns	WhimOrClutters	53	100	163	237	36	64	0
+672-151632	boss	castle	Unkillable Skeleton	Makarina	true
+672-151632	boss	village	Zombie Homeowners' Association	WhimOrClutters	true
+672-151632	boss	woods	Great Wolf of the Air	Sary	true
+672-151632	lootdistro	1	Great Wolf's beastly trousers	Aliisza	1
+672-151632	lootdistro	2	zombie accordion	Jaeshala	1
+672-151632	lootdistro	3	Hunger&trade; Sauce	Jizmak The Destroyer	1
+672-151632	lootdistro	4	Unkillable Skeleton's shield	Jizmak The Destroyer	1
+672-151632	lootdistro	5	Hunger&trade; Sauce	kuankyh	1
+672-151632	lootdistro	6	wriggling severed nose	kuankyh	1
+672-151632	lootdistro	7	HOA citation pad	Makarina	1
+672-151632	lootdistro	8	skull capacitor	Makarina	1
+672-151632	lootdistro	9	wriggling severed nose	Makarina	1
+672-151632	lootdistro	10	electric Kool-Aid	Sary	2
+672-151632	lootdistro	11	Great Wolf's right paw	WhimOrClutters	1
+672-151632	lootdistro	12	Unkillable Skeleton's shinguards	WhimOrClutters	1
+672-151755	clanid	672
+672-151755	startdate	20130930
+672-151755	enddate	20131002
+672-151755	playerturns	Aliisza	19	14	13	40	94	146	0
+672-151755	playerturns	Chunky Spelunky	1	1	9	8	0	0	0
+672-151755	playerturns	DracoTrainer	0	0	0	0	0	0	1
+672-151755	playerturns	Jaeshala	131	77	52	100	0	0	0
+672-151755	playerturns	Jizmak The Destroyer	0	1	0	0	0	0	0
+672-151755	playerturns	kuankyh	29	20	0	1	189	241	0
+672-151755	playerturns	Makarina	180	116	123	154	0	0	0
+672-151755	playerturns	nOOBSauce	258	153	0	0	147	183	0
+672-151755	playerturns	WhimOrClutters	0	0	197	303	0	0	0
+672-151755	boss	castle	Unkillable Skeleton	Makarina	true
+672-151755	boss	village	Zombie Homeowners' Association	WhimOrClutters	true
+672-151755	boss	woods	Falls-From-Sky	WhimOrClutters	true
+672-151755	lootdistro	1	wriggling severed nose	DracoTrainer	1
+672-151755	lootdistro	2	Gets-You-Drunk	Jizmak The Destroyer	1
+672-151755	lootdistro	3	Helps-You-Sleep	Jizmak The Destroyer	1
+672-151755	lootdistro	4	HOA zombie eyes	Jizmak The Destroyer	1
+672-151755	lootdistro	5	Unkillable Skeleton's sawsword	Makarina	1
+672-151755	lootdistro	6	zombie accordion	Makarina	1
+672-151755	lootdistro	7	electric Kool-Aid	nOOBSauce	1
+672-151755	lootdistro	8	Gets-You-Drunk	nOOBSauce	1
+672-151755	lootdistro	9	skull capacitor	nOOBSauce	1
+672-151755	lootdistro	10	wriggling severed nose	nOOBSauce	1
+672-151755	lootdistro	11	electric Kool-Aid	WhimOrClutters	1
+672-151755	lootdistro	12	Unkillable Skeleton's breastplate	WhimOrClutters	1
+672-151755	lootdistro	13	Warms-Your-Tush	WhimOrClutters	1
+672-151875	clanid	672
+672-151875	startdate	20131002
+672-151875	enddate	20131004
+672-151875	playerturns	Aliisza	121	172	0	0	0	0	0
+672-151875	playerturns	Chunky Spelunky	0	0	3	7	24	50	0
+672-151875	playerturns	Jaeshala	47	76	0	0	47	62	0
+672-151875	playerturns	kuankyh	0	0	0	0	97	156	0
+672-151875	playerturns	Makarina	135	235	0	0	73	139	0
+672-151875	playerturns	nOOBSauce	0	0	175	229	0	0	0
+672-151875	playerturns	Sary	40	64	77	99	60	82	0
+672-151875	playerturns	WhimOrClutters	41	69	168	242	79	131	0
+672-151875	boss	castle	Unkillable Skeleton	Makarina	false
+672-151875	boss	village	Zombie Homeowners' Association	WhimOrClutters	true
+672-151875	boss	woods	Great Wolf of the Air	Makarina	true
+672-151875	lootdistro	1	zombie mariachi pants	Jaeshala	1
+672-151875	lootdistro	2	Great Wolf's rocket launcher	kuankyh	1
+672-151875	lootdistro	3	HOA regulation book	Makarina	1
+672-151875	lootdistro	4	Unkillable Skeleton's shinguards	Makarina	1
+672-151875	lootdistro	5	Great Wolf's headband	nOOBSauce	1
+672-151875	lootdistro	6	wriggling severed nose	nOOBSauce	1
+672-151875	lootdistro	7	electric Kool-Aid	Sary	1
+672-151875	lootdistro	8	Hunger&trade; Sauce	WhimOrClutters	2
+672-152109	clanid	672
+672-152109	startdate	20131005
+672-152109	enddate	20131008
+672-152109	playerturns	Aliisza	0	1	1	9	5	5	5
+672-152109	playerturns	Chunky Spelunky	0	0	73	129	0	0	0
+672-152109	playerturns	Jaeshala	213	314	0	0	0	1	0
+672-152109	playerturns	Jizmak The Destroyer	0	1	0	0	91	118	0
+672-152109	playerturns	nOOBSauce	64	138	68	66	141	239	0
+672-152109	playerturns	Sary	70	99	229	325	0	0	6
+672-152109	playerturns	WhimOrClutters	43	57	37	63	169	231	0
+672-152109	boss	castle	Unkillable Skeleton	Sary	true
+672-152109	boss	village	Zombie Homeowners' Association	Sary	true
+672-152109	boss	woods	Great Wolf of the Air	Sary	true
+672-152109	lootdistro	1	Great Wolf's headband	anaki	1
+672-152109	lootdistro	2	zombie mariachi hat	anaki	1
+672-152109	lootdistro	3	skull capacitor	Chunky Spelunky	1
+672-152109	lootdistro	4	HOA regulation book	Jaeshala	1
+672-152109	lootdistro	5	wriggling severed nose	Jaeshala	2
+672-152109	lootdistro	6	Unkillable Skeleton's sawsword	nOOBSauce	1
+672-152109	lootdistro	7	Unkillable Skeleton's shinguards	nOOBSauce	1
+672-152109	lootdistro	8	electric Kool-Aid	Sary	2
+672-152109	lootdistro	9	Hunger&trade; Sauce	Sary	1
+672-152109	lootdistro	10	Great Wolf's lice	WhimOrClutters	1
+672-152109	lootdistro	11	Hunger&trade; Sauce	WhimOrClutters	1
+672-152311	clanid	672
+672-152311	startdate	20131008
+672-152311	enddate	20131012
+672-152311	playerturns	Aliisza	491	281	14	10	66	51	0
+672-152311	playerturns	anaki	0	0	0	0	0	0	1
+672-152311	playerturns	HappyAmerican	0	1	0	0	0	0	1
+672-152311	playerturns	Jaeshala	7	11	0	0	0	0	0
+672-152311	playerturns	Makarina	0	0	84	53	0	0	2
+672-152311	playerturns	nOOBSauce	128	72	0	0	109	74	0
+672-152311	playerturns	scathdhuan	0	0	348	201	0	0	0
+672-152311	playerturns	The_Dancing_Viagra	0	0	118	52	115	85	0
+672-152311	playerturns	WhimOrClutters	6	3	82	38	291	209	0
+672-152311	boss	castle	Count Drunkula	WhimOrClutters	true
+672-152311	boss	village	Mayor Ghost	Sary	true
+672-152311	boss	woods	Falls-From-Sky	WhimOrClutters	true
+672-152311	lootdistro	1	Mayor Ghost's sash	Aliisza	1
+672-152311	lootdistro	2	Protects-Your-Junk	Jaeshala	1
+672-152311	lootdistro	3	Drunkula's bell	nOOBSauce	1
+672-152311	lootdistro	4	ghost pepper	nOOBSauce	1
+672-152311	lootdistro	5	bottle of Bloodweiser	Sary	2
+672-152311	lootdistro	6	Mayor Ghost's cloak	scathdhuan	1
+672-152311	lootdistro	7	Gets-You-Drunk	The_Dancing_Viagra	1
+672-152311	lootdistro	8	Drapes-You-Regally	WhimOrClutters	1
+672-152311	lootdistro	9	Drunkula's cape	WhimOrClutters	1
+672-152311	lootdistro	10	Gets-You-Drunk	WhimOrClutters	1
+672-152311	lootdistro	11	ghost pepper	WhimOrClutters	1
+672-152311	lootdistro	12	skull capacitor	WhimOrClutters	1
+672-152549	clanid	672
+672-152549	startdate	20131012
+672-152549	enddate	20131016
+672-152549	playerturns	Aliisza	208	301	82	29	177	111	0
+672-152549	playerturns	anaki	0	0	44	30	0	0	1
+672-152549	playerturns	Jizmak The Destroyer	0	1	4	6	7	3	0
+672-152549	playerturns	Makarina	204	286	29	22	94	69	1
+672-152549	playerturns	nOOBSauce	0	0	153	97	139	100	0
+672-152549	playerturns	The_Dancing_Viagra	0	0	120	84	0	0	3
+672-152549	playerturns	WhimOrClutters	0	0	187	113	179	121	0
+672-152549	boss	castle	Count Drunkula	Jizmak The Destroyer	true
+672-152549	boss	village	Mayor Ghost	Jizmak The Destroyer	true
+672-152549	boss	woods	Great Wolf of the Air	Jizmak The Destroyer	true
+672-152549	lootdistro	1	Mayor Ghost's gavel	Aliisza	1
+672-152549	lootdistro	2	Mayor Ghost's toupee	Aliisza	1
+672-152549	lootdistro	3	Thunkula's drinking cap	Aliisza	1
+672-152549	lootdistro	4	Drunkula's bell	anaki	1
+672-152549	lootdistro	5	skull capacitor	Jaeshala	1
+672-152549	lootdistro	6	ghost pepper	Jizmak The Destroyer	1
+672-152549	lootdistro	7	Hunger&trade; Sauce	Jizmak The Destroyer	1
+672-152549	lootdistro	8	Great Wolf's beastly trousers	nOOBSauce	1
+672-152549	lootdistro	9	bottle of Bloodweiser	Sary	1
+672-152549	lootdistro	10	Great Wolf's right paw	The_Dancing_Viagra	1
+672-152549	lootdistro	11	bottle of Bloodweiser	WhimOrClutters	1
+672-152549	lootdistro	12	ghost pepper	WhimOrClutters	1
+672-152549	lootdistro	13	Hunger&trade; Sauce	WhimOrClutters	1

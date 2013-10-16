@@ -1,0 +1,47 @@
+#Clan	Type	Points
+# 672 - CGC
+# 58778 - Prisoners of 1337
+# 2046991961 - Poof
+# 2047001253 - Big Whoop
+
+672	mobKill	1
+672	hardBoss	1000
+672	normBoss	0
+672	unlock	0
+672	sheets	0
+672	hardLoot	-1000
+672	normLoot	-1000
+672	noseFam	0
+672	consLoot	-10
+672	skullCap	0	
+58778	mobKill	0
+58778	hardBoss	0
+58778	normBoss	0
+58778	unlock	0
+58778	sheets	0
+58778	hardLoot	0
+58778	normLoot	0
+58778	noseFam	0
+58778	consLoot	0
+58778	skullCap	0
+2046991961	mobKill	0
+2046991961	hardBoss	0
+2046991961	normBoss	0
+2046991961	unlock	0
+2046991961	sheets	0
+2046991961	hardLoot	0
+2046991961	normLoot	0
+2046991961	noseFam	0
+2046991961	consLoot	0
+2046991961	skullCap	0
+2047001253	mobKill	0
+2047001253	hardBoss	0
+2047001253	normBoss	0
+2047001253	unlock	0
+2047001253	sheets	0
+2047001253	hardLoot	0
+2047001253	normLoot	0
+2047001253	noseFam	0
+2047001253	consLoot	0
+2047001253	skullCap	0
+ 	
