@@ -1,0 +1,404 @@
+Aliisza	pointsbyinstance	2046991961	149092	90	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0
+Aliisza	pointsbyinstance	2046991961	149512	39	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0
+Aliisza	pointsbyinstance	2046991961	149926	469	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0
+Aliisza	pointsbyinstance	2046991961	150161	1117	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0
+Aliisza	pointsbyinstance	2046991961	150463	880	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0
+Aliisza	pointsbyinstance	2046991961	150734	791	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0
+Aliisza	pointsbyinstance	2046991961	151031	230	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0
+Aliisza	pointsbyinstance	2046991961	151406	510	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0
+Aliisza	pointsbyinstance	672	149128	516	516	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-484
+Aliisza	pointsbyinstance	672	149378	584	584	0	0	0	0	0	0	0	0	0	0	0	0	2	-20	564
+Aliisza	pointsbyinstance	672	149569	723	723	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-277
+Aliisza	pointsbyinstance	672	149790	571	571	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-429
+Aliisza	pointsbyinstance	672	150167	13	13	0	0	0	0	0	0	0	0	0	0	0	0	0	0	13
+Aliisza	pointsbyinstance	672	150462	0	0	0	0	0	0	0	0	1	-1000	0	0	0	0	1	-10	-1010
+Aliisza	pointsbyinstance	672	150730	11	11	0	0	0	0	0	0	0	0	0	0	0	0	0	0	11
+Aliisza	pointsbyinstance	672	151017	80	80	0	0	0	0	0	0	0	0	0	0	0	0	0	0	80
+Aliisza	pointsbyinstance	672	151429	34	34	0	0	0	0	0	0	0	0	0	0	0	0	0	0	34
+Aliisza	pointsbyinstance	672	151632	10	10	0	0	0	0	0	0	1	-1000	0	0	0	0	0	0	-990
+Aliisza	pointsbyinstance	672	151755	326	326	0	0	0	0	0	0	0	0	0	0	0	0	0	0	326
+Aliisza	pointsbyinstance	672	151875	293	293	0	0	0	0	0	0	0	0	0	0	0	0	0	0	293
+Aliisza	pointsbyinstance	672	152109	21	21	0	0	0	0	0	0	0	0	0	0	0	0	0	0	21
+Aliisza	pointsbyinstance	672	152311	913	913	0	0	0	0	0	0	1	-1000	0	0	0	0	0	0	-87
+Aliisza	pointsbyinstance	672	152549	908	908	0	0	0	0	2	-2000	1	-1000	0	0	0	0	0	0	-3092
+Aliisza	pointsbyclan	2046991961		4126	0	0	0	0	0	6	0	5	0	0	0	1	0	0	0	0
+Aliisza	pointsbyclan	672		5003	5003	0	0	0	0	5	-5000	4	-4000	0	0	0	0	3	-30	-5027
+Aliisza	pointstotal	9129	5003	0	0	0	0	11	-5000	9	-4000	0	0	1	0	3	-30	-5027
+anaki	pointsbyinstance	2046991961	149512	48	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0
+anaki	pointsbyinstance	2047001253	149101	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0
+anaki	pointsbyinstance	672	149128	314	314	0	0	0	0	0	0	0	0	0	0	1	0	0	0	314
+anaki	pointsbyinstance	672	149378	278	278	0	0	0	0	0	0	0	0	0	0	0	0	2	-20	258
+anaki	pointsbyinstance	672	149569	253	253	0	0	0	0	0	0	1	-1000	0	0	0	0	0	0	-747
+anaki	pointsbyinstance	672	149790	139	139	0	0	0	0	0	0	0	0	0	0	0	0	2	-20	109
+anaki	pointsbyinstance	672	150167	211	211	0	0	0	0	0	0	1	-1000	0	0	0	0	0	0	-789
+anaki	pointsbyinstance	672	151017	147	147	0	0	0	0	0	0	0	0	0	0	0	0	1	-10	137
+anaki	pointsbyinstance	672	152109	0	0	0	0	0	0	2	-2000	0	0	0	0	0	0	0	0	-3000
+anaki	pointsbyinstance	672	152311	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+anaki	pointsbyinstance	672	152549	74	74	0	0	0	0	0	0	1	-1000	0	0	0	0	0	0	-926
+anaki	pointsbyclan	2046991961		48	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0
+anaki	pointsbyclan	2047001253		0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0
+anaki	pointsbyclan	672		1416	1416	0	0	0	0	2	-2000	3	-3000	0	0	1	0	5	-50	-4644
+anaki	pointstotal	1464	1416	0	0	0	0	2	-2000	3	-3000	0	0	3	0	5	-50	-4644
+Batdan88	pointsbyinstance	672	144190	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+Batdan88	pointsbyclan	672		1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+Batdan88	pointstotal	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+Chunky Spelunky	pointsbyinstance	2046991961	144836	157	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Chunky Spelunky	pointsbyinstance	2046991961	148284	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0
+Chunky Spelunky	pointsbyinstance	2046991961	149092	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0
+Chunky Spelunky	pointsbyinstance	2046991961	151031	0	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0
+Chunky Spelunky	pointsbyinstance	2047001253	143310	2600	0	3	0	0	0	3	0	0	0	0	0	0	0	1	0	0
+Chunky Spelunky	pointsbyinstance	2047001253	145185	2627	0	3	0	0	0	3	0	0	0	0	0	0	0	6	0	0
+Chunky Spelunky	pointsbyinstance	2047001253	147219	2999	0	1	0	2	0	3	0	1	0	1	0	0	0	5	0	0
+Chunky Spelunky	pointsbyinstance	2047001253	149101	1395	0	1	0	2	0	1	0	2	0	1	0	0	0	1	0	0
+Chunky Spelunky	pointsbyinstance	2047001253	150106	1858	0	2	0	1	0	2	0	1	0	1	0	0	0	1	0	0
+Chunky Spelunky	pointsbyinstance	2047001253	150761	2440	0	0	0	2	0	2	0	1	0	1	0	0	0	4	0	0
+Chunky Spelunky	pointsbyinstance	58778	148423	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0
+Chunky Spelunky	pointsbyinstance	672	142929	274	274	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-726
+Chunky Spelunky	pointsbyinstance	672	144190	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1	-10	-10
+Chunky Spelunky	pointsbyinstance	672	147822	280	280	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-720
+Chunky Spelunky	pointsbyinstance	672	148094	275	275	0	0	0	0	0	0	0	0	0	0	0	0	1	-10	265
+Chunky Spelunky	pointsbyinstance	672	148508	443	443	0	0	0	0	0	0	0	0	0	0	0	0	1	-10	433
+Chunky Spelunky	pointsbyinstance	672	149128	293	293	0	0	0	0	0	0	1	-1000	0	0	0	0	0	0	-707
+Chunky Spelunky	pointsbyinstance	672	149378	482	482	0	0	0	0	0	0	0	0	0	0	0	0	0	0	482
+Chunky Spelunky	pointsbyinstance	672	149569	313	313	0	0	0	0	0	0	0	0	0	0	0	0	2	-20	283
+Chunky Spelunky	pointsbyinstance	672	149790	485	485	0	0	0	0	0	0	0	0	0	0	1	0	1	-10	475
+Chunky Spelunky	pointsbyinstance	672	150462	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	-10	-10
+Chunky Spelunky	pointsbyinstance	672	150730	108	108	0	0	0	0	0	0	1	-1000	0	0	0	0	0	0	-892
+Chunky Spelunky	pointsbyinstance	672	151017	291	291	0	0	0	0	0	0	0	0	0	0	0	0	0	0	291
+Chunky Spelunky	pointsbyinstance	672	151429	155	155	0	0	0	0	0	0	0	0	0	0	0	0	0	0	155
+Chunky Spelunky	pointsbyinstance	672	151632	155	155	0	0	0	0	0	0	0	0	0	0	0	0	0	0	155
+Chunky Spelunky	pointsbyinstance	672	151755	19	19	0	0	0	0	0	0	0	0	0	0	0	0	0	0	19
+Chunky Spelunky	pointsbyinstance	672	151875	84	84	0	0	0	0	0	0	0	0	0	0	0	0	0	0	84
+Chunky Spelunky	pointsbyinstance	672	152109	202	202	0	0	0	0	0	0	0	0	1	0	0	0	0	0	202
+Chunky Spelunky	pointsbyclan	2046991961		158	0	0	0	0	0	0	0	3	0	1	0	0	0	0	0	0
+Chunky Spelunky	pointsbyclan	2047001253		13919	0	10	0	7	0	14	0	5	0	4	0	0	0	18	0	0
+Chunky Spelunky	pointsbyclan	58778		0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0
+Chunky Spelunky	pointsbyclan	672		3859	3859	1	0	0	0	2	-2000	2	-2000	1	0	1	0	7	-70	-221
+Chunky Spelunky	pointstotal	17936	3859	11	0	7	0	16	-2000	11	-2000	6	0	1	0	25	-70	-221
+Cosmosis	pointsbyinstance	672	145342	5	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5
+Cosmosis	pointsbyclan	672		5	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5
+Cosmosis	pointstotal	5	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5
+Crowther	pointsbyinstance	58778	143198	2528	0	3	0	0	0	3	0	0	0	0	0	0	0	0	0	0
+Crowther	pointsbyinstance	58778	145098	2614	0	3	0	0	0	3	0	0	0	0	0	0	0	1	0	0
+Crowther	pointsbyinstance	58778	146758	2858	0	2	0	1	0	3	0	1	0	0	0	0	0	4	0	0
+Crowther	pointsbyinstance	58778	148423	3000	0	0	0	3	0	3	0	2	0	1	0	0	0	5	0	0
+Crowther	pointsbyinstance	58778	149557	3000	0	0	0	3	0	3	0	3	0	1	0	2	0	4	0	0
+Crowther	pointsbyinstance	58778	150751	3000	0	0	0	3	0	2	0	3	0	1	0	2	0	3	0	0
+Crowther	pointsbyinstance	58778	151491	2276	0	0	0	3	0	1	0	1	0	1	0	0	0	3	0	0
+Crowther	pointsbyinstance	58778	152403	769	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Crowther	pointsbyclan	58778		20045	0	8	0	13	0	18	0	10	0	4	0	4	0	20	0	0
+Crowther	pointstotal	20045	0	8	0	13	0	18	0	10	0	4	0	4	0	20	0	0
+DracoTrainer	pointsbyinstance	672	142929	579	579	0	0	0	0	0	0	0	0	0	0	0	0	0	0	579
+DracoTrainer	pointsbyinstance	672	144190	614	614	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-386
+DracoTrainer	pointsbyinstance	672	145342	326	326	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-674
+DracoTrainer	pointsbyinstance	672	145960	572	572	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-428
+DracoTrainer	pointsbyinstance	672	147549	512	512	0	0	0	0	0	0	0	0	0	0	0	0	0	0	512
+DracoTrainer	pointsbyinstance	672	147822	618	618	0	0	0	0	0	0	0	0	0	0	1	0	1	-10	608
+DracoTrainer	pointsbyinstance	672	148094	621	621	0	0	0	0	1	-1000	0	0	0	0	0	0	1	-10	-389
+DracoTrainer	pointsbyinstance	672	149128	97	97	0	0	0	0	0	0	0	0	1	0	0	0	0	0	97
+DracoTrainer	pointsbyinstance	672	149378	303	303	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-697
+DracoTrainer	pointsbyinstance	672	149569	579	579	0	0	0	0	0	0	0	0	0	0	0	0	1	-10	569
+DracoTrainer	pointsbyinstance	672	151755	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0
+DracoTrainer	pointsbyclan	672		4821	4821	0	0	0	0	5	-5000	0	0	1	0	2	0	3	-30	-209
+DracoTrainer	pointstotal	4821	4821	0	0	0	0	5	-5000	0	0	1	0	2	0	3	-30	-209
+DreamCatcher	pointsbyinstance	672	142929	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+DreamCatcher	pointsbyinstance	672	144190	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+DreamCatcher	pointsbyclan	672		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+DreamCatcher	pointstotal	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+ElectricChairJ	pointsbyinstance	672	150730	835	835	0	0	0	0	1	-1000	1	-1000	0	0	0	0	0	0	-1165
+ElectricChairJ	pointsbyinstance	672	151017	566	566	0	0	0	0	0	0	1	-1000	0	0	0	0	0	0	-434
+ElectricChairJ	pointsbyinstance	672	151197	691	691	0	0	0	0	1	-1000	0	0	1	0	0	0	0	0	-309
+ElectricChairJ	pointsbyinstance	672	151429	710	710	0	0	1	1000	3	-3000	0	0	1	0	0	0	0	0	-4290
+ElectricChairJ	pointsbyclan	672		2802	2802	0	0	1	1000	5	-5000	2	-2000	2	0	0	0	0	0	-6198
+ElectricChairJ	pointstotal	2802	2802	0	0	1	1000	5	-5000	2	-2000	2	0	0	0	0	0	-6198
+Gringdor	pointsbyinstance	2046991961	144836	0	0	0	0	1	0	0	0	0	0	0	0	0	0	1	0	0
+Gringdor	pointsbyinstance	672	142929	396	396	3	0	0	0	0	0	0	0	0	0	0	0	0	0	396
+Gringdor	pointsbyinstance	672	144190	745	745	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-255
+Gringdor	pointsbyinstance	672	145342	1244	1244	1	0	2	2000	0	0	0	0	1	0	0	0	0	0	4244
+Gringdor	pointsbyinstance	672	145960	702	702	0	0	0	0	0	0	0	0	0	0	0	0	0	0	702
+Gringdor	pointsbyclan	2046991961		0	0	0	0	1	0	0	0	0	0	0	0	0	0	1	0	0
+Gringdor	pointsbyclan	672		3087	3087	4	0	2	2000	1	-1000	0	0	1	0	0	0	0	0	5087
+Gringdor	pointstotal	3087	3087	4	0	3	2000	1	-1000	0	0	1	0	0	0	1	0	5087
+Jaeshala	pointsbyinstance	2046991961	151031	338	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jaeshala	pointsbyinstance	672	142929	251	251	0	0	0	0	0	0	0	0	0	0	0	0	0	0	251
+Jaeshala	pointsbyinstance	672	147549	61	61	0	0	0	0	0	0	0	0	0	0	0	0	0	0	61
+Jaeshala	pointsbyinstance	672	147822	511	511	0	0	0	0	0	0	0	0	0	0	0	0	1	-10	501
+Jaeshala	pointsbyinstance	672	148094	842	842	0	0	0	0	1	-1000	0	0	0	0	0	0	1	-10	-168
+Jaeshala	pointsbyinstance	672	148508	703	703	0	0	0	0	1	-1000	0	0	0	0	0	0	2	-20	-327
+Jaeshala	pointsbyinstance	672	150462	142	142	0	0	0	0	1	-1000	1	-1000	0	0	0	0	0	0	-1858
+Jaeshala	pointsbyinstance	672	150730	192	192	0	0	0	0	0	0	0	0	0	0	0	0	0	0	192
+Jaeshala	pointsbyinstance	672	151017	491	491	0	0	0	0	0	0	0	0	0	0	0	0	3	-30	431
+Jaeshala	pointsbyinstance	672	151197	186	186	0	0	0	0	0	0	0	0	0	0	0	0	1	-10	176
+Jaeshala	pointsbyinstance	672	151429	110	110	0	0	0	0	0	0	0	0	0	0	0	0	1	-10	100
+Jaeshala	pointsbyinstance	672	151632	256	256	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-744
+Jaeshala	pointsbyinstance	672	151755	360	360	0	0	0	0	0	0	0	0	0	0	0	0	0	0	360
+Jaeshala	pointsbyinstance	672	151875	232	232	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-768
+Jaeshala	pointsbyinstance	672	152109	528	528	0	0	0	0	0	0	1	-1000	0	0	2	0	0	0	-472
+Jaeshala	pointsbyinstance	672	152311	18	18	0	0	0	0	0	0	1	-1000	0	0	0	0	0	0	-982
+Jaeshala	pointsbyinstance	672	152549	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+Jaeshala	pointsbyclan	2046991961		338	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jaeshala	pointsbyclan	672		4883	4883	0	0	0	0	5	-5000	3	-3000	1	0	2	0	9	-90	-3247
+Jaeshala	pointstotal	5221	4883	0	0	0	0	5	-5000	3	-3000	1	0	2	0	9	-90	-3247
+JimFromTx	pointsbyinstance	672	145342	88	88	0	0	0	0	0	0	0	0	0	0	1	0	0	0	88
+JimFromTx	pointsbyinstance	672	145960	4	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4
+JimFromTx	pointsbyclan	672		92	92	0	0	0	0	0	0	0	0	0	0	1	0	0	0	92
+JimFromTx	pointstotal	92	92	0	0	0	0	0	0	0	0	0	0	1	0	0	0	92
+Jizmak The Destroyer	pointsbyinstance	2046991961	143247	478	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0
+Jizmak The Destroyer	pointsbyinstance	2046991961	144836	1229	0	0	0	1	0	0	0	1	0	0	0	0	0	1	0	0
+Jizmak The Destroyer	pointsbyinstance	2046991961	145967	621	0	0	0	1	0	0	0	1	0	0	0	0	0	2	0	0
+Jizmak The Destroyer	pointsbyinstance	2046991961	146753	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0
+Jizmak The Destroyer	pointsbyinstance	2046991961	148284	652	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0
+Jizmak The Destroyer	pointsbyinstance	2046991961	149092	1428	0	0	0	0	0	0	0	1	0	1	0	2	0	0	0	0
+Jizmak The Destroyer	pointsbyinstance	2046991961	149512	1168	0	0	0	0	0	2	0	2	0	1	0	0	0	0	0	0
+Jizmak The Destroyer	pointsbyinstance	2046991961	149926	915	0	0	0	0	0	3	0	0	0	1	0	0	0	0	0	0
+Jizmak The Destroyer	pointsbyinstance	2046991961	150161	649	0	0	0	1	0	3	0	0	0	1	0	0	0	0	0	0
+Jizmak The Destroyer	pointsbyinstance	2046991961	150463	925	0	0	0	2	0	2	0	1	0	1	0	0	0	0	0	0
+Jizmak The Destroyer	pointsbyinstance	2046991961	150734	539	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0
+Jizmak The Destroyer	pointsbyinstance	2046991961	151031	1274	0	0	0	2	0	0	0	1	0	0	0	2	0	1	0	0
+Jizmak The Destroyer	pointsbyinstance	2046991961	151406	1287	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0
+Jizmak The Destroyer	pointsbyinstance	2047001253	149101	200	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jizmak The Destroyer	pointsbyinstance	2047001253	150106	84	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Jizmak The Destroyer	pointsbyinstance	2047001253	150761	82	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0
+Jizmak The Destroyer	pointsbyinstance	672	142929	132	132	0	0	0	0	0	0	0	0	0	0	0	0	0	0	132
+Jizmak The Destroyer	pointsbyinstance	672	145342	12	12	0	0	0	0	0	0	0	0	0	0	0	0	0	0	12
+Jizmak The Destroyer	pointsbyinstance	672	147549	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0
+Jizmak The Destroyer	pointsbyinstance	672	147822	407	407	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-593
+Jizmak The Destroyer	pointsbyinstance	672	148094	0	0	0	0	1	1000	0	0	1	-1000	0	0	0	0	0	0	0
+Jizmak The Destroyer	pointsbyinstance	672	148508	0	0	0	0	1	1000	0	0	1	-1000	0	0	0	0	0	0	0
+Jizmak The Destroyer	pointsbyinstance	672	149378	147	147	0	0	1	1000	0	0	1	-1000	0	0	0	0	0	0	147
+Jizmak The Destroyer	pointsbyinstance	672	149569	67	67	0	0	1	1000	1	-1000	1	-1000	0	0	0	0	0	0	-933
+Jizmak The Destroyer	pointsbyinstance	672	149790	20	20	0	0	1	1000	0	0	1	-1000	0	0	0	0	0	0	20
+Jizmak The Destroyer	pointsbyinstance	672	150167	660	660	0	0	2	2000	1	-1000	1	-1000	1	0	0	0	0	0	1660
+Jizmak The Destroyer	pointsbyinstance	672	150462	120	120	0	0	2	2000	0	0	0	0	0	0	0	0	0	0	3120
+Jizmak The Destroyer	pointsbyinstance	672	150730	52	52	0	0	2	2000	2	-2000	1	-1000	0	0	0	0	0	0	-948
+Jizmak The Destroyer	pointsbyinstance	672	151017	178	178	0	0	2	2000	1	-1000	0	0	0	0	0	0	1	-10	2168
+Jizmak The Destroyer	pointsbyinstance	672	151197	345	345	0	0	2	2000	0	0	0	0	0	0	0	0	2	-20	3315
+Jizmak The Destroyer	pointsbyinstance	672	151429	303	303	0	0	1	1000	0	0	1	-1000	0	0	0	0	0	0	303
+Jizmak The Destroyer	pointsbyinstance	672	151632	428	428	0	0	0	0	0	0	1	-1000	0	0	0	0	1	-10	-582
+Jizmak The Destroyer	pointsbyinstance	672	151755	1	1	0	0	0	0	0	0	2	-2000	0	0	0	0	1	-10	-3009
+Jizmak The Destroyer	pointsbyinstance	672	152109	210	210	0	0	0	0	0	0	0	0	0	0	0	0	0	0	210
+Jizmak The Destroyer	pointsbyinstance	672	152549	21	21	0	0	3	3000	0	0	0	0	0	0	0	0	2	-20	5991
+Jizmak The Destroyer	pointsbyclan	2046991961		11165	0	0	0	8	0	12	0	8	0	5	0	5	0	4	0	0
+Jizmak The Destroyer	pointsbyclan	2047001253		366	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0
+Jizmak The Destroyer	pointsbyclan	672		3103	3103	0	0	19	19000	6	-6000	11	-11000	1	0	1	0	7	-70	11013
+Jizmak The Destroyer	pointstotal	14634	3103	0	0	28	19000	18	-6000	19	-11000	6	0	6	0	11	-70	11013
+kuankyh	pointsbyinstance	672	144190	251	251	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-749
+kuankyh	pointsbyinstance	672	145342	608	608	0	0	0	0	0	0	1	-1000	0	0	0	0	0	0	-392
+kuankyh	pointsbyinstance	672	145960	672	672	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-328
+kuankyh	pointsbyinstance	672	147549	216	216	0	0	0	0	0	0	0	0	0	0	0	0	0	0	216
+kuankyh	pointsbyinstance	672	147822	606	606	0	0	0	0	1	-1000	0	0	0	0	0	0	1	-10	-404
+kuankyh	pointsbyinstance	672	148094	498	498	0	0	0	0	0	0	0	0	0	0	0	0	1	-10	488
+kuankyh	pointsbyinstance	672	148508	621	621	0	0	0	0	0	0	0	0	0	0	0	0	1	-10	611
+kuankyh	pointsbyinstance	672	149128	483	483	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-517
+kuankyh	pointsbyinstance	672	149378	225	225	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-775
+kuankyh	pointsbyinstance	672	149569	455	455	0	0	0	0	0	0	0	0	0	0	0	0	1	-10	445
+kuankyh	pointsbyinstance	672	149790	545	545	0	0	0	0	0	0	0	0	0	0	1	0	1	-10	535
+kuankyh	pointsbyinstance	672	150167	687	687	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-313
+kuankyh	pointsbyinstance	672	150462	618	618	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-382
+kuankyh	pointsbyinstance	672	150730	599	599	0	0	0	0	0	0	0	0	0	0	0	0	2	-20	569
+kuankyh	pointsbyinstance	672	151017	646	646	0	0	0	0	1	-1000	1	-1000	0	0	0	0	0	0	-1354
+kuankyh	pointsbyinstance	672	151197	664	664	0	0	0	0	1	-1000	0	0	0	0	0	0	2	-20	-366
+kuankyh	pointsbyinstance	672	151429	323	323	0	0	0	0	0	0	0	0	0	0	0	0	2	-20	293
+kuankyh	pointsbyinstance	672	151632	553	553	0	0	0	0	0	0	0	0	0	0	1	0	1	-10	543
+kuankyh	pointsbyinstance	672	151755	480	480	0	0	0	0	0	0	0	0	0	0	0	0	0	0	480
+kuankyh	pointsbyinstance	672	151875	253	253	0	0	0	0	0	0	1	-1000	0	0	0	0	0	0	-747
+kuankyh	pointsbyclan	672		10003	10003	0	0	0	0	9	-9000	3	-3000	0	0	2	0	12	-120	-2147
+kuankyh	pointstotal	10003	10003	0	0	0	0	9	-9000	3	-3000	0	0	2	0	12	-120	-2147
+Kyta	pointsbyinstance	672	142929	68	68	0	0	0	0	0	0	0	0	0	0	0	0	0	0	68
+Kyta	pointsbyclan	672		68	68	0	0	0	0	0	0	0	0	0	0	0	0	0	0	68
+Kyta	pointstotal	68	68	0	0	0	0	0	0	0	0	0	0	0	0	0	0	68
+lloh	pointsbyinstance	672	142929	159	159	0	0	0	0	0	0	0	0	0	0	0	0	0	0	159
+lloh	pointsbyclan	672		159	159	0	0	0	0	0	0	0	0	0	0	0	0	0	0	159
+lloh	pointstotal	159	159	0	0	0	0	0	0	0	0	0	0	0	0	0	0	159
+Maikeruu	pointsbyinstance	672	142929	17	17	0	0	0	0	0	0	0	0	0	0	0	0	0	0	17
+Maikeruu	pointsbyinstance	672	144190	76	76	0	0	0	0	0	0	0	0	0	0	0	0	0	0	76
+Maikeruu	pointsbyclan	672		93	93	0	0	0	0	0	0	0	0	0	0	0	0	0	0	93
+Maikeruu	pointstotal	93	93	0	0	0	0	0	0	0	0	0	0	0	0	0	0	93
+Makarina	pointsbyinstance	2046991961	151406	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0
+Makarina	pointsbyinstance	2047001253	150761	65	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0
+Makarina	pointsbyinstance	58778	150751	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0
+Makarina	pointsbyinstance	672	151197	596	596	0	0	1	1000	1	-1000	1	-1000	0	0	0	0	0	0	-404
+Makarina	pointsbyinstance	672	151429	331	331	0	0	0	0	0	0	1	-1000	0	0	0	0	0	0	-669
+Makarina	pointsbyinstance	672	151632	371	371	0	0	1	1000	0	0	1	-1000	1	0	1	0	0	0	371
+Makarina	pointsbyinstance	672	151755	573	573	0	0	1	1000	1	-1000	1	-1000	0	0	0	0	0	0	-427
+Makarina	pointsbyinstance	672	151875	582	582	1	0	1	1000	1	-1000	1	-1000	0	0	0	0	0	0	-418
+Makarina	pointsbyinstance	672	152311	137	137	0	0	0	0	0	0	0	0	0	0	0	0	0	0	137
+Makarina	pointsbyinstance	672	152549	704	704	0	0	0	0	0	0	0	0	0	0	0	0	0	0	704
+Makarina	pointsbyclan	2046991961		0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0
+Makarina	pointsbyclan	2047001253		65	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0
+Makarina	pointsbyclan	58778		0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0
+Makarina	pointsbyclan	672		3294	3294	1	0	4	4000	3	-3000	5	-5000	1	0	1	0	0	0	-706
+Makarina	pointstotal	3359	3294	1	0	4	4000	5	-3000	6	-5000	1	0	1	0	0	0	0
+MaWnStuRR	pointsbyinstance	672	144190	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+MaWnStuRR	pointsbyclan	672		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+MaWnStuRR	pointstotal	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+nOOBSauce	pointsbyinstance	2047001253	143310	400	0	0	0	0	0	0	0	0	0	0	0	1	0	1	0	0
+nOOBSauce	pointsbyinstance	2047001253	145185	279	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+nOOBSauce	pointsbyinstance	2047001253	150106	107	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+nOOBSauce	pointsbyinstance	672	142929	73	73	0	0	0	0	0	0	0	0	0	0	0	0	5	-50	-17
+nOOBSauce	pointsbyinstance	672	144190	438	438	0	0	0	0	0	0	0	0	0	0	0	0	4	-40	378
+nOOBSauce	pointsbyinstance	672	145342	18	18	0	0	0	0	0	0	0	0	0	0	0	0	4	-40	-42
+nOOBSauce	pointsbyinstance	672	145960	320	320	0	0	0	0	0	0	0	0	1	0	0	0	1	-10	310
+nOOBSauce	pointsbyinstance	672	147549	660	660	0	0	0	0	1	-1000	0	0	0	0	1	0	0	0	-340
+nOOBSauce	pointsbyinstance	672	148094	276	276	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-724
+nOOBSauce	pointsbyinstance	672	149128	10	10	0	0	0	0	0	0	0	0	0	0	0	0	1	-10	0
+nOOBSauce	pointsbyinstance	672	149569	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+nOOBSauce	pointsbyinstance	672	149790	199	199	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-801
+nOOBSauce	pointsbyinstance	672	150167	412	412	0	0	0	0	0	0	0	0	0	0	0	0	2	-20	392
+nOOBSauce	pointsbyinstance	672	150462	457	457	0	0	0	0	0	0	1	-1000	0	0	0	0	0	0	-543
+nOOBSauce	pointsbyinstance	672	150730	303	303	0	0	0	0	0	0	0	0	0	0	0	0	0	0	303
+nOOBSauce	pointsbyinstance	672	151755	741	741	0	0	0	0	0	0	0	0	1	0	1	0	2	-20	711
+nOOBSauce	pointsbyinstance	672	151875	404	404	0	0	0	0	1	-1000	0	0	0	0	1	0	0	0	-596
+nOOBSauce	pointsbyinstance	672	152109	716	716	0	0	0	0	1	-1000	1	-1000	0	0	0	0	0	0	-1284
+nOOBSauce	pointsbyinstance	672	152311	383	383	0	0	0	0	0	0	1	-1000	0	0	0	0	1	-10	-627
+nOOBSauce	pointsbyinstance	672	152549	489	489	0	0	0	0	0	0	1	-1000	0	0	0	0	0	0	-511
+nOOBSauce	pointsbyclan	2047001253		786	0	0	0	0	0	0	0	0	0	0	0	1	0	1	0	0
+nOOBSauce	pointsbyclan	672		5899	5899	0	0	0	0	5	-5000	4	-4000	2	0	3	0	20	-200	-3391
+nOOBSauce	pointstotal	6685	5899	0	0	0	0	5	-5000	4	-4000	2	0	4	0	21	-200	-3391
+Noodlius	pointsbyinstance	672	142929	265	265	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-735
+Noodlius	pointsbyclan	672		265	265	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-735
+Noodlius	pointstotal	265	265	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-735
+ReisenFig	pointsbyinstance	672	144190	6	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6
+ReisenFig	pointsbyinstance	672	145342	45	45	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-955
+ReisenFig	pointsbyinstance	672	145960	12	12	0	0	0	0	0	0	0	0	0	0	0	0	1	-10	2
+ReisenFig	pointsbyclan	672		63	63	0	0	0	0	1	-1000	0	0	0	0	0	0	1	-10	-947
+ReisenFig	pointstotal	63	63	0	0	0	0	1	-1000	0	0	0	0	0	0	1	-10	-947
+Sary	pointsbyinstance	2046991961	143247	2522	0	3	0	0	0	2	0	0	0	0	0	1	0	0	0	0
+Sary	pointsbyinstance	2046991961	144836	1614	0	0	0	0	0	3	0	2	0	1	0	0	0	3	0	0
+Sary	pointsbyinstance	2046991961	145967	2217	0	0	0	2	0	3	0	2	0	1	0	0	0	3	0	0
+Sary	pointsbyinstance	2046991961	146753	2580	0	0	0	3	0	3	0	1	0	1	0	0	0	4	0	0
+Sary	pointsbyinstance	2046991961	148284	1932	0	0	0	3	0	3	0	2	0	1	0	0	0	4	0	0
+Sary	pointsbyinstance	2046991961	149092	1482	0	0	0	2	0	2	0	1	0	0	0	0	0	2	0	0
+Sary	pointsbyinstance	2046991961	149512	1385	0	0	0	3	0	0	0	1	0	0	0	0	0	4	0	0
+Sary	pointsbyinstance	2046991961	149926	1126	0	0	0	3	0	0	0	0	0	0	0	1	0	4	0	0
+Sary	pointsbyinstance	2046991961	150161	938	0	0	0	2	0	0	0	0	0	0	0	0	0	4	0	0
+Sary	pointsbyinstance	2046991961	150463	1194	0	0	0	1	0	0	0	0	0	0	0	0	0	5	0	0
+Sary	pointsbyinstance	2046991961	150734	1474	0	0	0	2	0	0	0	0	0	1	0	1	0	4	0	0
+Sary	pointsbyinstance	2046991961	151031	412	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0
+Sary	pointsbyinstance	2046991961	151406	1192	0	0	0	1	0	0	0	0	0	0	0	0	0	2	0	0
+Sary	pointsbyinstance	2047001253	145185	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sary	pointsbyinstance	2047001253	147219	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0
+Sary	pointsbyinstance	672	142929	74	74	0	0	0	0	0	0	0	0	0	0	0	0	0	0	74
+Sary	pointsbyinstance	672	144190	25	25	0	0	2	2000	0	0	2	-2000	0	0	0	0	0	0	25
+Sary	pointsbyinstance	672	145342	200	200	0	0	0	0	0	0	1	-1000	0	0	0	0	0	0	-800
+Sary	pointsbyinstance	672	145960	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+Sary	pointsbyinstance	672	147549	0	0	0	0	1	1000	1	-1000	1	-1000	0	0	0	0	0	0	-1000
+Sary	pointsbyinstance	672	147822	5	5	0	0	2	2000	0	0	2	-2000	1	0	0	0	0	0	5
+Sary	pointsbyinstance	672	148094	19	19	0	0	1	1000	0	0	1	-1000	1	0	0	0	1	-10	9
+Sary	pointsbyinstance	672	148508	0	0	0	0	1	1000	0	0	1	-1000	0	0	0	0	0	0	0
+Sary	pointsbyinstance	672	149128	1	1	0	0	3	3000	0	0	0	0	0	0	0	0	3	-30	5961
+Sary	pointsbyinstance	672	149378	122	122	0	0	1	1000	1	-1000	0	0	0	0	0	0	2	-20	102
+Sary	pointsbyinstance	672	149569	0	0	0	0	1	1000	0	0	0	0	0	0	0	0	2	-20	980
+Sary	pointsbyinstance	672	149790	0	0	0	0	1	1000	0	0	1	-1000	0	0	0	0	0	0	0
+Sary	pointsbyinstance	672	150167	65	65	0	0	1	1000	0	0	0	0	0	0	0	0	2	-20	1045
+Sary	pointsbyinstance	672	150462	10	10	0	0	0	0	0	0	0	0	0	0	0	0	2	-20	-10
+Sary	pointsbyinstance	672	150730	9	9	0	0	0	0	0	0	0	0	0	0	0	0	1	-10	-1
+Sary	pointsbyinstance	672	151017	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	-10	-10
+Sary	pointsbyinstance	672	151197	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	-10	-10
+Sary	pointsbyinstance	672	151429	534	534	0	0	0	0	0	0	0	0	0	0	0	0	2	-20	514
+Sary	pointsbyinstance	672	151632	574	574	0	0	1	1000	0	0	0	0	0	0	0	0	2	-20	1554
+Sary	pointsbyinstance	672	151875	422	422	0	0	0	0	0	0	0	0	0	0	0	0	1	-10	412
+Sary	pointsbyinstance	672	152109	723	723	0	0	3	3000	0	0	0	0	0	0	0	0	3	-30	6673
+Sary	pointsbyinstance	672	152311	0	0	0	0	1	1000	0	0	0	0	0	0	0	0	2	-20	980
+Sary	pointsbyinstance	672	152549	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	-10	-10
+Sary	pointsbyclan	2046991961		20068	0	3	0	22	0	16	0	9	0	5	0	3	0	42	0	0
+Sary	pointsbyclan	2047001253		2	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0
+Sary	pointsbyclan	672		2784	2784	0	0	19	19000	2	-2000	9	-9000	2	0	0	0	26	-260	16494
+Sary	pointstotal	22854	2784	3	0	41	19000	18	-2000	19	-9000	7	0	3	0	68	-260	16494
+scathdhuan	pointsbyinstance	2046991961	146753	64	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0
+scathdhuan	pointsbyinstance	2046991961	148284	415	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0
+scathdhuan	pointsbyinstance	2046991961	149926	388	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0
+scathdhuan	pointsbyinstance	2046991961	150161	296	0	0	0	0	0	0	0	1	0	0	0	1	0	0	0	0
+scathdhuan	pointsbyinstance	2046991961	150463	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0
+scathdhuan	pointsbyinstance	2046991961	151031	746	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0
+scathdhuan	pointsbyinstance	2047001253	149101	1352	0	0	0	0	0	2	0	0	0	0	0	1	0	2	0	0
+scathdhuan	pointsbyinstance	2047001253	150106	951	0	0	0	0	0	1	0	0	0	0	0	0	0	2	0	0
+scathdhuan	pointsbyinstance	2047001253	150761	412	0	0	0	0	0	0	0	1	0	0	0	0	0	2	0	0
+scathdhuan	pointsbyinstance	58778	146758	142	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+scathdhuan	pointsbyinstance	58778	151491	320	0	0	0	0	0	1	0	1	0	0	0	0	0	2	0	0
+scathdhuan	pointsbyinstance	672	147822	51	51	0	0	0	0	0	0	0	0	0	0	1	0	0	0	51
+scathdhuan	pointsbyinstance	672	149790	224	224	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-776
+scathdhuan	pointsbyinstance	672	150462	399	399	0	0	0	0	0	0	0	0	0	0	0	0	1	-10	389
+scathdhuan	pointsbyinstance	672	151197	25	25	0	0	0	0	0	0	0	0	0	0	0	0	0	0	25
+scathdhuan	pointsbyinstance	672	152311	549	549	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-451
+scathdhuan	pointsbyclan	2046991961		1910	0	0	0	0	0	1	0	2	0	0	0	4	0	0	0	0
+scathdhuan	pointsbyclan	2047001253		2715	0	0	0	0	0	3	0	1	0	0	0	1	0	6	0	0
+scathdhuan	pointsbyclan	58778		462	0	0	0	0	0	1	0	1	0	0	0	0	0	2	0	0
+scathdhuan	pointsbyclan	672		1248	1248	0	0	0	0	2	-2000	0	0	0	0	1	0	1	-10	-762
+scathdhuan	pointstotal	6335	1248	0	0	0	0	7	-2000	4	0	0	0	6	0	9	-10	-762
+Sirquacksalot	pointsbyinstance	672	145342	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sirquacksalot	pointsbyclan	672		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sirquacksalot	pointstotal	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Smedley	pointsbyinstance	672	145342	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+Smedley	pointsbyinstance	672	145960	25	25	0	0	0	0	0	0	0	0	0	0	0	0	1	-10	15
+Smedley	pointsbyinstance	672	147549	37	37	0	0	0	0	0	0	0	0	0	0	0	0	0	0	37
+Smedley	pointsbyclan	672		63	63	0	0	0	0	0	0	0	0	0	0	0	0	1	-10	53
+Smedley	pointstotal	63	63	0	0	0	0	0	0	0	0	0	0	0	0	1	-10	53
+Tarragon	pointsbyinstance	58778	151491	404	0	0	0	0	0	1	0	1	0	0	0	0	0	1	0	0
+Tarragon	pointsbyclan	58778		404	0	0	0	0	0	1	0	1	0	0	0	0	0	1	0	0
+Tarragon	pointstotal	404	0	0	0	0	0	1	0	1	0	0	0	0	0	1	0	0
+The_Dancing_Viagra	pointsbyinstance	2046991961	145967	162	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0
+The_Dancing_Viagra	pointsbyinstance	672	144190	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+The_Dancing_Viagra	pointsbyinstance	672	145960	9	9	0	0	1	1000	0	0	1	-1000	0	0	0	0	1	-10	-1
+The_Dancing_Viagra	pointsbyinstance	672	147549	478	478	1	0	1	1000	0	0	1	-1000	0	0	0	0	3	-30	438
+The_Dancing_Viagra	pointsbyinstance	672	148508	0	0	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-1000
+The_Dancing_Viagra	pointsbyinstance	672	149128	547	547	0	0	0	0	0	0	2	-2000	0	0	0	0	0	0	-2453
+The_Dancing_Viagra	pointsbyinstance	672	149378	240	240	0	0	0	0	0	0	0	0	0	0	0	0	0	0	240
+The_Dancing_Viagra	pointsbyinstance	672	149790	16	16	0	0	0	0	0	0	0	0	0	0	0	0	0	0	16
+The_Dancing_Viagra	pointsbyinstance	672	150167	103	103	0	0	0	0	0	0	0	0	0	0	0	0	1	-10	93
+The_Dancing_Viagra	pointsbyinstance	672	150462	509	509	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-491
+The_Dancing_Viagra	pointsbyinstance	672	150730	289	289	0	0	0	0	0	0	0	0	0	0	0	0	0	0	289
+The_Dancing_Viagra	pointsbyinstance	672	152311	370	370	0	0	0	0	0	0	0	0	0	0	0	0	1	-10	360
+The_Dancing_Viagra	pointsbyinstance	672	152549	204	204	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-796
+The_Dancing_Viagra	pointsbyclan	2046991961		162	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0
+The_Dancing_Viagra	pointsbyclan	672		2765	2765	1	0	2	2000	3	-3000	4	-4000	0	0	0	0	6	-60	-3305
+The_Dancing_Viagra	pointstotal	2927	2765	1	0	2	2000	3	-3000	4	-4000	0	0	0	0	7	-60	-3805
+tomkitty	pointsbyinstance	2046991961	146753	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+tomkitty	pointsbyinstance	2046991961	149092	0	0	0	0	1	0	0	0	0	0	0	0	0	0	2	0	0
+tomkitty	pointsbyinstance	2046991961	149926	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0
+tomkitty	pointsbyinstance	2046991961	151031	0	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+tomkitty	pointsbyinstance	2046991961	151406	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+tomkitty	pointsbyinstance	672	149790	0	0	0	0	1	1000	0	0	1	-1000	0	0	0	0	0	0	0
+tomkitty	pointsbyclan	2046991961		7	0	0	0	2	0	0	0	2	0	0	0	0	0	2	0	0
+tomkitty	pointsbyclan	672		0	0	0	0	1	1000	0	0	1	-1000	0	0	0	0	0	0	0
+tomkitty	pointstotal	7	0	0	0	3	1000	0	0	3	-1000	0	0	0	0	2	0	0
+WhimOrClutters	pointsbyinstance	2046991961	146753	355	0	0	0	0	0	0	0	1	0	0	0	1	0	0	0	0
+WhimOrClutters	pointsbyinstance	2046991961	149512	360	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0
+WhimOrClutters	pointsbyinstance	2046991961	149926	102	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0
+WhimOrClutters	pointsbyinstance	2046991961	150161	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0
+WhimOrClutters	pointsbyinstance	2046991961	150734	111	0	0	0	1	0	1	0	2	0	0	0	0	0	0	0	0
+WhimOrClutters	pointsbyinstance	2046991961	151406	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0
+WhimOrClutters	pointsbyinstance	2047001253	149101	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+WhimOrClutters	pointsbyinstance	2047001253	150761	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0
+WhimOrClutters	pointsbyinstance	672	142929	713	713	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-287
+WhimOrClutters	pointsbyinstance	672	144190	844	844	0	0	0	0	0	0	0	0	0	0	0	0	0	0	844
+WhimOrClutters	pointsbyinstance	672	145342	451	451	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-549
+WhimOrClutters	pointsbyinstance	672	145960	632	632	0	0	1	1000	1	-1000	1	-1000	0	0	0	0	0	0	-368
+WhimOrClutters	pointsbyinstance	672	147549	1036	1036	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	36
+WhimOrClutters	pointsbyinstance	672	147822	522	522	0	0	1	1000	0	0	1	-1000	0	0	0	0	1	-10	512
+WhimOrClutters	pointsbyinstance	672	148094	469	469	0	0	1	1000	0	0	1	-1000	0	0	0	0	1	-10	459
+WhimOrClutters	pointsbyinstance	672	148508	1233	1233	0	0	1	1000	1	-1000	1	-1000	1	0	0	0	2	-20	203
+WhimOrClutters	pointsbyinstance	672	149128	739	739	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-261
+WhimOrClutters	pointsbyinstance	672	149378	619	619	0	0	1	1000	0	0	2	-2000	1	0	0	0	0	0	-1381
+WhimOrClutters	pointsbyinstance	672	149569	610	610	0	0	1	1000	1	-1000	1	-1000	1	0	0	0	0	0	-390
+WhimOrClutters	pointsbyinstance	672	149790	801	801	0	0	0	0	0	0	0	0	1	0	0	0	0	0	801
+WhimOrClutters	pointsbyinstance	672	150167	849	849	0	0	0	0	1	-1000	1	-1000	0	0	0	0	0	0	-1151
+WhimOrClutters	pointsbyinstance	672	150462	745	745	0	0	1	1000	0	0	0	0	1	0	0	0	1	-10	1735
+WhimOrClutters	pointsbyinstance	672	150730	602	602	0	0	1	1000	0	0	0	0	1	0	0	0	2	-20	1572
+WhimOrClutters	pointsbyinstance	672	151017	601	601	0	0	1	1000	1	-1000	1	-1000	1	0	0	0	0	0	-399
+WhimOrClutters	pointsbyinstance	672	151197	493	493	0	0	0	0	0	0	2	-2000	0	0	0	0	0	0	-2507
+WhimOrClutters	pointsbyinstance	672	151429	500	500	0	0	1	1000	0	0	1	-1000	0	0	0	0	0	0	500
+WhimOrClutters	pointsbyinstance	672	151632	653	653	0	0	1	1000	2	-2000	0	0	0	0	0	0	0	0	-1347
+WhimOrClutters	pointsbyinstance	672	151755	500	500	0	0	2	2000	2	-2000	0	0	0	0	0	0	1	-10	490
+WhimOrClutters	pointsbyinstance	672	151875	730	730	0	0	1	1000	0	0	0	0	0	0	0	0	2	-20	1710
+WhimOrClutters	pointsbyinstance	672	152109	600	600	0	0	0	0	0	0	1	-1000	0	0	0	0	1	-10	-410
+WhimOrClutters	pointsbyinstance	672	152311	629	629	0	0	2	2000	2	-2000	0	0	1	0	0	0	2	-20	599
+WhimOrClutters	pointsbyinstance	672	152549	600	600	0	0	0	0	0	0	0	0	0	0	0	0	3	-30	540
+WhimOrClutters	pointsbyclan	2046991961		928	0	0	0	1	0	3	0	4	0	0	0	2	0	0	0	0
+WhimOrClutters	pointsbyclan	2047001253		1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0
+WhimOrClutters	pointsbyclan	672		16171	16171	0	0	16	16000	15	-15000	13	-13000	8	0	0	0	16	-160	951
+WhimOrClutters	pointstotal	17100	16171	0	0	17	16000	18	-15000	18	-13000	8	0	2	0	16	-160	951
+zavijava	pointsbyinstance	672	145342	3	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3
+zavijava	pointsbyinstance	672	145960	52	52	1	0	0	0	0	0	0	0	0	0	0	0	1	-10	42
+zavijava	pointsbyclan	672		55	55	1	0	0	0	0	0	0	0	0	0	0	0	1	-10	45
+zavijava	pointstotal	55	55	1	0	0	0	0	0	0	0	0	0	0	0	1	-10	-9

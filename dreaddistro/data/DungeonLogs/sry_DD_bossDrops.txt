@@ -1,0 +1,44 @@
+#Item	Type
+Covers-Your-Head	outfit	
+Drapes-You-Regally	outfit	
+Warms-Your-Tush	outfit	
+Helps-You-Sleep	hardmode
+Quiets-Your-Steps	hardmode
+Protects-Your-Junk	hardmode
+Gets-You-Drunk	consumable
+Great Wolf's headband	outfit	
+Great Wolf's left paw	outfit	
+Great Wolf's right paw	outfit	
+Great Wolf's rocket launcher	hardmode
+Great Wolf's beastly trousers	hardmode
+Great Wolf's lice	hardmode
+Hunger™ Sauce	consumable
+zombie mariachi hat	outfit	
+zombie accordion	outfit	
+zombie mariachi pants	outfit	
+HOA regulation book	hardmode
+HOA zombie eyes	hardmode
+HOA citation pad	hardmode
+wriggling severed nose	consumable
+Mayor Ghost's toupee	outfit	
+Mayor Ghost's cloak	outfit	
+Mayor Ghost's khakis	outfit	
+Mayor Ghost's gavel	hardmode
+Mayor Ghost's sash	hardmode
+Mayor Ghost's scissors	hardmode
+ghost pepper	consumable
+Thunkula's drinking cap	outfit	
+Drunkula's cape	outfit	
+Drunkula's silky pants	outfit	
+Drunkula's bell	hardmode
+Drunkula's ring of haze	hardmode
+Drunkula's wineglass	hardmode
+bottle of Bloodweiser	consumable
+Unkillable Skeleton's skullcap	outfit	
+Unkillable Skeleton's breastplate	outfit	
+Unkillable Skeleton's shinguards	outfit	
+Unkillable Skeleton's sawsword	hardmode
+Unkillable Skeleton's shield	hardmode
+Unkillable Skeleton's restless leg	hardmode
+electric Kool-Aid	consumable
+skull capacitor	hardmode

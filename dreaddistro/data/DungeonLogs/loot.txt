@@ -1,0 +1,692 @@
+Aliisza	fallsloot	3	0	1	1
+Aliisza	gwolfloot	1	1	1	1
+Aliisza	mayorloot	2	1	1	0
+Aliisza	zhoaloot	1	0	0	1
+Aliisza	drunkloot	3	1	0	0
+Aliisza	uskeleloot	1	0	0	0
+Aliisza	miscloot	0	1	2
+Aliisza	lootbreakdown	2046991961-149092-1	zombie mariachi pants		1
+Aliisza	lootbreakdown	2046991961-149512-1	wriggling severed nose		1
+Aliisza	lootbreakdown	2046991961-149926-1	Protects-Your-Junk		1
+Aliisza	lootbreakdown	2046991961-150161-1	Great Wolf's lice		1
+Aliisza	lootbreakdown	2046991961-150161-2	HOA citation pad		1
+Aliisza	lootbreakdown	2046991961-150463-1	Drunkula's bell		1
+Aliisza	lootbreakdown	2046991961-150463-2	Drunkula's cape		1
+Aliisza	lootbreakdown	2046991961-150734-1	Great Wolf's rocket launcher		1
+Aliisza	lootbreakdown	2046991961-150734-2	Unkillable Skeleton's shinguards		1
+Aliisza	lootbreakdown	2046991961-151031-1	Drapes-You-Regally		1
+Aliisza	lootbreakdown	2046991961-151031-2	zombie accordion		1
+Aliisza	lootbreakdown	2046991961-151406-1	Great Wolf's right paw		1
+Aliisza	lootbreakdown	672-149128-1	Thunkula's drinking cap		1
+Aliisza	lootbreakdown	672-149378-1	Gets-You-Drunk		2
+Aliisza	lootbreakdown	672-149569-1	Covers-Your-Head		1
+Aliisza	lootbreakdown	672-149790-1	Drapes-You-Regally		1
+Aliisza	lootbreakdown	672-150462-1	Gets-You-Drunk		1
+Aliisza	lootbreakdown	672-150462-2	Quiets-Your-Steps		1
+Aliisza	lootbreakdown	672-151632-1	Great Wolf's beastly trousers		1
+Aliisza	lootbreakdown	672-152311-1	Mayor Ghost's sash		1
+Aliisza	lootbreakdown	672-152549-1	Mayor Ghost's gavel		1
+Aliisza	lootbreakdown	672-152549-2	Mayor Ghost's toupee		1
+Aliisza	lootbreakdown	672-152549-3	Thunkula's drinking cap		1
+anaki	fallsloot	0	0	0	1
+anaki	gwolfloot	1	0	0	0
+anaki	mayorloot	1	0	1	0
+anaki	zhoaloot	0	0	0	0
+anaki	drunkloot	0	1	0	0
+anaki	uskeleloot	0	0	0	0
+anaki	miscloot	0	3	4
+anaki	lootbreakdown	2046991961-149512-2	wriggling severed nose		1
+anaki	lootbreakdown	2047001253-149101-1	wriggling severed nose		1
+anaki	lootbreakdown	672-149128-2	wriggling severed nose		1
+anaki	lootbreakdown	672-149378-2	ghost pepper		2
+anaki	lootbreakdown	672-149569-2	Protects-Your-Junk		1
+anaki	lootbreakdown	672-149790-2	bottle of Bloodweiser		1
+anaki	lootbreakdown	672-149790-3	Gets-You-Drunk		1
+anaki	lootbreakdown	672-150167-1	Mayor Ghost's sash		1
+anaki	lootbreakdown	672-151017-1	ghost pepper		1
+anaki	lootbreakdown	672-152109-1	Great Wolf's headband		1
+anaki	lootbreakdown	672-152109-2	zombie mariachi hat		1
+anaki	lootbreakdown	672-152549-4	Drunkula's bell		1
+Chunky Spelunky	fallsloot	2	0	0	1
+Chunky Spelunky	gwolfloot	3	1	1	0
+Chunky Spelunky	mayorloot	3	0	1	1
+Chunky Spelunky	zhoaloot	3	1	1	0
+Chunky Spelunky	drunkloot	2	0	0	0
+Chunky Spelunky	uskeleloot	3	1	1	2
+Chunky Spelunky	miscloot	6	1	19
+Chunky Spelunky	lootbreakdown	2046991961-148284-1	HOA zombie eyes		1
+Chunky Spelunky	lootbreakdown	2046991961-149092-2	Unkillable Skeleton's restless leg		1
+Chunky Spelunky	lootbreakdown	2046991961-151031-3	Protects-Your-Junk		1
+Chunky Spelunky	lootbreakdown	2046991961-151031-4	skull capacitor		1
+Chunky Spelunky	lootbreakdown	2047001253-143310-1	bottle of Bloodweiser		1
+Chunky Spelunky	lootbreakdown	2047001253-143310-2	Great Wolf's right paw		1
+Chunky Spelunky	lootbreakdown	2047001253-143310-3	Thunkula's drinking cap		1
+Chunky Spelunky	lootbreakdown	2047001253-143310-4	zombie accordion		1
+Chunky Spelunky	lootbreakdown	2047001253-145185-1	bottle of Bloodweiser		2
+Chunky Spelunky	lootbreakdown	2047001253-145185-2	Covers-Your-Head		1
+Chunky Spelunky	lootbreakdown	2047001253-145185-3	Gets-You-Drunk		2
+Chunky Spelunky	lootbreakdown	2047001253-145185-4	ghost pepper		2
+Chunky Spelunky	lootbreakdown	2047001253-145185-5	Mayor Ghost's khakis		1
+Chunky Spelunky	lootbreakdown	2047001253-145185-6	Thunkula's drinking cap		1
+Chunky Spelunky	lootbreakdown	2047001253-147219-1	electric Kool-Aid		2
+Chunky Spelunky	lootbreakdown	2047001253-147219-2	ghost pepper		1
+Chunky Spelunky	lootbreakdown	2047001253-147219-3	Great Wolf's beastly trousers		1
+Chunky Spelunky	lootbreakdown	2047001253-147219-4	Great Wolf's headband		1
+Chunky Spelunky	lootbreakdown	2047001253-147219-5	Hunger&trade; Sauce		2
+Chunky Spelunky	lootbreakdown	2047001253-147219-6	Mayor Ghost's toupee		1
+Chunky Spelunky	lootbreakdown	2047001253-147219-7	skull capacitor		1
+Chunky Spelunky	lootbreakdown	2047001253-147219-8	Unkillable Skeleton's shinguards		1
+Chunky Spelunky	lootbreakdown	2047001253-149101-2	electric Kool-Aid		1
+Chunky Spelunky	lootbreakdown	2047001253-149101-3	HOA regulation book		1
+Chunky Spelunky	lootbreakdown	2047001253-149101-4	skull capacitor		1
+Chunky Spelunky	lootbreakdown	2047001253-149101-5	Unkillable Skeleton's shield		1
+Chunky Spelunky	lootbreakdown	2047001253-149101-6	zombie mariachi hat		1
+Chunky Spelunky	lootbreakdown	2047001253-150106-1	Drapes-You-Regally		1
+Chunky Spelunky	lootbreakdown	2047001253-150106-2	electric Kool-Aid		1
+Chunky Spelunky	lootbreakdown	2047001253-150106-3	skull capacitor		1
+Chunky Spelunky	lootbreakdown	2047001253-150106-4	Unkillable Skeleton's sawsword		1
+Chunky Spelunky	lootbreakdown	2047001253-150106-5	Unkillable Skeleton's skullcap		1
+Chunky Spelunky	lootbreakdown	2047001253-150761-1	electric Kool-Aid		2
+Chunky Spelunky	lootbreakdown	2047001253-150761-2	ghost pepper		1
+Chunky Spelunky	lootbreakdown	2047001253-150761-3	Great Wolf's headband		1
+Chunky Spelunky	lootbreakdown	2047001253-150761-4	Hunger&trade; Sauce		1
+Chunky Spelunky	lootbreakdown	2047001253-150761-5	skull capacitor		1
+Chunky Spelunky	lootbreakdown	2047001253-150761-6	Unkillable Skeleton's breastplate		1
+Chunky Spelunky	lootbreakdown	2047001253-150761-7	Unkillable Skeleton's restless leg		1
+Chunky Spelunky	lootbreakdown	58778-148423-1	Mayor Ghost's scissors		1
+Chunky Spelunky	lootbreakdown	672-142929-1	Mayor Ghost's toupee		1
+Chunky Spelunky	lootbreakdown	672-144190-1	bottle of Bloodweiser		1
+Chunky Spelunky	lootbreakdown	672-147822-1	zombie accordion		1
+Chunky Spelunky	lootbreakdown	672-148094-1	ghost pepper		1
+Chunky Spelunky	lootbreakdown	672-148508-1	ghost pepper		1
+Chunky Spelunky	lootbreakdown	672-149128-3	Great Wolf's rocket launcher		1
+Chunky Spelunky	lootbreakdown	672-149569-3	Gets-You-Drunk		1
+Chunky Spelunky	lootbreakdown	672-149569-4	ghost pepper		1
+Chunky Spelunky	lootbreakdown	672-149790-4	Gets-You-Drunk		1
+Chunky Spelunky	lootbreakdown	672-149790-5	wriggling severed nose		1
+Chunky Spelunky	lootbreakdown	672-150462-3	ghost pepper		1
+Chunky Spelunky	lootbreakdown	672-150730-1	Mayor Ghost's sash		1
+Chunky Spelunky	lootbreakdown	672-152109-3	skull capacitor		1
+ckb1	fallsloot	0	0	0	0
+ckb1	gwolfloot	0	0	0	0
+ckb1	mayorloot	0	0	0	0
+ckb1	zhoaloot	0	0	0	0
+ckb1	drunkloot	0	0	0	0
+ckb1	uskeleloot	0	0	0	0
+ckb1	miscloot	0	0	1
+ckb1	lootbreakdown	2046991961-144836-1	electric Kool-Aid		1
+Crowther	fallsloot	4	1	1	0
+Crowther	gwolfloot	2	0	0	1
+Crowther	mayorloot	3	0	1	1
+Crowther	zhoaloot	3	1	1	0
+Crowther	drunkloot	4	1	1	1
+Crowther	uskeleloot	2	0	0	0
+Crowther	miscloot	4	2	13
+Crowther	lootbreakdown	58778-143198-1	Drunkula's cape		1
+Crowther	lootbreakdown	58778-143198-2	Warms-Your-Tush		1
+Crowther	lootbreakdown	58778-143198-3	zombie accordion		1
+Crowther	lootbreakdown	58778-145098-1	Drapes-You-Regally		1
+Crowther	lootbreakdown	58778-145098-2	electric Kool-Aid		1
+Crowther	lootbreakdown	58778-145098-3	Mayor Ghost's toupee		1
+Crowther	lootbreakdown	58778-145098-4	Unkillable Skeleton's skullcap		1
+Crowther	lootbreakdown	58778-146758-1	electric Kool-Aid		1
+Crowther	lootbreakdown	58778-146758-2	ghost pepper		2
+Crowther	lootbreakdown	58778-146758-3	Great Wolf's headband		1
+Crowther	lootbreakdown	58778-146758-4	Hunger&trade; Sauce		1
+Crowther	lootbreakdown	58778-146758-5	Mayor Ghost's scissors		1
+Crowther	lootbreakdown	58778-146758-6	Mayor Ghost's toupee		1
+Crowther	lootbreakdown	58778-146758-7	Unkillable Skeleton's shinguards		1
+Crowther	lootbreakdown	58778-148423-10	skull capacitor		1
+Crowther	lootbreakdown	58778-148423-2	bottle of Bloodweiser		2
+Crowther	lootbreakdown	58778-148423-3	Covers-Your-Head		1
+Crowther	lootbreakdown	58778-148423-4	Drunkula's ring of haze		1
+Crowther	lootbreakdown	58778-148423-5	Drunkula's silky pants		1
+Crowther	lootbreakdown	58778-148423-6	Gets-You-Drunk		2
+Crowther	lootbreakdown	58778-148423-7	ghost pepper		1
+Crowther	lootbreakdown	58778-148423-8	Helps-You-Sleep		1
+Crowther	lootbreakdown	58778-148423-9	Mayor Ghost's cloak		1
+Crowther	lootbreakdown	58778-149557-1	bottle of Bloodweiser		2
+Crowther	lootbreakdown	58778-149557-10	zombie mariachi pants		1
+Crowther	lootbreakdown	58778-149557-2	Covers-Your-Head		1
+Crowther	lootbreakdown	58778-149557-3	Drunkula's wineglass		1
+Crowther	lootbreakdown	58778-149557-4	Gets-You-Drunk		2
+Crowther	lootbreakdown	58778-149557-5	HOA regulation book		1
+Crowther	lootbreakdown	58778-149557-6	Quiets-Your-Steps		1
+Crowther	lootbreakdown	58778-149557-7	skull capacitor		1
+Crowther	lootbreakdown	58778-149557-8	Thunkula's drinking cap		1
+Crowther	lootbreakdown	58778-149557-9	wriggling severed nose		2
+Crowther	lootbreakdown	58778-150751-1	bottle of Bloodweiser		2
+Crowther	lootbreakdown	58778-150751-2	Drunkula's bell		1
+Crowther	lootbreakdown	58778-150751-3	Great Wolf's headband		1
+Crowther	lootbreakdown	58778-150751-4	Great Wolf's lice		1
+Crowther	lootbreakdown	58778-150751-5	HOA zombie eyes		1
+Crowther	lootbreakdown	58778-150751-6	Hunger&trade; Sauce		1
+Crowther	lootbreakdown	58778-150751-7	skull capacitor		1
+Crowther	lootbreakdown	58778-150751-8	wriggling severed nose		2
+Crowther	lootbreakdown	58778-150751-9	zombie accordion		1
+Crowther	lootbreakdown	58778-151491-1	bottle of Bloodweiser		2
+Crowther	lootbreakdown	58778-151491-2	Drunkula's silky pants		1
+Crowther	lootbreakdown	58778-151491-3	Gets-You-Drunk		1
+Crowther	lootbreakdown	58778-151491-4	Mayor Ghost's sash		1
+Crowther	lootbreakdown	58778-151491-5	skull capacitor		1
+DracoTrainer	fallsloot	1	0	0	0
+DracoTrainer	gwolfloot	1	0	0	0
+DracoTrainer	mayorloot	0	0	0	0
+DracoTrainer	zhoaloot	1	0	0	0
+DracoTrainer	drunkloot	1	0	0	0
+DracoTrainer	uskeleloot	1	0	0	0
+DracoTrainer	miscloot	1	2	3
+DracoTrainer	lootbreakdown	672-144190-2	Mayor Ghost's khakis		1
+DracoTrainer	lootbreakdown	672-145342-1	Great Wolf's right paw		1
+DracoTrainer	lootbreakdown	672-145960-1	Drunkula's cape		1
+DracoTrainer	lootbreakdown	672-147822-2	electric Kool-Aid		1
+DracoTrainer	lootbreakdown	672-147822-3	wriggling severed nose		1
+DracoTrainer	lootbreakdown	672-148094-2	electric Kool-Aid		1
+DracoTrainer	lootbreakdown	672-148094-3	Unkillable Skeleton's shinguards		1
+DracoTrainer	lootbreakdown	672-149128-4	skull capacitor		1
+DracoTrainer	lootbreakdown	672-149378-3	Warms-Your-Tush		1
+DracoTrainer	lootbreakdown	672-149569-5	ghost pepper		1
+DracoTrainer	lootbreakdown	672-151755-1	wriggling severed nose		1
+ElectricChairJ	fallsloot	1	0	0	1
+ElectricChairJ	gwolfloot	0	0	0	0
+ElectricChairJ	mayorloot	0	1	0	0
+ElectricChairJ	zhoaloot	2	0	0	0
+ElectricChairJ	drunkloot	1	0	0	0
+ElectricChairJ	uskeleloot	1	0	0	0
+ElectricChairJ	miscloot	2	0	0
+ElectricChairJ	lootbreakdown	672-150730-2	Drunkula's cape		1
+ElectricChairJ	lootbreakdown	672-150730-3	Protects-Your-Junk		1
+ElectricChairJ	lootbreakdown	672-151017-2	Mayor Ghost's gavel		1
+ElectricChairJ	lootbreakdown	672-151197-1	Mayor Ghost's cloak		1
+ElectricChairJ	lootbreakdown	672-151197-2	skull capacitor		1
+ElectricChairJ	lootbreakdown	672-151429-1	Covers-Your-Head		1
+ElectricChairJ	lootbreakdown	672-151429-2	Mayor Ghost's toupee		1
+ElectricChairJ	lootbreakdown	672-151429-3	skull capacitor		1
+ElectricChairJ	lootbreakdown	672-151429-4	Unkillable Skeleton's shinguards		1
+Gringdor	fallsloot	0	0	0	0
+Gringdor	gwolfloot	0	0	0	0
+Gringdor	mayorloot	0	0	0	0
+Gringdor	zhoaloot	0	0	0	0
+Gringdor	drunkloot	1	0	0	0
+Gringdor	uskeleloot	0	0	0	0
+Gringdor	miscloot	1	0	1
+Gringdor	lootbreakdown	2046991961-144836-2	Hunger&trade; Sauce		1
+Gringdor	lootbreakdown	672-144190-3	Drunkula's silky pants		1
+Gringdor	lootbreakdown	672-145342-2	skull capacitor		1
+Jaeshala	fallsloot	1	0	0	1
+Jaeshala	gwolfloot	0	0	0	0
+Jaeshala	mayorloot	2	0	0	0
+Jaeshala	zhoaloot	1	1	0	0
+Jaeshala	drunkloot	1	1	0	0
+Jaeshala	uskeleloot	0	0	0	0
+Jaeshala	miscloot	1	1	9
+Jaeshala	lootbreakdown	672-147822-4	Gets-You-Drunk		1
+Jaeshala	lootbreakdown	672-148094-4	Drapes-You-Regally		1
+Jaeshala	lootbreakdown	672-148094-5	Gets-You-Drunk		1
+Jaeshala	lootbreakdown	672-148508-2	bottle of Bloodweiser		1
+Jaeshala	lootbreakdown	672-148508-3	ghost pepper		1
+Jaeshala	lootbreakdown	672-148508-4	Mayor Ghost's cloak		1
+Jaeshala	lootbreakdown	672-150462-4	Drunkula's bell		1
+Jaeshala	lootbreakdown	672-150462-5	Drunkula's cape		1
+Jaeshala	lootbreakdown	672-151017-3	bottle of Bloodweiser		1
+Jaeshala	lootbreakdown	672-151017-4	Gets-You-Drunk		1
+Jaeshala	lootbreakdown	672-151017-5	ghost pepper		1
+Jaeshala	lootbreakdown	672-151197-3	bottle of Bloodweiser		1
+Jaeshala	lootbreakdown	672-151429-5	ghost pepper		1
+Jaeshala	lootbreakdown	672-151632-2	zombie accordion		1
+Jaeshala	lootbreakdown	672-151875-1	zombie mariachi pants		1
+Jaeshala	lootbreakdown	672-152109-4	HOA regulation book		1
+Jaeshala	lootbreakdown	672-152109-5	wriggling severed nose		2
+Jaeshala	lootbreakdown	672-152311-2	Protects-Your-Junk		1
+Jaeshala	lootbreakdown	672-152549-5	skull capacitor		1
+JimFromTx	fallsloot	0	0	0	0
+JimFromTx	gwolfloot	0	0	0	0
+JimFromTx	mayorloot	0	0	0	0
+JimFromTx	zhoaloot	0	0	0	0
+JimFromTx	drunkloot	0	0	0	0
+JimFromTx	uskeleloot	0	0	0	0
+JimFromTx	miscloot	0	1	0
+JimFromTx	lootbreakdown	672-145342-3	wriggling severed nose		1
+Jizmak The Destroyer	fallsloot	3	1	1	1
+Jizmak The Destroyer	gwolfloot	3	1	1	1
+Jizmak The Destroyer	mayorloot	3	1	1	1
+Jizmak The Destroyer	zhoaloot	3	1	1	1
+Jizmak The Destroyer	drunkloot	3	1	1	1
+Jizmak The Destroyer	uskeleloot	3	1	1	2
+Jizmak The Destroyer	miscloot	6	4	11
+Jizmak The Destroyer	lootbreakdown	2046991961-143247-1	Thunkula's drinking cap		1
+Jizmak The Destroyer	lootbreakdown	2046991961-144836-3	ghost pepper		1
+Jizmak The Destroyer	lootbreakdown	2046991961-144836-4	Mayor Ghost's gavel		1
+Jizmak The Destroyer	lootbreakdown	2046991961-145967-1	bottle of Bloodweiser		1
+Jizmak The Destroyer	lootbreakdown	2046991961-145967-2	Gets-You-Drunk		1
+Jizmak The Destroyer	lootbreakdown	2046991961-145967-3	Protects-Your-Junk		1
+Jizmak The Destroyer	lootbreakdown	2046991961-146753-1	Great Wolf's rocket launcher		1
+Jizmak The Destroyer	lootbreakdown	2046991961-148284-2	wriggling severed nose		1
+Jizmak The Destroyer	lootbreakdown	2046991961-149092-3	Quiets-Your-Steps		1
+Jizmak The Destroyer	lootbreakdown	2046991961-149092-4	skull capacitor		1
+Jizmak The Destroyer	lootbreakdown	2046991961-149092-5	wriggling severed nose		2
+Jizmak The Destroyer	lootbreakdown	2046991961-149512-3	Drunkula's bell		1
+Jizmak The Destroyer	lootbreakdown	2046991961-149512-4	Great Wolf's headband		1
+Jizmak The Destroyer	lootbreakdown	2046991961-149512-5	HOA citation pad		1
+Jizmak The Destroyer	lootbreakdown	2046991961-149512-6	skull capacitor		1
+Jizmak The Destroyer	lootbreakdown	2046991961-149512-7	Thunkula's drinking cap		1
+Jizmak The Destroyer	lootbreakdown	2046991961-149926-2	Covers-Your-Head		1
+Jizmak The Destroyer	lootbreakdown	2046991961-149926-3	skull capacitor		1
+Jizmak The Destroyer	lootbreakdown	2046991961-149926-4	Unkillable Skeleton's skullcap		1
+Jizmak The Destroyer	lootbreakdown	2046991961-149926-5	zombie mariachi pants		1
+Jizmak The Destroyer	lootbreakdown	2046991961-150161-3	Great Wolf's right paw		1
+Jizmak The Destroyer	lootbreakdown	2046991961-150161-4	skull capacitor		1
+Jizmak The Destroyer	lootbreakdown	2046991961-150161-5	Thunkula's drinking cap		1
+Jizmak The Destroyer	lootbreakdown	2046991961-150161-6	zombie mariachi hat		1
+Jizmak The Destroyer	lootbreakdown	2046991961-150463-3	Great Wolf's left paw		1
+Jizmak The Destroyer	lootbreakdown	2046991961-150463-4	Mayor Ghost's scissors		1
+Jizmak The Destroyer	lootbreakdown	2046991961-150463-5	Mayor Ghost's toupee		1
+Jizmak The Destroyer	lootbreakdown	2046991961-150463-6	skull capacitor		1
+Jizmak The Destroyer	lootbreakdown	2046991961-150734-3	zombie mariachi pants		1
+Jizmak The Destroyer	lootbreakdown	2046991961-151031-5	Gets-You-Drunk		1
+Jizmak The Destroyer	lootbreakdown	2046991961-151031-6	HOA regulation book		1
+Jizmak The Destroyer	lootbreakdown	2046991961-151031-7	wriggling severed nose		2
+Jizmak The Destroyer	lootbreakdown	672-147549-1	wriggling severed nose		1
+Jizmak The Destroyer	lootbreakdown	672-147822-5	Unkillable Skeleton's shinguards		1
+Jizmak The Destroyer	lootbreakdown	672-148094-6	Unkillable Skeleton's restless leg		1
+Jizmak The Destroyer	lootbreakdown	672-148508-5	Great Wolf's lice		1
+Jizmak The Destroyer	lootbreakdown	672-149378-4	Mayor Ghost's sash		1
+Jizmak The Destroyer	lootbreakdown	672-149569-6	Unkillable Skeleton's sawsword		1
+Jizmak The Destroyer	lootbreakdown	672-149569-7	Unkillable Skeleton's shinguards		1
+Jizmak The Destroyer	lootbreakdown	672-149790-6	Drunkula's ring of haze		1
+Jizmak The Destroyer	lootbreakdown	672-150167-2	Great Wolf's beastly trousers		1
+Jizmak The Destroyer	lootbreakdown	672-150167-3	Mayor Ghost's toupee		1
+Jizmak The Destroyer	lootbreakdown	672-150167-4	skull capacitor		1
+Jizmak The Destroyer	lootbreakdown	672-150730-4	Covers-Your-Head		1
+Jizmak The Destroyer	lootbreakdown	672-150730-5	Drunkula's wineglass		1
+Jizmak The Destroyer	lootbreakdown	672-150730-6	Mayor Ghost's khakis		1
+Jizmak The Destroyer	lootbreakdown	672-151017-6	Drapes-You-Regally		1
+Jizmak The Destroyer	lootbreakdown	672-151017-7	Gets-You-Drunk		1
+Jizmak The Destroyer	lootbreakdown	672-151197-4	ghost pepper		1
+Jizmak The Destroyer	lootbreakdown	672-151197-5	Hunger&trade; Sauce		1
+Jizmak The Destroyer	lootbreakdown	672-151429-6	Unkillable Skeleton's restless leg		1
+Jizmak The Destroyer	lootbreakdown	672-151632-3	Hunger&trade; Sauce		1
+Jizmak The Destroyer	lootbreakdown	672-151632-4	Unkillable Skeleton's shield		1
+Jizmak The Destroyer	lootbreakdown	672-151755-2	Gets-You-Drunk		1
+Jizmak The Destroyer	lootbreakdown	672-151755-3	Helps-You-Sleep		1
+Jizmak The Destroyer	lootbreakdown	672-151755-4	HOA zombie eyes		1
+Jizmak The Destroyer	lootbreakdown	672-152549-6	ghost pepper		1
+Jizmak The Destroyer	lootbreakdown	672-152549-7	Hunger&trade; Sauce		1
+kuankyh	fallsloot	3	0	0	0
+kuankyh	gwolfloot	3	1	0	1
+kuankyh	mayorloot	0	0	0	0
+kuankyh	zhoaloot	1	0	0	0
+kuankyh	drunkloot	1	1	0	0
+kuankyh	uskeleloot	1	0	0	0
+kuankyh	miscloot	0	2	12
+kuankyh	lootbreakdown	672-144190-4	Warms-Your-Tush		1
+kuankyh	lootbreakdown	672-145342-4	Great Wolf's lice		1
+kuankyh	lootbreakdown	672-145960-2	Drapes-You-Regally		1
+kuankyh	lootbreakdown	672-147822-6	Covers-Your-Head		1
+kuankyh	lootbreakdown	672-147822-7	electric Kool-Aid		1
+kuankyh	lootbreakdown	672-148094-7	electric Kool-Aid		1
+kuankyh	lootbreakdown	672-148508-6	Hunger&trade; Sauce		1
+kuankyh	lootbreakdown	672-149128-5	Great Wolf's right paw		1
+kuankyh	lootbreakdown	672-149378-5	Unkillable Skeleton's shinguards		1
+kuankyh	lootbreakdown	672-149569-8	Gets-You-Drunk		1
+kuankyh	lootbreakdown	672-149790-7	bottle of Bloodweiser		1
+kuankyh	lootbreakdown	672-149790-8	wriggling severed nose		1
+kuankyh	lootbreakdown	672-150167-5	Great Wolf's headband		1
+kuankyh	lootbreakdown	672-150462-6	Mayor Ghost's cloak		1
+kuankyh	lootbreakdown	672-150730-7	Gets-You-Drunk		1
+kuankyh	lootbreakdown	672-150730-8	ghost pepper		1
+kuankyh	lootbreakdown	672-151017-8	Drunkula's bell		1
+kuankyh	lootbreakdown	672-151017-9	Drunkula's cape		1
+kuankyh	lootbreakdown	672-151197-6	ghost pepper		1
+kuankyh	lootbreakdown	672-151197-7	Great Wolf's right paw		1
+kuankyh	lootbreakdown	672-151197-8	Hunger&trade; Sauce		1
+kuankyh	lootbreakdown	672-151429-7	Gets-You-Drunk		1
+kuankyh	lootbreakdown	672-151429-8	ghost pepper		1
+kuankyh	lootbreakdown	672-151632-5	Hunger&trade; Sauce		1
+kuankyh	lootbreakdown	672-151632-6	wriggling severed nose		1
+kuankyh	lootbreakdown	672-151875-2	Great Wolf's rocket launcher		1
+Makarina	fallsloot	0	0	0	1
+Makarina	gwolfloot	0	1	0	0
+Makarina	mayorloot	1	0	0	1
+Makarina	zhoaloot	1	1	0	1
+Makarina	drunkloot	2	0	0	0
+Makarina	uskeleloot	1	1	0	0
+Makarina	miscloot	1	1	0
+Makarina	lootbreakdown	2046991961-151406-2	Great Wolf's rocket launcher		1
+Makarina	lootbreakdown	2047001253-150761-8	Mayor Ghost's toupee		1
+Makarina	lootbreakdown	58778-150751-10	Drunkula's silky pants		1
+Makarina	lootbreakdown	672-151197-10	Thunkula's drinking cap		1
+Makarina	lootbreakdown	672-151197-9	Mayor Ghost's scissors		1
+Makarina	lootbreakdown	672-151429-9	Protects-Your-Junk		1
+Makarina	lootbreakdown	672-151632-7	HOA citation pad		1
+Makarina	lootbreakdown	672-151632-8	skull capacitor		1
+Makarina	lootbreakdown	672-151632-9	wriggling severed nose		1
+Makarina	lootbreakdown	672-151755-5	Unkillable Skeleton's sawsword		1
+Makarina	lootbreakdown	672-151755-6	zombie accordion		1
+Makarina	lootbreakdown	672-151875-3	HOA regulation book		1
+Makarina	lootbreakdown	672-151875-4	Unkillable Skeleton's shinguards		1
+nOOBSauce	fallsloot	1	0	0	0
+nOOBSauce	gwolfloot	1	0	1	0
+nOOBSauce	mayorloot	1	1	0	0
+nOOBSauce	zhoaloot	1	0	0	0
+nOOBSauce	drunkloot	0	1	0	0
+nOOBSauce	uskeleloot	1	1	0	0
+nOOBSauce	miscloot	2	4	14
+nOOBSauce	lootbreakdown	2047001253-143310-5	Hunger&trade; Sauce		1
+nOOBSauce	lootbreakdown	2047001253-143310-6	wriggling severed nose		1
+nOOBSauce	lootbreakdown	672-142929-2	electric Kool-Aid		1
+nOOBSauce	lootbreakdown	672-142929-3	Gets-You-Drunk		2
+nOOBSauce	lootbreakdown	672-142929-4	ghost pepper		2
+nOOBSauce	lootbreakdown	672-144190-5	Gets-You-Drunk		2
+nOOBSauce	lootbreakdown	672-144190-6	ghost pepper		2
+nOOBSauce	lootbreakdown	672-145342-5	electric Kool-Aid		2
+nOOBSauce	lootbreakdown	672-145342-6	Hunger&trade; Sauce		2
+nOOBSauce	lootbreakdown	672-145960-3	ghost pepper		1
+nOOBSauce	lootbreakdown	672-145960-4	skull capacitor		1
+nOOBSauce	lootbreakdown	672-147549-2	Drapes-You-Regally		1
+nOOBSauce	lootbreakdown	672-147549-3	wriggling severed nose		1
+nOOBSauce	lootbreakdown	672-148094-8	Mayor Ghost's cloak		1
+nOOBSauce	lootbreakdown	672-149128-6	bottle of Bloodweiser		1
+nOOBSauce	lootbreakdown	672-149790-9	zombie mariachi hat		1
+nOOBSauce	lootbreakdown	672-150167-6	Hunger&trade; Sauce		2
+nOOBSauce	lootbreakdown	672-150462-7	Mayor Ghost's gavel		1
+nOOBSauce	lootbreakdown	672-151755-10	wriggling severed nose		1
+nOOBSauce	lootbreakdown	672-151755-7	electric Kool-Aid		1
+nOOBSauce	lootbreakdown	672-151755-8	Gets-You-Drunk		1
+nOOBSauce	lootbreakdown	672-151755-9	skull capacitor		1
+nOOBSauce	lootbreakdown	672-151875-5	Great Wolf's headband		1
+nOOBSauce	lootbreakdown	672-151875-6	wriggling severed nose		1
+nOOBSauce	lootbreakdown	672-152109-6	Unkillable Skeleton's sawsword		1
+nOOBSauce	lootbreakdown	672-152109-7	Unkillable Skeleton's shinguards		1
+nOOBSauce	lootbreakdown	672-152311-3	Drunkula's bell		1
+nOOBSauce	lootbreakdown	672-152311-4	ghost pepper		1
+nOOBSauce	lootbreakdown	672-152549-8	Great Wolf's beastly trousers		1
+Noodlius	fallsloot	0	0	0	0
+Noodlius	gwolfloot	0	0	0	0
+Noodlius	mayorloot	0	0	0	0
+Noodlius	zhoaloot	0	0	0	0
+Noodlius	drunkloot	0	0	0	0
+Noodlius	uskeleloot	1	0	0	0
+Noodlius	miscloot	0	0	0
+Noodlius	lootbreakdown	672-142929-5	Unkillable Skeleton's shinguards		1
+NULL	fallsloot	0	0	0	0
+NULL	gwolfloot	0	0	0	0
+NULL	mayorloot	0	0	0	0
+NULL	zhoaloot	0	0	0	0
+NULL	drunkloot	0	0	1	0
+NULL	uskeleloot	0	0	0	0
+NULL	miscloot	1	0	0
+NULL	lootbreakdown	2046991961-151406-3	Drunkula's ring of haze		1
+NULL	lootbreakdown	2046991961-151406-4	skull capacitor		1
+ReisenFig	fallsloot	0	0	0	0
+ReisenFig	gwolfloot	0	0	0	0
+ReisenFig	mayorloot	1	0	0	0
+ReisenFig	zhoaloot	0	0	0	0
+ReisenFig	drunkloot	0	0	0	0
+ReisenFig	uskeleloot	0	0	0	0
+ReisenFig	miscloot	0	0	1
+ReisenFig	lootbreakdown	672-145342-7	zombie mariachi pants		1
+ReisenFig	lootbreakdown	672-145960-5	bottle of Bloodweiser		1
+Sary	fallsloot	3	1	1	1
+Sary	gwolfloot	3	1	1	1
+Sary	mayorloot	3	1	1	1
+Sary	zhoaloot	3	1	1	1
+Sary	drunkloot	3	1	1	1
+Sary	uskeleloot	3	1	1	2
+Sary	miscloot	7	3	43
+Sary	lootbreakdown	2046991961-143247-2	Drapes-You-Regally		1
+Sary	lootbreakdown	2046991961-143247-3	wriggling severed nose		1
+Sary	lootbreakdown	2046991961-143247-4	zombie mariachi pants		1
+Sary	lootbreakdown	2046991961-144836-10	Mayor Ghost's cloak		1
+Sary	lootbreakdown	2046991961-144836-11	skull capacitor		1
+Sary	lootbreakdown	2046991961-144836-12	Unkillable Skeleton's breastplate		1
+Sary	lootbreakdown	2046991961-144836-13	Unkillable Skeleton's restless leg		1
+Sary	lootbreakdown	2046991961-144836-5	electric Kool-Aid		1
+Sary	lootbreakdown	2046991961-144836-6	ghost pepper		1
+Sary	lootbreakdown	2046991961-144836-7	Great Wolf's right paw		1
+Sary	lootbreakdown	2046991961-144836-8	Great Wolf's rocket launcher		1
+Sary	lootbreakdown	2046991961-144836-9	Hunger&trade; Sauce		1
+Sary	lootbreakdown	2046991961-145967-10	Mayor Ghost's sash		1
+Sary	lootbreakdown	2046991961-145967-11	Mayor Ghost's toupee		1
+Sary	lootbreakdown	2046991961-145967-12	skull capacitor		1
+Sary	lootbreakdown	2046991961-145967-4	bottle of Bloodweiser		1
+Sary	lootbreakdown	2046991961-145967-5	Drapes-You-Regally		1
+Sary	lootbreakdown	2046991961-145967-6	Drunkula's ring of haze		1
+Sary	lootbreakdown	2046991961-145967-7	Drunkula's silky pants		1
+Sary	lootbreakdown	2046991961-145967-8	Gets-You-Drunk		1
+Sary	lootbreakdown	2046991961-145967-9	ghost pepper		1
+Sary	lootbreakdown	2046991961-146753-2	bottle of Bloodweiser		2
+Sary	lootbreakdown	2046991961-146753-3	Drunkula's bell		1
+Sary	lootbreakdown	2046991961-146753-4	Great Wolf's right paw		1
+Sary	lootbreakdown	2046991961-146753-5	Hunger&trade; Sauce		2
+Sary	lootbreakdown	2046991961-146753-6	skull capacitor		1
+Sary	lootbreakdown	2046991961-146753-7	Thunkula's drinking cap		1
+Sary	lootbreakdown	2046991961-146753-8	zombie accordion		1
+Sary	lootbreakdown	2046991961-148284-10	zombie mariachi pants		1
+Sary	lootbreakdown	2046991961-148284-3	electric Kool-Aid		2
+Sary	lootbreakdown	2046991961-148284-4	Great Wolf's headband		1
+Sary	lootbreakdown	2046991961-148284-5	Great Wolf's lice		1
+Sary	lootbreakdown	2046991961-148284-6	Hunger&trade; Sauce		2
+Sary	lootbreakdown	2046991961-148284-7	skull capacitor		1
+Sary	lootbreakdown	2046991961-148284-8	Unkillable Skeleton's breastplate		1
+Sary	lootbreakdown	2046991961-148284-9	Unkillable Skeleton's sawsword		1
+Sary	lootbreakdown	2046991961-149092-6	Covers-Your-Head		1
+Sary	lootbreakdown	2046991961-149092-7	electric Kool-Aid		2
+Sary	lootbreakdown	2046991961-149092-8	HOA citation pad		1
+Sary	lootbreakdown	2046991961-149092-9	Unkillable Skeleton's shinguards		1
+Sary	lootbreakdown	2046991961-149512-10	Hunger&trade; Sauce		2
+Sary	lootbreakdown	2046991961-149512-8	bottle of Bloodweiser		2
+Sary	lootbreakdown	2046991961-149512-9	Great Wolf's beastly trousers		1
+Sary	lootbreakdown	2046991961-149926-6	electric Kool-Aid		2
+Sary	lootbreakdown	2046991961-149926-7	Gets-You-Drunk		2
+Sary	lootbreakdown	2046991961-149926-8	wriggling severed nose		1
+Sary	lootbreakdown	2046991961-150161-7	bottle of Bloodweiser		2
+Sary	lootbreakdown	2046991961-150161-8	Hunger&trade; Sauce		2
+Sary	lootbreakdown	2046991961-150463-7	bottle of Bloodweiser		2
+Sary	lootbreakdown	2046991961-150463-8	ghost pepper		1
+Sary	lootbreakdown	2046991961-150463-9	Hunger&trade; Sauce		2
+Sary	lootbreakdown	2046991961-150734-4	electric Kool-Aid		2
+Sary	lootbreakdown	2046991961-150734-5	Hunger&trade; Sauce		2
+Sary	lootbreakdown	2046991961-150734-6	skull capacitor		1
+Sary	lootbreakdown	2046991961-150734-7	wriggling severed nose		1
+Sary	lootbreakdown	2046991961-151031-8	bottle of Bloodweiser		2
+Sary	lootbreakdown	2046991961-151031-9	Gets-You-Drunk		1
+Sary	lootbreakdown	2046991961-151406-5	bottle of Bloodweiser		1
+Sary	lootbreakdown	2046991961-151406-6	Hunger&trade; Sauce		1
+Sary	lootbreakdown	2047001253-147219-9	Unkillable Skeleton's shield		1
+Sary	lootbreakdown	672-144190-7	Mayor Ghost's gavel		1
+Sary	lootbreakdown	672-144190-8	Protects-Your-Junk		1
+Sary	lootbreakdown	672-145342-8	Unkillable Skeleton's restless leg		1
+Sary	lootbreakdown	672-147549-4	HOA regulation book		1
+Sary	lootbreakdown	672-147549-5	Thunkula's drinking cap		1
+Sary	lootbreakdown	672-147822-10	skull capacitor		1
+Sary	lootbreakdown	672-147822-8	HOA zombie eyes		1
+Sary	lootbreakdown	672-147822-9	Quiets-Your-Steps		1
+Sary	lootbreakdown	672-148094-10	Mayor Ghost's scissors		1
+Sary	lootbreakdown	672-148094-11	skull capacitor		1
+Sary	lootbreakdown	672-148094-9	ghost pepper		1
+Sary	lootbreakdown	672-148508-7	Drunkula's wineglass		1
+Sary	lootbreakdown	672-149128-7	bottle of Bloodweiser		1
+Sary	lootbreakdown	672-149128-8	Hunger&trade; Sauce		2
+Sary	lootbreakdown	672-149378-6	electric Kool-Aid		2
+Sary	lootbreakdown	672-149378-7	Mayor Ghost's cloak		1
+Sary	lootbreakdown	672-149569-9	electric Kool-Aid		2
+Sary	lootbreakdown	672-149790-10	Helps-You-Sleep		1
+Sary	lootbreakdown	672-150167-7	bottle of Bloodweiser		2
+Sary	lootbreakdown	672-150462-8	bottle of Bloodweiser		2
+Sary	lootbreakdown	672-150730-9	bottle of Bloodweiser		1
+Sary	lootbreakdown	672-151017-10	bottle of Bloodweiser		1
+Sary	lootbreakdown	672-151197-11	bottle of Bloodweiser		1
+Sary	lootbreakdown	672-151429-10	electric Kool-Aid		2
+Sary	lootbreakdown	672-151632-10	electric Kool-Aid		2
+Sary	lootbreakdown	672-151875-7	electric Kool-Aid		1
+Sary	lootbreakdown	672-152109-8	electric Kool-Aid		2
+Sary	lootbreakdown	672-152109-9	Hunger&trade; Sauce		1
+Sary	lootbreakdown	672-152311-5	bottle of Bloodweiser		2
+Sary	lootbreakdown	672-152549-9	bottle of Bloodweiser		1
+scathdhuan	fallsloot	1	1	0	0
+scathdhuan	gwolfloot	0	0	0	1
+scathdhuan	mayorloot	0	0	1	0
+scathdhuan	zhoaloot	3	0	0	0
+scathdhuan	drunkloot	2	1	0	0
+scathdhuan	uskeleloot	1	0	0	0
+scathdhuan	miscloot	0	6	8
+scathdhuan	lootbreakdown	2046991961-146753-9	wriggling severed nose		1
+scathdhuan	lootbreakdown	2046991961-148284-11	wriggling severed nose		1
+scathdhuan	lootbreakdown	2046991961-149926-9	wriggling severed nose		1
+scathdhuan	lootbreakdown	2046991961-150161-10	wriggling severed nose		1
+scathdhuan	lootbreakdown	2046991961-150161-9	Drunkula's bell		1
+scathdhuan	lootbreakdown	2046991961-150463-10	Great Wolf's lice		1
+scathdhuan	lootbreakdown	2046991961-151031-10	Drunkula's silky pants		1
+scathdhuan	lootbreakdown	2047001253-149101-10	Unkillable Skeleton's breastplate		1
+scathdhuan	lootbreakdown	2047001253-149101-11	wriggling severed nose		1
+scathdhuan	lootbreakdown	2047001253-149101-7	Drapes-You-Regally		1
+scathdhuan	lootbreakdown	2047001253-149101-8	electric Kool-Aid		1
+scathdhuan	lootbreakdown	2047001253-149101-9	Gets-You-Drunk		1
+scathdhuan	lootbreakdown	2047001253-150106-6	electric Kool-Aid		1
+scathdhuan	lootbreakdown	2047001253-150106-7	Gets-You-Drunk		1
+scathdhuan	lootbreakdown	2047001253-150106-8	Mayor Ghost's cloak		1
+scathdhuan	lootbreakdown	2047001253-150761-10	Hunger&trade; Sauce		1
+scathdhuan	lootbreakdown	2047001253-150761-11	Mayor Ghost's sash		1
+scathdhuan	lootbreakdown	2047001253-150761-9	ghost pepper		1
+scathdhuan	lootbreakdown	58778-151491-6	ghost pepper		2
+scathdhuan	lootbreakdown	58778-151491-7	Helps-You-Sleep		1
+scathdhuan	lootbreakdown	58778-151491-8	Mayor Ghost's toupee		1
+scathdhuan	lootbreakdown	672-147822-11	wriggling severed nose		1
+scathdhuan	lootbreakdown	672-149790-11	Drunkula's silky pants		1
+scathdhuan	lootbreakdown	672-150462-9	ghost pepper		1
+scathdhuan	lootbreakdown	672-152311-6	Mayor Ghost's cloak		1
+Smedley	fallsloot	0	0	0	0
+Smedley	gwolfloot	0	0	0	0
+Smedley	mayorloot	0	0	0	0
+Smedley	zhoaloot	0	0	0	0
+Smedley	drunkloot	0	0	0	0
+Smedley	uskeleloot	0	0	0	0
+Smedley	miscloot	0	0	1
+Smedley	lootbreakdown	672-145960-6	bottle of Bloodweiser		1
+Smoochygirl	fallsloot	0	0	0	0
+Smoochygirl	gwolfloot	0	0	0	0
+Smoochygirl	mayorloot	0	0	0	0
+Smoochygirl	zhoaloot	0	0	0	0
+Smoochygirl	drunkloot	0	0	0	0
+Smoochygirl	uskeleloot	0	0	0	0
+Smoochygirl	miscloot	0	1	1
+Smoochygirl	lootbreakdown	58778-143198-4	bottle of Bloodweiser		1
+Smoochygirl	lootbreakdown	58778-143198-5	wriggling severed nose		1
+Tarragon	fallsloot	1	0	0	0
+Tarragon	gwolfloot	0	0	0	0
+Tarragon	mayorloot	0	0	0	0
+Tarragon	zhoaloot	0	0	0	0
+Tarragon	drunkloot	0	0	1	0
+Tarragon	uskeleloot	0	0	0	0
+Tarragon	miscloot	0	0	1
+Tarragon	lootbreakdown	58778-151491-10	Gets-You-Drunk		1
+Tarragon	lootbreakdown	58778-151491-11	Warms-Your-Tush		1
+Tarragon	lootbreakdown	58778-151491-9	Drunkula's ring of haze		1
+The_Dancing_Viagra	fallsloot	1	0	0	1
+The_Dancing_Viagra	gwolfloot	1	0	0	0
+The_Dancing_Viagra	mayorloot	0	1	0	0
+The_Dancing_Viagra	zhoaloot	0	0	1	0
+The_Dancing_Viagra	drunkloot	1	1	0	0
+The_Dancing_Viagra	uskeleloot	0	0	0	0
+The_Dancing_Viagra	miscloot	0	0	6
+The_Dancing_Viagra	lootbreakdown	2046991961-145967-13	ghost pepper		1
+The_Dancing_Viagra	lootbreakdown	672-145960-7	Gets-You-Drunk		1
+The_Dancing_Viagra	lootbreakdown	672-145960-8	Mayor Ghost's gavel		1
+The_Dancing_Viagra	lootbreakdown	672-147549-6	bottle of Bloodweiser		1
+The_Dancing_Viagra	lootbreakdown	672-147549-7	Gets-You-Drunk		2
+The_Dancing_Viagra	lootbreakdown	672-147549-8	Protects-Your-Junk		1
+The_Dancing_Viagra	lootbreakdown	672-148508-8	Drunkula's silky pants		1
+The_Dancing_Viagra	lootbreakdown	672-149128-10	HOA zombie eyes		1
+The_Dancing_Viagra	lootbreakdown	672-149128-9	Drunkula's bell		1
+The_Dancing_Viagra	lootbreakdown	672-150167-8	ghost pepper		1
+The_Dancing_Viagra	lootbreakdown	672-150462-10	Drapes-You-Regally		1
+The_Dancing_Viagra	lootbreakdown	672-152311-7	Gets-You-Drunk		1
+The_Dancing_Viagra	lootbreakdown	672-152549-10	Great Wolf's right paw		1
+tomkitty	fallsloot	0	0	0	0
+tomkitty	gwolfloot	0	0	0	0
+tomkitty	mayorloot	0	0	0	0
+tomkitty	zhoaloot	0	0	0	1
+tomkitty	drunkloot	0	0	0	1
+tomkitty	uskeleloot	0	0	0	1
+tomkitty	miscloot	0	0	1
+tomkitty	lootbreakdown	2046991961-149092-10	Gets-You-Drunk		2
+tomkitty	lootbreakdown	2046991961-149926-10	Unkillable Skeleton's restless leg		1
+tomkitty	lootbreakdown	2046991961-151031-11	Drunkula's wineglass		1
+tomkitty	lootbreakdown	672-149790-12	HOA citation pad		1
+WhimOrClutters	fallsloot	3	1	1	1
+WhimOrClutters	gwolfloot	3	1	1	1
+WhimOrClutters	mayorloot	3	1	1	1
+WhimOrClutters	zhoaloot	3	1	1	1
+WhimOrClutters	drunkloot	3	1	1	1
+WhimOrClutters	uskeleloot	3	1	1	1
+WhimOrClutters	miscloot	8	2	15
+WhimOrClutters	lootbreakdown	2046991961-146753-10	HOA regulation book		1
+WhimOrClutters	lootbreakdown	2046991961-146753-11	wriggling severed nose		1
+WhimOrClutters	lootbreakdown	2046991961-149512-11	zombie mariachi hat		1
+WhimOrClutters	lootbreakdown	2046991961-149926-11	HOA citation pad		1
+WhimOrClutters	lootbreakdown	2046991961-150161-11	wriggling severed nose		1
+WhimOrClutters	lootbreakdown	2046991961-150734-10	Unkillable Skeleton's sawsword		1
+WhimOrClutters	lootbreakdown	2046991961-150734-8	Great Wolf's left paw		1
+WhimOrClutters	lootbreakdown	2046991961-150734-9	HOA zombie eyes		1
+WhimOrClutters	lootbreakdown	2046991961-151406-7	Drunkula's cape		1
+WhimOrClutters	lootbreakdown	2047001253-150761-12	Great Wolf's rocket launcher		1
+WhimOrClutters	lootbreakdown	672-142929-6	Covers-Your-Head		1
+WhimOrClutters	lootbreakdown	672-145342-9	Unkillable Skeleton's shinguards		1
+WhimOrClutters	lootbreakdown	672-145960-10	Mayor Ghost's toupee		1
+WhimOrClutters	lootbreakdown	672-145960-9	Drunkula's wineglass		1
+WhimOrClutters	lootbreakdown	672-147549-9	zombie mariachi hat		1
+WhimOrClutters	lootbreakdown	672-147822-12	Gets-You-Drunk		1
+WhimOrClutters	lootbreakdown	672-147822-13	Unkillable Skeleton's restless leg		1
+WhimOrClutters	lootbreakdown	672-148094-12	Gets-You-Drunk		1
+WhimOrClutters	lootbreakdown	672-148094-13	Protects-Your-Junk		1
+WhimOrClutters	lootbreakdown	672-148508-10	Great Wolf's right paw		1
+WhimOrClutters	lootbreakdown	672-148508-11	Hunger&trade; Sauce		1
+WhimOrClutters	lootbreakdown	672-148508-12	Mayor Ghost's sash		1
+WhimOrClutters	lootbreakdown	672-148508-13	skull capacitor		1
+WhimOrClutters	lootbreakdown	672-148508-9	bottle of Bloodweiser		1
+WhimOrClutters	lootbreakdown	672-149128-11	zombie accordion		1
+WhimOrClutters	lootbreakdown	672-149378-10	Unkillable Skeleton's shield		1
+WhimOrClutters	lootbreakdown	672-149378-8	Quiets-Your-Steps		1
+WhimOrClutters	lootbreakdown	672-149378-9	skull capacitor		1
+WhimOrClutters	lootbreakdown	672-149569-10	Mayor Ghost's gavel		1
+WhimOrClutters	lootbreakdown	672-149569-11	Mayor Ghost's toupee		1
+WhimOrClutters	lootbreakdown	672-149569-12	skull capacitor		1
+WhimOrClutters	lootbreakdown	672-149790-13	skull capacitor		1
+WhimOrClutters	lootbreakdown	672-150167-10	Drunkula's silky pants		1
+WhimOrClutters	lootbreakdown	672-150167-9	Drunkula's bell		1
+WhimOrClutters	lootbreakdown	672-150462-11	Gets-You-Drunk		1
+WhimOrClutters	lootbreakdown	672-150462-12	skull capacitor		1
+WhimOrClutters	lootbreakdown	672-150730-10	Gets-You-Drunk		1
+WhimOrClutters	lootbreakdown	672-150730-11	ghost pepper		1
+WhimOrClutters	lootbreakdown	672-150730-12	skull capacitor		1
+WhimOrClutters	lootbreakdown	672-151017-11	Helps-You-Sleep		1
+WhimOrClutters	lootbreakdown	672-151017-12	Mayor Ghost's khakis		1
+WhimOrClutters	lootbreakdown	672-151017-13	skull capacitor		1
+WhimOrClutters	lootbreakdown	672-151197-12	Drunkula's ring of haze		1
+WhimOrClutters	lootbreakdown	672-151197-13	Great Wolf's beastly trousers		1
+WhimOrClutters	lootbreakdown	672-151429-11	Mayor Ghost's scissors		1
+WhimOrClutters	lootbreakdown	672-151632-11	Great Wolf's right paw		1
+WhimOrClutters	lootbreakdown	672-151632-12	Unkillable Skeleton's shinguards		1
+WhimOrClutters	lootbreakdown	672-151755-11	electric Kool-Aid		1
+WhimOrClutters	lootbreakdown	672-151755-12	Unkillable Skeleton's breastplate		1
+WhimOrClutters	lootbreakdown	672-151755-13	Warms-Your-Tush		1
+WhimOrClutters	lootbreakdown	672-151875-8	Hunger&trade; Sauce		2
+WhimOrClutters	lootbreakdown	672-152109-10	Great Wolf's lice		1
+WhimOrClutters	lootbreakdown	672-152109-11	Hunger&trade; Sauce		1
+WhimOrClutters	lootbreakdown	672-152311-10	Gets-You-Drunk		1
+WhimOrClutters	lootbreakdown	672-152311-11	ghost pepper		1
+WhimOrClutters	lootbreakdown	672-152311-12	skull capacitor		1
+WhimOrClutters	lootbreakdown	672-152311-8	Drapes-You-Regally		1
+WhimOrClutters	lootbreakdown	672-152311-9	Drunkula's cape		1
+WhimOrClutters	lootbreakdown	672-152549-11	bottle of Bloodweiser		1
+WhimOrClutters	lootbreakdown	672-152549-12	ghost pepper		1
+WhimOrClutters	lootbreakdown	672-152549-13	Hunger&trade; Sauce		1
+zavijava	fallsloot	0	0	0	0
+zavijava	gwolfloot	0	0	0	0
+zavijava	mayorloot	0	0	0	0
+zavijava	zhoaloot	0	0	0	0
+zavijava	drunkloot	0	0	0	0
+zavijava	uskeleloot	0	0	0	0
+zavijava	miscloot	0	0	1
+zavijava	lootbreakdown	672-145960-11	ghost pepper		1
