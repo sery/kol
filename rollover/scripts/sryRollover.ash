@@ -412,6 +412,7 @@ void rollover(String simulate) {
 		}
 
 //Other Summons
+			
 	if (have_skill($skill[Summon Crimbo Candy]) && (to_int(get_property("_candySummons")) < 1 )){
 		finalSummons += "You can still summon Crimbo candy today.<br>";
 		}
@@ -450,7 +451,13 @@ void rollover(String simulate) {
 				available_amount($item[Twinkly Wad])+")<br>";
 			}
 		}
-				
+
+//Swagger related things
+	buffer skillbody = visit_url("/skills.php");
+	matcher summonAnnoyMatch = create_matcher("<option value=107>Summon Annoyance \\(([0-9]+) swagger\\)</option>", skillbody);
+	while (summonAnnoyMatch.find()) {
+		finalSummons +=  "You can still Summon Annoyances for "+summonAnnoyMatch.group(1)+" swagger today.";
+		}
 
 //Misc.
 
