@@ -118,18 +118,34 @@ void rollover(String simulate) {
 		}
 	}
 	
+	foreach fam in $familiars[Disembodied Hand, Fancypants Scarecrow, Mad Hatrack]{
+		if (familiar_equipped_equipment(fam) != $item[none]){
+			familiar current_fam = my_familiar();
+			use_familiar(fam);
+			equip($slot[familiar],$item[none]);
+			use_familiar(current_fam);
+			}
+		}
+	foreach fam in familiars {
+		if (familiar_equipped_equipment(fam) != $item[Loathing Legion Helicopter]){
+			familiar current_fam = my_familiar();
+			use_familiar(fam);
+			equip($slot[familiar],$item[none]);
+			use_familiar(current_fam);
+			}
+		}
 	boolean haveCheese = false;
 		if(available_amount($item[stinky cheese diaper]) == 0){
 			item cheesy;
 			foreach cheesy in get_related($item[stinky cheese diaper], "fold"){
-			vprint(cheesy + ", " + available_amount(cheesy), 15);
- 			if(available_amount(cheesy) != 0) haveCheese = true;
- 			}
+				vprint(cheesy + ", " + available_amount(cheesy), 15);
+ 				if(available_amount(cheesy) != 0) haveCheese = true;
+ 				}
  			}
 	
 	if(haveCheese && (available_amount($item[Stinky Cheese Diaper]) == 0)) {
 		if (to_boolean(get_property("sry_RO_runQuiet"))){
-			if ((item_amount($item[Stinky Cheese Diaper]) == 0) && !have_equipped($item[Stinky Cheese Diaper])) {
+			if ((available_amount($item[Stinky Cheese Diaper]) == 0) && !have_equipped($item[Stinky Cheese Diaper])) {
 				cli_execute("fold diaper");
 				finalEquip += "Folded your stinky cheese pants.<br>";
 				}
