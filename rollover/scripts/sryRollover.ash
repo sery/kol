@@ -126,7 +126,7 @@ void rollover(String simulate) {
 			use_familiar(current_fam);
 			}
 		}
-	foreach fam in familiars {
+	foreach fam in $familiars[] {
 		if (familiar_equipped_equipment(fam) != $item[Loathing Legion Helicopter]){
 			familiar current_fam = my_familiar();
 			use_familiar(fam);
