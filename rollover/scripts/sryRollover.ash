@@ -390,8 +390,8 @@ void rollover(String simulate) {
 //Summon Limit Checking
 	int maxNoodles=3;
 		if(have_skill($skill[Transcendental Noodlecraft])) maxNoodles = 5;
-	int maxCocktails=3;
-		if(have_skill($skill[Superhuman Cocktailcrafting])) maxCocktails = 5;
+//	int maxCocktails=3;
+//		if(have_skill($skill[Superhuman Cocktailcrafting])) maxCocktails = 5;
 	int maxReagents=3;
 		if((my_class()==$class[Sauceror])&&(available_amount($item[Gravyskin Belt of the Sauceblob])>0)) maxReagents = maxReagents+3;
 		if(have_skill($skill[The Way of Sauce])) maxReagents = maxReagents + 2;
@@ -399,7 +399,7 @@ void rollover(String simulate) {
 	if (have_skill($skill[Advanced Saucecrafting])	&& (to_int(get_property("reagentSummons")) < maxReagents)){
 		finalSummons += "You can still summon reagents today.<br>";
 		}
-	if (have_skill($skill[Advanced Cocktailcrafting]) && (to_int(get_property("cocktailSummons")) < maxCocktails)){
+	if (have_skill($skill[Advanced Cocktailcrafting]) && (to_int(get_property("cocktailSummons")) < 1)){
 		finalSummons += "You can still summon cocktailcrafting garnishes today.<br>";
 		}
 	if (have_skill($skill[Pastamastery]) && (to_int(get_property("noodleSummons")) < maxNoodles)){
@@ -456,7 +456,7 @@ void rollover(String simulate) {
 	buffer skillbody = visit_url("/skills.php");
 	matcher summonAnnoyMatch = create_matcher("<option value=107>Summon Annoyance \\(([0-9]+) swagger\\)</option>", skillbody);
 	while (summonAnnoyMatch.find()) {
-		finalSummons +=  "You can still Summon Annoyances for "+summonAnnoyMatch.group(1)+" swagger today.";
+		finalSummons +=  "You can still Summon Annoyances for "+summonAnnoyMatch.group(1)+" swagger today.<br>";
 		}
 
 //Misc.
