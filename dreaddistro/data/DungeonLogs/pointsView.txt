@@ -1,4 +1,4 @@
-Aliisza	3035
+Aliisza	3437
 anaki	-4582
 Batdan88	1
 Chunky Spelunky	-221
@@ -6,7 +6,7 @@ Cosmosis	5
 Crowther	0
 DracoTrainer	-209
 DreamCatcher	0
-ElectricChairJ	-8853
+ElectricChairJ	-8103
 Gringdor	5087
 Hippie Dude	-2936
 Jaeshala	-4749
