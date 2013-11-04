@@ -21,9 +21,12 @@ Aliisza	pointsbyinstance	672	151875	293	293	0	0	0	0	0	0	0	0	0	0	0	0	0	0	293
 Aliisza	pointsbyinstance	672	152109	21	21	0	0	0	0	0	0	0	0	0	0	0	0	0	0	21
 Aliisza	pointsbyinstance	672	152311	913	913	0	0	0	0	0	0	1	-1000	0	0	0	0	0	0	-87
 Aliisza	pointsbyinstance	672	152549	908	908	0	0	0	0	2	-2000	1	-1000	0	0	0	0	0	0	-3092
+Aliisza	pointsbyinstance	672	152839	938	938	0	0	0	0	0	0	1	-1000	0	0	0	0	0	0	-62
+Aliisza	pointsbyinstance	672	153128	1560	1560	0	0	0	0	0	0	1	-1000	0	0	0	0	0	0	560
+Aliisza	pointsbyinstance	672	153396	1564	1564	0	0	0	0	0	0	1	-1000	0	0	0	0	0	0	564
 Aliisza	pointsbyclan	2046991961		4126	0	0	0	0	0	6	0	5	0	0	0	1	0	0	0	0
-Aliisza	pointsbyclan	672		5003	5003	0	0	0	0	5	-5000	4	-4000	0	0	0	0	3	-30	-5027
-Aliisza	pointstotal	9129	5003	0	0	0	0	11	-5000	9	-4000	0	0	1	0	3	-30	-5027
+Aliisza	pointsbyclan	672		9065	9065	0	0	0	0	5	-5000	7	-7000	0	0	0	0	3	-30	-3965
+Aliisza	pointstotal	13191	9065	0	0	0	0	11	-5000	12	-7000	0	0	1	0	3	-30	3035
 anaki	pointsbyinstance	2046991961	149512	48	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0
 anaki	pointsbyinstance	2047001253	149101	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0
 anaki	pointsbyinstance	672	149128	314	314	0	0	0	0	0	0	0	0	0	0	1	0	0	0	314
@@ -35,10 +38,11 @@ anaki	pointsbyinstance	672	151017	147	147	0	0	0	0	0	0	0	0	0	0	0	0	1	-10	137
 anaki	pointsbyinstance	672	152109	0	0	0	0	0	0	2	-2000	0	0	0	0	0	0	0	0	-3000
 anaki	pointsbyinstance	672	152311	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 anaki	pointsbyinstance	672	152549	74	74	0	0	0	0	0	0	1	-1000	0	0	0	0	0	0	-926
+anaki	pointsbyinstance	672	152839	62	62	0	0	0	0	0	0	0	0	0	0	0	0	0	0	62
 anaki	pointsbyclan	2046991961		48	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0
 anaki	pointsbyclan	2047001253		0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0
-anaki	pointsbyclan	672		1416	1416	0	0	0	0	2	-2000	3	-3000	0	0	1	0	5	-50	-4644
-anaki	pointstotal	1464	1416	0	0	0	0	2	-2000	3	-3000	0	0	3	0	5	-50	-4644
+anaki	pointsbyclan	672		1478	1478	0	0	0	0	2	-2000	3	-3000	0	0	1	0	5	-50	-4582
+anaki	pointstotal	1526	1478	0	0	0	0	2	-2000	3	-3000	0	0	3	0	5	-50	-4582
 Batdan88	pointsbyinstance	672	144190	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
 Batdan88	pointsbyclan	672		1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
 Batdan88	pointstotal	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
@@ -99,8 +103,9 @@ DracoTrainer	pointsbyinstance	672	149128	97	97	0	0	0	0	0	0	0	0	1	0	0	0	0	0	97
 DracoTrainer	pointsbyinstance	672	149378	303	303	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-697
 DracoTrainer	pointsbyinstance	672	149569	579	579	0	0	0	0	0	0	0	0	0	0	0	0	1	-10	569
 DracoTrainer	pointsbyinstance	672	151755	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0
-DracoTrainer	pointsbyclan	672		4821	4821	0	0	0	0	5	-5000	0	0	1	0	2	0	3	-30	-209
-DracoTrainer	pointstotal	4821	4821	0	0	0	0	5	-5000	0	0	1	0	2	0	3	-30	-209
+DracoTrainer	pointsbyinstance	672	153396	329	329	0	0	0	0	0	0	0	0	0	0	0	0	0	0	329
+DracoTrainer	pointsbyclan	672		5150	5150	0	0	0	0	5	-5000	0	0	1	0	2	0	3	-30	120
+DracoTrainer	pointstotal	5150	5150	0	0	0	0	5	-5000	0	0	1	0	2	0	3	-30	-209
 DreamCatcher	pointsbyinstance	672	142929	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 DreamCatcher	pointsbyinstance	672	144190	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 DreamCatcher	pointsbyclan	672		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
@@ -109,8 +114,10 @@ ElectricChairJ	pointsbyinstance	672	150730	835	835	0	0	0	0	1	-1000	1	-1000	0	0	0
 ElectricChairJ	pointsbyinstance	672	151017	566	566	0	0	0	0	0	0	1	-1000	0	0	0	0	0	0	-434
 ElectricChairJ	pointsbyinstance	672	151197	691	691	0	0	0	0	1	-1000	0	0	1	0	0	0	0	0	-309
 ElectricChairJ	pointsbyinstance	672	151429	710	710	0	0	1	1000	3	-3000	0	0	1	0	0	0	0	0	-4290
-ElectricChairJ	pointsbyclan	672		2802	2802	0	0	1	1000	5	-5000	2	-2000	2	0	0	0	0	0	-6198
-ElectricChairJ	pointstotal	2802	2802	0	0	1	1000	5	-5000	2	-2000	2	0	0	0	0	0	-6198
+ElectricChairJ	pointsbyinstance	672	152839	264	264	0	0	0	0	0	0	0	0	0	0	0	0	1	-10	254
+ElectricChairJ	pointsbyinstance	672	153396	91	91	0	0	0	0	2	-2000	0	0	0	0	0	0	0	0	-2909
+ElectricChairJ	pointsbyclan	672		3157	3157	0	0	1	1000	7	-7000	2	-2000	2	0	0	0	1	-10	-8853
+ElectricChairJ	pointstotal	3157	3157	0	0	1	1000	7	-7000	2	-2000	2	0	0	0	1	-10	-8853
 Gringdor	pointsbyinstance	2046991961	144836	0	0	0	0	1	0	0	0	0	0	0	0	0	0	1	0	0
 Gringdor	pointsbyinstance	672	142929	396	396	3	0	0	0	0	0	0	0	0	0	0	0	0	0	396
 Gringdor	pointsbyinstance	672	144190	745	745	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-255
@@ -119,6 +126,9 @@ Gringdor	pointsbyinstance	672	145960	702	702	0	0	0	0	0	0	0	0	0	0	0	0	0	0	702
 Gringdor	pointsbyclan	2046991961		0	0	0	0	1	0	0	0	0	0	0	0	0	0	1	0	0
 Gringdor	pointsbyclan	672		3087	3087	4	0	2	2000	1	-1000	0	0	1	0	0	0	0	0	5087
 Gringdor	pointstotal	3087	3087	4	0	3	2000	1	-1000	0	0	1	0	0	0	1	0	5087
+Hippie Dude	pointsbyinstance	672	153128	64	64	0	0	0	0	0	0	2	-2000	0	0	0	0	0	0	-2936
+Hippie Dude	pointsbyclan	672		64	64	0	0	0	0	0	0	2	-2000	0	0	0	0	0	0	-2936
+Hippie Dude	pointstotal	64	64	0	0	0	0	0	0	2	-2000	0	0	0	0	0	0	-2936
 Jaeshala	pointsbyinstance	2046991961	151031	338	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 Jaeshala	pointsbyinstance	672	142929	251	251	0	0	0	0	0	0	0	0	0	0	0	0	0	0	251
 Jaeshala	pointsbyinstance	672	147549	61	61	0	0	0	0	0	0	0	0	0	0	0	0	0	0	61
@@ -136,13 +146,19 @@ Jaeshala	pointsbyinstance	672	151875	232	232	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-76
 Jaeshala	pointsbyinstance	672	152109	528	528	0	0	0	0	0	0	1	-1000	0	0	2	0	0	0	-472
 Jaeshala	pointsbyinstance	672	152311	18	18	0	0	0	0	0	0	1	-1000	0	0	0	0	0	0	-982
 Jaeshala	pointsbyinstance	672	152549	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+Jaeshala	pointsbyinstance	672	152839	851	851	0	0	0	0	1	-1000	1	-1000	0	0	0	0	0	0	-1149
+Jaeshala	pointsbyinstance	672	153128	656	656	0	0	0	0	0	0	0	0	0	0	0	0	1	-10	646
+Jaeshala	pointsbyinstance	672	153396	1	1	0	0	0	0	0	0	1	-1000	0	0	0	0	0	0	-999
 Jaeshala	pointsbyclan	2046991961		338	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-Jaeshala	pointsbyclan	672		4883	4883	0	0	0	0	5	-5000	3	-3000	1	0	2	0	9	-90	-3247
-Jaeshala	pointstotal	5221	4883	0	0	0	0	5	-5000	3	-3000	1	0	2	0	9	-90	-3247
+Jaeshala	pointsbyclan	672		6391	6391	0	0	0	0	6	-6000	5	-5000	1	0	2	0	10	-100	-4749
+Jaeshala	pointstotal	6729	6391	0	0	0	0	6	-6000	5	-5000	1	0	2	0	10	-100	-4749
 JimFromTx	pointsbyinstance	672	145342	88	88	0	0	0	0	0	0	0	0	0	0	1	0	0	0	88
 JimFromTx	pointsbyinstance	672	145960	4	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4
-JimFromTx	pointsbyclan	672		92	92	0	0	0	0	0	0	0	0	0	0	1	0	0	0	92
-JimFromTx	pointstotal	92	92	0	0	0	0	0	0	0	0	0	0	1	0	0	0	92
+JimFromTx	pointsbyinstance	672	152839	249	249	0	0	0	0	1	-1000	1	-1000	1	0	0	0	0	0	-1751
+JimFromTx	pointsbyinstance	672	153128	167	167	0	0	0	0	2	-2000	0	0	0	0	0	0	0	0	-2833
+JimFromTx	pointsbyinstance	672	153396	308	308	0	0	0	0	0	0	1	-1000	0	0	0	0	0	0	-692
+JimFromTx	pointsbyclan	672		816	816	0	0	0	0	3	-3000	2	-2000	1	0	1	0	0	0	-5184
+JimFromTx	pointstotal	816	816	0	0	0	0	3	-3000	2	-2000	1	0	1	0	0	0	-5184
 Jizmak The Destroyer	pointsbyinstance	2046991961	143247	478	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0
 Jizmak The Destroyer	pointsbyinstance	2046991961	144836	1229	0	0	0	1	0	0	0	1	0	0	0	0	0	1	0	0
 Jizmak The Destroyer	pointsbyinstance	2046991961	145967	621	0	0	0	1	0	0	0	1	0	0	0	0	0	2	0	0
@@ -178,10 +194,16 @@ Jizmak The Destroyer	pointsbyinstance	672	151632	428	428	0	0	0	0	0	0	1	-1000	0	0
 Jizmak The Destroyer	pointsbyinstance	672	151755	1	1	0	0	0	0	0	0	2	-2000	0	0	0	0	1	-10	-3009
 Jizmak The Destroyer	pointsbyinstance	672	152109	210	210	0	0	0	0	0	0	0	0	0	0	0	0	0	0	210
 Jizmak The Destroyer	pointsbyinstance	672	152549	21	21	0	0	3	3000	0	0	0	0	0	0	0	0	2	-20	5991
+Jizmak The Destroyer	pointsbyinstance	672	152839	20	20	0	0	1	1000	0	0	0	0	0	0	0	0	0	0	1020
+Jizmak The Destroyer	pointsbyinstance	672	153128	0	0	0	0	2	2000	0	0	0	0	0	0	0	0	2	-20	2980
+Jizmak The Destroyer	pointsbyinstance	672	153396	10	10	0	0	3	3000	0	0	0	0	0	0	0	0	5	-50	5910
 Jizmak The Destroyer	pointsbyclan	2046991961		11165	0	0	0	8	0	12	0	8	0	5	0	5	0	4	0	0
 Jizmak The Destroyer	pointsbyclan	2047001253		366	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0
-Jizmak The Destroyer	pointsbyclan	672		3103	3103	0	0	19	19000	6	-6000	11	-11000	1	0	1	0	7	-70	11013
-Jizmak The Destroyer	pointstotal	14634	3103	0	0	28	19000	18	-6000	19	-11000	6	0	6	0	11	-70	11013
+Jizmak The Destroyer	pointsbyclan	672		3133	3133	0	0	25	25000	6	-6000	11	-11000	1	0	1	0	14	-140	20923
+Jizmak The Destroyer	pointstotal	14664	3133	0	0	34	25000	18	-6000	19	-11000	6	0	6	0	18	-140	20923
+KID6969	pointsbyinstance	672	153128	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+KID6969	pointsbyclan	672		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+KID6969	pointstotal	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 kuankyh	pointsbyinstance	672	144190	251	251	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-749
 kuankyh	pointsbyinstance	672	145342	608	608	0	0	0	0	0	0	1	-1000	0	0	0	0	0	0	-392
 kuankyh	pointsbyinstance	672	145960	672	672	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-328
@@ -252,12 +274,18 @@ nOOBSauce	pointsbyinstance	672	151875	404	404	0	0	0	0	1	-1000	0	0	0	0	1	0	0	0	-5
 nOOBSauce	pointsbyinstance	672	152109	716	716	0	0	0	0	1	-1000	1	-1000	0	0	0	0	0	0	-1284
 nOOBSauce	pointsbyinstance	672	152311	383	383	0	0	0	0	0	0	1	-1000	0	0	0	0	1	-10	-627
 nOOBSauce	pointsbyinstance	672	152549	489	489	0	0	0	0	0	0	1	-1000	0	0	0	0	0	0	-511
+nOOBSauce	pointsbyinstance	672	153128	20	20	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-980
 nOOBSauce	pointsbyclan	2047001253		786	0	0	0	0	0	0	0	0	0	0	0	1	0	1	0	0
-nOOBSauce	pointsbyclan	672		5899	5899	0	0	0	0	5	-5000	4	-4000	2	0	3	0	20	-200	-3391
-nOOBSauce	pointstotal	6685	5899	0	0	0	0	5	-5000	4	-4000	2	0	4	0	21	-200	-3391
+nOOBSauce	pointsbyclan	672		5919	5919	0	0	0	0	6	-6000	4	-4000	2	0	3	0	20	-200	-4371
+nOOBSauce	pointstotal	6705	5919	0	0	0	0	6	-6000	4	-4000	2	0	4	0	21	-200	-4371
 Noodlius	pointsbyinstance	672	142929	265	265	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-735
 Noodlius	pointsbyclan	672		265	265	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-735
 Noodlius	pointstotal	265	265	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-735
+RedBamboo	pointsbyinstance	672	152839	6	6	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-994
+RedBamboo	pointsbyinstance	672	153128	533	533	0	0	0	0	0	0	0	0	0	0	0	0	0	0	533
+RedBamboo	pointsbyinstance	672	153396	183	183	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-817
+RedBamboo	pointsbyclan	672		722	722	0	0	0	0	2	-2000	0	0	0	0	0	0	0	0	-1278
+RedBamboo	pointstotal	722	722	0	0	0	0	2	-2000	0	0	0	0	0	0	0	0	-1811
 ReisenFig	pointsbyinstance	672	144190	6	6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6
 ReisenFig	pointsbyinstance	672	145342	45	45	0	0	0	0	1	-1000	0	0	0	0	0	0	0	0	-955
 ReisenFig	pointsbyinstance	672	145960	12	12	0	0	0	0	0	0	0	0	0	0	0	0	1	-10	2
@@ -301,10 +329,12 @@ Sary	pointsbyinstance	672	151875	422	422	0	0	0	0	0	0	0	0	0	0	0	0	1	-10	412
 Sary	pointsbyinstance	672	152109	723	723	0	0	3	3000	0	0	0	0	0	0	0	0	3	-30	6673
 Sary	pointsbyinstance	672	152311	0	0	0	0	1	1000	0	0	0	0	0	0	0	0	2	-20	980
 Sary	pointsbyinstance	672	152549	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	-10	-10
+Sary	pointsbyinstance	672	152839	0	0	0	0	1	1000	0	0	0	0	0	0	0	0	2	-20	980
+Sary	pointsbyinstance	672	153396	76	76	0	0	0	0	0	0	0	0	0	0	0	0	0	0	76
 Sary	pointsbyclan	2046991961		20068	0	3	0	22	0	16	0	9	0	5	0	3	0	42	0	0
 Sary	pointsbyclan	2047001253		2	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0
-Sary	pointsbyclan	672		2784	2784	0	0	19	19000	2	-2000	9	-9000	2	0	0	0	26	-260	16494
-Sary	pointstotal	22854	2784	3	0	41	19000	18	-2000	19	-9000	7	0	3	0	68	-260	16494
+Sary	pointsbyclan	672		2860	2860	0	0	20	20000	2	-2000	9	-9000	2	0	0	0	28	-280	17550
+Sary	pointstotal	22930	2860	3	0	42	20000	18	-2000	19	-9000	7	0	3	0	70	-280	10550
 scathdhuan	pointsbyinstance	2046991961	146753	64	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0
 scathdhuan	pointsbyinstance	2046991961	148284	415	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0
 scathdhuan	pointsbyinstance	2046991961	149926	388	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0
@@ -394,10 +424,13 @@ WhimOrClutters	pointsbyinstance	672	151875	730	730	0	0	1	1000	0	0	0	0	0	0	0	0	2	
 WhimOrClutters	pointsbyinstance	672	152109	600	600	0	0	0	0	0	0	1	-1000	0	0	0	0	1	-10	-410
 WhimOrClutters	pointsbyinstance	672	152311	629	629	0	0	2	2000	2	-2000	0	0	1	0	0	0	2	-20	599
 WhimOrClutters	pointsbyinstance	672	152549	600	600	0	0	0	0	0	0	0	0	0	0	0	0	3	-30	540
+WhimOrClutters	pointsbyinstance	672	152839	610	610	0	0	1	1000	0	0	0	0	0	0	0	0	2	-20	1580
+WhimOrClutters	pointsbyinstance	672	153128	0	0	0	0	1	1000	0	0	0	0	1	0	0	0	2	-20	970
+WhimOrClutters	pointsbyinstance	672	153396	438	438	0	0	0	0	0	0	0	0	1	0	0	0	0	0	438
 WhimOrClutters	pointsbyclan	2046991961		928	0	0	0	1	0	3	0	4	0	0	0	2	0	0	0	0
 WhimOrClutters	pointsbyclan	2047001253		1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0
-WhimOrClutters	pointsbyclan	672		16171	16171	0	0	16	16000	15	-15000	13	-13000	8	0	0	0	16	-160	951
-WhimOrClutters	pointstotal	17100	16171	0	0	17	16000	18	-15000	18	-13000	8	0	2	0	16	-160	951
+WhimOrClutters	pointsbyclan	672		17219	17219	0	0	18	18000	15	-15000	13	-13000	10	0	0	0	20	-200	3939
+WhimOrClutters	pointstotal	18148	17219	0	0	19	18000	18	-15000	18	-13000	10	0	2	0	20	-200	3939
 zavijava	pointsbyinstance	672	145342	3	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3
 zavijava	pointsbyinstance	672	145960	52	52	1	0	0	0	0	0	0	0	0	0	0	0	1	-10	42
 zavijava	pointsbyclan	672		55	55	1	0	0	0	0	0	0	0	0	0	0	0	1	-10	45
