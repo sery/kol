@@ -1110,3 +1110,77 @@
 672-152549	lootdistro	11	bottle of Bloodweiser	WhimOrClutters	1
 672-152549	lootdistro	12	ghost pepper	WhimOrClutters	1
 672-152549	lootdistro	13	Hunger&trade; Sauce	WhimOrClutters	1
+672-152839	clanid	672
+672-152839	startdate	20131016
+672-152839	enddate	20131021
+672-152839	playerturns	Aliisza	6	5	0	0	537	390	0
+672-152839	playerturns	anaki	0	0	39	23	0	0	0
+672-152839	playerturns	ElectricChairJ	0	0	157	107	0	0	0
+672-152839	playerturns	Jaeshala	398	262	87	58	34	12	1
+672-152839	playerturns	JimFromTx	8	5	130	89	6	11	0
+672-152839	playerturns	Jizmak The Destroyer	0	0	5	5	1	9	2
+672-152839	playerturns	RedBamboo	3	3	0	0	0	0	8
+672-152839	playerturns	WhimOrClutters	195	115	185	115	0	0	0
+672-152839	boss	castle	Unkillable Skeleton	Sary	true
+672-152839	boss	village	Mayor Ghost	Jizmak The Destroyer	true
+672-152839	boss	woods	Falls-From-Sky	WhimOrClutters	true
+672-152839	lootdistro	1	Unkillable Skeleton's sawsword	Aliisza	1
+672-152839	lootdistro	2	Gets-You-Drunk	ElectricChairJ	1
+672-152839	lootdistro	3	Mayor Ghost's gavel	Jaeshala	1
+672-152839	lootdistro	4	Unkillable Skeleton's breastplate	Jaeshala	1
+672-152839	lootdistro	5	Mayor Ghost's cloak	JimFromTx	1
+672-152839	lootdistro	6	Protects-Your-Junk	JimFromTx	1
+672-152839	lootdistro	7	skull capacitor	JimFromTx	1
+672-152839	lootdistro	8	Warms-Your-Tush	RedBamboo	1
+672-152839	lootdistro	9	electric Kool-Aid	Sary	2
+672-152839	lootdistro	10	Gets-You-Drunk	WhimOrClutters	1
+672-152839	lootdistro	11	ghost pepper	WhimOrClutters	1
+672-153128	clanid	672
+672-153128	startdate	20131021
+672-153128	enddate	20131028
+672-153128	playerturns	Aliisza	291	146	518	372	127	106	0
+672-153128	playerturns	Hippie Dude	0	0	7	14	24	19	0
+672-153128	playerturns	Jaeshala	158	98	1	9	229	161	0
+672-153128	playerturns	JimFromTx	36	26	45	26	24	10	0
+672-153128	playerturns	KID6969	0	0	0	0	0	0	1
+672-153128	playerturns	nOOBSauce	2	3	3	2	6	4	0
+672-153128	playerturns	RedBamboo	136	104	2	1	157	133	14
+672-153128	boss	castle	Count Drunkula	Jizmak The Destroyer	true
+672-153128	boss	village	Mayor Ghost	Jizmak The Destroyer	true
+672-153128	boss	woods	Falls-From-Sky	WhimOrClutters	true
+672-153128	lootdistro	1	Drunkula's ring of haze	Aliisza	1
+672-153128	lootdistro	2	Mayor Ghost's scissors	Hippie Dude	1
+672-153128	lootdistro	3	Protects-Your-Junk	Hippie Dude	1
+672-153128	lootdistro	4	ghost pepper	Jaeshala	1
+672-153128	lootdistro	5	Drapes-You-Regally	JimFromTx	1
+672-153128	lootdistro	6	Mayor Ghost's cloak	JimFromTx	1
+672-153128	lootdistro	7	bottle of Bloodweiser	Jizmak The Destroyer	2
+672-153128	lootdistro	8	Thunkula's drinking cap	nOOBSauce	1
+672-153128	lootdistro	9	Gets-You-Drunk	WhimOrClutters	1
+672-153128	lootdistro	10	ghost pepper	WhimOrClutters	1
+672-153128	lootdistro	11	skull capacitor	WhimOrClutters	1
+672-153396	clanid	672
+672-153396	startdate	00000000
+672-153396	enddate	00000000
+672-153396	playerturns	Aliisza	123	149	549	341	161	241	1
+672-153396	playerturns	DracoTrainer	0	0	0	0	120	209	1
+672-153396	playerturns	ElectricChairJ	35	56	0	0	0	0	0
+672-153396	playerturns	Jaeshala	0	0	0	0	0	1	1
+672-153396	playerturns	JimFromTx	98	126	0	0	37	47	0
+672-153396	playerturns	Jizmak The Destroyer	0	0	4	6	0	0	4
+672-153396	playerturns	RedBamboo	76	107	0	0	0	0	0
+672-153396	playerturns	Sary	0	0	0	0	35	41	2
+672-153396	playerturns	WhimOrClutters	90	140	61	39	46	62	0
+672-153396	boss	castle	Count Drunkula	Jizmak The Destroyer	true
+672-153396	boss	village	Mayor Ghost	Jizmak The Destroyer	true
+672-153396	boss	woods	Great Wolf of the Air	Jizmak The Destroyer	true
+672-153396	lootdistro	1	Mayor Ghost's scissors	Aliisza	1
+672-153396	lootdistro	2	Drunkula's cape	ElectricChairJ	1
+672-153396	lootdistro	3	Mayor Ghost's cloak	ElectricChairJ	1
+672-153396	lootdistro	4	Drunkula's ring of haze	Jaeshala	1
+672-153396	lootdistro	5	Great Wolf's rocket launcher	JimFromTx	1
+672-153396	lootdistro	6	bottle of Bloodweiser	Jizmak The Destroyer	2
+672-153396	lootdistro	7	ghost pepper	Jizmak The Destroyer	1
+672-153396	lootdistro	8	Hunger&trade; Sauce	Jizmak The Destroyer	2
+672-153396	lootdistro	9	Great Wolf's headband	RedBamboo	1
+672-153396	lootdistro	10	skull capacitor	WhimOrClutters	1
