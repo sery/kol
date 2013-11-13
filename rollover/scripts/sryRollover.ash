@@ -214,6 +214,7 @@ void rollover(String simulate) {
 		if (contains_text(rumpus, "rump2_3")) clan_adv += 5;
 		if (contains_text(rumpus, "rump4_3")) clan_adv += 1;
 		}
+
 	
 		res_adv += to_int(get_property("_resolutionAdv"));		
 
@@ -228,7 +229,7 @@ void rollover(String simulate) {
 		if (my_camp contains $item[cuckoo clock]) camp_adv += 3;
 		
 		if (have_skill($skill[Fashionably Late])) skill_adv += 1;
-		
+		if (have_skill($skill[The Long View])) skill_adv += 3;
 		
 	extra_adv_total = base_adv + clan_adv + res_adv + fam_adv + camp_adv + skill_adv;
 
@@ -249,7 +250,8 @@ void rollover(String simulate) {
 	if(to_boolean(get_property("sry_RO_verbose"))){
 		finalReport += "-- Current: " +my_adventures()+"<br>";
 		finalReport += "-- Base: " + base_adv+"<br>";
-		finalReport += "-- Clan: " +clan_adv+"<br>";
+		if(can_interact()) { finalReport += "-- Clan: " +clan_adv+"<br>"; }
+		else { finalReport += "-- Clan: 0 (Hardcore/Ronin)<br>"; }
 		finalReport += "-- Resolutions: " + res_adv+"<br>";
 		finalReport += "-- Familiar: " +fam_adv+"<br>";
 		finalReport += "-- Campground: " +camp_adv+"<br>";
