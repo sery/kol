@@ -390,21 +390,21 @@ void rollover(String simulate) {
 					
 //Class Summons
 //Summon Limit Checking
-	int maxNoodles=3;
-		if(have_skill($skill[Transcendental Noodlecraft])) maxNoodles = 5;
+//	int maxNoodles=3;
+//		if(have_skill($skill[Transcendental Noodlecraft])) maxNoodles = 5;
 //	int maxCocktails=3;
 //		if(have_skill($skill[Superhuman Cocktailcrafting])) maxCocktails = 5;
-	int maxReagents=3;
-		if((my_class()==$class[Sauceror])&&(available_amount($item[Gravyskin Belt of the Sauceblob])>0)) maxReagents = maxReagents+3;
-		if(have_skill($skill[The Way of Sauce])) maxReagents = maxReagents + 2;
+//	int maxReagents=3;
+//		if((my_class()==$class[Sauceror])&&(available_amount($item[Gravyskin Belt of the Sauceblob])>0)) maxReagents = maxReagents+3;
+//		if(have_skill($skill[The Way of Sauce])) maxReagents = maxReagents + 2;
 
-	if (have_skill($skill[Advanced Saucecrafting])	&& (to_int(get_property("reagentSummons")) < maxReagents)){
+	if (have_skill($skill[Advanced Saucecrafting])	&& (to_int(get_property("reagentSummons")) < 1)){
 		finalSummons += "You can still summon reagents today.<br>";
 		}
 	if (have_skill($skill[Advanced Cocktailcrafting]) && (to_int(get_property("cocktailSummons")) < 1)){
 		finalSummons += "You can still summon cocktailcrafting garnishes today.<br>";
 		}
-	if (have_skill($skill[Pastamastery]) && (to_int(get_property("noodleSummons")) < maxNoodles)){
+	if (have_skill($skill[Pastamastery]) && (to_int(get_property("noodleSummons")) < 1)){
 		finalSummons += "You can still summon dry noodles today.<br>";
 		}
 

@@ -4,7 +4,8 @@ zavijava	norm-killed Bugbear w/out permission (672-145960)	-54
 RedBamboo	wasted blood kiwi and brought woods and village above 990 (672-153128)	-533
 Sary	Points gifted to Aliisza (28 Oct 2013)	-7000
 Aliisza	Points gifted from Sary (28 Oct 2013)	7000
-Aliisza	Lack of communication closed out Castle early.
-Aliisza	Stashed missed roast, along with ~1.5mil in items and dense.	402
-DracoTrainer	Lack of communication closed out Castle early.	-329
-ElectricChairJ	Sary misdistroed	750
+Aliisza	Lack of communication closed out Castle early. (672-153128)
+Aliisza	Stashed missed roast, along with ~1.5mil in items and dense. (672-153128)	402
+DracoTrainer	Lack of communication closed out Castle early. (672-153128)	-329
+ElectricChairJ	Sary misdistroed (672-153128)	750
+RedBamboo	Brought woods over 990 w/out permission (672-153396)	-100
