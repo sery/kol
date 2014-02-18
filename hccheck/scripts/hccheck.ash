@@ -85,7 +85,7 @@ Telescope3[$item[barbed-wire fence]]="pair of horns";
 //Prints a string if I want it to. Just comment out the line for debugging.
 boolean debug(string write)
 {
-  print("DEBUG: " + write, "blue");
+  //print("DEBUG: " + write, "blue");
   return true;
 }
 
@@ -404,7 +404,8 @@ void bumcheekcitys_hardcore_checklist()
 		||(my_path() == "Bugbear Invasion")
 		||(my_path() == "Zombie Slayer")
 		||(my_path() == "Avatar of Jarlsberg")
-		||(my_path() == "KOLHS")){
+		||(my_path() == "KOLHS")
+    ||(my_path() == "Avatar of Sneaky Pete")){
   		debug("You don't need the Wand of Nagamar, so setting this to true.");
     	hasWandOfNagamar = true;
     	}
@@ -491,7 +492,9 @@ void bumcheekcitys_hardcore_checklist()
   if (my_level >= 2)
   {
     //Mosquito Larva
-    if (my_path() != "Avatar of Boris" && my_path() != "Zombie Slayer"){
+    if (my_path() != "Avatar of Boris" 
+        && my_path() != "Zombie Slayer"
+        && my_path() != "Avatar of Sneaky Pete" ){
 	    if (!have_familiar($familiar[Mosquito])){
       		if (item_amount($item[mosquito larva]) == 0){
         		bufferoutput("You do not have the Mosquito Larva");
