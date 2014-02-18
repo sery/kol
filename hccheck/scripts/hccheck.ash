@@ -398,7 +398,7 @@ void bumcheekcitys_hardcore_checklist()
   boolean hasWA = false;
   boolean hasND = false;
   boolean hasNG = false;
-  
+    
 	if ((my_path() == "Bees Hate You")
 		||(my_path() == "Avatar of Boris")
 		||(my_path() == "Bugbear Invasion")
@@ -408,17 +408,17 @@ void bumcheekcitys_hardcore_checklist()
     ||(my_path() == "Avatar of Sneaky Pete")){
   		debug("You don't need the Wand of Nagamar, so setting this to true.");
     	hasWandOfNagamar = true;
-    	}
+      }
 	else if (item_amount($item[Wand of Nagamar]) >= 1){
 		debug("You have the Wand of Nagamar.");
     	hasWandOfNagamar = true;
-    	}
+     }
   	else {
 		if (item_amount($item[WA]) >= 1 && item_amount($item[ND]) >= 1) hasWandOfNagamar = true;
     	if (item_amount($item[WA]) >= 1) hasWA = true;
     	if (item_amount($item[ND]) >= 1) hasND = true;
     	if (item_amount($item[NG]) >= 1) hasNG = true;
-    }
+     }
   
   
   //CHECK FOR FAMILIARS IN BAD MOON
@@ -840,7 +840,13 @@ void bumcheekcitys_hardcore_checklist()
       
       int totalNs = item_amount($item[lowercase N]) + item_amount($item[NG]) + item_amount($item[ND]) + item_amount($item[Wand of Nagamar]);
    
-   	if ((my_path() == "Bees Hate You")||(my_path() == "Avatar of Boris")||(my_path() == "Zombie Slayer")){
+   	if ((my_path() == "Bees Hate You")
+    ||(my_path() == "Avatar of Boris")
+    ||(my_path() == "Bugbear Invasion")
+    ||(my_path() == "Zombie Slayer")
+    ||(my_path() == "Avatar of Jarlsberg")
+    ||(my_path() == "KOLHS")
+    ||(my_path() == "Avatar of Sneaky Pete")){
    		if (northPoleDef){
    			if (totalNs < 1) bufferoutput("You only need 1 lowercase N, but you don't have any.");
         	}
