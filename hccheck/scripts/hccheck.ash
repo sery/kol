@@ -543,10 +543,14 @@ void bumcheekcitys_hardcore_checklist()
         else if (urlContains("main.php?action=motorcycle", '<input class=button type=submit value="Upgrade the Gas Tank')){
           bufferoutput("You could upgrade to an Extra-Buoyant Gas Tank now.");
           }
-        else {bufferoutput("You need to get and use the Dinghy Planks.");}
-        }
-    	else bufferoutput("You need to get and use the Dinghy Planks.");
-    }
+        else {
+          bufferoutput("You need to get and use the Dinghy Planks.");
+          }
+        }  
+    else {
+      bufferoutput("You need to get and use the Dinghy Planks.");
+      }
+      
     
     //Gate 6 Items
     
