@@ -530,27 +530,28 @@ void bumcheekcitys_hardcore_checklist()
   if (my_level >= 3)
   {
     //Dinghy Plans
-    if (item_amount($item[dingy dinghy]) > 0 || item_amount($item[skeletal skiff]) > 0 || (my_path()=="Avatar of Sneaky Pete" && urlContains("main.php?action=motorcycle", "<b>Gas Tank:</b> Extra-Buoyant Tank"))){
+    if (urlContains("main.php", "The Mysterious Island of Mystery")){
       debug("You have discovered the Island.");
       }
-    else if(item_amount($item[skeleton]) > 7){
-    		bufferoutput("You should make a Skeletal Skiff.");
-    		}
-    else if (my_path()=="Avatar of Sneaky Pete"){
-        if(urlContains("main.php?action=motorcycle", "<b>Gas Tank:</b> (factory standard)")){
-          bufferoutput("You could upgrade to an Extra-Buoyant Gas Tank later.");
-          }
-        else if (urlContains("main.php?action=motorcycle", '<input class=button type=submit value="Upgrade the Gas Tank')){
-          bufferoutput("You could upgrade to an Extra-Buoyant Gas Tank now.");
+    else if (my_path()=="Avatar of Sneaky Pete") {
+        if (urlContains("main.php?action=motorcycle", "Tank")){
+          if (urlContains("main.php?action=motorcycle", "<b>Gas Tank:</b> (factory standard)")){
+            bufferoutput("You could upgrade to an Extra-Buoyant Gas Tank later.");
+            }
+          else if (urlContains("main.php?action=motorcycle", '<input class=button type=submit value="Upgrade the Gas Tank')){
+            bufferoutput("You could upgrade to an Extra-Buoyant Gas Tank now.");
+            }
           }
         else {
           bufferoutput("You need to get and use the Dinghy Planks.");
           }
-        }  
+        }
+    else if (item_amount($item[skeleton]) > 7){
+    		bufferoutput("You should make a Skeletal Skiff.");
+    		}
     else {
-      bufferoutput("You need to get and use the Dinghy Planks.");
+      bufferoutput("You need to get and use the Dinghy Plans.");
       }
-      
     
     //Gate 6 Items
     
