@@ -344,7 +344,7 @@ else {
 			finalPVP += "-- Outfit: " +outfit_pvp+"<br>";
 			}
 		}
-
+	}
 // Skills
 	/*body = visit_url("/skills.php");
 	int start = index_of(body,"select a skill");
