@@ -468,10 +468,10 @@ else {
 	if (have_skill($skill[Demand Sandwich]) && (to_int(get_property("_demandSandwich")) < 3 )){
 		finalSummons += "You can still demand sandwiches today.<br>";
 		}
-	if (have_skill($skill[Incite Riot]) && !(to_boolean(get_property("_peteRiotIncited"))) {
+	if (have_skill($skill[Incite Riot]) && !(to_boolean(get_property("_peteRiotIncited")))) {
 		finalSummons += "You can still incite a riot today.<br>";
 		}
-	if (have_skill($skill[Throw Party]) && !(to_boolean(get_property("_petePartyThrown"))) {
+	if (have_skill($skill[Throw Party]) && !(to_boolean(get_property("_petePartyThrown")))) {
 		finalSummons += "You can still throw a party today.<br>";
 		}
 
