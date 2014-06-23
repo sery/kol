@@ -377,7 +377,8 @@ void rollover(String simulate) {
 		finalSummons += "You can still summon tasteful items today.<br>";
 		}
 	if (have_skill($skill[Summon Alice's Army Cards])	&& (to_int(get_property("grimoire3Summons")) < 1 )){
-		finalSummons += "You can still summon Alice's Army cards today.<br>";}
+		finalSummons += "You can still summon Alice's Army cards today.<br>";
+		}
 	if (have_skill($skill[Summon Geeky Gifts])	&& (to_int(get_property("_grimoireGeekySummons")) < 1 )){
 		finalSummons += "You can still summon geeky gifts today.<br>";
 		}
@@ -389,21 +390,14 @@ void rollover(String simulate) {
 		(have_skill($skill[Summon Love Song])	||
 		(have_skill($skill[Summon BRICKOs])		||
 		(have_skill($skill[Summon Dice])		||
-		(have_skill($skill[Summon Resolutions])))))))) {
+		(have_skill($skill[Summon Resolutions])	||
+		(have_skill($skill[Summon Taffy])	)))))))) {
 			finalSummons+="You can summon a Libram item for "+mp_cost($skill[Summon Love Song])+" MP.<br>";
 			}
 //End Mr. Skills
 					
 //Class Summons
 //Summon Limit Checking
-//	int maxNoodles=3;
-//		if(have_skill($skill[Transcendental Noodlecraft])) maxNoodles = 5;
-//	int maxCocktails=3;
-//		if(have_skill($skill[Superhuman Cocktailcrafting])) maxCocktails = 5;
-//	int maxReagents=3;
-//		if((my_class()==$class[Sauceror])&&(available_amount($item[Gravyskin Belt of the Sauceblob])>0)) maxReagents = maxReagents+3;
-//		if(have_skill($skill[The Way of Sauce])) maxReagents = maxReagents + 2;
-
 	if (have_skill($skill[Advanced Saucecrafting])	&& (to_int(get_property("reagentSummons")) < 1)){
 		finalSummons += "You can still summon reagents today.<br>";
 		}
@@ -418,7 +412,13 @@ void rollover(String simulate) {
 	if (have_skill($skill[Demand Sandwich]) && (to_int(get_property("_demandSandwich")) < 3 )){
 		finalSummons += "You can still demand sandwiches today.<br>";
 		}
-	//Incite Riot/Throw Party
+	if (have_skill($skill[Incite Riot]) && !(to_boolean(get_property("_peteRiotIncited"))) {
+		finalSummons += "You can still incite a riot today.<br>";
+		}
+	if (have_skill($skill[Throw Party]) && !(to_boolean(get_property("_petePartyThrown"))) {
+		finalSummons += "You can still throw a party today.<br>";
+		}
+
 //Other Summons
 			
 	if (have_skill($skill[Summon Crimbo Candy]) && (to_int(get_property("_candySummons")) < 1 )){
@@ -663,7 +663,7 @@ void rollover(String simulate) {
 	
 	} else print("You don't have access to the VIP lounge.", "gray");
 	
-	if (item_amount(to_item("neverending soda"))>0 &&get_property("oscusSodaUsed")==false) {
+	if (available_amount(to_item("neverending soda"))>0 &&get_property("oscusSodaUsed")==false) {
 		finalHPMP += "You can still drink Oscus's Soda today.<br>";
 	}
 	
