@@ -95,6 +95,7 @@ void rollover(String simulate) {
 	string finalAdv = "";
 	string finalConsume = "";
 	string finalMisc = "";
+	string finalPVP = "";
 
 	string body;
 	int base_adv = 40;
@@ -287,8 +288,63 @@ void rollover(String simulate) {
 	if (pulls_remaining() > 0) {
 		finalMisc+="You can still pull "+pulls_remaining()+" items from Hagnk's today.<br>";
 	}
+// PVP
+if (pvpreset()) {
+	finalPVP += "A new PVP season starts tomorrow, and your hippy stone will be automatically fixed.<br>";
+	if (can_PVP()) {
+		finalPVP += "<font color='red'>You will lose " + pvp_attacks_left() + " fights at rollover. Perhaps you should burn some fights!</font><br>";
+		}
+	else finalPVP += "You might want to break your stone to get some (relatively) risk free fites!";
+	}
 
+else {
+	if(can_PVP()){
+
+		int base_pvp = 10;
+		int clan_pvp = 0;
+		int camp_pvp = 0;
+		int skill_pvp = 0;
+		int outfit_pvp = 0;
+		int extra_pvp_total = 0;
+					
+		string rumpus = visit_url("clan_rumpus.php");
+		if (contains_text(rumpus, "rump1_3")) clan_pvp += 3;
+		if (contains_text(rumpus, "rump2_2")) clan_pvp += 5;
+		if (contains_text(rumpus, "rump5_1")) clan_pvp += 1;
+		
+
+		int [item] my_camp;
+		my_camp = get_campground();
+		if (my_camp contains $item[tin roof (rusted)]) camp_pvp += 5;
+		
+		if (have_skill($skill[Chip on your Shoulder])) skill_pvp += 5;
+		
+		extra_pvp_total = base_pvp + clan_pvp + camp_pvp + skill_pvp;
+
+		if (contains_text(simulate, "sim")) outfit_adv = numeric_modifier("_spec", "PvP Fights");
+		else  outfit_pvp = numeric_modifier("PvP Fights");
 	
+		outfit_pvp = outfit_pvp-camp_pvp-skill_pvp;
+	
+		int pvptom = outfit_pvp + extra_pvp_total + pvp_attacks_left();
+
+		finalPVP += "You will get " + (extra_pvp_total+outfit_pvp) + " PVP fights from rollover.<br>";
+		if(pvptom <= 100) finalPVP +="If you log off now, you will start tomorrow with " + pvptom + " PVP fights.<br>";
+		if(pvptom > 100) {
+			finalPVP += "If you log off now, you will start tomorrow with 100 PVP fights.<br>";
+			int pvplost = pvptom-100;
+			finalPVP += "<font color='red'>You will lose " + pvplost + " fights at rollover. Perhaps you should burn some fights!</font><br>";
+			}
+		if(to_boolean(get_property("sry_RO_verbose"))) {
+			finalPVP += "-- Current: " +pvp_attacks_left()+"<br>";
+			finalPVP += "-- Base: " + base_pvp+"<br>";
+			finalPVP += "-- Clan: " +clan_pvp+"<br>"; }
+			finalPVP += "-- Campground: " +camp_pvp"<br>";
+			finalPVP += "-- Skills: " +skill_pvp+"<br>";
+			finalPVP += "-- Outfit: " +outfit_pvp+"<br>";
+			}
+		}
+
 // Skills
 	/*body = visit_url("/skills.php");
 	int start = index_of(body,"select a skill");
@@ -686,6 +742,8 @@ void rollover(String simulate) {
 	print_html("							<center>================= adventures ==================</center><br>");
 	if (length(finalReport)>0) print_html(finalReport);
 	//if (length(finalAdv)>5) print_html(finalAdv);
+	if (length(finalPVP)>0) print_html("	<center>==================== pvp ======================</center><br>");
+	if (length(finalPVP)>0) print_html(finalPVP);
 	if (length(finalEquip)>0) print_html("	<center>================= equipment ===================</center><br>");
 	if (length(finalEquip)>0) print_html(finalEquip);
 	if (length(finalConsume)>0) print_html("<center>================ consumption ==================</center><br>");
