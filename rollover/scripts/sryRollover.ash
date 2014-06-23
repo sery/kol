@@ -265,16 +265,36 @@ void rollover(String simulate) {
 		finalReport += "-- Skills: " +skill_adv+"<br>";
 		finalReport += "-- Outfit: " +outfit_adv+"<br>";
 		if (!contains_text(simulate, "sim")) {
-			finalReport += "----- Hat: "+ equipped_item($slot[Hat]) +" ("+numeric_modifier(equipped_item($slot[Hat]), "Adventures")+")<br>";
-			finalReport += "----- Weapon: "+ equipped_item($slot[Weapon]) +" ("+numeric_modifier(equipped_item($slot[Weapon]), "Adventures")+")<br>";
-			finalReport += "----- Offhand: "+ equipped_item($slot[Off-hand]) +" ("+numeric_modifier(equipped_item($slot[Off-hand]), "Adventures")+")<br>";
-			finalReport += "----- Back: "+ equipped_item($slot[Back]) +" ("+numeric_modifier(equipped_item($slot[Back]), "Adventures")+")<br>";
-			finalReport += "----- Shirt: "+ equipped_item($slot[Shirt]) +" ("+numeric_modifier(equipped_item($slot[Shirt]), "Adventures")+")<br>";
-			finalReport += "----- Pants: "+ equipped_item($slot[Pants]) +" ("+numeric_modifier(equipped_item($slot[Pants]), "Adventures")+")<br>";
-			finalReport += "----- Acc 1: "+ equipped_item($slot[Acc1]) +" ("+numeric_modifier(equipped_item($slot[Acc1]), "Adventures")+")<br>";
-			finalReport += "----- Acc 2: "+ equipped_item($slot[Acc2]) +" ("+numeric_modifier(equipped_item($slot[Acc2]), "Adventures")+")<br>";
-			finalReport += "----- Acc 3: "+ equipped_item($slot[Acc3]) +" ("+numeric_modifier(equipped_item($slot[Acc3]), "Adventures")+")<br>";
-			finalReport += "----- Familiar: "+ equipped_item($slot[Familiar]) +" ("+numeric_modifier(equipped_item($slot[Familiar]), "Adventures")+")<br>";
+			finalReport += "----- Hat: "+ equipped_item($slot[Hat]) +" ("+to_int(numeric_modifier(equipped_item($slot[Hat]), "Adventures"))+" adv";
+				if (can_PVP()) finalReport += ", "+to_int(numeric_modifier(equipped_item($slot[Hat]), "PVP Fights"))+" pvp";
+				finalReport += ")<br>";
+			finalReport += "----- Weapon: "+ equipped_item($slot[Weapon]) +" ("+to_int(numeric_modifier(equipped_item($slot[Weapon]), "Adventures"))+" adv";
+				if (can_PVP()) finalReport += ", "+to_int(numeric_modifier(equipped_item($slot[Weapon]), "PVP Fights"))+" pvp";
+				finalReport += ")<br>";
+			finalReport += "----- Offhand: "+ equipped_item($slot[Off-hand]) +" ("+to_int(numeric_modifier(equipped_item($slot[Off-hand]), "Adventures"))+" adv";
+				if (can_PVP()) finalReport += ", "+to_int(numeric_modifier(equipped_item($slot[Off-Hand]), "PVP Fights"))+" pvp";
+				finalReport += ")<br>";
+			finalReport += "----- Back: "+ equipped_item($slot[Back]) +" ("+to_int(numeric_modifier(equipped_item($slot[Back]), "Adventures"))+" adv";
+				if (can_PVP()) finalReport += ", "+to_int(numeric_modifier(equipped_item($slot[Back]), "PVP Fights"))+" pvp";
+				finalReport += ")<br>";
+			finalReport += "----- Shirt: "+ equipped_item($slot[Shirt]) +" ("+to_int(numeric_modifier(equipped_item($slot[Shirt]), "Adventures"))+" adv";
+				if (can_PVP()) finalReport += ", "+to_int(numeric_modifier(equipped_item($slot[Shirt]), "PVP Fights"))+" pvp";
+				finalReport += ")<br>";
+			finalReport += "----- Pants: "+ equipped_item($slot[Pants]) +" ("+to_int(numeric_modifier(equipped_item($slot[Pants]), "Adventures"))+" adv";
+				if (can_PVP()) finalReport += ", "+to_int(numeric_modifier(equipped_item($slot[Pants]), "PVP Fights"))+" pvp";
+				finalReport += ")<br>";
+			finalReport += "----- Acc 1: "+ equipped_item($slot[Acc1]) +" ("+to_int(numeric_modifier(equipped_item($slot[Acc1]), "Adventures"))+" adv";
+				if (can_PVP()) finalReport += ", "+to_int(numeric_modifier(equipped_item($slot[Acc1]), "PVP Fights"))+" pvp";
+				finalReport += ")<br>";
+			finalReport += "----- Acc 2: "+ equipped_item($slot[Acc2]) +" ("+to_int(numeric_modifier(equipped_item($slot[Acc2]), "Adventures"))+" adv";
+				if (can_PVP()) finalReport += ", "+to_int(numeric_modifier(equipped_item($slot[Acc2]), "PVP Fights"))+" pvp";
+				finalReport += ")<br>";
+			finalReport += "----- Acc 3: "+ equipped_item($slot[Acc3]) +" ("+to_int(numeric_modifier(equipped_item($slot[Acc3]), "Adventures"))+" adv";
+				if (can_PVP()) finalReport += ", "+to_int(numeric_modifier(equipped_item($slot[Acc3]), "PVP Fights"))+" pvp";
+				finalReport += ")<br>";
+			finalReport += "----- Familiar: "+ equipped_item($slot[Familiar]) +" ("+to_int(numeric_modifier(equipped_item($slot[Familiar]), "Adventures"))+" adv";
+				if (can_PVP()) finalReport += ", "+to_int(numeric_modifier(equipped_item($slot[Familiar]), "PVP Fights"))+" pvp";
+				finalReport += ")<br>";
 			}
 		}
 	if (to_boolean(get_property("_borrowedTimeUsed"))){
@@ -294,7 +314,7 @@ if (pvpreset()) {
 	if (can_PVP()) {
 		finalPVP += "<font color='red'>You will lose " + pvp_attacks_left() + " fights at rollover. Perhaps you should burn some fights!</font><br>";
 		}
-	else finalPVP += "You might want to break your stone to get some (relatively) risk free fites!";
+	else finalPVP += "You might want to break your stone to get some (relatively) risk free fites!<br>";
 	}
 
 else {
@@ -335,14 +355,15 @@ else {
 			int pvplost = pvptom-100;
 			finalPVP += "<font color='red'>You will lose " + pvplost + " fights at rollover. Perhaps you should burn some fights!</font><br>";
 			}
-		if(to_boolean(get_property("sry_RO_verbose"))) {
-			finalPVP += "-- Current: " +pvp_attacks_left()+"<br>";
-			finalPVP += "-- Base: " + base_pvp+"<br>";
-			finalPVP += "-- Clan: " +clan_pvp+"<br>"; 
-			finalPVP += "-- Campground: " +camp_pvp+"<br>";
-			finalPVP += "-- Skills: " +skill_pvp+"<br>";
-			finalPVP += "-- Outfit: " +outfit_pvp+"<br>";
-			}
+	/*	if(to_boolean(get_property("sry_RO_verbose"))) {
+	*		finalPVP += "-- Current: " +pvp_attacks_left()+"<br>";
+	*		finalPVP += "-- Base: " + base_pvp+"<br>";
+	*		finalPVP += "-- Clan: " +clan_pvp+"<br>"; 
+	*		finalPVP += "-- Campground: " +camp_pvp+"<br>";
+	*		finalPVP += "-- Skills: " +skill_pvp+"<br>";
+	*		finalPVP += "-- Outfit: " +outfit_pvp+"<br>";
+	*		}
+	*/
 		}
 	}
 // Skills
