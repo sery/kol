@@ -339,7 +339,7 @@ else {
 			finalPVP += "-- Current: " +pvp_attacks_left()+"<br>";
 			finalPVP += "-- Base: " + base_pvp+"<br>";
 			finalPVP += "-- Clan: " +clan_pvp+"<br>"; 
-			finalPVP += "-- Campground: " +camp_pvp"<br>";
+			finalPVP += "-- Campground: " +camp_pvp+"<br>";
 			finalPVP += "-- Skills: " +skill_pvp+"<br>";
 			finalPVP += "-- Outfit: " +outfit_pvp+"<br>";
 			}
