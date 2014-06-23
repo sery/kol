@@ -97,3 +97,24 @@ int count_PVP_fights() {
 		} 
 	} 
 /*	END: METHOD:COUNTFIGHTS	*/
+
+/*  METHOD:PVPRESET  *//*
+*   checks if a new season of PVP will start tomorrow
+*   (thus healing all stones)
+*/
+boolean pvpreset() {
+    string monthday = substring(today_to_string(),4);
+    switch (monthday) {
+        case "0228" :
+        case "0229" :
+        case "0430" :
+        case "0630" :
+        case "0831" :
+        case "1031" :
+        case "1231" :
+            return true;
+        default:
+            return false;
+    }
+}
+/*  END: METHOD:PVPRESET */
