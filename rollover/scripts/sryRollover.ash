@@ -133,6 +133,12 @@ void rollover(String simulate) {
 			equip($slot[familiar],$item[none]);
 			use_familiar(current_fam);
 			}
+		if (familiar_equipped_equipment(fam) == $item[solid shifting time weirdness]){
+			familiar current_fam = my_familiar();
+			use_familiar(fam);
+			equip($slot[familiar],$item[none]);
+			use_familiar(current_fam);
+			}
 		}
 	boolean haveCheese = false;
 		if(available_amount($item[stinky cheese diaper]) == 0){
@@ -412,7 +418,7 @@ void rollover(String simulate) {
 	if (have_skill($skill[Demand Sandwich]) && (to_int(get_property("_demandSandwich")) < 3 )){
 		finalSummons += "You can still demand sandwiches today.<br>";
 		}
-
+	//Incite Riot/Throw Party
 //Other Summons
 			
 	if (have_skill($skill[Summon Crimbo Candy]) && (to_int(get_property("_candySummons")) < 1 )){
