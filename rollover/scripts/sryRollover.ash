@@ -27,11 +27,15 @@ import <Rainbow Gravitation.ash>
 //import <ClipArt.ash>
 
 void create_RO_Aliases(){
-	if (get_property("sry_RO_Alias") != 2){
+	if (get_property("sry_RO_Alias") < 2){
 		set_property("sry_RO_Alias",2);
-		cli_execute("alias rollover => ashq import <sryRollover.ash> rollover('none')");
 		cli_execute("alias rolloversim => ashq import <sryRollover.ash> rollover('sim')");
 		cli_execute("alias sryROPrefs => ashq import <sryRollover.ash> getRolloverPrefs()");
+		}
+	if (get_property("sry_RO_Alias") == 2) {
+		cli_execute("alias rollpvp => ashq import <sryRollover.ash> rollover('pvp')");
+		cli_execute("alias rollover => ashq import <sryRollover.ash> rollover('adv')");
+		set_property("sry_RO_Alias",3);
 		}
 	}
 
@@ -85,7 +89,7 @@ void main(){
 	}
 */
 
-void rollover(String simulate) {
+void rollover(String roPriority) {
 
 	string finalReport = "";
 	string finalHPMP = "";
@@ -128,13 +132,7 @@ void rollover(String simulate) {
 			}
 		}
 	foreach fam in $familiars[] {
-		if (familiar_equipped_equipment(fam) == $item[Loathing Legion Helicopter]){
-			familiar current_fam = my_familiar();
-			use_familiar(fam);
-			equip($slot[familiar],$item[none]);
-			use_familiar(current_fam);
-			}
-		if (familiar_equipped_equipment(fam) == $item[solid shifting time weirdness]){
+		if ((familiar_equipped_equipment(fam) == $item[Loathing Legion Helicopter]) || (familiar_equipped_equipment(fam) == $item[solid shifting time weirdness])) {
 			familiar current_fam = my_familiar();
 			use_familiar(fam);
 			equip($slot[familiar],$item[none]);
@@ -170,7 +168,13 @@ void rollover(String simulate) {
 		item llk;
 		foreach llk in get_related($item[Loathing Legion moondial], "fold"){
 			vprint(llk + ", " + available_amount(llk), 15);
- 			if(available_amount(llk) != 0) haveknife = true;
+ 			if(available_amount(llk) != 0) {
+ 				if (item_amount(llk) + equipped_amount(llk) == 0) {
+ 					if (closet_amount(llk) != 0) take_closet(1, llk);
+ 					else if (can_interact() && (storage_amount(llk) != 0)) take_storage(1, llk);
+ 					}
+ 				haveknife = true;
+ 				}
  			}
  		}
 	if(haveknife){
@@ -186,21 +190,22 @@ void rollover(String simulate) {
 			}
 		}
 					
-	if (!contains_text(simulate, "sim")){
-		if (!to_boolean(get_property("sry_RO_runQuiet"))) {if(my_mp() > my_basestat($stat[mysticality])) {
-			if (!user_confirm("Changing your equipment *may* cause you to lose MP.\nDo you want to continue?")){
-				abort("Burn some MP and rerun Rollover.");
+	if (!contains_text(roPriority, "sim")){
+		if (!to_boolean(get_property("sry_RO_runQuiet"))) {
+			if(my_mp() > my_basestat($stat[mysticality])) {
+				if (!user_confirm("Changing your equipment *may* cause you to lose MP.\nDo you want to continue?")){
+					abort("Burn some MP and rerun Rollover.");
+					}
 				}
 			}
-		}
 		familiar oldFam = my_familiar();
-		cli_execute("maximize adv, -tie, switch Disembodied Hand");
+		if (contains_text(roPriority, "adv")) cli_execute("maximize adv, -tie, switch Disembodied Hand");
+		else if (contains_text(roPriority, "pvp")) cli_execute("maximize fites, -tie, switch Disembodied Hand");//TKTK
+		
 		if (equipped_item($slot[familiar])!=$item[Time Sword]) use_familiar(oldFam);
 		if ((equipped_item($slot[back])!=$item[Drunkula's Cape])&&((available_amount($item[auxiliary backbone])>0)&&can_equip($item[auxiliary backbone])))equip($item[auxiliary backbone]);
 		}
-	else {
-		maximize("adv, -tie, switch hand",true);
-		}
+	else maximize("adv, -tie, switch hand",true);
 	
 	print("Finished checking for rollover adventures.", "green");
 	print("Compiling rollover tasks...", "green");
@@ -240,7 +245,7 @@ void rollover(String simulate) {
 		
 	extra_adv_total = base_adv + clan_adv + res_adv + fam_adv + camp_adv + skill_adv;
 
-	if (contains_text(simulate, "sim")) outfit_adv = numeric_modifier("_spec", "Adventures");
+	if (contains_text(roPriority, "sim")) outfit_adv = numeric_modifier("_spec", "Adventures");
 	else  outfit_adv = numeric_modifier("Adventures");
 	
 	outfit_adv = outfit_adv-camp_adv-skill_adv;
@@ -264,7 +269,7 @@ void rollover(String simulate) {
 		finalReport += "-- Campground: " +camp_adv+"<br>";
 		finalReport += "-- Skills: " +skill_adv+"<br>";
 		finalReport += "-- Outfit: " +outfit_adv+"<br>";
-		if (!contains_text(simulate, "sim")) {
+		if (!contains_text(roPriority, "sim")) {
 			finalReport += "----- Hat: "+ equipped_item($slot[Hat]) +" ("+to_int(numeric_modifier(equipped_item($slot[Hat]), "Adventures"))+" adv";
 				if (hippy_stone_broken() && !pvpreset()) finalReport += ", "+to_int(numeric_modifier(equipped_item($slot[Hat]), "PVP Fights"))+" pvp";
 				finalReport += ")<br>";
@@ -317,6 +322,9 @@ if (pvpreset()) {
 	else if (!hippy_stone_broken()) {
 		finalPVP += "You might want to break your stone to get some (relatively) risk free fites!<br>";
 		}
+	if ((get_property("_fireStartingKitUsed") == "false") && (available_amount($item[CSA fire-starting kit]) > 0)) {
+		finalPVP += "You can still get PVP fights from a fire-starting kit today";
+		}
 	}
 
 else {
@@ -343,7 +351,7 @@ else {
 		
 		extra_pvp_total = base_pvp + clan_pvp + camp_pvp + skill_pvp;
 
-		if (contains_text(simulate, "sim")) outfit_adv = numeric_modifier("_spec", "PvP Fights");
+		if (contains_text(roPriority, "sim")) outfit_adv = numeric_modifier("_spec", "PvP Fights");
 		else  outfit_pvp = numeric_modifier("PvP Fights");
 	
 		outfit_pvp = outfit_pvp-camp_pvp-skill_pvp;
@@ -356,6 +364,9 @@ else {
 			finalPVP += "If you log off now, you will start tomorrow with 100 PVP fights.<br>";
 			int pvplost = pvptom-100;
 			finalPVP += "<font color='red'>You will lose " + pvplost + " fights at rollover. Perhaps you should burn some fights!</font><br>";
+			}
+		if ((get_property("_fireStartingKitUsed") == "false") && (available_amount($item[CSA fire-starting kit]) > 0)) {
+			finalPVP += "You can still get PVP fights from a fire-starting kit today";
 			}
 	/*	if(to_boolean(get_property("sry_RO_verbose"))) {
 	*		finalPVP += "-- Current: " +pvp_attacks_left()+"<br>";
@@ -547,9 +558,6 @@ else {
 		}
 
 //Misc.
-
-//	if ((getproperty("_fireStartingKitUsed") == "false") && (getproperty("_fireStartingKitUsed") == "true")){
-//		finalMisc += "You can still get PVP fights from a fire-starting kit today"}
 	
 	if (have_skill($skill[Canticle of Carboloading]) && !(to_boolean(get_property("_carboLoaded")))){
 		finalBuffs += "You can still cast Canticle of Carboloading today.<br>";}					
@@ -747,16 +755,124 @@ else {
 	}
 	
     
-    if(to_boolean(get_property("sry_RO_checkBugged"))){
-        if (item_amount(to_item("bugged balaclava"))>0 ) {
-            print("You could sell your bugged balaclava today (and get another tomorrow).");
-        }
+    /*if(to_boolean(get_property("sry_RO_checkBugged"))){
+     *   if (item_amount(to_item("bugged balaclava"))>0 ) {
+      *      print("You could sell your bugged balaclava today (and get another tomorrow).");
+       * }
 
-        if (item_amount(to_item("bugged beanie"))>0 ) {
-            print("You could sell your bugged beanie today (and get another tomorrow).");
-        }
-    }
+       * if (item_amount(to_item("bugged beanie"))>0 ) {
+        *    print("You could sell your bugged beanie today (and get another tomorrow).");
+      *  }
+    }*/
+
+    if(to_boolean(get_property("sry_RO_checkBugged"))){
+    	if (have_familiar($familiar[Baby Bugged Bugbear])) {
+    		if (get_property("_gotBuggedBeanie")!=1) {
+	
+    			familiar current_fam = my_familiar();
+    			if (my_familiar() != $familiar[Baby Bugged Bugbear]) use_familiar($familiar[Baby Bugged Bugbear]);
+				equip( $slot[familiar], $item[none] );
+						
+				int closet_beanies = closet_amount($item[bugged beanie]);
+		   		int closet_bala = closet_amount($item[bugged balaclava]);
+    			int inv_beanies = item_amount($item[bugged beanie]);
+    			int inv_bala = item_amount($item[bugged balaclava]);
+    			int sum_buggedhats = closet_amount($item[bugged beanie])+closet_amount($item[bugged balaclava])+item_amount($item[bugged beanie])+item_amount($item[bugged balaclava]);
+
+    			//If you're out of Ronin/HC OR you lack any bugged hats...
+    			if(can_interact() || (sum_buggedhats==0) ) {
+    				//unclosets any bugged beanies and balaclavas, and shoves all you have into your dc
+    				if (can_interact()){
+    					take_closet(closet_amount($item[bugged beanie]),$item[bugged beanie]);
+    					take_closet(closet_amount($item[bugged balaclava]),$item[bugged balaclava]);
+    					put_display(inv_beanies+closet_beanies, $item[bugged beanie]);
+    					put_display(inv_bala+closet_bala,$item[bugged balaclava]);
+    					}
+    				//visits the arena, if you get the bugged beanie today, set _gotBuggedBeanie so we don't need to check again if you rerun.
+    				string arenastring = visit_url("arena.php");
+    				if (contains_text(arenastring, "Congratulations on your %arenawins arena win.")) {
+    					set_property("_gotBuggedBeanie", 1);
+						finalMisc += "Got a bugged beanie.<br>";
+						}
+					else finalMisc += "Tried to get a bugged beanie, but failed. Maybe you already got one today?<br>";
+					
+					//undisplays your balas and beanies, closeting as appropriate.
+					if(can_interact()){
+						take_display(inv_beanies+closet_beanies, $item[bugged beanie]);
+    					take_display(inv_bala+closet_bala,$item[bugged balaclava]);
+    					put_closet(closet_amount($item[bugged beanie]),$item[bugged beanie]);
+    					put_closet(closet_amount($item[bugged balaclava]),$item[bugged balaclava]);
+						}
+					use_familiar(current_fam);
+    				
+    				}
+
+    			else if (!can_interact() && (sum_buggedhats!=0)) {
+    				finalMisc += "I wanted to get you a bugged beanie, but you're in hardcore/ronin and already have one (or a balaclava) in your inventory or closet.<br>";
+    				finalMisc += "If you want me to get one, you should either autosell the ones you have, or put them in your store or display case.<br>";
+    				}
+				}
+    		}
+    	}
     
+    if(to_boolean(get_property("sry_RO_checkGnome"))) {
+    	if (have_familiar($familiar[Reagnimated Gnome])) {
+    		if (get_property("_gotGnomeEquip") !=1) {
+    			if (!to_boolean(get_property("sry_RO_autoGnome"))) finalMisc += "You might be able to get some equipment for your Reagnimated Gnome at the Arena.<br>";
+    			else {
+    				string old597val = get_property("choiceAdventure597");
+    				item [int] gnomeOrderAmt;
+    				item itemPicked;
+    				string [int] gnomeOrder = split_string(get_property("sry_RO_autoGnomeOrder"),",");
+    				foreach x,gequip in gnomeOrder {
+    					if (gequip == "attack") gnomeOrderAmt[x] = $item[gnomish tennis elbow];
+						if (gequip == "underwater") gnomeOrderAmt[x]=$item[gnomish swimmer's ears];
+    					if (gequip == "block") gnomeOrderAmt[x]=$item[gnomish coal miner's lung];
+    					if (gequip == "delevel") gnomeOrderAmt[x]=$item[gnomish athlete's foot];
+    					if (gequip == "adv") gnomeOrderAmt[x]=$item[gnomish housemaid's kgnee];
+    					}
+    				foreach o,i  in gnomeOrderAmt {
+    					if ((available_amount(i) == 0) && (itemPicked == $item[none])) itemPicked = i;
+						}
+
+					switch (itemPicked) {
+						case $item[gnomish tennis elbow]:
+							set_property("choiceAdventure597","3");
+							break;
+						case $item[gnomish swimmer's ears]:
+							set_property("choiceAdventure597","1");
+							break;
+    					case $item[gnomish coal miner's lung]:
+    						set_property("choiceAdventure597","2");
+    						break;
+    					case $item[gnomish athlete's foot]:
+    						set_property("choiceAdventure597","5");
+    						break;
+    					case $item[gnomish housemaid's kgnee]:
+    						set_property("choiceAdventure597","4");
+    						break;
+						default:
+							set_property("choiceAdventure597","4");
+						}
+    				
+    				familiar current_fam = my_familiar();
+    				if (my_familiar() != $familiar[Reagnimated Gnome]) use_familiar($familiar[Reagnimated Gnome]);
+					
+					string arenastring = visit_url("arena.php");
+					if (contains_text(arenastring,"Susie is probably still mad at your little Gnome buddy"))set_property("_gotGnomeEquip",1);
+					else {
+						visit_url("choice.php?pwd&whichchoice=597&option="+get_property("choiceAdventure597"));
+						finalMisc += "Outfitted your Reagnimated Gnome with a "+itemPicked+".<br>";
+						set_property("_gotGnomeEquip",1);
+    					}
+    				use_familiar(current_fam);
+    				set_property("choiceAdventure597",old597val);
+					}
+				}
+			}
+		}
+    
+
 	// Visit the BHH to redeem any completed bounties
 	body = visit_url("/bhh.php");
 	
@@ -779,6 +895,7 @@ else {
 	if (length(finalSummons)>0) print_html(finalSummons);
 	if (length(finalMisc)>0) print_html("	<center>================ miscellaneous ================</center><br>");
 	if (length(finalMisc)>0) print_html(finalMisc);
+	if (get_property("sry_RO_Alias") < 3) print_html("<font color='red'>Your aliases may be out of date. <br>Run sryRollover.ash to fix this.</font><br>");
 	print("");
 	print("Rollover checking complete.", "green");
 }
@@ -786,5 +903,5 @@ else {
 void main() {
 	create_RO_Aliases();
 	setPrefs();
-	print("Rollover setup complete. Use the aliases 'rollover' or 'rolloversim' to prep for rollover, or 'sryROPrefs' to check settings.","blue");
+	print("Rollover setup complete. Use the aliases 'rollover','rollpvp' or 'rolloversim' to prep for rollover, or 'sryROPrefs' to check settings.","blue");
 	}
