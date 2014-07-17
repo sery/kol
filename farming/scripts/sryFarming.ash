@@ -237,7 +237,7 @@ void main(){
 	while (my_adventures() > 101) {
 		if (have_effect($effect[Everything Looks Yellow]) == 0) dohboxscript();
 		while (have_effect($effect[Everything Looks Yellow]) != 0) {
-			if (((to_int(get_property("_pantsgivingFullness")) == 2) && (fullness_limit() > my_fullness()))&&(have_effect($effect[got milk])==0)) {
+			if (((to_int(get_property("_pantsgivingCount")) > 48) && (fullness_limit() > my_fullness()))&&(have_effect($effect[got milk])==0)) {
 				use(1, $item[milk of magnesium]);
 				eat(1, $item[bag of qwop]);
 				cli_execute("hottub");
