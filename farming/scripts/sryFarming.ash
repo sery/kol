@@ -54,44 +54,48 @@ void advprep(){
 		}
 
 	put_closet(item_amount($item[bowling ball]), $item[bowling ball]);
+	if (available_amount($item[BittyCar Meatcar]) > 0) use(1, $item[Bittycar meatcar]);
 	if (available_amount($item[stinky Cheese Eye]) < 1) cli_execute("fold Stinky Cheese Eye");
 	if (available_amount($item[loathing Legion electric knife]) < 1) cli_execute("fold Loathing Legion electric knife");
 	cli_execute("acquire ice house");
 	}
 
 void dohboxscript(){
-	familiar currentfam = my_familiar();
-	if (my_familiar() != $familiar[He-Boulder]){
-		cli_execute("checkpoint");
-		use_familiar($familiar[he-boulder]);
-		}
-	cli_execute("maximize meat, equip quadroculars");
-	cli_execute("ccs swarm");
-	if ((have_effect($effect[Billiards Belligerence])<1) && (to_int(get_property("_poolGames")) < 2)) cli_execute("pool 1");
-	if (get_property("rainDohMonster")=="swarm of scarab beatles"){
-		cli_execute("use doh box");
-		}
-	else if (get_property("spookyPuttyMonster")=="swarm of scarab beatles"){
-		cli_execute("use putty monster");
-		}
-	else if (!to_boolean(get_property("_photocopyUsed"))){
-		if (get_property("photocopyMonster")=="swarm of scarab beatles"){
-			cli_execute("use photocopied monster");
+	if (have_familiar($familiar[He-Boulder])) {
+		familiar currentfam = my_familiar();
+		if (my_familiar() != $familiar[He-Boulder]){
+			cli_execute("checkpoint");
+			use_familiar($familiar[he-boulder]);
 			}
-		else {
-			if(user_confirm("Do you want me to get some beatles from Faxbot?", 50, true)){
-				cli_execute("faxbot beatles");
+		if (available_amount($item[quadroculars] ) <1) buy(1, $item[quadroculars]);
+		cli_execute("maximize meat, equip quadroculars");
+		cli_execute("ccs swarm");
+		if ((have_effect($effect[Billiards Belligerence])<1) && (to_int(get_property("_poolGames")) < 2)) cli_execute("pool 1");
+		if (get_property("rainDohMonster")=="swarm of scarab beatles"){
+			cli_execute("use doh box");
+			}
+		else if (get_property("spookyPuttyMonster")=="swarm of scarab beatles"){
+			cli_execute("use putty monster");
+			}
+		else if (!to_boolean(get_property("_photocopyUsed"))){
+			if (get_property("photocopyMonster")=="swarm of scarab beatles"){
 				cli_execute("use photocopied monster");
 				}
-			else { 
-				print("You don't have a copy of a swarm of scarab beatles, and you won't let me get one.");
+			else {
+				if(user_confirm("Do you want me to get some beatles from Faxbot?", 50, true)){
+					cli_execute("faxbot beatles");
+					cli_execute("use photocopied monster");
+					}
+				else { 
+					print("You don't have a copy of a swarm of scarab beatles, and you won't let me get one.");
+					}
 				}
 			}
+		else print("You don't have a copy of a swarm of scarab beatles, and I can't get one.");
+		cli_execute("ccs wham");
+		use_familiar(currentfam);
+		cli_execute("outfit checkpoint");
 		}
-	else print("You don't have a copy of a swarm of scarab beatles, and I can't get one.");
-	cli_execute("ccs wham");
-	use_familiar(currentfam);
-	cli_execute("outfit checkpoint");
 	}
 
 void which_fam(){
@@ -154,7 +158,10 @@ void which_fam(){
 	else if (have_familiar($familiar[Pair of Stomping Boots]) && (to_int(get_property( "_pasteDrops" )) < 7)) {
 		use_familiar($familiar[Pair of Stomping Boots]);
 		}
-	else use_familiar($familiar[grimstone golem]);
+	else {
+		use_familiar($familiar[leprechaun]);
+		if (have_familiar($familiar[grimstone golem])) use_familiar($familiar[grimstone golem]);
+		}
 	}
 
 string maximizefor(){
@@ -168,7 +175,10 @@ string maximizefor(){
 	if (to_int(get_property("_stinkyCheeseCount")) < 100) maximizeforString += ", equip stinky cheese eye";
 	if ((to_int(get_property("_pantsgivingCrumbs")) < 9) || ((to_int(get_property("_pantsgivingCount")) < 50) && (to_int(get_property("_pantsgivingFullness")) < 2))) maximizeforString += ", equip pantsgiving";
 
-	if ((my_familiar()== $familiar[knob goblin organ grinder]) && (((to_int(get_property( "_pieDrops" )) == 1) && (to_int(get_property( "_piePartsCount" )) == 4)) || ((to_int(get_property( "_pieDrops" )) == 2) && (to_int(get_property( "_piePartsCount" )) == 10)))) maximizeforString += ",equip microwave stogie";
+	if ((my_familiar()== $familiar[knob goblin organ grinder]) && (((to_int(get_property( "_pieDrops" )) == 1) && (to_int(get_property( "_piePartsCount" )) == 4)) || ((to_int(get_property( "_pieDrops" )) == 2) && (to_int(get_property( "_piePartsCount" )) == 10)))) {
+		if (available_amount($item[microwave stogie] ) <1) buy(1, $item[microwave stogie]);
+		maximizeforString += ",equip microwave stogie";
+		}
 	if (my_primestat() == $stat[moxie]) maximizeforString += ", -melee";
 	return maximizeforString;
 	}
@@ -216,13 +226,34 @@ void finalcleanup(){
 		if (my_maxmp()-my_mp()>1000) cli_execute("nuns");
 		while (mp_cost( $skill[Summon Resolutions] ) < my_mp()) use_skill($skill[Summon Resolutions]);
 		}
-	if ((my_maxmp()-my_mp()>500)&&(available_amount($item[oscus's neverending soda])>1)) use(1,$item[oscus's neverending soda]);
+	if ((my_maxmp()-my_mp()>500)&&(available_amount($item[oscus's neverending soda])>0)) use(1,$item[oscus's neverending soda]);
 	while (mp_cost( $skill[Summon Resolutions] ) < my_mp()) use_skill($skill[Summon Resolutions]);
 	if ((to_int(get_property("_zapCount")) == 0) && (my_ascensions() == to_int(get_property("lastZapperWand")))) cli_execute("acquire peach;zap peach");
 	cli_execute("rollover");
 	cli_execute("/msg buffy 25 ode");
 
 
+}
+
+void pantsFull(){
+	if (((to_int(get_property("_pantsgivingCount")) > 48) && (fullness_limit() > my_fullness()))&&(have_effect($effect[got milk])==0)) {
+				use(1, $item[milk of magnesium]);
+				eat(1, $item[bag of qwop]);
+				cli_execute("hottub");
+				}
+			else if ((to_int(get_property("_pantsgivingFullness")) == 2) && (fullness_limit() > my_fullness())) {
+				eat(1, $item[bag of qwop]);
+				cli_execute("hottub");
+				}
+	
+}
+void crownDrops(){
+				if ((to_int(get_property("_grimFairyTaleDropsCrown")) <1) && have_familiar($familiar[grim brother])) {
+				if ((my_familiar() != $familiar[grim brother]) && (have_equipped($item[Crown of thrones]))) 
+					enthrone_familiar($familiar[grim brother]);}
+			if ((to_int(get_property("_grimstoneMaskDropsCrown")) <1) && have_familiar($familiar[grimstone golem])) {
+				if ((my_familiar() != $familiar[grimstone golem]) && (have_equipped($item[Crown of thrones]))) 
+					enthrone_familiar($familiar[grimstone golem]);}
 }
 void main(){
 	boolean satWithCloset = to_boolean(get_property("autoSatisfyWithCloset"));
@@ -234,39 +265,27 @@ void main(){
 	advprep();
 	string maxStringbefore = maximizefor();
 	maximize(maxStringbefore, false);
-	while (my_adventures() > 101) {
-		if (have_effect($effect[Everything Looks Yellow]) == 0) dohboxscript();
-		while (have_effect($effect[Everything Looks Yellow]) != 0) {
-			if (((to_int(get_property("_pantsgivingCount")) > 48) && (fullness_limit() > my_fullness()))&&(have_effect($effect[got milk])==0)) {
-				use(1, $item[milk of magnesium]);
-				eat(1, $item[bag of qwop]);
-				cli_execute("hottub");
+	if ( have_familiar($familiar[he-boulder])) {
+		while (my_adventures() > 100) {
+			pantsFull();
+			if (have_effect($effect[Everything Looks Yellow]) == 0) dohboxscript();
+			while (have_effect($effect[Everything Looks Yellow]) != 0) {
+				familiar usingfam = my_familiar();
+				which_fam();
+				boolean runMax = false;
+				if (maxStringbefore != maximizefor()) {
+					runMax = true;
+					maxStringbefore = maximizefor();
+					}
+				if (my_familiar() != usingfam) runMax=true;
+				if (runMax) maximize(maximizefor(),false);
+				crownDrops();
+				adv1($location[the hidden bowling alley], -1, "");
 				}
-			else if ((to_int(get_property("_pantsgivingFullness")) == 2) && (fullness_limit() > my_fullness())) {
-				eat(1, $item[bag of qwop]);
-				cli_execute("hottub");
-				}
-			familiar usingfam = my_familiar();
-			which_fam();
-			boolean runMax = false;
-			if (maxStringbefore != maximizefor()) {
-				runMax = true;
-				maxStringbefore = maximizefor();
-				}
-			if (my_familiar() != usingfam) runMax=true;
-			if (runMax) maximize(maximizefor(),false);
-			if ((to_int(get_property("_grimFairyTaleDropsCrown")) <1) && have_familiar($familiar[grim brother])) {
-				if ((my_familiar() != $familiar[grim brother]) && (have_equipped($item[Crown of thrones]))) 
-					enthrone_familiar($familiar[grim brother]);}
-			if ((to_int(get_property("_grimstoneMaskDropsCrown")) <1) && have_familiar($familiar[grimstone golem])) {
-				if ((my_familiar() != $familiar[grimstone golem]) && (have_equipped($item[Crown of thrones]))) 
-					enthrone_familiar($familiar[grimstone golem]);}
-			adv1($location[the hidden bowling alley], -1, "");
 			}
-	
-
-	}
+		}
 	while (my_adventures() > 61) {
+		pantsFull();
 		familiar usingfam = my_familiar();
 		which_fam();
 		boolean runMax = false;
@@ -276,7 +295,7 @@ void main(){
 			}
 		if (my_familiar() != usingfam) runMax=true;
 		if (runMax) maximize(maximizefor(),false);
-		if (to_int(get_property("_grimstoneMaskDropsCrown")) <1) {if ((my_familiar() != $familiar[grimstone golem]) && (have_equipped($item[Crown of thrones]))) cli_execute("enthrone grimstone golem");}
+		crownDrops();
 		adv1($location[the hidden bowling alley], -1, "");
 		}
 	if (my_adventures() < 62) finalcleanup();
