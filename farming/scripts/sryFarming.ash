@@ -159,7 +159,7 @@ void which_fam(){
 		use_familiar($familiar[Pair of Stomping Boots]);
 		}
 	else {
-		use_familiar($familiar[leprechaun]);
+		if (!have_familiar($familiar[grimstone golem])) use_familiar($familiar[leprechaun]);
 		if (have_familiar($familiar[grimstone golem])) use_familiar($familiar[grimstone golem]);
 		}
 	}
