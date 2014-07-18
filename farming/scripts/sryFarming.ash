@@ -241,7 +241,7 @@ void pantsFull(){
 				eat(1, $item[bag of qwop]);
 				cli_execute("hottub");
 				}
-			else if ((to_int(get_property("_pantsgivingFullness")) == 2) && (fullness_limit() > my_fullness())) {
+			else if ((to_int(get_property("_pantsgivingCount")) > 49) && (fullness_limit() > my_fullness())) {
 				eat(1, $item[bag of qwop]);
 				cli_execute("hottub");
 				}
