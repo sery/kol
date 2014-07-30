@@ -203,9 +203,9 @@ void rollover(String roPriority) {
 		else if (contains_text(roPriority, "pvp")) cli_execute("maximize fites, -tie, switch Disembodied Hand");//TKTK
 		
 		if (equipped_item($slot[familiar])!=$item[Time Sword]) use_familiar(oldFam);
-		if ((equipped_item($slot[back])!=$item[Drunkula's Cape])&&((available_amount($item[auxiliary backbone])>0)&&can_equip($item[auxiliary backbone])))equip($item[auxiliary backbone]);
 		}
 	else maximize("adv, -tie, switch hand",true);
+	if ((numeric_modifier(equipped_item($slot[back]), "Adventures")<= 0) &&((available_amount($item[auxiliary backbone])>0)&&can_equip($item[auxiliary backbone]))) equip($item[auxiliary backbone]);
 	
 	print("Finished checking for rollover adventures.", "green");
 	print("Compiling rollover tasks...", "green");
