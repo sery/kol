@@ -457,6 +457,11 @@ else {
 			if (radlibsLeft > 1) finalSummons += "You can still summon " + radlibsLeft + " Rad Libs today.<br>";
 			else finalSummons += "You can still summon " + radlibsLeft + " Rad Libs today.<br>";
 			}
+		if (have_skill($skill[Summon Smithsness]) && (to_int(get_property("_smithsnessSummons")) < 3 )){
+			int smithsnessLeft = 3 - to_int(get_property("_smithsnessSummons"));
+			if (smithsnessLeft > 1) finalSummons += "You can still summon " + smithsnessLeft + " Smithsness today.<br>";
+			else finalSummons += "You can still summon " + smithsnessLeft + " Smithsness today.<br>";
+			}
 		}
 				
 //Grimoire Summons			
@@ -475,7 +480,7 @@ else {
 
 //Libram Items
 	if 	(my_mp() >= to_int(mp_cost($skill[Summon Love Song])) && 
-		(have_skill($skill[Summon Candy Hearts])	||
+		(have_skill($skill[Summon Candy Heart])	||
 		(have_skill($skill[Summon Party Favor])	||
 		(have_skill($skill[Summon Love Song])	||
 		(have_skill($skill[Summon BRICKOs])		||

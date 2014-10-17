@@ -13,8 +13,11 @@ void eatdrinkspleen(){
 			if (my_primestat() == $stat[moxie]) drink(1,$item[dirty martini]);
 			}
 		while((inebriety_limit()- my_inebriety()) > 0){
-			if (can_equip($item[The Necbromancer's Wizard Staff])) equip($item[The Necbromancer's Wizard Staff]);
-			drink(1,$item[ice-cold Sir Schlitz]);
+			if (can_equip($item[The Necbromancer's Wizard Staff])) {
+				equip($item[The Necbromancer's Wizard Staff]);
+				drink(1,$item[ice-cold Sir Schlitz]);
+				}
+			else drink(1,$item[pumpkin beer]);
 			}
 		}
 
@@ -92,7 +95,7 @@ void dohboxscript(){
 				}
 			}
 		else print("You don't have a copy of a swarm of scarab beatles, and I can't get one.");
-		cli_execute("ccs wham");
+		cli_execute("ccs default");
 		use_familiar(currentfam);
 		cli_execute("outfit checkpoint");
 		}
@@ -202,7 +205,7 @@ void finalcleanup(){
 		}
 	cli_execute("pool 1");
 	if (get_property("sidequestArenaCompleted")=="fratboy") cli_execute("concert winklered");
-	if (get_property("questL11Manor")=="finished")cli_execute("summon 2");
+	if ((get_property("questL11Manor")=="finished") && (get_property("demonSummoned")=="false")) cli_execute("summon 2");
 	if (have_effect($effect[Everything Looks Yellow]) == 0) dohboxscript();
 	
 	if (available_amount($item[the legendary beat])>0) use(1,$item[the legendary beat]);
@@ -301,7 +304,7 @@ void main(){
 	if (my_adventures() < 62) finalcleanup();
 	print("i think i'm done?","red");
 	print("Started at "+startedAt+" and finished at "+time_to_string()+".","red");
-	print("All you shoukd need to do now is check for a Jick Jar and drink a nightcap","red");
+	print("All you should need to do now is check for a Jick Jar and drink a nightcap","red");
 	print("Best to be on the safe side and double check, though.","red");
 	if (satWithCloset) set_property("autoSatisfyWithCloset","true");
 
