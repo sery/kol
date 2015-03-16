@@ -227,6 +227,8 @@ void rollover(String roPriority) {
 		if (contains_text(rumpus, "rump4_3")) clan_adv += 1;
 		}
 
+
+
 	
 		res_adv += to_int(get_property("_resolutionAdv"));		
 
@@ -235,6 +237,12 @@ void rollover(String roPriority) {
 
 		int [item] my_camp;
 		my_camp = get_campground();
+		int [item] my_chat;
+		my_chat = get_chat();
+
+		if (get_property("chateauAvailable") == "true"){
+			if (my_chat contains $item[artificial skylight]) camp_adv += 3;
+			}
 		if (my_camp contains $item[Meat Maid]) camp_adv += 4;
 		if (my_camp contains $item[Clockwork Maid]) camp_adv += 8;
 		if (my_camp contains $item[pagoda plans]) camp_adv += 3;
@@ -346,6 +354,12 @@ else {
 		int [item] my_camp;
 		my_camp = get_campground();
 		if (my_camp contains $item[tin roof (rusted)]) camp_pvp += 5;
+		int [item] my_chat;
+		my_chat = get_chat();
+
+		if (get_property("chateauAvailable") == "true"){
+			if (my_chat contains $item[antler chandelier]) camp_pvp += 3;
+			}
 		
 		if (have_skill($skill[Chip on your Shoulder])) skill_pvp += 5;
 		
