@@ -238,7 +238,7 @@ void rollover(String roPriority) {
 		int [item] my_camp;
 		my_camp = get_campground();
 		int [item] my_chat;
-		my_chat = get_chat();
+		my_chat = get_chateau();
 
 		if (get_property("chateauAvailable") == "true"){
 			if (my_chat contains $item[artificial skylight]) camp_adv += 3;
@@ -355,7 +355,7 @@ else {
 		my_camp = get_campground();
 		if (my_camp contains $item[tin roof (rusted)]) camp_pvp += 5;
 		int [item] my_chat;
-		my_chat = get_chat();
+		my_chat = get_chateau();
 
 		if (get_property("chateauAvailable") == "true"){
 			if (my_chat contains $item[antler chandelier]) camp_pvp += 3;
