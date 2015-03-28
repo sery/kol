@@ -416,6 +416,7 @@ else {
 					(contains_text(skillName, "Stickers") && (to_int(get_property("tomeSummons")) <3 ))
 				||	(contains_text(skillName, "Snowcone") && (to_int(get_property("tomeSummons")) <3 ))
 				||	(contains_text(skillName, "Sugar") && (to_int(get_property("tomeSummons")) <3 ))
+				||	(contains_text(skillName, "Smithsness") && (to_int(get_property("tomeSummons")) <3 ))
 				||	(contains_text(skillName, "Clip Art") && (to_int(get_property("tomeSummons")) <3 )))))){
 					print("You can still cast "+skillName+" today.");
 					if (autoClipArt) {
@@ -439,7 +440,8 @@ else {
 		(have_skill($skill[Summon Stickers]) ||
 		(have_skill($skill[Summon Sugar Sheets]) ||
 		(have_skill($skill[Summon Clip Art]) ||
-		(have_skill($skill[Summon Rad Libs]))))))) {
+		(have_skill($skill[Summon Rad Libs]) ||
+		(have_skill($skill[Summon Smithsness])))))))) {
 					int summonsLeft = 3 - to_int(get_property("tomeSummons"));
 					finalSummons += "You can still summon " + summonsLeft + " tome items today.<br>";
 					}
@@ -568,7 +570,11 @@ else {
 				available_amount($item[Twinkly Wad])+")<br>";
 			}
 		}
-
+	if (get_property("chateauAvailable") == "true"){
+		if (!to_boolean(get_property("_chateauDeskHarvested"))) {
+			finalSummons += "You can still harvest your Chateau desk today";
+		}
+	}
 //Swagger related things
 	buffer skillbody = visit_url("/skills.php");
 	matcher summonAnnoyMatch = create_matcher("<option value=107>Summon Annoyance \\(([0-9]+) swagger\\)</option>", skillbody);
@@ -580,9 +586,12 @@ else {
 	
 	if (have_skill($skill[Canticle of Carboloading]) && !(to_boolean(get_property("_carboLoaded")))){
 		finalBuffs += "You can still cast Canticle of Carboloading today.<br>";}					
-		
-	if ((my_inebriety() <= inebriety_limit()) && (inebriety_limit() > 0)) {
+	
+	if (my_inebriety() < inebriety_limit()) {
 		finalConsume+="You're not drunk yet.<br>";
+	}	
+	else if ((my_inebriety() <= inebriety_limit()) && (inebriety_limit() > 0)) {
+		finalConsume+="You're not over-drunk yet.<br>";
 	}
 	if (my_fullness() < fullness_limit()) {
 		finalConsume+="You're not full yet.<br>";
@@ -731,21 +740,24 @@ else {
 		if (to_int(get_property("_hotTubSoaks"))<5) {
 			finalHPMP += "You can still relax in the hot tub today.<br>";
 		}
-	
+			
 		//Check pool table has been used for the day.
-		if(to_int(get_property("_poolGames")) < 3) {
-			finalBuffs += "You can still play pool today.<br>";
-		}
+	if (is_unrestricted("Pool Table")) {
+			if(to_int(get_property("_poolGames")) < 3) {
+				finalBuffs += "You can still play pool today.<br>";
+		}}
 		
 		// Check if the shower can still be used today
-		if (!to_boolean(get_property("_aprilShower"))) {
-			finalBuffs += "You can still take a shower today.<br>";
-		}
+		if (is_unrestricted("April Shower")) {
+			if (!to_boolean(get_property("_aprilShower"))) {
+				finalBuffs += "You can still take a shower today.<br>";
+		}}
 		
 		// Check if the swimming pool can still be used today
-		if (!to_boolean(get_property("_olympicSwimmingPool"))) {
-			finalBuffs += "You can still swim laps or sprints today.<br>";
-		}
+		if (is_unrestricted("Clan Swimming Pool")){
+			if (!to_boolean(get_property("_olympicSwimmingPool"))) {
+				finalBuffs += "You can still swim laps or sprints today.<br>";
+		}}
 
 		// Check if the mad hatter buff can still be used today
 		if (get_property("_lookingGlass")==true&&get_property("_madTeaParty")==false) {
@@ -760,14 +772,22 @@ else {
 	
 		// Check if you can still fight a fax today
 		if (!to_boolean(get_property("_photocopyUsed"))) {
-			if ((my_path() != "Avatar of Jarlsberg") &&
-				((my_path() != "Avatar of Boris") &&
-				(my_path() != "Trendy"))){
+			//if ((my_path() != "Avatar of Jarlsberg") &&
+			//	((my_path() != "Avatar of Boris") &&
+			//	(my_path() != "Trendy"))){
+			if (is_unrestricted("deluxe fax machine"))
 				finalMisc += "You can still fight a photocopied monster today.<br>";
 				}
-		}
+		
 	
 	} else print("You don't have access to the VIP lounge.", "gray");
+
+		if (get_property("chateauAvailable") == "true"){
+			if (!to_boolean(get_property("_chateauMonsterFought"))) {
+
+			if (get_property("chateauMonster") != "")finalMisc += "You can still fight your Chateau painting today";
+		}
+	}
 	
 	if (available_amount(to_item("neverending soda"))>0 &&get_property("oscusSodaUsed")==false) {
 		finalHPMP += "You can still drink Oscus's Soda today.<br>";
