@@ -572,7 +572,7 @@ else {
 		}
 	if (get_property("chateauAvailable") == "true"){
 		if (!to_boolean(get_property("_chateauDeskHarvested"))) {
-			finalSummons += "You can still harvest your Chateau desk today";
+			finalSummons += "You can still harvest your Chateau desk today.<br>";
 		}
 	}
 //Swagger related things
@@ -785,7 +785,7 @@ else {
 		if (get_property("chateauAvailable") == "true"){
 			if (!to_boolean(get_property("_chateauMonsterFought"))) {
 
-			if (get_property("chateauMonster") != "")finalMisc += "You can still fight your Chateau painting today";
+			if (get_property("chateauMonster") != "")finalMisc += "You can still fight your Chateau painting today.<br>";
 		}
 	}
 	
