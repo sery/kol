@@ -82,7 +82,7 @@ void dohboxscript(){
 			use_familiar($familiar[he-boulder]);
 			}
 		if (available_amount($item[quadroculars] ) <1) buy(1, $item[quadroculars]);
-		if ((available_amount($item[Rain-Doh black box] ) <1) && (available_amount($item[Rain-Doh box full of monster] ) <1) && (available_amount($item[can of Rain-Doh] ) <1)) use(1, $item[can of Rain-Doh]);
+		if ((available_amount($item[Rain-Doh black box] ) <1) && (available_amount($item[Rain-Doh box full of monster] ) <1) && (available_amount($item[can of Rain-Doh] ) >0)) use(1, $item[can of Rain-Doh]);
 		set_location($location[The Oasis]);
 		cli_execute("maximize meat, equip quadroculars");
 		cli_execute("ccs swarm");
