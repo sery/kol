@@ -1,0 +1,16 @@
+[ default ]
+abort
+
+[ swarm of scarab beatles ]
+item Rain-Doh black box
+skill summon hobo underling
+skill ask the hobo for something to eat
+skill ask the hobo to tell you a joke
+combo Rave Nirvana
+combo Disco Nirvana
+while !match "yellow eye"
+    skill consume burrowgrub
+    item facsimile dictionary
+endwhile
+skill point at your opponent
+
