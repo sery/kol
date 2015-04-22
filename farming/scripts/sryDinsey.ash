@@ -298,10 +298,10 @@ void main(){
 	maximize(maxStringbefore, false);
 	if ( have_familiar($familiar[he-boulder])) {
 		while (my_adventures() > 100) {
-			pantsFull();
 			if (have_effect($effect[Everything Looks Yellow]) == 0) dohboxscript();
 			set_location($location[Barf Mountain]);
 			while (have_effect($effect[Everything Looks Yellow]) != 0) {
+				pantsFull();
 				familiar usingfam = my_familiar();
 				which_fam();
 				boolean runMax = false;
