@@ -111,7 +111,7 @@ void dohboxscript(){
 		cli_execute("ccs wham");
 		use_familiar(currentfam);
 		cli_execute("outfit checkpoint");
-		abort();
+	
 		}
 	}
 
@@ -239,7 +239,7 @@ void finalcleanup(){
 	if (available_amount($item[bag o' tricks])>0) use(1,$item[bag o' tricks]);
 	if (available_amount($item[fishy pipe])>0) use(1,$item[fishy pipe]);
 	if (have_skill($skill[Summon Annoyance])) use_skill($skill[Summon annoyance]);
-	if (have_skill($skill[Summon Clip Art])) cli_execute("create 3 moreto");
+	if (have_skill($skill[Summon Clip Art])) cli_execute("create 3 cold-filtered");
 	if((have_skill($skill[Superhuman Cocktailcrafting])) && (my_primestat()==$stat[moxie])) cli_execute("create 10 definit");	
 	cli_execute("swim laps");
 	cli_execute("friars familiar");
@@ -316,7 +316,7 @@ void main(){
 				}
 			}
 		}
-	while (my_adventures() > 44) {
+	while (my_adventures() > 56) {
 		set_location($location[Barf Mountain]);
 		pantsFull();
 		familiar usingfam = my_familiar();
@@ -331,7 +331,7 @@ void main(){
 		crownDrops();
 		adv1($location[Barf Mountain], -1, "");
 		}
-	if (my_adventures() < 45) finalcleanup();
+	if (my_adventures() < 57) finalcleanup();
 	print("i think i'm done?","red");
 	print("Started at "+startedAt+" and finished at "+time_to_string()+".","red");
 	int gainedmeat = my_meat() - startingMeat;
