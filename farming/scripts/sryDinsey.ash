@@ -161,7 +161,7 @@ void which_fam(){
 		else if (aguas <= item_drop || aguas < 5) {	
 			use_familiar($familiar[baby sandworm]);
 			}
-		/*else if (folios <= item_drop || folios < 2) {	
+		else if (folios <= item_drop || folios < 2) {	
 			use_familiar($familiar[blavious kloop]);
 			}*/
 		if (greases <= item_drop || greases < 2) {	
@@ -186,11 +186,9 @@ void which_fam(){
 	else if (have_familiar($familiar[Adventurous Spelunker]) && (to_int(get_property( "__spelunkingTalesDrops" )) < 1)) {
 		use_familiar($familiar[Adventurous Spelunker]);
 		}
-	else {
-		if (!have_familiar($familiar[hobo monkey])) use_familiar($familiar[leprechaun]);
-		//if (have_familiar($familiar[grimstone golem])) use_familiar($familiar[grimstone golem]);
-		if (have_familiar($familiar[hobo monkey])) use_familiar($familiar[hobo monkey]);
-		}
+	else if (have_familiar($familiar[hobo monkey])) use_familiar($familiar[hobo monkey]);
+	else use_familiar($familiar[leprechaun]);
+		
 	}
 
 string maximizefor(){
