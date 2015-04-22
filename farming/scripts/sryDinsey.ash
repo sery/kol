@@ -164,16 +164,16 @@ void which_fam(){
 		else if (folios <= item_drop || folios < 2) {	
 			use_familiar($familiar[blavious kloop]);
 			}*/
-		if (greases <= item_drop || greases < 2) {	
+		if (greases <= item_drop || greases < 5) {	
 			use_familiar($familiar[bloovian groose]);
 			}
-		else if (dreamjars <= item_drop || dreamjars < 2) {	
+		else if (dreamjars <= item_drop || dreamjars < 5) {	
 			use_familiar($familiar[Unconscious Collective]);
 			}
-		else if (fairytales <= item_drop || fairytales < 2) {	
+		else if (fairytales <= item_drop || fairytales < 5) {	
 			use_familiar($familiar[Grim Brother]);
 			}
-		else if (powdergold <= item_drop || powdergold < 2) {	
+		else if (powdergold <= item_drop || powdergold < 5) {	
 			use_familiar($familiar[Golden Monkey]);
 			}
 		}
@@ -183,12 +183,12 @@ void which_fam(){
 	/*else if (have_familiar($familiar[Pair of Stomping Boots]) && (to_int(get_property( "_pasteDrops" )) < 2)) {
 		use_familiar($familiar[Pair of Stomping Boots]);
 		}*/
-	else if (have_familiar($familiar[Adventurous Spelunker]) && (to_int(get_property( "__spelunkingTalesDrops" )) < 1)) {
+	
+	else if (have_familiar($familiar[Adventurous Spelunker]) && (to_int(get_property( "_spelunkingTalesDrops" )) < 1)) {
 		use_familiar($familiar[Adventurous Spelunker]);
 		}
-	else if (have_familiar($familiar[hobo monkey])) use_familiar($familiar[hobo monkey]);
+	else if (have_familiar($familiar[hobo monkey]))use_familiar($familiar[hobo monkey]);
 	else use_familiar($familiar[leprechaun]);
-		
 	}
 
 string maximizefor(){
@@ -314,22 +314,23 @@ void main(){
 				}
 			}
 		}
-	while (my_adventures() > 56) {
+	while (my_adventures() > 45) {
+		
 		set_location($location[Barf Mountain]);
 		pantsFull();
 		familiar usingfam = my_familiar();
+		which_fam();
 		boolean runMax = false;
 		if (maxStringbefore != maximizefor()) {
 			runMax = true;
 			maxStringbefore = maximizefor();
 			}
 		if (my_familiar() != usingfam) runMax=true;
-	
 		if (runMax) maximize(maximizefor(),false);
 		crownDrops();
 		adv1($location[Barf Mountain], -1, "");
 		}
-	if (my_adventures() < 57) finalcleanup();
+	if (my_adventures() < 46) finalcleanup();
 	print("i think i'm done?","red");
 	print("Started at "+startedAt+" and finished at "+time_to_string()+".","red");
 	int gainedmeat = my_meat() - startingMeat;
