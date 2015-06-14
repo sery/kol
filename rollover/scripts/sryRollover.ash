@@ -788,6 +788,18 @@ else {
 			if (get_property("chateauMonster") != "")finalMisc += "You can still fight your Chateau painting today.<br>";
 		}
 	}
+
+	int [item] myshed; myshed = get_campground(); 
+	if (myshed contains $item[porta Mayo Clinic]) {
+		if (!to_boolean(get_property("_mayoTankSoaked"))) finalMisc += "You can still soak in your Mayo tank today.<br>";
+		} 
+	if (myshed contains $item[Little Geneticist DNA-Splicing Lab]) {
+		if (to_int(get_property("_dnaPotionsMade"))!=3) {
+			int tonicsLeft = 3 - to_int(get_property("_dnaPotionsMade"));
+			finalMisc += "You can still make " + tonicsLeft + " gene tonics today.<br>";
+			} 
+		if (!to_boolean(get_property("_dnaHybrid"))) finalMisc += "You can still hybridize yourself today.<br>";
+
 	
 	if (available_amount(to_item("neverending soda"))>0 &&get_property("oscusSodaUsed")==false) {
 		finalHPMP += "You can still drink Oscus's Soda today.<br>";
