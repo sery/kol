@@ -790,7 +790,7 @@ else {
 	}
 
 	int [item] myshed; myshed = get_campground(); 
-	if (myshed contains $item[porta Mayo Clinic]) {
+	if (myshed contains $item[portable Mayo Clinic]) {
 		if (!to_boolean(get_property("_mayoTankSoaked"))) finalMisc += "You can still soak in your Mayo tank today.<br>";
 		} 
 	if (myshed contains $item[Little Geneticist DNA-Splicing Lab]) {
@@ -800,7 +800,7 @@ else {
 			} 
 		if (!to_boolean(get_property("_dnaHybrid"))) finalMisc += "You can still hybridize yourself today.<br>";
 
-	
+	}
 	if (available_amount(to_item("neverending soda"))>0 &&get_property("oscusSodaUsed")==false) {
 		finalHPMP += "You can still drink Oscus's Soda today.<br>";
 	}
