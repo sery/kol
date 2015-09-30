@@ -575,6 +575,11 @@ else {
 			finalSummons += "You can still harvest your Chateau desk today.<br>";
 		}
 	}
+	string camptree = visit_url("/campground.php");
+	if (!contains_text(camptree,"teatree_used.gif")) {
+		finalSummons += "You can still harvest your tea tree today.<br>";"
+	}
+	
 //Swagger related things
 	buffer skillbody = visit_url("/skills.php");
 	matcher summonAnnoyMatch = create_matcher("<option value=107>Summon Annoyance \\(([0-9]+) swagger\\)</option>", skillbody);
