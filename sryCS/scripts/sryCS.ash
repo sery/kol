@@ -169,12 +169,12 @@ void main()
 			print("has tea tree");
 			visit_url("choice.php?pwd&whichchoice=1104&option=2&choiceform2=Pick+a+low-hanging+tea");
 
-			visit_url("choice.php?itemid=8606&pwd&whichchoice=1105&option=1"); //should be frost tea
+			visit_url("choice.php?pwd&itemid=8606&whichchoice=1105&option=1"); //should be frost tea
 
 			if (item_amount($item[cuppa Frost tea]) > 0) print ("yep you got a frost tea");
 			else {
-				print("oops sery messed up");
-				abort();
+				abort("oops sery messed up");
+			
 			}
 	//8620
 		}
@@ -484,8 +484,7 @@ else if (my_daycount() == 2) {
 			visit_url("choice.php?itemid=8620&pwd&whichchoice=1105&option=1"); //should be obscuri tea
 
 			if (item_amount($item[cuppa Obscuri tea]) > 0) print ("yep you got a Obscuri tea");
-			else {print("oops sery messed up");
-				abort();}
+			else {abort("oops sery messed up");}
 			//8620
 			}
 
