@@ -577,7 +577,7 @@ else {
 	}
 	string camptree = visit_url("/campground.php");
 	if (!contains_text(camptree,"teatree_used.gif")) {
-		finalSummons += "You can still harvest your tea tree today.<br>";"
+		finalSummons += "You can still harvest your tea tree today.<br>";
 	}
 	
 //Swagger related things
