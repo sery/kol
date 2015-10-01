@@ -167,7 +167,7 @@ void main()
 
 		if (get_campground() contains $item[potted tea tree]) {
 			print("has tea tree");
-			//choice.php?pwd&whichchoice=1104&option=2&choiceform2=Pick+a+low-hanging+tea
+			visit_url("choice.php?pwd&whichchoice=1104&option=2&choiceform2=Pick+a+low-hanging+tea");
 
 			visit_url("choice.php?itemid=8606&pwd&whichchoice=1105&option=1"); //should be frost tea
 
@@ -478,12 +478,14 @@ else if (my_daycount() == 2) {
 
 		if (get_campground() contains $item[potted tea tree]) {
 			print("has meat tree");
-			//choice.php?pwd&whichchoice=1104&option=2&choiceform2=Pick+a+low-hanging+tea
+			
+			visit_url("choice.php?pwd&whichchoice=1104&option=2&choiceform2=Pick+a+low-hanging+tea");
 
 			visit_url("choice.php?itemid=8620&pwd&whichchoice=1105&option=1"); //should be obscuri tea
 
 			if (item_amount($item[cuppa Obscuri tea]) > 0) print ("yep you got a Obscuri tea");
-			else {print("oops sery messed up");}
+			else {print("oops sery messed up");
+				abort();}
 			//8620
 			}
 
@@ -501,12 +503,6 @@ else if (my_daycount() == 2) {
 	    	use_skill(3, $skill[Advanced Saucecrafting]);
 		}
 
-		if (get_property("_deckCardsDrawn").to_int() == 0){
-			cli_execute("play forest");
-		}
-		if (get_property("_deckCardsDrawn").to_int() == 5){
-			cli_execute("play giant growth");
-		}
 		if (item_amount($item[green mana]) != 3) abort("Something got fucked. :(");
 
 		cli_execute("garden pick");
@@ -518,6 +514,13 @@ else if (my_daycount() == 2) {
 		if (get_property("_rapidPrototypingUsed") < 5 && item_amount($item[cordial of concentration]) == 0) retrieve_item(1, $item[cordial of concentration]);
 		if (get_property("_rapidPrototypingUsed") < 5 && item_amount($item[oil of expertise]) == 0 && item_amount($item[cherry]) > 0) retrieve_item(1, $item[oil of expertise]);
 	
+		if (get_property("_deckCardsDrawn").to_int() == 0){
+			cli_execute("play forest");
+		}
+		if (get_property("_deckCardsDrawn").to_int() == 5){
+			cli_execute("play giant growth");
+		}
+
 	}
 
 	//TEST 7 (4 of 11)
