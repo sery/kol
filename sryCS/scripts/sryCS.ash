@@ -167,6 +167,7 @@ void main()
 
 		if (get_campground() contains $item[potted tea tree]) {
 			print("has tea tree");
+			visit_url("campground.php?action=teatree");
 			visit_url("choice.php?pwd&whichchoice=1104&option=2&choiceform2=Pick+a+low-hanging+tea");
 
 			visit_url("choice.php?pwd&itemid=8606&whichchoice=1105&option=1"); //should be frost tea
@@ -478,6 +479,8 @@ else if (my_daycount() == 2) {
 
 		if (get_campground() contains $item[potted tea tree]) {
 			print("has meat tree");
+
+			visit_url("campground.php?action=teatree");
 			
 			visit_url("choice.php?pwd&whichchoice=1104&option=2&choiceform2=Pick+a+low-hanging+tea");
 
