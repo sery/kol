@@ -175,7 +175,6 @@ void main()
 			if (item_amount($item[cuppa Frost tea]) > 0) print ("yep you got a frost tea");
 			else {
 				abort("oops sery messed up");
-			
 			}
 	//8620
 		}
@@ -494,8 +493,9 @@ else if (my_daycount() == 2) {
 		if (get_property("_smithsnessSummons") == 0) {
 	    	use_skill(3, $skill[Summon Smithsness]);
 		}
-		if (item_amount($item[Staff of the Headmaster's Victuals]) + equipped_amount($item[Staff of the Headmaster's Victuals]) == 0) {
-	    	retrieve_item(1, $item[Staff of the Headmaster's Victuals]); //'
+		if (item_amount($item[Staff of the Headmaster's Victuals]) 
+			+ equipped_amount($item[Staff of the Headmaster's Victuals]) == 0) { 
+	    	retrieve_item(1, $item[Staff of the Headmaster's Victuals]);
 		}
 		if (item_amount($item[louder than bomb]) == 0) {
 	    	retrieve_item(3, $item[louder than bomb]);
@@ -505,7 +505,6 @@ else if (my_daycount() == 2) {
 	    	use_skill(3, $skill[Advanced Saucecrafting]);
 		}
 
-		if (item_amount($item[green mana]) != 3) abort("Something got fucked. :(");
 
 		cli_execute("garden pick");
 
@@ -522,6 +521,8 @@ else if (my_daycount() == 2) {
 		if (get_property("_deckCardsDrawn").to_int() == 5){
 			cli_execute("play giant growth");
 		}
+
+		if (item_amount($item[green mana]) != 3) abort("Something got fucked. :(");  // this needs to come after you get the mana, dumbass.
 
 	}
 
