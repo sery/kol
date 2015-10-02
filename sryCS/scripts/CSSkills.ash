@@ -2,7 +2,7 @@
 //string charsheet = visit_url("charsheet.php");
 import <zlib.ash>
 
-string charsheet = visit_url("showplayer.php?who=1384581");
+string charsheet = visit_url("showplayer.php?who="+my_id());
 /*foreach s in $skills[Advanced Cocktailcrafting,
 					Advanced Saucecrafting,
 					Aloysius' Antiphon of Aptitude,
