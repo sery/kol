@@ -401,13 +401,15 @@ void main()
 	if (item_amount($item[olive]) == 0 && item_amount($item[serum of sarcasm]) == 0) retrieve_item(1, $item[olive]);
 	if (item_amount($item[tomato]) == 0 && item_amount($item[Tomato Juice of Powerful Power]) == 0) retrieve_item(1, $item[tomato]);
 	
-		body = visit_url("/hermit.php");
+		hermitbody = visit_url("/hermit.php");
+
+		while(contains_text(hermitbody,"left in stock")){
+			hermit(1, $item[ten-leaf clover]);
+		}
 	
-	while (item_amount($item[cherry])==0 && item_amount($item[oil of expertise]) == 0 && contains_text(body,"left in stock")){
+	while (item_amount($item[cherry])==0 && item_amount($item[oil of expertise]) == 0) {// && contains_text(body,"left in stock")){
 
 		set_property("cloverProtectActive", false);
-		hermit(1, $item[ten-leaf clover]);
-		
 		
 		int clomount = item_amount($item[disassembled clover]) + item_amount($item[ten-leaf clover]);
 		if (clomount<1) hermit(1, $item[ten-leaf clover]);
@@ -420,7 +422,7 @@ void main()
 		if (item_amount($item[fruit basket]) > 0) use(1, $item[fruit basket]);
 		
 		set_property("cloverProtectActive", true);
-		body = visit_url("/hermit.php");
+		hermitbody = visit_url("/hermit.php");
 	}
 
 	if (item_amount($item[lemon])==1 && item_amount($item[philter of phorce])==0) retrieve_item(1, $item[philter of phorce]);
@@ -543,10 +545,33 @@ else if (my_daycount() == 2) {
 		doservice(7);
 	}
 
-//POSTTEST 7
+//POSTTEST 7 '
 
+		hermitbody = visit_url("/hermit.php");
 
-	if (item_amount($item[cherry]) == 0 && item_amount($item[oil of expertise]) == 0){
+		while(contains_text(hermitbody,"left in stock")){
+			hermit(1, $item[ten-leaf clover]);
+		}
+	
+	while (item_amount($item[cherry])==0 && item_amount($item[oil of expertise]) == 0) {// && contains_text(body,"left in stock")){
+
+		set_property("cloverProtectActive", false);
+		
+		int clomount = item_amount($item[disassembled clover]) + item_amount($item[ten-leaf clover]);
+		if (clomount<1) hermit(1, $item[ten-leaf clover]);
+		if (item_amount($item[disassembled clover]) > 0 && item_amount($item[ten-leaf clover]) <1) use(1, $item[disassembled clover]);
+		
+		add_item_condition(1, $item[fruit basket]);
+		
+		if (item_amount($item[ten-leaf clover]) > 0) adventure(1, $location[Hippy camp]);
+		
+		if (item_amount($item[fruit basket]) > 0) use(1, $item[fruit basket]);
+		
+		set_property("cloverProtectActive", true);
+		hermitbody = visit_url("/hermit.php");
+	}
+
+	/*if (item_amount($item[cherry]) == 0 && item_amount($item[oil of expertise]) == 0){
 		body = visit_url("/hermit.php");
 	
 		int clomount = item_amount($item[disassembled clover]) + item_amount($item[ten-leaf clover]);
@@ -569,7 +594,7 @@ else if (my_daycount() == 2) {
 		
 			set_property("cloverProtectActive", true);
 			body = visit_url("/hermit.php");
-
+		*/
 	}
 }
 
