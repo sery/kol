@@ -401,6 +401,7 @@ void main()
 	if (item_amount($item[olive]) == 0 && item_amount($item[serum of sarcasm]) == 0) retrieve_item(1, $item[olive]);
 	if (item_amount($item[tomato]) == 0 && item_amount($item[Tomato Juice of Powerful Power]) == 0) retrieve_item(1, $item[tomato]);
 	
+		string hermitbody;
 		hermitbody = visit_url("/hermit.php");
 
 		while(contains_text(hermitbody,"left in stock")){
@@ -546,14 +547,14 @@ else if (my_daycount() == 2) {
 	}
 
 //POSTTEST 7 '
-
+		string hermitbody;
 		hermitbody = visit_url("/hermit.php");
 
 		while(contains_text(hermitbody,"left in stock")){
 			hermit(1, $item[ten-leaf clover]);
 		}
 	
-	while (item_amount($item[cherry])==0 && item_amount($item[oil of expertise]) == 0) {// && contains_text(body,"left in stock")){
+	while (item_amount($item[cherry])==0 && item_amount($item[oil of expertise]) == 0) {
 
 		set_property("cloverProtectActive", false);
 		
@@ -571,32 +572,9 @@ else if (my_daycount() == 2) {
 		hermitbody = visit_url("/hermit.php");
 	}
 
-	/*if (item_amount($item[cherry]) == 0 && item_amount($item[oil of expertise]) == 0){
-		body = visit_url("/hermit.php");
 	
-		int clomount = item_amount($item[disassembled clover]) + item_amount($item[ten-leaf clover]);
-		
-		while (item_amount($item[cherry])==0 && item_amount($item[oil of expertise]) == 0 && contains_text(body,"left in stock")){
-			clomount = item_amount($item[disassembled clover]) + item_amount($item[ten-leaf clover]);
 
-			set_property("cloverProtectActive", false);
-			hermit(1, $item[ten-leaf clover]);
-			
-			if (item_amount($item[disassembled clover]) > 0 && item_amount($item[ten-leaf clover]) <1) use(1, $item[disassembled clover]);
-		
-			add_item_condition(1, $item[fruit basket]);
 
-			outfit( "Filthy Hippy Disguise" );
-		
-			if (item_amount($item[ten-leaf clover]) > 0) adventure(1, $location[Hippy camp]);
-		
-			if (item_amount($item[fruit basket]) > 0) use(1, $item[fruit basket]);
-		
-			set_property("cloverProtectActive", true);
-			body = visit_url("/hermit.php");
-		*/
-	}
-}
 
 	if (get_property("_rapidPrototypingUsed") < 5 && item_amount($item[oil of expertise]) == 0 && item_amount($item[cherry]) > 0) retrieve_item(1, $item[oil of expertise]);
 	
