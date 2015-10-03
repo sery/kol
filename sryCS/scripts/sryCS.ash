@@ -412,7 +412,7 @@ void main()
 
 		set_property("cloverProtectActive", false);
 
-		while(item_amount($item[disassembled clover]) > 0) { use(1, $item[disassembled clover])}
+		while(item_amount($item[disassembled clover]) > 0) { use(1, $item[disassembled clover]);}
 		
 		//int clomount = item_amount($item[disassembled clover]) + item_amount($item[ten-leaf clover]);
 		//if (clomount<1) hermit(1, $item[ten-leaf clover]);
@@ -565,7 +565,7 @@ if (item_amount($item[cherry])==0 && item_amount($item[oil of expertise]) == 0) 
 		}
 		set_property("cloverProtectActive", false);
 
-		while(item_amount($item[disassembled clover]) > 0) { use(1, $item[disassembled clover])}
+		while(item_amount($item[disassembled clover]) > 0) { use(1, $item[disassembled clover]);}
 		
 		//int clomount = item_amount($item[disassembled clover]) + item_amount($item[ten-leaf clover]);
 		//if (clomount<1) hermit(1, $item[ten-leaf clover]);
