@@ -50,8 +50,8 @@ void eatdrinkspleen(){
 		cli_execute("uneffect Just the Best Anapests"); */
 		}
 
-	if(to_int(get_property("_chocolatesUsed"))==0) use(1,$item[choco-crimbot]);
-	if((to_int(get_property("_chocolatesUsed"))==1)||(to_int(get_property("_chocolatesUsed"))==2)){
+	//if(to_int(get_property("_chocolatesUsed"))==0) use(1,$item[choco-crimbot]);
+	if((to_int(get_property("_chocolatesUsed"))==1){
 		if (my_class() == $class[Seal Clubber]) use(1,$item[chocolate seal-clubbing club]);
 		if (my_class() == $class[Turtle Tamer]) use(1,$item[chocolate turtle totem]);
 		if (my_class() == $class[Pastamancer]) use(1,$item[chocolate pasta spoon]);
